@@ -1,0 +1,58 @@
+baseURL = "http://blog.jeremylikness.com/"
+languageCode = "en-us"
+title = "Developer for Life"
+theme = "mediumish-gohugo-theme"
+summaryLength = 50
+copyright = "Jeremy Likness - All Rights Reserved"
+googleAnalytics = "UA-1227465-12"
+enableEmoji = true
+
+[params]
+    logo = "images/logo.png"
+    description = "Code all the things."
+
+[params.social]
+  github = "JeremyLikness"
+  linkedin = "JeremyLikness"
+  twitter = "JeremyLikness"
+  instagram = "JeremyLikness"
+
+[params.index]
+  picture = "/images/jumbotron.jpg"
+  title = "Developer for Life"
+  subtitle = "Code all the things!"
+  mdtext = '''
+'''
+  alertbar = false
+
+[params.author]
+  name = "Jeremy Likness"
+  thumbnail = "/images/author.png"
+  description = "Empowering developers to be their best."
+
+## Main Menu
+[[menu.main]]
+    name = "Home"
+    weight = 50
+    identifier = ""
+    url = "/"
+[[menu.main]]
+    name = "Blog"
+    weight = 100
+    identifier = "blog"
+    url = "/blog"
+[[menu.main]]
+    name = "Upcoming Talks"
+    weight = 150
+    identifier = "talks"
+    url = "/blog/2017-08-17_upcoming-talks/"
+[[menu.main]]
+    name = "Past Presentations"
+    weight = 200
+    identifier = "presentations"
+    url = "/blog/2017-08-17_presentations-archive/"
+[[menu.main]]
+    name = "About Me"
+    identifier = "about"
+    weight = 200
+    url = "/static/about"
