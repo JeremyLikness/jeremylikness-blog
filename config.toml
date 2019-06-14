@@ -7,6 +7,9 @@ copyright = "Jeremy Likness - All Rights Reserved"
 googleAnalytics = "UA-1227465-12"
 enableEmoji = true
 
+[outputs]
+  page = ["HTML", "RSS"]
+
 [params]
     logo = "images/logo.png"
     description = "Code all the things."
