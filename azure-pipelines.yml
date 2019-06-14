@@ -11,6 +11,14 @@ pool:
 
 steps:
 
+- script: git submodule init
+  workingDirectory: '$(Build.ArtifactStagingDirectory)/themes/mediumish-gohugo-theme'
+  displayName: 'Init theme'
+
+- script: git submodule update
+  workingDirectory: '$(Build.ArtifactStagingDirectory)/themes/mediumish-gohugo-theme'
+  displayName: 'Update theme'
+
 - script: choco install hugo -confirm
   displayName: 'Install Hugo'
 
