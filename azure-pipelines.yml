@@ -16,7 +16,7 @@ steps:
 - script: sudo apt-get install hugo
   displayName: 'Install Hugo'
 
-- script: Hugo
+- script: hugo
   displayName: 'Generate website'
 
 - task: PublishBuildArtifacts@1
