@@ -7,20 +7,23 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'vs2017-win2016'
 
 steps:
 
-- script: ls -al themes
-  displayName: 'List themes directory'
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Windows-64bit.zip'
+  displayName: 'Download hugo'
 
-- script: sudo apt-get update
-  displayName: 'Update'
+- task: ExtractFiles@1
+  inputs:
+    archiveFilePatterns: '*.zip'
+    destinationFolder: 'bin'
+    cleanDestinationFolder: true
+  displayName: 'Extract hugo'
 
-- script: sudo apt-get install hugo
-  displayName: 'Install Hugo'
-
-- script: hugo
+- script: ./bin/hugo.exe
   displayName: 'Generate website'
 
 - task: PublishBuildArtifacts@1
