@@ -15,3 +15,12 @@ steps:
 
 - script: sudo apt-get install hugo
   displayName: 'Install Hugo'
+
+- script: Hugo
+  displayName: 'Generate website'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/Public'
+    ArtifactName: 'blog'
+    publishLocation: 'Container'
