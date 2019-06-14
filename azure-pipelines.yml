@@ -11,20 +11,10 @@ pool:
 
 steps:
 
-- task: DownloadFile@1
-  inputs:
-    FileUrl: 'https://github.com/gohugoio/hugo/releases/download/v0.55.6/hugo_0.55.6_Windows-64bit.zip'
-    DestinationFolder: '$(System.DefaultWorkingDirectory)'
-    requireAuthentication: false
+- script: choco install hugo -confirm
+  displayName: 'Install Hugo'
 
-- task: ExtractFiles@1
-  inputs:
-    archiveFilePatterns: '*.zip'
-    destinationFolder: 'bin'
-    cleanDestinationFolder: true
-  displayName: 'Extract hugo'
-
-- script: ./bin/hugo.exe
+- script: hugo
   displayName: 'Generate website'
 
 - task: PublishBuildArtifacts@1
