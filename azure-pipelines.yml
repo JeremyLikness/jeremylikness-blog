@@ -11,6 +11,13 @@ pool:
 
 steps:
 
+- script: dir
+  displayName: 'Show directory'
+
+- script: dir
+  displayName: 'Show themes directory'
+  workingDirectory: '$(Build.ArtifactStagingDirectory)/themes'
+  
 - script: git submodule init
   workingDirectory: '$(Build.ArtifactStagingDirectory)/themes/mediumish-gohugo-theme'
   displayName: 'Init theme'
