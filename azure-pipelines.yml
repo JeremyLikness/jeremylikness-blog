@@ -10,30 +10,24 @@ pool:
   vmImage: 'vs2017-win2016'
 
 steps:
-
-- script: dir
-  displayName: 'Show directory'
-
-- script: dir
-  displayName: 'Show themes directory'
-  workingDirectory: '$(Build.ArtifactStagingDirectory)/themes'
   
 - script: git submodule init
-  workingDirectory: '$(Build.ArtifactStagingDirectory)/themes/mediumish-gohugo-theme'
+  workingDirectory: '$(Build.Repository.LocalPath)/themes/mediumish-gohugo-theme'
   displayName: 'Init theme'
 
 - script: git submodule update
-  workingDirectory: '$(Build.ArtifactStagingDirectory)/themes/mediumish-gohugo-theme'
+  workingDirectory: '$(Build.Repository.LocalPath)/themes/mediumish-gohugo-theme'
   displayName: 'Update theme'
 
 - script: choco install hugo -confirm
   displayName: 'Install Hugo'
 
 - script: hugo
+  workingDirectory: '$(Build.Repository.LocalPath)'
   displayName: 'Generate website'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/public'
+    PathtoPublish: '$(Build.Repository.LocalPath)/public'
     ArtifactName: 'blog'
     publishLocation: 'Container'
