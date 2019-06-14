@@ -1,0 +1,33 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'vs2017-win2016'
+
+steps:
+  
+- script: git submodule init
+  workingDirectory: '$(Build.Repository.LocalPath)/themes/mediumish-gohugo-theme'
+  displayName: 'Init theme'
+
+- script: git submodule update
+  workingDirectory: '$(Build.Repository.LocalPath)/themes/mediumish-gohugo-theme'
+  displayName: 'Update theme'
+
+- script: choco install hugo -confirm
+  displayName: 'Install Hugo'
+
+- script: hugo
+  workingDirectory: '$(Build.Repository.LocalPath)'
+  displayName: 'Generate website'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.Repository.LocalPath)/public'
+    ArtifactName: 'blog'
+    publishLocation: 'Container'
