@@ -4,6 +4,7 @@ title = "Developer for Life"
 theme = "mediumish-gohugo-theme"
 summaryLength = 50
 copyright = "Jeremy Likness - All Rights Reserved"
+disqusShortname = "developerforlife"
 googleAnalytics = "UA-1227465-12"
 enableEmoji = true
 
@@ -13,6 +14,7 @@ enableEmoji = true
 [params]
     logo = "images/logo.png"
     description = "Code all the things."
+    keywords = ["cloud", "webassembly", "azure", "programming", "coding"]
 
 [params.social]
   github = "JeremyLikness"

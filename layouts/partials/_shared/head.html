@@ -3,30 +3,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	{{ hugo.Generator }}
 	{{ with .Site.Params.logo }}
-	<link rel="icon" href="{{ . | urlize | relURL }}">
-	{{ end }}
+	<link rel="icon" href="{{ . | urlize | relURL }}">{{ end }}
 	{{ if .Params.canonicalUrl }}
-	<link rel="canonical" href="{{ .Params.canonicalUrl }}">
-	{{ end }}
+	<link rel="canonical" href="{{ .Params.canonicalUrl }}">{{ end }}
 	<title>{{ .Page.Title }} | {{ .Site.Title }}</title>
-	{{ with .Site.Params.meta.description }}
+	{{ with or .Page.Description .Site.Params.description }}
 	<meta name="description" content="{{ . }}">{{ end }}
-	{{ with .Site.Params.meta.keywords }}
-	<meta name="keywords" content="{{ . }}">{{ end }}
+	{{ with or .Params.tags .Site.Params.keywords  }}
+	{{ with delimit . "," }}
+	<meta name="keywords" content="{{ . }}">{{ end }}{{ end }}
 	{{ range .AlternativeOutputFormats -}}
-	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
-	{{ end }}
+	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">{{ end }}
 	<!-- twitter and open graph support -->
-	{{ if .Params.image }}
+	{{ if or .Params.image .Site.Params.author.thumbnail }}
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}" />
+	{{ with or .Params.image .Site.Params.author.thumbnail }}
+	<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
 	{{ else }}
-	<meta name="twitter:card" content="summary" />
-	{{ end }}
+	<meta name="twitter:card" content="summary" />{{ end }}
 	<meta name="twitter:creator" content="@JeremyLikness" />
+	<meta property="og:site_name" content="{{ .Site.Title }}"/> 
 	<meta property="og:url" content="{{ .Permalink }}" />
 	<meta property="og:title" content="{{ .Page.Title }}" />
-	<meta property="og:description" content="{{ .Page.Description }}" />
+	<meta property="og:description" content="{{ or .Page.Description .Site.Params.description }}" />
 	<!-- end twitter support -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -36,4 +35,5 @@
 		rel="stylesheet">
 	<link href="{{ "/css/medium.css" | urlize | relURL }}" rel="stylesheet">
 	<link href="{{ "/css/additional.css" | urlize | relURL }}" rel="stylesheet">
+	<link href="{{ "/css/custom.css" | urlize | relURL }}" rel="stylesheet">
 </head>
