@@ -10,6 +10,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- script: ls -al themes
+  displayName: 'List themes directory'
+
+steps:
 - script: sudo apt-get update
   displayName: 'Update'
 
