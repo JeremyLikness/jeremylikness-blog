@@ -10,8 +10,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: apt-get update
+- script: sudo apt-getupdate
   displayName: 'Update'
 
-- script: apt-get install hugo
+- script: sudo apt-get install hugo
   displayName: 'Install Hugo'
