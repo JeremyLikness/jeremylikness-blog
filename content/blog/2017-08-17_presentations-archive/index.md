@@ -16,13 +16,12 @@ images:
  - "/blog/2017-08-17_presentations-archive/images/1.jpeg" 
  - "/blog/2017-08-17_presentations-archive/images/2.jpeg" 
 
-
 aliases:
     - "/past-presentations-3aa8fe97cf31"
     - "/past-presentations/home"
 ---
 
-#### International and Keynote Speaker
+## International and Keynote Speaker
 
 I’ve been delivering technical presentations for a decade now. My passion is empowering developers to be their best and speaking around the world is one way I’ve been able to connect. This article contains descriptions and links to videos of presentations I’ve done in the past, including assets such as decks and source code. Please don’t hesitate to contact me if you are interested in me speaking at your event. The easiest way is to [direct message me on Twitter](https://twitter.com/jeremylikness). I accept DMs even if I’m not following you back yet.
 
@@ -32,109 +31,163 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 [Video Playlist of Past Presentations](https://www.youtube.com/playlist?list=PL1VfiVM16kp-sQ3D3XDLopmScoaOQibFb)
 
-![image](/blog/2017-08-17_presentations-archive/images/1.jpeg)
+![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
-**Inaugural .NET South Conference 2019  
-(May 13–14, 2019)**
+### Inaugural .NET South Conference 2019  
+
+_(May 13–14, 2019)_
 
 [Managing Data 📈 in the Cloud ☁](https://blog.jeremylikness.com/managing-data-in-the-cloud-82c5fa0be9d1)
 
-
-*   .NET is now your Browser OS With Blazor
+* .NET is now your Browser OS With Blazor
     {{<twitter 1128366868966793216>}}
 
+### CodeStock 2019  
 
-**CodeStock 2019  
-(April 12–13, 2019)**
+_(April 12–13, 2019)_
 
-*   Keynote
+* Keynote
     {{<twitter 1116706599807139840>}}
     {{<twitter 1116698835588399106>}}
 
+* WebAssembly: The Browser _is_ Your OS (with Blazor)
+    {{<twitter 1117068673003544577>}}
 
-*   WebAssembly: The Browser _is_ Your OS (with Blazor)
-> {{<twitter 1117068673003544577>}}
+### DEVIntersection and Microsoft Azure and AI Conference 2018 
 
+_(December 3–7, 2018)_
 
-**DEVIntersection and Microsoft Azure and AI Conference 2018 (December 3–7, 2018)**
+* What’s New with ASP.NET Core
+* Enterprise Serverless
+    {{<twitter 1062682236506509313>}}
+* Say “Yes” to NoSQL for the .NET SQL Developer
+    {{<twitter 1062324380938702848>}}
 
-*   What’s New with ASP.NET Core
-*   Enterprise Serverless
-*   Say “Yes” to NoSQL for the .NET SQL Developer
-> {{<twitter 1062682236506509313>}}
+### Connect.Tech 2018
 
-> {{<twitter 1062324380938702848>}}
+_(October 18-19, 2018)_
 
-> {{<twitter 1053360382826360832>}}
+* TypeScript from JavaScript
+    {{<twitter 1053360382826360832>}}
+* The Three D's of Modern Web Development
+    {{<twitter 1052937597058613248>}}
+    View the video of this presentation: [<i class="fab fa-vimeo"></i> https://vimeo.com/303443966](https://vimeo.com/303443966)
 
-> {{<twitter 1052937597058613248>}}
-View the video of this presentation: [https://vimeo.com/303443966](https://vimeo.com/303443966)
+### Azure in the ATL
 
+_(October 16, 2018)_
 
-> {{<twitter 1052381006022541312>}}
-Azure in the ATL: A Lap around Azure Storage
+* A Lap Around Azure Storage
+    {{<twitter 1052381006022541312>}}
 
+### Angular Air episode: Angular on .NET
 
+{{<youtube ipEC6aDGJeM>}}
 
+### TechBash 2018
 
+_(October 3 - 5, 2018)_
 
-Angular Air episode: Angular on .NET
+* 🔗 [Enterprise Serverless](https://blog.jeremylikness.com/enterprise-serverless-acc826616d4c)
+* 🔗 [Say “Yes” to NoSQL for .NET SQL Developers](https://blog.jeremylikness.com/say-yes-to-nosql-for-net-sql-developers-74391f785133)
 
+### Visual Studio Live! Chicago 2018
 
-[Enterprise Serverless](https://blog.jeremylikness.com/enterprise-serverless-acc826616d4c)
-
-[Say “Yes” to NoSQL for .NET SQL Developers](https://blog.jeremylikness.com/say-yes-to-nosql-for-net-sql-developers-74391f785133)
-
-
-
-
-![image](/blog/2017-08-17_presentations-archive/images/2.jpeg)
-
-
-
-**Visual Studio Live! Chicago 2018**
+_(September 17-20, 2018)_
 
 Delivered two sessions: Event Grid and overview of Azure Serverless
 
-> {{<twitter 1040943070827700225>}}
-Atlanta Code Camp 2018 Keynote: [https://twitter.com/i/moments/1040961613099089921](https://twitter.com/i/moments/1040961613099089921)
+### Atlanta Code Camp 2018
 
+_(September 15, 2018)_
 
-> {{<twitter 1039930388942966784>}}
+{{<twitter 1040943070827700225>}}
 
-[Get Started with Angular on .NET Core 2.1 (Part One)](https://blog.jeremylikness.com/get-started-with-angular-on-net-core-2-1-part-one-2effcfe8fae9)
+* Atlanta Code Camp 2018 Keynote: [https://twitter.com/i/moments/1040961613099089921](https://twitter.com/i/moments/1040961613099089921)
 
-> {{<twitter 1027185811555536896>}}
+### .NET Conference 2018
 
-> {{<twitter 1017603515450118146>}}
+_(September 12, 2018)_
 
-[Hack Your Career: WeRise](https://blog.jeremylikness.com/hack-your-career-werise-7595277c6bb9)
+* Serverless .NET from Surface Book to Azure Cloud
+    {{<twitter 1039930388942966784>}}
 
+### ngHouston Meetup
 
-Google Developer’s Group Atlanta on [Docker Containers and Orchestration](https://www.meetup.com/gdg-atlanta/events/250791821/):
+🔗 [Get Started with Angular on .NET Core 2.1 (Part One)](https://blog.jeremylikness.com/get-started-with-angular-on-net-core-2-1-part-one-2effcfe8fae9)
 
-> {{<twitter 1009256118588239872>}}
+### THAT Conference 2018
 
-> {{<twitter 1003010769703833601>}}
+_(August 8, 2018)_
 
-[NoSQL and Azure Cosmos DB in 20 Minutes](https://blog.jeremylikness.com/nosql-and-azure-cosmos-db-in-20-minutes-9d0c3e0279dc)
+* (Hitch) Hiker's Guide to the Cosmos (DB)
+    {{<twitter 1027185811555536896>}}
 
-[Connect Anything to Everything: Event Grid at Build 2018](https://blog.jeremylikness.com/connect-anything-to-everything-event-grid-at-build-2018-963b9001a3db)
+### Kansas City Developer Conference (KCDC)
 
-[DotNext Piter 2018 Recap](https://blog.jeremylikness.com/dotnext-piter-2018-recap-91fbd02c67fa)
+_(July 12, 2018)_
+
+* Cloud Native Azure Cosmos DB for NoSQL at Scale
+    {{<twitter 1017603515450118146>}}
+
+### WeRise Women in Tech Conference 2018 
+
+🔗 [Hack Your Career: WeRise](https://blog.jeremylikness.com/hack-your-career-werise-7595277c6bb9)
+
+### Google Developer’s Group Atlanta Meetup
+
+🔗 [Docker Containers and Orchestration](https://www.meetup.com/gdg-atlanta/events/250791821/)
+
+{{<twitter 1009256118588239872>}}
+
+### Music City Code 2018
+
+{{<twitter 1003010769703833601>}}
+
+### //Build 2018
+
+_(May 7-9, 2018)_
+
+* [NoSQL and Azure Cosmos DB in 20 Minutes](https://blog.jeremylikness.com/nosql-and-azure-cosmos-db-in-20-minutes-9d0c3e0279dc)
+* [Connect Anything to Everything: Event Grid at Build 2018](https://blog.jeremylikness.com/connect-anything-to-everything-event-grid-at-build-2018-963b9001a3db)
+
+### Microsoft Tech Summit Poland 2018
+
+_(April 29, 2018)_
 
 > {{<twitter 990661206020009985>}}
 
-[MJS 052: Jeremy Likness | Devchat.tv](https://devchat.tv/my-javascript-story/mjs-052-jeremy-likness)
+### DotNext Piter 2018
 
-> {{<twitter 978661365647904771>}}
+_(April 22-23, 2018)_
 
-[Jeremy Likness - CosmosDB and .NET Core](https://channel9.msdn.com/Shows/On-NET/Jeremy-Likness-CosmosDB-and-NET-Core)
+🔗 [DotNext Piter 2018 Recap](https://blog.jeremylikness.com/dotnext-piter-2018-recap-91fbd02c67fa)
 
+### My JavaScript Story
 
-**Click for highlights from:** [**Tech Summit Switzerland 2018**](https://twitter.com/i/moments/969571614617632768)
+🔗 [MJS 052: Jeremy Likness | Devchat.tv](https://devchat.tv/my-javascript-story/mjs-052-jeremy-likness)
 
-> {{<twitter 968773402617171968>}}
+### DevIntersection Orlando 2018
+
+_(March 27, 2018)_
+
+{{<twitter 978661365647904771>}}
+
+### Channel 9 On.NET
+
+🔗 [Jeremy Likness - CosmosDB and .NET Core](https://channel9.msdn.com/Shows/On-NET/Jeremy-Likness-CosmosDB-and-NET-Core)
+
+### Tech Summit Switzerland 2018
+
+_(February 2018)_
+
+🔗 [Tech Summit Switzerland 2018 Higlights](https://twitter.com/i/moments/969571614617632768)
+
+### Azure Zurich User Group
+
+_(February 28, 2018)_
+
+{{<twitter 968773402617171968>}}
 
 [Docker Management and Kubernetes Orchestration](https://blog.jeremylikness.com/docker-management-and-kubernetes-orchestration-2b7baf60a704)
 

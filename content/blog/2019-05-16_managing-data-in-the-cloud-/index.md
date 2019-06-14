@@ -20,7 +20,6 @@ images:
  - "/blog/2019-05-16_managing-data-in-the-cloud/images/1.png" 
  - "/blog/2019-05-16_managing-data-in-the-cloud/images/2.gif" 
 
-
 aliases:
     - "/managing-data-in-the-cloud-82c5fa0be9d1"
 ---

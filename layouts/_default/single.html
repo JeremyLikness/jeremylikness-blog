@@ -14,7 +14,7 @@
                 {{- partial "single-partials/share.html" . -}}
             </div>
             <!-- Post -->
-            <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="col-md-10 flex-first flex-md-unordered">
                 <div class="mainheading">
                     <!-- Author Box -->
                     {{if isset .Site.Params.author "name"}}
@@ -42,10 +42,8 @@
                     {{end}}
                     {{end}}
                     <!-- Post Title -->
-                    
                     <h1 class="posttitle">{{ .Title }}</h1>
                 </div>
-
                 {{ if (.Params.toc) }}
                 <aside>
                     <i>In this blog post...</i>
@@ -73,16 +71,17 @@
                 <!-- Next and PrevPage inside current section -->
                 <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
                     {{with .NextInSection}}
-                    <a class="d-block col-md-6" href="{{.URL}}"> &laquo; {{.Title}}</a>
+                    <a class="d-block col-md-6" href="{{.RelPermalink}}"> &laquo; {{.Title}}</a>
                     {{end}}
                     {{with .PrevInSection}}
-                    <a class="d-block col-md-6 text-lg-right" href="{{.URL}}">{{.Title}} &raquo;</a>
+                    <a class="d-block col-md-6 text-lg-right" href="{{.RelPermalink}}">{{.Title}} &raquo;</a>
                     {{end}}
-                    <div class="clearfix"></div>
+                    <!--<div class="clearfix"></div>-->
                 </div>
                 <!-- End Next and PrevPage -->
             </div>
             <!-- End Post -->
+
         </div>
     </div>
     <!-- End Article

@@ -1,0 +1,6 @@
+<p><a href="https://github.com/{{ .Get 0 }}" target="_blank">
+        <i class="fab fa-github"></i>&nbsp;{{ .Get 0 }}
+        {{ if .Get 1 }}
+        {{ with .Get 1 }}
+        &nbsp;&mdash;&nbsp;{{ . }}{{ end }}{{ end }}
+    </a></p>
