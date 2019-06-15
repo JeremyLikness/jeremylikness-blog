@@ -3,6 +3,7 @@ title: "Presentations Archive"
 author: "Jeremy Likness"
 date: 2017-08-17T16:03:00.620Z
 lastmod: 2019-06-13T10:43:31-07:00
+toc: false
 
 description: "This article contains descriptions of presentations Jeremy Likness gave in the past, including any videos and links to assets such as decks and source code."
 
@@ -21,51 +22,76 @@ aliases:
     - "/past-presentations/home"
 ---
 
-## International and Keynote Speaker
-
 I’ve been delivering technical presentations for a decade now. My passion is empowering developers to be their best and speaking around the world is one way I’ve been able to connect. This article contains descriptions and links to videos of presentations I’ve done in the past, including assets such as decks and source code. Please don’t hesitate to contact me if you are interested in me speaking at your event. The easiest way is to [direct message me on Twitter](https://twitter.com/jeremylikness). I accept DMs even if I’m not following you back yet.
 
-[View my papercall.io profile](https://www.papercall.io/speakers/jeremylikness)
+🗣 [View my papercall.io profile](https://www.papercall.io/speakers/jeremylikness)
 
-[View my sessionize profile](https://sessionize.com/jeremylikness)
+🗣 [View my sessionize profile](https://sessionize.com/jeremylikness)
 
-[Video Playlist of Past Presentations](https://www.youtube.com/playlist?list=PL1VfiVM16kp-sQ3D3XDLopmScoaOQibFb)
+🎥 [Watch recorded presentations on YouTube](https://www.youtube.com/playlist?list=PL1VfiVM16kp-sQ3D3XDLopmScoaOQibFb) | [Channel 9 Shows](https://channel9.msdn.com/niners/jeremylikness)
+
+🔎 [Read Presentation Recaps and Trip Reports](/tags/presentations)
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
-### Inaugural .NET South Conference 2019  
+## Refactr.Tech 2019
 
-_(May 13–14, 2019)_
+_Atlanta, GA (Jun 7-8, 2019)_
+
+* WebAssembly: Your Browser is the New OS
+    {{<twitter 1137041533625032704>}}
+
+## Microsoft Ignite | The Tour 2018-2019
+
+I had the opportunity to travel to several cities, including Toronto, Johannesburg, Hong Kong, Amsterdam, and Mumbai. I presented two sessions at each stop.
+
+### Designing Resilient Cloud Applications
+
+{{<youtube iEjdmG9cNH4>}}
+
+### Investing in Serverless: Less Servers, More Code
+
+{{<youtube NZYSID8snjI>}}
+
+## Inaugural .NET South Conference 2019  
+
+_Atlanta, GA (May 13–14, 2019)_
 
 [Managing Data 📈 in the Cloud ☁](https://blog.jeremylikness.com/managing-data-in-the-cloud-82c5fa0be9d1)
 
 * .NET is now your Browser OS With Blazor
     {{<twitter 1128366868966793216>}}
 
-### CodeStock 2019  
+## CodeStock 2019  
 
-_(April 12–13, 2019)_
+_Knoxville, TN (April 12–13, 2019)_
 
 * Keynote
     {{<twitter 1116706599807139840>}}
     {{<twitter 1116698835588399106>}}
-
 * WebAssembly: The Browser _is_ Your OS (with Blazor)
     {{<twitter 1117068673003544577>}}
 
-### DEVIntersection and Microsoft Azure and AI Conference 2018 
+## DEVIntersection and Microsoft Azure and AI Conference 2018
 
-_(December 3–7, 2018)_
+_Las Vegas, CA (December 3–7, 2018)_
 
 * What’s New with ASP.NET Core
 * Enterprise Serverless
+* Say “Yes” to NoSQL for the .NET SQL Developer 
+
+## DevReach 2019 
+
+_Sofia, Bulgaria (November 13-14, 2018)_
+
+* Enterprise Serverless
     {{<twitter 1062682236506509313>}}
-* Say “Yes” to NoSQL for the .NET SQL Developer
+* (Hitch) Hiker's Guide to the Cosmos (DB)
     {{<twitter 1062324380938702848>}}
 
-### Connect.Tech 2018
+## Connect.Tech 2018
 
-_(October 18-19, 2018)_
+_Atlanta, GA (October 18-19, 2018)_
 
 * TypeScript from JavaScript
     {{<twitter 1053360382826360832>}}
@@ -73,68 +99,72 @@ _(October 18-19, 2018)_
     {{<twitter 1052937597058613248>}}
     View the video of this presentation: [<i class="fab fa-vimeo"></i> https://vimeo.com/303443966](https://vimeo.com/303443966)
 
-### Azure in the ATL
+## Azure in the ATL
 
-_(October 16, 2018)_
+_Atlanta, GA (October 16, 2018)_
 
 * A Lap Around Azure Storage
     {{<twitter 1052381006022541312>}}
 
-### Angular Air episode: Angular on .NET
+## Angular Air episode: Angular on .NET
 
 {{<youtube ipEC6aDGJeM>}}
 
-### TechBash 2018
+## TechBash 2018
 
-_(October 3 - 5, 2018)_
+_Pocono Manor, PA (October 3 - 5, 2018)_
 
 * 🔗 [Enterprise Serverless](https://blog.jeremylikness.com/enterprise-serverless-acc826616d4c)
 * 🔗 [Say “Yes” to NoSQL for .NET SQL Developers](https://blog.jeremylikness.com/say-yes-to-nosql-for-net-sql-developers-74391f785133)
 
-### Visual Studio Live! Chicago 2018
+## Visual Studio Live! Chicago 2018
 
-_(September 17-20, 2018)_
+_Chicago, IL (September 17-20, 2018)_
 
 Delivered two sessions: Event Grid and overview of Azure Serverless
 
-### Atlanta Code Camp 2018
+## Atlanta Code Camp 2018
 
-_(September 15, 2018)_
+_Atlanta, GA (September 15, 2018)_
 
 {{<twitter 1040943070827700225>}}
 
 * Atlanta Code Camp 2018 Keynote: [https://twitter.com/i/moments/1040961613099089921](https://twitter.com/i/moments/1040961613099089921)
 
-### .NET Conference 2018
+## .NET Conference 2018
 
 _(September 12, 2018)_
 
 * Serverless .NET from Surface Book to Azure Cloud
     {{<twitter 1039930388942966784>}}
 
-### ngHouston Meetup
+## ngHouston Meetup
 
 🔗 [Get Started with Angular on .NET Core 2.1 (Part One)](https://blog.jeremylikness.com/get-started-with-angular-on-net-core-2-1-part-one-2effcfe8fae9)
 
-### THAT Conference 2018
+## THAT Conference 2018
 
-_(August 8, 2018)_
+_Wisconsin Dells, WI (August 8, 2018)_
 
 * (Hitch) Hiker's Guide to the Cosmos (DB)
     {{<twitter 1027185811555536896>}}
 
-### Kansas City Developer Conference (KCDC)
+## Kansas City Developer Conference (KCDC)
 
-_(July 12, 2018)_
+_Kansas City, MO (July 12, 2018)_
 
 * Cloud Native Azure Cosmos DB for NoSQL at Scale
     {{<twitter 1017603515450118146>}}
 
-### WeRise Women in Tech Conference 2018 
+## WeRise Women in Tech Conference 2018 
+
+_Atlanta, GA_
 
 🔗 [Hack Your Career: WeRise](https://blog.jeremylikness.com/hack-your-career-werise-7595277c6bb9)
 
 ### Google Developer’s Group Atlanta Meetup
+
+_Atlanta, GA_
 
 🔗 [Docker Containers and Orchestration](https://www.meetup.com/gdg-atlanta/events/250791821/)
 
@@ -142,109 +172,148 @@ _(July 12, 2018)_
 
 ### Music City Code 2018
 
+_Nashville, TN (June 2, 2018)_
+
 {{<twitter 1003010769703833601>}}
 
 ### //Build 2018
 
-_(May 7-9, 2018)_
+_Seattle, WA (May 7-9, 2018)_
 
 * [NoSQL and Azure Cosmos DB in 20 Minutes](https://blog.jeremylikness.com/nosql-and-azure-cosmos-db-in-20-minutes-9d0c3e0279dc)
 * [Connect Anything to Everything: Event Grid at Build 2018](https://blog.jeremylikness.com/connect-anything-to-everything-event-grid-at-build-2018-963b9001a3db)
 
-### Microsoft Tech Summit Poland 2018
+## Microsoft Tech Summit Poland 2018
 
-_(April 29, 2018)_
+_Warsaw, Poland (April 29, 2018)_
 
-> {{<twitter 990661206020009985>}}
+{{<twitter 990661206020009985>}}
 
-### DotNext Piter 2018
+## DotNext Piter 2018
 
-_(April 22-23, 2018)_
+_St. Petersburg, Russia (April 22-23, 2018)_
 
 🔗 [DotNext Piter 2018 Recap](https://blog.jeremylikness.com/dotnext-piter-2018-recap-91fbd02c67fa)
 
-### My JavaScript Story
+## My JavaScript Story
 
 🔗 [MJS 052: Jeremy Likness | Devchat.tv](https://devchat.tv/my-javascript-story/mjs-052-jeremy-likness)
 
-### DevIntersection Orlando 2018
+## DevIntersection Orlando 2018
 
-_(March 27, 2018)_
+_Orlando, FL (March 27, 2018)_
 
 {{<twitter 978661365647904771>}}
 
-### Channel 9 On.NET
+## Tech Summit Switzerland 2018
 
-🔗 [Jeremy Likness - CosmosDB and .NET Core](https://channel9.msdn.com/Shows/On-NET/Jeremy-Likness-CosmosDB-and-NET-Core)
-
-### Tech Summit Switzerland 2018
-
-_(February 2018)_
+_Zurich, Switzerland (February 2018)_
 
 🔗 [Tech Summit Switzerland 2018 Higlights](https://twitter.com/i/moments/969571614617632768)
 
-### Azure Zurich User Group
+## Azure Zurich User Group
 
-_(February 28, 2018)_
+_Zurich, Switzerland (February 28, 2018)_
 
 {{<twitter 968773402617171968>}}
 
-[Docker Management and Kubernetes Orchestration](https://blog.jeremylikness.com/docker-management-and-kubernetes-orchestration-2b7baf60a704)
+## DevNexus 2018
 
-[Azure Event Grid: Glue for the Internet](https://blog.jeremylikness.com/azure-event-grid-glue-for-the-internet-e770d94cc29)
+_Atlanta, GA_
 
+🔗 [Docker Management and Kubernetes Orchestration](https://blog.jeremylikness.com/docker-management-and-kubernetes-orchestration-2b7baf60a704)
 
+## Azure in the ATL
 
+_Atlanta, GA_
 
+🔗 [Azure Event Grid: Glue for the Internet](https://blog.jeremylikness.com/azure-event-grid-glue-for-the-internet-e770d94cc29)
 
-[Serverless in South Florida](https://blog.jeremylikness.com/serverless-in-south-florida-2fdc8147d3df)
+## South Florida Code Camp
 
-[Presentation: Introduction to TypeScript](https://blog.jeremylikness.com/presentation-introduction-to-typescript-a655df16c8e6)
+_Davies, FL_
 
-[CosmosDB: Serverless NoSQL for the .NET Developer](https://jlik.me/b35)
+🔗 [Serverless in South Florida](https://blog.jeremylikness.com/serverless-in-south-florida-2fdc8147d3df)
 
-[Azure: Bring your app to the cloud with serverless Azure Functions](https://jlik.me/b1z)
+## Atlanta JavaScript User Group
 
-[Azure Functions: Less-Server and More Code](https://jlik.me/b1x)
+_Atlanta, GA_
 
-[JeremyLikness/PASS-2017](https://github.com/JeremyLikness/PASS-2017)
+🔗 [Presentation: Introduction to TypeScript](https://blog.jeremylikness.com/presentation-introduction-to-typescript-a655df16c8e6)
 
-[The San Francisco/Bay Area Serverless Tour 2017](https://blog.jeremylikness.com/the-san-francisco-bay-area-serverless-tour-2017-9883b43aa9f3)
+## PASS Summit 2017
 
-[Interview: Women Tech Talk with Alicia Carr](https://blog.jeremylikness.com/interview-women-tech-talk-with-alicia-carr-df189fa6659a)
+_Seattle, WA_
 
-[Microsoft Community Connections Charlotte 2017](https://blog.jeremylikness.com/microsoft-community-connections-charlotte-2017-54e30eb4a43e)
+{{<github "JeremyLikness/PASS-2017">}}
 
-[Connect.Tech 2017: Node.js and TypeScript](https://blog.jeremylikness.com/connect-tech-2017-node-js-and-typescript-8419b0e4d689)
+## Bay Area Serverless Tour 2017
 
-[Google Developer Group Atlanta: Serverless Node.js Functions](https://blog.jeremylikness.com/google-developer-group-atlanta-serverless-node-js-functions-2ec8d987a4b1)
+🔗 [The San Francisco/Bay Area Serverless Tour 2017](https://blog.jeremylikness.com/the-san-francisco-bay-area-serverless-tour-2017-9883b43aa9f3)
 
-[.NET Rocks: Migrating to .NET Core 2.0](https://blog.jeremylikness.com/net-rocks-migrating-to-net-core-2-0-72203276a698)
+## Women who Code
 
-[Atlanta Code Camp 2017: Serverless .NET](https://blog.jeremylikness.com/atlanta-code-camp-2017-serverless-net-da640edd59e9)
+🔗 [Interview: Women Tech Talk with Alicia Carr](https://blog.jeremylikness.com/interview-women-tech-talk-with-alicia-carr-df189fa6659a)
 
-[.NET Core on Channel 9 Visual Studio Toolbox](https://blog.jeremylikness.com/net-core-on-channel-9-visual-studio-toolbox-979241700758)
+## Microsoft Community Connections
 
-[Web Apps on Linux: JavaScript Jabber](https://blog.jeremylikness.com/web-apps-on-linux-javascript-jabber-84da7d62cc6)
+_Charlotte, NC_
 
-[Explore the Cosmos (DB) with .NET Core 2.0](https://blog.jeremylikness.com/explore-the-cosmos-db-with-net-core-2-0-aab48423dcdc)
+🔗 [Microsoft Community Connections Charlotte 2017](https://blog.jeremylikness.com/microsoft-community-connections-charlotte-2017-54e30eb4a43e)
 
-[Herding Cattle with the Azure Container Service (ACS)](https://blog.jeremylikness.com/herding-cattle-with-the-azure-container-service-acs-e329e7def93e)
+## Connect.Tech 2017
 
-[Music City Code 2017](https://blog.jeremylikness.com/music-city-code-2017-e78e6279a60b)
+_Atlanta, GA_
 
+🔗 [Connect.Tech 2017: Node.js and TypeScript](https://blog.jeremylikness.com/connect-tech-2017-node-js-and-typescript-8419b0e4d689)
 
-#### WE RISE WOMEN IN TECHNOLOGY: CONTAIN YOUR EXCITEMENT: HANDS-ON DOCKER
+## Google Developer User Group Atlanta
+
+_Atlanta, GA_
+
+🔗 [Google Developer Group Atlanta: Serverless Node.js Functions](https://blog.jeremylikness.com/google-developer-group-atlanta-serverless-node-js-functions-2ec8d987a4b1)
+
+## .NET Rocks Podcast
+
+🔗 [.NET Rocks: Migrating to .NET Core 2.0](https://blog.jeremylikness.com/net-rocks-migrating-to-net-core-2-0-72203276a698)
+
+## Atlanta Code Camp 2017
+
+_Atlanta, GA_
+
+🔗 [Atlanta Code Camp 2017: Serverless .NET](https://blog.jeremylikness.com/atlanta-code-camp-2017-serverless-net-da640edd59e9)
+
+## JavaSCript Jabber
+
+🔗 [Web Apps on Linux: JavaScript Jabber](https://blog.jeremylikness.com/web-apps-on-linux-javascript-jabber-84da7d62cc6)
+
+## Atlanta Docker User Group 
+
+_Atlanta, GA_
+
+🔗 [Herding Cattle with the Azure Container Service (ACS)](https://blog.jeremylikness.com/herding-cattle-with-the-azure-container-service-acs-e329e7def93e)
+
+## Music City Code 2017
+
+_Nashville, TN_
+
+🔗 [Music City Code 2017](https://blog.jeremylikness.com/music-city-code-2017-e78e6279a60b)
+
+## WeRise.Tech 2017
 
 _Saturday, June 24th, 2017 — Atlanta, GA_
 
-[We Rise Women in Technology](https://werise.tech/) | [Code, Deck, and Step-by-Step Instructions](https://github.com/JeremyLikness/docker-we-rise)
+[We Rise Women in Technology](https://werise.tech/) 
 
-#### **CODE CAREER ACADEMY: TYPESCRIPT: JAVASCRIPT’S SAFETY HARNESS**
+{{<github "JeremyLikness/docker-we-rise" "Code, Deck, and Step-by-Step Instructions">}}
+
+## Code Career Academy
 
 _Thursday, March 23rd, 2017 — Lawrenceville, GA_
 
-[Code Career Academy Meetups](https://www.meetup.com/Code-Career-Academy-Meetups-Gwinnett/events/237645432/) | [Code and Deck](https://www.github.com/jeremylikness/typescript-cca)
+* TypeScript: JavaScript's Safety Harness
+
+[Code and Deck](https://www.github.com/jeremylikness/typescript-cca)
 
 #### GWINNETT GEORGIA MICROSOFT USER GROUP (GGMUG): CONTAIN YOUR EXCITEMENT, DOCKER FOR DEVELOPERS
 

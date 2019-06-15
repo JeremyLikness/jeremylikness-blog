@@ -12,7 +12,8 @@ tags:
  - JavaScript 
  - Single Page Applications 
  - Blazor 
- - Dotnet 
+ - Dotnet
+ - Presentations 
 
 image: "/blog/2019-04-16_presentation-webassembly-c-sharp-and-blazor-at-codestock-2019/images/2.png" 
 images:
@@ -24,8 +25,6 @@ images:
 aliases:
     - "/presentation-webassembly-c-and-blazor-at-codestock-2019-ab2f8636356"
 ---
-
-## How the browser is now your new cross-platform OS
 
 Knoxville, Tennessee is not only a fun city and great place to visit; it happens to be the host city of the [CodeStock](https://codestock.org) developers’ conference.
 

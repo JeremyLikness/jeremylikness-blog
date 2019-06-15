@@ -28,8 +28,6 @@ aliases:
     - "/vanilla-js-getting-started-5df2553df0f0"
 ---
 
-## Build web code with a zero-footprint web framework
-
 Welcome to Vanilla.js, a zero-footprint framework powered by JavaScript! Vanilla.js helps you build modern applications for the web, mobile, or desktop.
 
 {{<figure src="/blog/2019-04-09_vanilla.jsgetting-started/images/1.png" caption="Wait, WHAT?! No LIBRARY or FRAMEWORK? Are you KIDDING me?!" alt="Screenshot showing no libaries">}}
@@ -38,15 +36,15 @@ This guide shows you how to build and run a simple Vanilla.js app. You’ll use 
 
 This guide takes less than 10 minutes to complete. At the end of this guide — as part of final code review — there is a link to see the final application code. (If you don’t execute the steps in this guide, you can still access the final application code.)
 
-### Prerequisites
+## Prerequisites
 
 Before you begin, make sure your development environment includes a text editor (your choice) and a web browser (again, your choice).
 
-### JavaScript Engine
+## JavaScript Engine
 
 Vanilla.js requires a browser that runs JavaScript. Oh, wait, that’s _every modern browser_! (You should be good to go).
 
-### Package Manager and Build Tools
+## Package Manager and Build Tools
 
 Vanilla.js depends on _no_ packages and requires _zero_ build tools.
 
@@ -56,7 +54,7 @@ To check that you have the Vanilla.js client installed, open your browser, launc
 
 {{<figure src="/blog/2019-04-09_vanilla.jsgetting-started/images/2.png" caption="Success!" alt="Console showing success">}}
 
-### Step 1: Create an HTML File and Begin Editing
+## Step 1: Create an HTML File and Begin Editing
 
 You will use your favorite text editor to create web pages and perform a variety of ongoing development tasks such as testing, bundling, and deployment.
 
@@ -135,7 +133,7 @@ You can include the CSS inside a `<style></style>` opening and closing tag, or s
 
 `<link rel="stylesheet" type="text/css" href="style.css">`
 
-### Step 2: Create the initial application
+## Step 2: Create the initial application
 
 You develop apps in the context of your text editor. Your file system contains the files for one or more pages.
 
@@ -153,7 +151,7 @@ app.innerHTML = '<button onclick="run()">Load</button>';
 
 Yes, it’s a very simple application right now.
 
-### Step 3: Serve the Application
+## Step 3: Serve the Application
 
 On most systems you can simply double-click or tap on the `index.html` file and it will open in your browser and run. If you need a web server, that’s when you start doing crazy things like installing third-party tools. Sure, it’s possible.
 
@@ -171,7 +169,7 @@ Your app will greet you with a button that transforms when clicked:
 
 ![Animation of pointer clicking load button](/blog/2019-04-09_vanilla.jsgetting-started/images/3.gif)
 
-### Step 4: Create a Fully Functional RSS-Style Reader with Dynamic Collapsible Posts and Geo-Encoded User Information that Reveals on Hover
+## Step 4: Create a Fully Functional RSS-Style Reader with Dynamic Collapsible Posts and Geo-Encoded User Information that Reveals on Hover
 
 Really, it’s not as much work as it sounds. For data, we’ll make a live call to the sample information provided by “[JSON Placeholder](https://jsonplaceholder.typicode.com/).” There are several data sets, but we’ll just look at “[posts](https://jsonplaceholder.typicode.com/posts)” and “[users](https://jsonplaceholder.typicode.com/users)”.
 
@@ -309,7 +307,7 @@ The code fluently generates the template, wiring in place everything needed for 
 
 (Clicking on the location links will take you to an online map … you may find the destinations from the sample data to be quite interesting).
 
-### Final code review
+## Final code review
 
 You can [browse the working example](https://jsfiddle.net/jeremylikness/q1tvzdrn/) of the app that you created in this Getting Started guide.
 
@@ -319,7 +317,7 @@ _“But, wait! What if the browsers I’m targeting don’t support the latest J
 
 If it were me, I’d just rename that `.js` file to have a `.ts` extension and compile it to ES5.
 
-### Next steps
+## Next steps
 
 Now that you’ve seen the essentials of a Vanilla.js app and your favorite text editor, continue with these other deep thoughts:
 

@@ -43,10 +43,13 @@
                     {{end}}
                     <!-- Post Title -->
                     <h1 class="posttitle">{{ .Title }}</h1>
+                    {{ if .Params.subtitle }}
+                    <p class="subtitle">{{ .Params.subtitle }}</p>
+                    {{ end }}
                 </div>
                 {{ if (.Params.toc) }}
                 <aside>
-                    <i>In this blog post...</i>
+                    <ul><li><i>In this blog post...</i></li></ul>
                     {{ .TableOfContents }}
                 </aside>
                 {{ end }}

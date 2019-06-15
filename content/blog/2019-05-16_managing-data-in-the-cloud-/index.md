@@ -13,7 +13,8 @@ tags:
  - Azure Storage 
  - NoSQL 
  - Mongodb 
- - Sql 
+ - Sql
+ - Presentations 
 
 image: "/blog/2019-05-16_managing-data-in-the-cloud/images/1.png" 
 images:
@@ -23,8 +24,6 @@ images:
 aliases:
     - "/managing-data-in-the-cloud-82c5fa0be9d1"
 ---
-
-#### Learn how to classify and host your data using cloud services.
 
 Monday, May 13th, 2019 was the date we kicked off the inaugural [.NET South conference](https://dotnetsouth.tech). It was also the date I delivered a new talk, “Managing Data in the Cloud.”
 

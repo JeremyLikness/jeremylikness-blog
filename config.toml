@@ -26,8 +26,6 @@ enableEmoji = true
   picture = "/images/jumbotron.jpg"
   title = "Developer for Life"
   subtitle = "Code all the things!"
-  mdtext = '''
-'''
   alertbar = false
 
 [params.author]
@@ -37,27 +35,32 @@ enableEmoji = true
 
 ## Main Menu
 [[menu.main]]
-    name = "Home"
+    name = "🏠 Home"
     weight = 50
     identifier = ""
     url = "/"
 [[menu.main]]
-    name = "Blog"
+    name = "📃 Blog"
     weight = 100
     identifier = "blog"
     url = "/blog"
 [[menu.main]]
-    name = "Upcoming Talks"
+    name = "📆 Upcoming Talks"
     weight = 150
     identifier = "talks"
     url = "/blog/2017-08-17_upcoming-talks/"
 [[menu.main]]
-    name = "Past Presentations"
+    name = "🗣 Past Presentations"
     weight = 200
     identifier = "presentations"
     url = "/blog/2017-08-17_presentations-archive/"
 [[menu.main]]
-    name = "About Me"
+    name = "▶Videos"
+    weight = 250
+    identifier = "videos"
+    url = "https://www.youtube.com/playlist?list=PL1VfiVM16kp-sQ3D3XDLopmScoaOQibFb"
+[[menu.main]]
+    name = "ℹ About Me"
     identifier = "about"
-    weight = 200
+    weight = 300
     url = "/static/about"

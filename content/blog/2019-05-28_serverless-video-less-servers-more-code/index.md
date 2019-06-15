@@ -7,13 +7,14 @@ canonicalUrl: "https://medium.com/microsoftazure/serverless-video-less-servers-m
 
 description: "A video that covers the definition of serverless, describes scenarios that serverless makes sense and provides practical, working examples using Azure Functions, Logic Apps, and Event Grid."
 
-subtitle: "Learn about the Azure serverless platform and how Azure Functions, Event Grid, and Logic Apps work together to deliver cloud native…"
+subtitle: "Learn about the Azure serverless platform and how Azure Functions, Event Grid, and Logic Apps work together to deliver cloud native experiences."
 tags:
  - Serverless 
  - Azure 
  - Azure Functions 
  - Logic Apps 
- - Cloud Native 
+ - Cloud Native
+ - Presentations 
 
 image: "/blog/2019-05-28_serverless-video-less-servers-more-code/images/1.png" 
 images:
@@ -22,8 +23,6 @@ images:
 aliases:
     - "/serverless-video-less-servers-more-code-4b360a50ed7d"
 ---
-
-#### Learn about the Azure serverless platform and how Azure Functions, Event Grid, and Logic Apps work together to deliver cloud native experiences.
 
 _Serverless_. It’s a word that marketing teams around the world love to associate with cloud-based offerings, but what does it really mean? What’s the difference between fully managed offerings and true “serverless?” Are there _really_ no servers involved? Should you migrate existing application services to serverless? How do you decide what new projects should incorporate serverless?
 

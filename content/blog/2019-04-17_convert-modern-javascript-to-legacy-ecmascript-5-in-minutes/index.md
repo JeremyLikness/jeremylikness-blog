@@ -22,8 +22,6 @@ aliases:
     - "/convert-modern-javascript-to-legacy-ecmascript-5-in-minutes-464b3d75f01f"
 ---
 
-## Use TypeScript to bring your New JavaScript to Old Browsers
-
 I recently posted a “quick start” guide for building Single Page Apps using the “Vanilla” JavaScript framework:
 
 [🔗 Vanilla.js — Getting Started](https://blog.jeremylikness.com/vanilla-js-getting-started-5df2553df0f0)
@@ -38,7 +36,7 @@ If you find yourself in this predicament, it _is_ possible to take modern JavaSc
 
 > **Note:** the code “as is” uses the new [fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to load data from a test endpoint. Like the older [XMLHttpRequest API](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest), this is not a language feature but a browser feature that is exposed to JavaScript. This post covers converting modern JavaScript code to ECMAScript 5, not handling browser differences outside of the JavaScript version that is supported.
 
-### Setup
+## Setup
 
 Prerequisites are [git](https://git-scm.com/downloads) and [node.js](https://nodejs.org/) (with npm).
 
@@ -64,7 +62,7 @@ Initialize the TypeScript configuration.
 
 Edit the generated `tsconfig.json` file so that the property `strict` is set to `false`. Make sure that the `target` is `es5` (this should be the default) so you generate legacy code.
 
-### Transform
+## Transform
 
 Next, you’ll transform the JavaScript to TypeScript.
 

@@ -30,8 +30,6 @@ aliases:
     - "/play-the-chaos-game-to-understand-webassembly-memory-management-5feaa7553a5"
 ---
 
-## A tale of C, fractals, and JavaScript-Wasm Interopability
-
 I’ve been digging into [WebAssembly](https://webassembly.org/) for several weeks now, and one aspect that was difficult for me to understand is how memory is allocated and shared between JavaScript and generated Wasm. There are a few answers scattered across the Internet and simple examples, but I wanted to build something more comprehensive. So, I went back to my roots and tackled the age old “[Chaos Game](https://en.wikipedia.org/wiki/Chaos_game).”
 
 {{<figure src="/blog/2019-04-22_play-the-chaos-game-to-understand-webassembly-memory-management/images/1.gif" caption="Playing the Chaos Game" alt="Playing the Chaos Game">}}
@@ -55,7 +53,7 @@ The chaos game is the perfect way to test WebAssembly’s performance and learn 
 🔗 Source code: [https://github.com/JeremyLikness/wasm-trees](https://github.com/JeremyLikness/wasm-trees)  
 👀 Live demo: [https://jlikme.z13.web.core.windows.net/wasm/wasm-trees/](https://jlikme.z13.web.core.windows.net/wasm/wasm-trees/)
 
-### The Challenge
+## The Challenge
 
 For this challenge, I wanted to learn about memory management and passing buffers between JavaScript and Wasm. My requirements:
 
@@ -65,7 +63,7 @@ For this challenge, I wanted to learn about memory management and passing buffer
 
 Armed with my old books, my knowledge of fractals and WebAssembly and of course the power of search engines, I set forth to implement the chaos game.
 
-### I Can “C” Clearly Now
+## I Can “C” Clearly Now
 
 The chaos game operates by holding a matrix of transformations and a probability each will be applied. A point randomly hops around the playing field based on these transformations. The following code sets up the transformations and probabilities for rendering a fractal tree.
 
@@ -187,7 +185,7 @@ All the code is available online in this GitHub repository.
 
 The next step is to compile the C code to WebAssembly.
 
-### Compiling C to Wasm
+## Compiling C to Wasm
 
 [Emscripten](https://emscripten.org/) is a set of tools created specifically to compile C/C++ projects to WebAssembly. In addition to generating Wasm byte code, it provides other services such as mapping standard output to the JavaScript console and converting JavaScript types when passed as parameters to C and C++ functions. The SDK has tools to install and/or build it on multiple platforms, but my preference is to use a pre-built Docker container. This allows me to use the tools without installing anything locally.
 
@@ -212,7 +210,7 @@ The bash shell version is almost identical except for the convention to get the 
 
 Running this command should create two files around 20 kilobytes in size each: `trees.js` and `trees.wasm`. The scripts will also copy these into the `web` directory.
 
-### Pass Data and Call Functions from JavaScript
+## Pass Data and Call Functions from JavaScript
 
 The main JavaScript code (written, not generated) lives in `index.js`. There you will find a variable set to track state, references to the canvas, and several functions that are called on intervals or based on events. The first “Wasm-related” bit of code looks like this:
 
@@ -259,7 +257,7 @@ At this stage, you can observe a few interesting behaviors:
 
 Next, let’s read some memory from WebAssembly.
 
-### Read WebAssembly Memory from JavaScript
+## Read WebAssembly Memory from JavaScript
 
 The most straightforward way to read Wasm memory is to use the unsigned byte heap. The following code successfully parses the buffer that was manipulated by WebAssembly and uses it to construct image data that is drawn on the canvas. Note that it simply iterates through the heap starting at the offset that was passed back from the C code (see line 3).
 
@@ -320,7 +318,7 @@ const jsArray = new Uint16Array(Module.HEAP16, ptr/Uint16Array.BYTES_PER_ELEMENT
 
 After grabbing the values from memory, the function then emits these values so you can capture them for later reference.
 
-### Conclusion
+## Conclusion
 
 This project focuses on how WebAssembly and JavaScript work together to manage and access memory. Hopefully, this provides a solid understanding of the Wasm memory model, how to wrap functions for calls, and how to correctly access memory from JavaScript. Before I conclude, I don’t want to lose sight of the magic that is happening.
 
