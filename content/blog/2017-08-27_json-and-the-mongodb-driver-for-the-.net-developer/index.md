@@ -2,6 +2,7 @@
 title: "JSON and the MongoDB Driver for the .NET Developer"
 author: "Jeremy Likness"
 date: 2017-08-27T14:26:12.057Z
+years: "2017"
 lastmod: 2019-06-13T10:43:42-07:00
 
 description: "Learn how to leverage the MongoDB driver for .NET Core 2.0 apps to query document databases with ease and support for both strong and dynamic types."

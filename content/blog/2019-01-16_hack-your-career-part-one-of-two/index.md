@@ -2,6 +2,7 @@
 title: "Hack Your Career (Part One of Two)"
 author: "Jeremy Likness"
 date: 2019-01-16T19:18:14.941Z
+years: "2019"
 lastmod: 2019-06-13T10:45:26-07:00
 
 description: "Five tips to move forward in your technology career from a 25-year professional development veteran."

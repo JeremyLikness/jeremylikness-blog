@@ -2,6 +2,7 @@
 title: ".NET Rocks: Migrating to .NET Core 2.0"
 author: "Jeremy Likness"
 date: 2017-09-19T12:28:28.454Z
+years: "2017"
 lastmod: 2019-06-13T10:43:58-07:00
 
 description: ".NET Core 2 is out — are you ready to migrate? Carl and Richard talk to me about my experiences migrating my own projects over to Core 2 from .NET Framework."

@@ -2,6 +2,7 @@
 title: "Vanilla.js — Getting Started"
 author: "Jeremy Likness"
 date: 2019-04-09T23:23:09.674Z
+years: "2019"
 lastmod: 2019-06-13T10:45:41-07:00
 comments: true
 toc: true

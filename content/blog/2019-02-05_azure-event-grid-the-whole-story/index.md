@@ -2,6 +2,7 @@
 title: "Azure Event Grid: The Whole Story"
 author: "Jeremy Likness"
 date: 2019-02-05T16:31:02.515Z
+years: "2019"
 lastmod: 2019-06-13T10:45:32-07:00
 
 description: "Learn about Azure Event Grid for event-driven cloud computing with massive scale and high availability. See how to send and consume messages both inside and outside of Azure, including custom code."

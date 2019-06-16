@@ -2,6 +2,7 @@
 title: "Hack Your Career: WeRise"
 author: "Jeremy Likness"
 date: 2018-07-13T15:00:12.526Z
+years: "2018"
 lastmod: 2019-06-13T10:45:03-07:00
 
 description: "The deck and video for my career hacks talk that I presented at the WeRise Women who Code conference in 2018."

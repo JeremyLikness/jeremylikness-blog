@@ -2,6 +2,7 @@
 title: "What the Shard?"
 author: "Jeremy Likness"
 date: 2018-07-23T02:03:19.242Z
+years: "2018"
 lastmod: 2019-06-13T10:45:04-07:00
 
 description: "Learn how to leverage the MongoDB C# driver to set up sharding with partition key from code for your Azure Cosmos DB database."

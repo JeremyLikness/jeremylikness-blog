@@ -2,6 +2,7 @@
 title: "Connect Anything to Everything: Event Grid at Build 2018"
 author: "Jeremy Likness"
 date: 2018-05-10T17:59:39.294Z
+years: "2018"
 lastmod: 2019-06-13T10:44:58-07:00
 
 description: "20 minute video aboutAzure Event Grid, a serverless backbone to manage events in one place. It features seamless integration with Azure resources but provides a platform and language agnostic model."

@@ -2,6 +2,7 @@
 title: "Get Started with CosmosDB SQL API"
 author: "Jeremy Likness"
 date: 2017-12-18T13:58:08.158Z
+years: "2017"
 lastmod: 2019-06-13T10:44:26-07:00
 
 description: "Video walk through shows how to create an Azure Cloud-based NoSQL database with CosmosDB and connect from a .NET application using the SQL API in under 5 minutes."

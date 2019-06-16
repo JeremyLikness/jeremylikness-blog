@@ -2,6 +2,7 @@
 title: "Lift and Shift your .NET App to Azure"
 author: "Jeremy Likness"
 date: 2017-11-17T21:46:10.703Z
+years: "2017"
 lastmod: 2019-06-13T10:44:17-07:00
 
 description: "Learn how to transform a legacy application to take advantage of advanced cloud architectures including Platform-as-a-Service and serverless using Azure App Services, Azure Functions, and Proxies."

@@ -2,6 +2,7 @@
 title: "Create a Serverless Angular App with Azure Functions and Blob Storage"
 author: "Jeremy Likness"
 date: 2017-04-07T00:00:00.000Z
+years: "2017"
 lastmod: 2019-06-13T10:43:21-07:00
 
 description: "Learn how to create a fully serverless Angular TypeScript and Node.js app using Azure Functions and Azure Blob Storage."

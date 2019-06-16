@@ -2,6 +2,7 @@
 title: "Deploy Angular and .NET Core 2.1 to the Azure Cloud (Part Four)"
 author: "Jeremy Likness"
 date: 2018-09-26T15:46:58.653Z
+years: "2018"
 lastmod: 2019-06-13T10:45:12-07:00
 
 description: "Learn how to deploy an Angular application with a .NET Core backend to the cloud using serverless, static websites, and Platform-as-a-Service (PaaS) on Azure."

@@ -2,6 +2,7 @@
 title: "Five RESTFul Web Design Patterns Implemented in ASP.NET Core 2.0 Part 2: HATEOAS"
 author: "Jeremy Likness"
 date: 2017-12-05T13:18:21.179Z
+years: "2017"
 lastmod: 2019-06-13T10:44:21-07:00
 
 description: "Learn how to implement RESTful Hypertext as the Engine of Application State (HATEOAS) in .NET Core 2.0 Web API apps."

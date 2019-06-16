@@ -2,6 +2,7 @@
 title: "TypeScript for JavaScript Developers by Refactoring Part 2 of 2"
 author: "Jeremy Likness"
 date: 2019-03-15T19:17:09.915Z
+years: "2019"
 lastmod: 2019-06-13T10:45:39-07:00
 comments: true
 toc: true

@@ -2,6 +2,7 @@
 title: "Serverless in South Florida"
 author: "Jeremy Likness"
 date: 2018-02-12T15:03:26.768Z
+years: "2018"
 lastmod: 2019-06-13T10:44:41-07:00
 
 description: "Contains videos of demos, full deck, and photo recap of South Florida Code Camp presentation about serverless applications on Azure including functions, logic apps, event grid, and app insights."

@@ -2,6 +2,7 @@
 title: "Google Developer Group Atlanta: Serverless Node.js Functions"
 author: "Jeremy Likness"
 date: 2017-09-21T13:08:59.602Z
+years: "2017"
 lastmod: 2019-06-13T10:43:59-07:00
 
 description: "Learn how easy it is to build microservices leveraging JavaScript and Node.js with Azure Functions, Logic Apps, and Application Insights."

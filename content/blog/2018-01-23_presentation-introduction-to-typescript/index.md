@@ -2,6 +2,7 @@
 title: "Presentation: Introduction to TypeScript"
 author: "Jeremy Likness"
 date: 2018-01-23T13:49:03.335Z
+years: "2018"
 lastmod: 2019-06-13T10:44:39-07:00
 
 description: "Recap of presentation with full source code repository and interactive presentation introducing TypeScript to JavaScript developers."

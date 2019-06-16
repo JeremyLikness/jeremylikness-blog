@@ -2,6 +2,7 @@
 title: "Getting Behind the 9-Ball: CosmosDB Consistency Levels"
 author: "Jeremy Likness"
 date: 2018-03-23T11:22:52.280Z
+years: "2018"
 lastmod: 2019-06-13T10:44:51-07:00
 
 description: "Explore cloud NoSQL Azure CosmosDB database consistency levels in the like “strong”, “bounded staleness” and “consistent prefix” using a billiards game analogy to explain what they mean."

@@ -2,6 +2,7 @@
 title: ".NET Core on Channel 9 Visual Studio Toolbox"
 author: "Jeremy Likness"
 date: 2017-09-13T17:02:59.071Z
+years: "2017"
 lastmod: 2019-06-13T10:43:50-07:00
 
 description: "A deep dive of .NET Core 2.0, .NET Standard 2.0 and why it’s ready for developers to migrate their code today, with in depth example porting the 6-year old open source NoSQL Sterling Database."

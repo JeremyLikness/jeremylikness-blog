@@ -2,6 +2,7 @@
 title: "Five RESTFul Web Design Patterns Implemented in ASP.NET Core 2.0 Part 5: Security"
 author: "Jeremy Likness"
 date: 2017-12-23T17:04:58.770Z
+years: "2017"
 lastmod: 2019-06-13T10:44:27-07:00
 
 description: "Learn how to secure access to and manage permissions for Web APIs using ASP .NET Core 2.0, SSL and JavaScript Web Tokens (JWT)."

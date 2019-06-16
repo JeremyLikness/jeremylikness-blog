@@ -1,0 +1,57 @@
+{{ define "header"}}
+{{- partial "_shared/navbar.html" . -}}
+{{ end }}
+
+{{ define "main" }}
+{{- partial "_shared/title.html" . -}}
+{{ $pages := .Pages }}
+            {{ $pageSize := 6 }}
+            {{ if eq .Page.Kind "taxonomyTerm" }}
+            {{ $pageSize = 12 }}
+            {{ if eq .Page.Type "tags" }}
+            {{ $pages = .Pages.ByTitle }}
+            {{ else }}
+            {{ $pages = .Pages.ByDate }}
+            {{ end }}
+            {{ end }}
+            {{ $post_paginator := .Paginate ($pages) $pageSize }}
+            
+<div class="main-content">
+    <!-- Posts Index
+        ================================================== -->
+    <section class="recent-posts">
+        <div class="section-title">
+            <strong><a href="/blog">All</a>&nbsp;|&nbsp;<a href="/tags">Tags</a>
+                |&nbsp;<a href="/years">Years</a></strong>
+            <h2>&nbsp;</h2>
+            {{if eq .Page.Kind "taxonomyTerm"}}
+                <h2><span>Available {{ .Page.Title }} ({{ len .Data.Pages }} Total)
+            {{ else }}
+            {{ if eq .Page.Type "tags" }}
+                <h2><span>All Posts Tagged "{{ .Page.Title }}" ({{ len .Data.Pages }} Total)
+            {{ else }}
+                {{ if eq .Page.Type "years" }}
+                    <h2><span>All Posts From {{ .Page.Title }} ({{ len .Data.Pages }} Total)
+                {{ else }}
+                    <h2><span>All Posts ({{ len .Pages}} Total){{ end }}
+                {{ end }}{{ end }}
+            {{ if gt $post_paginator.TotalPages 1 }}
+                <em style="color: lightslategray">Page {{ $post_paginator.PageNumber }} of {{ $post_paginator.TotalPages }}</em>
+            {{ end }}
+        </span></h2>
+        </div>
+        <div class="row listrecent">
+            {{ range $post_paginator.Pages }}
+            {{- partial "list-partials/postbox.html" . -}}
+            {{end}}
+        </div>
+    </section>
+    {{- partial "list-partials/pagination.html" $post_paginator -}}
+</div>
+{{- partial "_shared/alertbar.html" . -}}
+{{ end }}
+
+{{ define "footer"}}
+{{- partial "_shared/jumbotron.html" . -}}
+{{- partial "_shared/footer.html" . -}}
+{{ end }}

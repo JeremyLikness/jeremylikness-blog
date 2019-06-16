@@ -2,6 +2,7 @@
 title: "Microsoft Community Connections Charlotte 2017"
 author: "Jeremy Likness"
 date: 2017-10-09T13:06:09.730Z
+years: "2017"
 lastmod: 2019-06-13T10:44:07-07:00
 
 description: "Recap of the Charlotte-based Microsoft Community Connections event with MVPs, RDs, and community leaders."

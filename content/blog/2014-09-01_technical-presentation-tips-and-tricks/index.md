@@ -2,6 +2,7 @@
 title: "Technical Presentation Tips and Tricks"
 author: "Jeremy Likness"
 date: 2014-09-01T00:00:00.000Z
+years: "2014"
 lastmod: 2019-06-13T10:43:07-07:00
 
 description: ""

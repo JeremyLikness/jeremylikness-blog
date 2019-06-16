@@ -2,6 +2,7 @@
 title: "Migrating Azure Functions from v1 (.NET) to v2 (.NET Standard)"
 author: "Jeremy Likness"
 date: 2019-02-13T15:58:12.364Z
+years: "2019"
 lastmod: 2019-06-13T10:45:33-07:00
 
 description: "This post explains how a production serverless C# app that uses Azure Functions, Azure Table Storage, and Azure Cosmos DB was successfully migrated from v1 using .NET to v2 using .NET Standard."

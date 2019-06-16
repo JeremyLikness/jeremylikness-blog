@@ -2,6 +2,7 @@
 title: "Connect.Tech 2017: Node.js and TypeScript"
 author: "Jeremy Likness"
 date: 2017-09-22T12:01:49.515Z
+years: "2017"
 lastmod: 2019-06-13T10:44:01-07:00
 
 description: "Introduction to Node.js, how to deploy Node.js apps to Azure and connect to CosmosDB, the benefits of TypeScript and how TypeScript works with Node.js projects."

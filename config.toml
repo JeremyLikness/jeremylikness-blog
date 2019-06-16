@@ -7,6 +7,11 @@ copyright = "Jeremy Likness - All Rights Reserved"
 disqusShortname = "developerforlife"
 googleAnalytics = "UA-1227465-12"
 enableEmoji = true
+enableRobotsTXT = true
+
+[taxonomies]
+  tag = "tags"
+  year = "years"
 
 [outputs]
   page = ["HTML", "RSS"]

@@ -2,6 +2,7 @@
 title: "Deploy WebAssembly from GitHub toAzure Storage Static Websites with Azure Pipelines"
 author: "Jeremy Likness"
 date: 2019-05-06T23:29:23.987Z
+years: "2019"
 lastmod: 2019-06-13T10:45:48-07:00
 description: "Learn how to create automated builds and deployments for CI/CD of your open source WebAssembly projects (C, C#, Go, or Rust) on GitHub."
 toc: true

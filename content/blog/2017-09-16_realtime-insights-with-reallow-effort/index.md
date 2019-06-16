@@ -2,6 +2,7 @@
 title: "Real-Time Insights with Real-Low Effort"
 author: "Jeremy Likness"
 date: 2017-09-16T20:12:52.951Z
+years: "2017"
 lastmod: 2019-06-13T10:43:52-07:00
 
 description: "Learn how to track performance metrics, page load times, custom events, and engage machine learning for automatic anomaly detection using Azure Application Insights."

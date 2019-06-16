@@ -2,6 +2,7 @@
 title: ".NET Core 2.0 is Ready and Sterling Proves It!"
 author: "Jeremy Likness"
 date: 2017-08-23T11:21:48.610Z
+years: "2017"
 lastmod: 2019-06-13T10:43:41-07:00
 
 description: "Learn about the new features available in .NET Core 2.0 and how to migrate existing .NET apps with an example based on the open source Sterling NoSQL database."

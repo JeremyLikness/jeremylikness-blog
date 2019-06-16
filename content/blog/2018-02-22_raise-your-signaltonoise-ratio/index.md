@@ -2,6 +2,7 @@
 title: "Raise Your Signal-to-Noise Ratio"
 author: "Jeremy Likness"
 date: 2018-02-22T14:31:02.360Z
+years: "2018"
 lastmod: 2019-06-13T10:44:45-07:00
 
 description: "Raise your signal-to-noise ratio and improve your productivity by learning about leverage, focus, the power of three and other tips I use every day to accomplish more output with less input."

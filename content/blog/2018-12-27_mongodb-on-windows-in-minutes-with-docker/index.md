@@ -2,6 +2,7 @@
 title: "MongoDB on Windows in Minutes with Docker"
 author: "Jeremy Likness"
 date: 2018-12-27T17:54:30.939Z
+years: "2018"
 lastmod: 2019-06-13T10:45:22-07:00
 
 description: "Learn how to quickly and easily get up and running with MongoDB on your local machine using Docker and persisted volumes. Includes how to set up authentication."

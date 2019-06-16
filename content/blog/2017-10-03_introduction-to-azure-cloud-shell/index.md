@@ -2,6 +2,7 @@
 title: "Introduction to Azure Cloud Shell"
 author: "Jeremy Likness"
 date: 2017-10-03T15:59:39.976Z
+years: "2017"
 lastmod: 2019-06-13T10:44:04-07:00
 
 description: "Learn about Azure Cloud Shell, a workstation you can access from any browser in the Azure portal. It attaches to a pre-configured workstation that has several tools and utilities already installed."

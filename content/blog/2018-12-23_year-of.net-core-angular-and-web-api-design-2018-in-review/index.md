@@ -2,6 +2,7 @@
 title: "The Year of .NET Core, Angular, and Web API Design: 2018 in Review"
 author: "Jeremy Likness"
 date: 2018-12-23T21:36:29.418Z
+years: "2018"
 lastmod: 2019-06-13T10:45:18-07:00
 
 description: "My personal and technical retrospective and analysis of 2018, using Twitter, blog statistics and link tracking statistics for data."

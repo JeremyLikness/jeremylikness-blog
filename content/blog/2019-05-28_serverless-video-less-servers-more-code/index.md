@@ -2,6 +2,7 @@
 title: "Serverless Video: Less Servers, More Code"
 author: "Jeremy Likness"
 date: 2019-05-28T17:53:15.648Z
+years: "2019"
 lastmod: 2019-06-13T10:45:51-07:00
 canonicalUrl: "https://medium.com/microsoftazure/serverless-video-less-servers-more-code-4b360a50ed7d"
 
@@ -14,7 +15,7 @@ tags:
  - Azure Functions 
  - Logic Apps 
  - Cloud Native
- - Presentations 
+ - Presentations
 
 image: "/blog/2019-05-28_serverless-video-less-servers-more-code/images/1.png" 
 images:

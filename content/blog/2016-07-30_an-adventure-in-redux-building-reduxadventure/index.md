@@ -2,6 +2,7 @@
 title: "An Adventure in Redux: Building redux-adventure"
 author: "Jeremy Likness"
 date: 2016-07-30T00:00:00.000Z
+years: "2016"
 lastmod: 2019-06-13T10:43:13-07:00
 
 description: "Learn about the JavaScript Redux library for state machines by building an adventure game with TypeScript and Angular."

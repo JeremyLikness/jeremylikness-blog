@@ -2,6 +2,7 @@
 title: "Reflecting on 15 Years of Blogging"
 author: "Jeremy Likness"
 date: 2017-08-20T14:26:14.747Z
+years: "2017"
 lastmod: 2019-06-13T10:43:35-07:00
 
 description: "Jeremy Likness reflects on his personal history of blogging for over 15 years, shares why he moved to medium, and stats from over 8 years of his old blog."

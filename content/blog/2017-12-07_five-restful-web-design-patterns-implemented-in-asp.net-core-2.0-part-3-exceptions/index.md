@@ -2,6 +2,7 @@
 title: "Five RESTFul Web Design Patterns Implemented in ASP.NET Core 2.0 Part 3: Exceptions"
 author: "Jeremy Likness"
 date: 2017-12-07T12:36:24.161Z
+years: "2017"
 lastmod: 2019-06-13T10:44:23-07:00
 
 description: "How to consistently manage server-side exceptions in ASP. NET Core Web API apps to return a standard response that can be easily processed by clients."

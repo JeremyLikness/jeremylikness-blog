@@ -2,6 +2,7 @@
 title: "Five RESTFul Web Design Patterns Implemented in ASP.NET Core 2.0 Bonus: Swagger"
 author: "Jeremy Likness"
 date: 2018-01-04T14:59:18.395Z
+years: "2018"
 lastmod: 2019-06-13T10:44:33-07:00
 
 description: "Learn how to document your ASP. NET Core 2.0 Web API endpoints using the OpenAPI specification with Swagger tools like Swashbuckle."

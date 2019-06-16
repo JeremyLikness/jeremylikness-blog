@@ -2,6 +2,7 @@
 title: "Music City Code 2017"
 author: "Jeremy Likness"
 date: 2017-06-07T00:00:00.000Z
+years: "2017"
 lastmod: 2019-06-13T10:43:27-07:00
 
 description: "This was my first year to attend the Music City Code conference in “the Music City” Nashville, Tennessee. It was held on the beautiful Vanderbilt University campus, where they advertise a 3-to-1…"

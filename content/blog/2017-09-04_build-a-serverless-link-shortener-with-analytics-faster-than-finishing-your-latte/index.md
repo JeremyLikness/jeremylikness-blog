@@ -2,6 +2,7 @@
 title: "Build a Serverless Link Shortener with Analytics Faster than Finishing your Latte"
 author: "Jeremy Likness"
 date: 2017-09-04T16:18:59.417Z
+years: "2017"
 lastmod: 2019-06-13T10:43:45-07:00
 
 description: "How to leverage Azure Functions, Azure Table Storage, and Application Insights to build a serverless custom URL shortening tool."

@@ -2,6 +2,7 @@
 title: "TypeScript for JavaScript Developers by Refactoring Part 1 of 2"
 author: "Jeremy Likness"
 date: 2019-03-05T18:57:22.675Z
+years: "2019"
 lastmod: 2019-06-13T10:45:36-07:00
 
 description: "Learn TypeScript by taking a journey refactoring an existing JavaScript application. Step by step, with short 1–2 minute video clips, you discover the immediate benefits of using TypeScript."

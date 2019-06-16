@@ -2,6 +2,7 @@
 title: "Get Started with Angular on .NET Core 2.1 (Part One)"
 author: "Jeremy Likness"
 date: 2018-09-06T01:04:49.997Z
+years: "2018"
 lastmod: 2019-06-13T10:45:07-07:00
 
 description: "Learn how Angular and .NET Core provide everything you need to deliver modern single page web applications. Set up a static web app with a dynamic REST API back-end."

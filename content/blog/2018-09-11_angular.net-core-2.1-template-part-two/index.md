@@ -2,6 +2,7 @@
 title: "The Angular .NET Core 2.1 Template (Part Two)"
 author: "Jeremy Likness"
 date: 2018-09-11T21:21:01.845Z
+years: "2018"
 lastmod: 2019-06-13T10:45:08-07:00
 
 description: "Learn how to use the ASP.NET Core Angular template to create a single project with front-end and API code that supports seamless debugging between the browser and the server."

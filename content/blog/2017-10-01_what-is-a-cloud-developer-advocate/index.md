@@ -2,6 +2,7 @@
 title: "What is a Cloud Developer Advocate?"
 author: "Jeremy Likness"
 date: 2017-10-01T15:05:17.157Z
+years: "2017"
 lastmod: 2019-06-13T10:44:02-07:00
 
 description: "This post articulates what it means to be a cloud developer advocate and links to tweets, articles, podcasts, and blog posts to share several perspectives."

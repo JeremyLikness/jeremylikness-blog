@@ -2,6 +2,7 @@
 title: "DotNext Piter 2018 Recap"
 author: "Jeremy Likness"
 date: 2018-05-04T14:06:42.939Z
+years: "2018"
 lastmod: 2019-06-13T10:44:55-07:00
 
 description: "My recap of a visit to St. Petersburg, Russia to present Explore the Azure Cosmos DB at the DotNext conference. Includes video and slides."

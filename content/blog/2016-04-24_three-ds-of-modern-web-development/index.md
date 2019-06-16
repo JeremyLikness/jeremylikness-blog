@@ -2,6 +2,7 @@
 title: "The Three D’s of Modern Web Development"
 author: "Jeremy Likness"
 date: 2016-04-24T00:00:00.000Z
+years: "2016"
 lastmod: 2019-06-13T10:43:12-07:00
 
 description: "Learn the history of and decompose modern JavaScript frameworks like Angular, React, and Vue by learning about dependency injection, declarative syntax, and data-binding."

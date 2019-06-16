@@ -2,6 +2,7 @@
 title: "Atlanta Code Camp 2017: Serverless .NET"
 author: "Jeremy Likness"
 date: 2017-09-17T17:42:26.534Z
+years: "2017"
 lastmod: 2019-06-13T10:43:56-07:00
 
 description: "Recap of presentation about leveraging Azure Functions, Logic Apps, and Application Insights for .NET Serverless applications."

@@ -2,6 +2,7 @@
 title: "Expanding Azure Functions to the Cosmos"
 author: "Jeremy Likness"
 date: 2017-10-10T11:46:25.245Z
+years: "2017"
 lastmod: 2019-06-13T10:44:08-07:00
 
 description: "Serverless data platform CosmosDB meets serverless compute platform Azure Functions in this example based on a URL link shortener that is used to track click-through metrics."

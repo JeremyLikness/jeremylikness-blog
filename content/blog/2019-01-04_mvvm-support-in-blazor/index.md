@@ -2,6 +2,7 @@
 title: "MVVM Support in Blazor"
 author: "Jeremy Likness"
 date: 2019-01-04T17:54:22.777Z
+years: "2019"
 lastmod: 2019-06-13T10:45:25-07:00
 
 description: "Simple solution for change detection across Blazor components by supporting the MVVM pattern and INotifiyPropertyChanged."

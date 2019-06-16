@@ -2,6 +2,7 @@
 title: "Gopher meet Plasma: A WebAssembly Experiment"
 author: "Jeremy Likness"
 date: 2019-03-03T16:32:05.940Z
+years: "2019"
 lastmod: 2019-06-13T10:45:35-07:00
 
 description: "A walk through to building a high performance plasma effect using JavaScript’s canvas in conjunction with WebAssembly by compiling Go to WASM."

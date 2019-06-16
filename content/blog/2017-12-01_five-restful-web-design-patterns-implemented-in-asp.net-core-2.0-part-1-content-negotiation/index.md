@@ -2,6 +2,7 @@
 title: "Five RESTFul Web Design Patterns Implemented in ASP.NET Core 2.0 Part 1: Content Negotiation"
 author: "Jeremy Likness"
 date: 2017-12-01T14:44:03.851Z
+years: "2017"
 lastmod: 2019-06-13T10:44:19-07:00
 
 description: "Learn how to implement several popular RESTful Web API design patterns like content negotation, HATEOAS, exception handling, and more using ASP .NET Core 2.0."

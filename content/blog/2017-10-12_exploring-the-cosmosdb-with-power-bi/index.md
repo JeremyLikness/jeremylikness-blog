@@ -2,6 +2,7 @@
 title: "Exploring the CosmosDB with Power BI"
 author: "Jeremy Likness"
 date: 2017-10-12T15:02:14.205Z
+years: "2017"
 lastmod: 2019-06-13T10:44:11-07:00
 
 description: "Learn how I leveraged CosmosDB to store telemetry from a URL shortening tool, then analyze the data in a PowerBI dashboard."

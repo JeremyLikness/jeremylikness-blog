@@ -2,6 +2,7 @@
 title: "Serverless application architecture, patterns, and implementation"
 author: "Jeremy Likness"
 date: 2018-07-03T13:32:16.557Z
+years: "2018"
 lastmod: 2019-06-13T10:45:02-07:00
 
 description: "Full guide to serverless apps architecture, covering approaches, patterns, business scenarios, and including guidance on how to implement using the Azure platform."

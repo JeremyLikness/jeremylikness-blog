@@ -2,6 +2,7 @@
 title: "Upcoming Talks"
 author: "Jeremy Likness"
 date: 2017-08-17T14:11:13.204Z
+years: "2017"
 lastmod: 2019-06-13T10:43:33-07:00
 toc: true
 

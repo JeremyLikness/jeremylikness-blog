@@ -2,6 +2,7 @@
 title: "Five RESTFul Web Design Patterns Implemented in ASP.NET Core 2.0 Part 4: Optimistic Concurrency"
 author: "Jeremy Likness"
 date: 2017-12-15T13:45:13.206Z
+years: "2017"
 lastmod: 2019-06-13T10:44:24-07:00
 
 description: "Learn how to implement optimistic concurrency in ASP.NET Core apps by leveraging the concept of entity tags or ETags."

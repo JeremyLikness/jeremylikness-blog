@@ -2,6 +2,7 @@
 title: "Server-side Rendering (SSR) with Angular in .NET Core 2.1 (Part Three)"
 author: "Jeremy Likness"
 date: 2018-09-19T14:11:46.980Z
+years: "2018"
 lastmod: 2019-06-13T10:45:10-07:00
 
 description: "Take advantage of Angular Universal and integration with .NET Core to pre-render single page application pages using server-side rendering (SSR)."

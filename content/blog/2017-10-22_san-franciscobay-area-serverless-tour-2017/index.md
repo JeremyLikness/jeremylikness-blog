@@ -2,6 +2,7 @@
 title: "The San Francisco/Bay Area Serverless Tour 2017"
 author: "Jeremy Likness"
 date: 2017-10-22T15:31:57.535Z
+years: "2017"
 lastmod: 2019-06-13T10:44:15-07:00
 
 description: "Summary of my San Francisco and Mountain View tour sharing serverless  Azure Functions, Logic Apps, and Application Insights with West Coast developers."

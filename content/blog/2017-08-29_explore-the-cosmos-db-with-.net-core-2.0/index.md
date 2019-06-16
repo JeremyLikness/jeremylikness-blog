@@ -2,6 +2,7 @@
 title: "Explore the Cosmos (DB) with .NET Core 2.0"
 author: "Jeremy Likness"
 date: 2017-08-29T11:40:48.294Z
+years: "2017"
 lastmod: 2019-06-13T10:43:44-07:00
 
 description: "Learn about the Azure CosmosDB database w/ DocumentDB, MongoDB, Gremlin (Graph) and Table storage APIs and .NET Core 2.0 examples."

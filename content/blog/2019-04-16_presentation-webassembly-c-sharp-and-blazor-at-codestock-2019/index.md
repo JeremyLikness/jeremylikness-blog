@@ -2,6 +2,7 @@
 title: "Presentation: WebAssembly, C#, and Blazor at CodeStock 2019"
 author: "Jeremy Likness"
 date: 2019-04-16T18:19:04.371Z
+years: "2019"
 lastmod: 2019-06-13T10:45:43-07:00
 comments: true
 

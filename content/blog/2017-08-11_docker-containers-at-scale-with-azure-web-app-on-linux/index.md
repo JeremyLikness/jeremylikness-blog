@@ -2,6 +2,7 @@
 title: "Docker Containers at Scale with Azure Web App on Linux"
 author: "Jeremy Likness"
 date: 2017-08-11T00:00:00.000Z
+years: "2017"
 lastmod: 2019-06-13T10:43:28-07:00
 
 description: "The Azure team recently announced a new feature that is currently in preview called Azure Web App on Linux. This feature enables you to host web apps natively on Linux. The service enables you to…"

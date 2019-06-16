@@ -2,6 +2,7 @@
 title: "From Angular to Blazor: The Health App"
 author: "Jeremy Likness"
 date: 2019-01-03T14:20:39.133Z
+years: "2019"
 lastmod: 2019-06-13T10:45:24-07:00
 
 description: "Build a sample app in Blazor, a .NET-based framework for building web apps that run in the browser and leverages C# and Razor templates to generate cross-platform, HTML5-compliant WebAssembly code."

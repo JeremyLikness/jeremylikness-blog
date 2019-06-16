@@ -2,6 +2,7 @@
 title: "Managing Data 📈 in the Cloud ☁"
 author: "Jeremy Likness"
 date: 2019-05-16T20:13:51.155Z
+years: "2019"
 lastmod: 2019-06-13T10:45:49-07:00
 comments: true
 

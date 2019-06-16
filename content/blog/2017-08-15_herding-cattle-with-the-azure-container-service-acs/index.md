@@ -2,6 +2,7 @@
 title: "Herding Cattle with the Azure Container Service (ACS)"
 author: "Jeremy Likness"
 date: 2017-08-15T00:00:00.000Z
+years: "2017"
 lastmod: 2019-06-13T10:43:30-07:00
 
 description: "Deck and video focuses on Azure Container Service, a tool that enables creation and management of Kubernetes, Docker Swarm, and Mesos DC/OS clusters with ease."

@@ -2,6 +2,7 @@
 title: "Enterprise Serverless"
 author: "Jeremy Likness"
 date: 2018-10-08T20:36:37.556Z
+years: "2018"
 lastmod: 2019-06-13T10:45:15-07:00
 
 description: "Comprehensive presentation includes information about serverless with implementation illustrated in video demos  featuring Azure Functions, Azure Logic Apps, and Azure Event Grid."

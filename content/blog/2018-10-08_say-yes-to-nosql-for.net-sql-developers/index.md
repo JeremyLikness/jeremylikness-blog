@@ -2,6 +2,7 @@
 title: "Say “Yes” to NoSQL for .NET SQL Developers"
 author: "Jeremy Likness"
 date: 2018-10-08T16:20:17.998Z
+years: "2018"
 lastmod: 2019-06-13T10:45:16-07:00
 
 description: "Learn about NoSQL, including key/value, document, graph, and column databases, and how they are implemented using the fully managed Azure CosmosDB service."

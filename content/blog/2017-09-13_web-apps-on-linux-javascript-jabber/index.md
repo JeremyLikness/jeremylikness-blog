@@ -2,6 +2,7 @@
 title: "Web Apps on Linux: JavaScript Jabber"
 author: "Jeremy Likness"
 date: 2017-09-13T16:29:43.588Z
+years: "2017"
 lastmod: 2019-06-13T10:43:51-07:00
 
 description: "Podcast about Azure Web Apps on Linux, a cloud service that supports CI/CD for Docker containers, Node.js, PHP, GoLang and more!"

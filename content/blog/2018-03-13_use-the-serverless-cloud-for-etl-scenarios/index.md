@@ -2,6 +2,7 @@
 title: "Use the Serverless Cloud for ETL Scenarios"
 author: "Jeremy Likness"
 date: 2018-03-13T14:07:40.886Z
+years: "2018"
 lastmod: 2019-06-13T10:44:50-07:00
 
 description: "Detailed walk through demonstrates how to build and test serverless solutions that process data into a SQL server locally, then migrate the entire solution to the Azure cloud."

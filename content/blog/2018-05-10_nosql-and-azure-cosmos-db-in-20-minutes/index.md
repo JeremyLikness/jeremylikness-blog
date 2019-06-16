@@ -2,6 +2,7 @@
 title: "NoSQL and Azure Cosmos DB in 20 Minutes"
 author: "Jeremy Likness"
 date: 2018-05-10T19:57:15.332Z
+years: "2018"
 lastmod: 2019-06-13T10:44:59-07:00
 
 description: "A brief overview of NoSQL (including key/value stores, column databases, document databases, and graphs) for SQL developers and how to implement a fully managed cloud solution using Azure Cosmos DB."

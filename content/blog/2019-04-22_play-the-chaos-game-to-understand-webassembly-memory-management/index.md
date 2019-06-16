@@ -2,6 +2,7 @@
 title: "Play the Chaos Game to Understand WebAssembly Memory Management"
 author: "Jeremy Likness"
 date: 2019-04-22T18:26:51.951Z
+years: "2019"
 lastmod: 2019-06-13T10:45:46-07:00
 
 description: "Explore memory management, passing and accessing arrays between JavaScript and WebAssembly with this fractal “chaos game” coded in C."

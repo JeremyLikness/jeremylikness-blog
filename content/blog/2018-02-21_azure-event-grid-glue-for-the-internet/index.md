@@ -2,6 +2,7 @@
 title: "Azure Event Grid: Glue for the Internet"
 author: "Jeremy Likness"
 date: 2018-02-21T13:24:48.860Z
+years: "2018"
 lastmod: 2019-06-13T10:44:42-07:00
 
 description: "Learn about the serverless publisher/subscriber (“pubsub”) service in Azure called Event Grid. Includes presentation, photos, and source code."

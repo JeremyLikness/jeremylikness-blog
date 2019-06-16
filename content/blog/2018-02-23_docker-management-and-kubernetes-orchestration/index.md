@@ -2,6 +2,7 @@
 title: "Docker Management and Kubernetes Orchestration"
 author: "Jeremy Likness"
 date: 2018-02-23T21:25:59.292Z
+years: "2018"
 lastmod: 2019-06-13T10:44:46-07:00
 
 description: "Learn about Docker containers and orchestration with Kubernetes. Includes live video examples using Azure Container Registry, Azure Container Instances, and Azure Kubernetes Service."

@@ -2,6 +2,7 @@
 title: "Interview: Women Tech Talk with Alicia Carr"
 author: "Jeremy Likness"
 date: 2017-10-10T12:32:42.477Z
+years: "2017"
 lastmod: 2019-06-13T10:44:10-07:00
 
 description: "Interview about the We Rise: Women in Tech conference, women who code, diversity and inclusion and a little bit about my background too."
