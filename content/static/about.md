@@ -24,4 +24,9 @@ Some interesting facts about me:
 * My first professional development job was writing software for AS/400 midrange machines using RPG in 1994.
 * I've written and co-authored [several books](https://amzn.to/2IkBCqq).
 * I'm a devout follower of Jesus Christ.
-* 
+* I used to be a certified fitness trainer and specialist in performance nutrition and owned my own [online business](http://web.archive.org/web/20010629182818/http://www.peakphysiques.com/).
+* One of my many jobs was working in a pool hall and I've been a fan of 9-ball and One Pocket for decades now.
+
+Welcome and enjoy!
+
+![Jeremy Likness](/images/jeremylikness.gif)
