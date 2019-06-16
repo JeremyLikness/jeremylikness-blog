@@ -100,7 +100,7 @@ _Atlanta, GA (October 18-19, 2018)_
     {{<twitter 1052937597058613248>}}
     View the video of this presentation: [<i class="fab fa-vimeo"></i> https://vimeo.com/303443966](https://vimeo.com/303443966)
 
-## Azure in the ATL
+## Azure in the ATL October 2018
 
 _Atlanta, GA (October 16, 2018)_
 
@@ -224,19 +224,19 @@ _Atlanta, GA_
 
 🔗 [Docker Management and Kubernetes Orchestration](https://blog.jeremylikness.com/docker-management-and-kubernetes-orchestration-2b7baf60a704)
 
-## Azure in the ATL
+## Azure in the ATL 2018
 
 _Atlanta, GA_
 
 🔗 [Azure Event Grid: Glue for the Internet](https://blog.jeremylikness.com/azure-event-grid-glue-for-the-internet-e770d94cc29)
 
-## South Florida Code Camp
+## South Florida Code Camp 2018
 
 _Davies, FL_
 
 🔗 [Serverless in South Florida](https://blog.jeremylikness.com/serverless-in-south-florida-2fdc8147d3df)
 
-## Atlanta JavaScript User Group
+## Atlanta JavaScript User Group January 2018
 
 _Atlanta, GA_
 
@@ -284,11 +284,11 @@ _Atlanta, GA_
 
 🔗 [Atlanta Code Camp 2017: Serverless .NET](https://blog.jeremylikness.com/atlanta-code-camp-2017-serverless-net-da640edd59e9)
 
-## JavaSCript Jabber
+## JavaScript Jabber
 
 🔗 [Web Apps on Linux: JavaScript Jabber](https://blog.jeremylikness.com/web-apps-on-linux-javascript-jabber-84da7d62cc6)
 
-## Atlanta Docker User Group 
+## Atlanta Docker User Group
 
 _Atlanta, GA_
 
@@ -304,7 +304,7 @@ _Nashville, TN_
 
 _Saturday, June 24th, 2017 — Atlanta, GA_
 
-[We Rise Women in Technology](https://werise.tech/) 
+🔗 [We Rise Women in Technology](https://werise.tech/) 
 
 {{<github "JeremyLikness/docker-we-rise" "Code, Deck, and Step-by-Step Instructions">}}
 
@@ -314,366 +314,397 @@ _Thursday, March 23rd, 2017 — Lawrenceville, GA_
 
 * TypeScript: JavaScript's Safety Harness
 
-[Code and Deck](https://www.github.com/jeremylikness/typescript-cca)
+{{<github "jeremylikness/typescript-cca" "Code and Deck">}}
 
-#### GWINNETT GEORGIA MICROSOFT USER GROUP (GGMUG): CONTAIN YOUR EXCITEMENT, DOCKER FOR DEVELOPERS
+## Gwinnett Georgia Microsoft User Group (GGMUG)
 
 _Thursday, March 9th, 2017 — Lawrenceville, GA_
 
-[Deck and Code](https://github.com/iVisionATL/docker-contain) | [Docker Container](https://hub.docker.com/r/jlikness/docker-contain-prez/)
+* Contain your Excitement: Docker for Developers
 
-#### DEVNEXUS: ANGULAR (2.X) AND TYPESCRIPT WORKSHOP
+## DevNexus
 
 _Wednesday, February 22, 2017 — Atlanta, GA (Georgia World Congress Center)_
 
-[Full Workshop, Projects, and Deck](https://github.com/JeremyLikness/ng2ts-workshop-v2)
+* Angular (2.X) and TypeScript Workshop
 
-#### ATLANTA CODE CAMP: UPGRADING ANGULAR 1 TO ANGULAR 2 APPS
+{{<github "jeremylikness/ng2ts-workshop-v2" "Full Workshop, Projects, and Deck">}}
 
-_Saturday, October 15, 2016 — Marietta, GA (Kennesaw State University Marietta Campus)_
-
-[Deck and Code](https://github.com/JeremyLikness/ATLCodeCamp2016)
-
-#### ATLANTA CODE CAMP: CROSS-PLATFORM ANGULAR 2 WITH TYPESCRIPT DEVELOPMENT
+## Atlanta Code Camp 2016
 
 _Saturday, October 15, 2016 — Marietta, GA (Kennesaw State University Marietta Campus)_
 
-[Deck and Code](https://github.com/JeremyLikness/ATLCodeCamp2016)
+* Upgrading Angular.js to Angular 2.x apps
+    {{<github "jeremylikness/ATLCodeCamp2016" "Deck and Code">}}
+* Cross-platform Angular 2 with TypeScript Development
+    {{<github "jeremylikness/ATLCodeCamp2016" "Deck and Code">}}
 
-#### **IGNITE! DEVOPS HACKATHON**
+## Microsoft Ignite 2016
 
 _Sunday, September 25, 2016 — Atlanta, GA (Georgia World Congress Center)_
 
-[Hackathon GitHub](https://github.com/oguzpastirmaci/ignite-2016-hackathon)
+* DevOps Hackathon
+    {{<github "oguzpastirmaci/ignite-2016-hackathon">}}
 
-#### DEVOPS CONTAINER CAMP
+## Microsoft DevOps Container Camp
 
 _Wednesday, August 25, 2016 — Alpharetta, GA (Microsoft Technology Center)_
 
-[View the Labs](https://github.com/tripdubroot/ContainerCamp)
+{{<github "tripdubroot/ContainerCamp">}}
 
-#### MACON .NET USER GROUP: TYPESCRIPT FOR ENTERPRISE SCALE JAVASCRIPT APPS
+## Macon .NET User Group
 
 _Thursday, July 21, 2016 — Macon, GA_
 
-[View the deck](http://www.slideshare.net/jeremylikness/typescript-for-enterprise-scale-javascript-apps)
+* TypeScript for Enterprise Scale JavaScript Apps
 
-#### ATLANTA ANGULARJS MEETUP: BACK TO THE NGFUTURE
+👀 [View the deck](http://www.slideshare.net/jeremylikness/typescript-for-enterprise-scale-javascript-apps)
+
+## Atlanta Angular.js Meetup
 
 _Wednesday, July 20, 2016 — Atlanta, GA_
 
-[View the deck, live examples, and source](http://csharperimage.jeremylikness.com/2016/07/back-to-ngfuture.html)
+* Back to the ngFuture
 
-#### CODESTOCK : CROSS-PLATFORM DEVELOPMENT WITH ANGULAR 2 AND TYPESCRIPT
+👀 [View the deck, live examples, and source](http://csharperimage.jeremylikness.com/2016/07/back-to-ngfuture.html)
 
-_Saturday, July 16, 2016 — Knoxville, GA_
+## CodeStock 2016
 
-[View the deck](http://www.slideshare.net/jeremylikness/cross-platform-angular-2-and-typescript-development)
+_July 15-16, 2016 — Knoxville, GA_
 
-#### CODESTOCK: CROSS-PLATFORM AGILE DEVOPS WITH VISUAL STUDIO TEAM SERVICES
+* Cross-platform Development with Angular 2 and TypeScript
 
-_Friday, July 15, 2016 — Knoxville, GA_
+    👀 [View the deck](http://www.slideshare.net/jeremylikness/cross-platform-angular-2-and-typescript-development)
+* Cross-platform Agile DevOps with Visual Studio Team Services
 
-#### **WEBINAR: DEVOPS, MICROSERVICES, AND IOT: BEYOND THE HYPE**
-
-_Wednesday, June 8, 2016_
-
-[Learn More and Watch the Video](http://ivision.com/blog/devops-microservices-iot-beyond-hype/)
-
-#### ATLANTA JAVASCRIPT MEETUP: THE ANGULAR 2 CLI AND TYPESCRIPT
+## Atlanta JavaScript Meetup
 
 _Monday, May 16, 2016 — Atlanta, GA_
 
+* The Angular 2 CLI and TypeScript
 
+{{<youtube 8GX5gKiLLfU>}}
 
-
-
-
-#### WEBINAR: CHOOSING THE RIGHT TECH STACK FOR YOUR .NET APP
-
-_Tuesday, April 5, 2016_
-
-[Watch the Webinar On Demand](http://www.telerik.com/campaigns/devcraft/choosing-the-right-tech-stack)
-
-#### //BUILD RECAP
+## //Build recap
 
 _Monday, April 4, 2016 — Alpharetta, GA_
 
-[Review the Meetup](http://www.meetup.com/Atlanta-Windows-Apps/events/229595061/)
-
-#### WEBINAR: TYPESCRIPT 1.8 TO FUTURE-PROOF JAVASCRIPT APPS
-
-_Tuesday, March 22, 2016_
-
-[Watch the Video](http://kliant.com/assets/files/2016-03-22_11.06_Webinar_with_Jeremy_Likness_-_TypeScript_to_Future_Proof_Enterprise_JavaScript_Apps_at_Scale.mp4)
-
-#### ATLANTA .NET USER GROUP: ANGULARJS 2.0 AND TYPESCRIPT
+## Atlanta .NET User Group
 
 _Monday, January 25, 2016 — Alpharetta, GA_
 
-[Review the Meetup](http://www.meetup.com/Atlanta-Net-User-Group/events/227119222/)
+* Angular 2.0 and TypeScript
 
-#### ATLANTA ANGULARJS MEETUP: ANGLE FORWARD WITH TYPESCRIPT
+## Atlanta Angular.js Meetup January 2016
 
 _January 21, 2016 — Atlanta, GA_
 
-[View the Deck](http://www.slideshare.net/jeremylikness/angle-forward-with-typescript)
+* Angle Forward with TypeScript
 
-#### **TELERIK NEXT: C.R.U.D. WITH ASP.NET MVC, WEB API, ENTITY FRAMEWORK AND KENDO UI**
+    👀 [View the Deck](http://www.slideshare.net/jeremylikness/angle-forward-with-typescript)
 
-_May 4, 2015 — Boston, MA_
-
-
-
-
-
-
-#### TELERIK NEXT: KENDOUI AND ANGULARJS
+## Telerik Next 2015
 
 _May 4, 2015 — Boston, MA_
 
+* C.R.U.D. with ASP.NET MVC, Web API, Entity Framework and Kendo UI
 
+{{<youtube zxlqN6CDfrU>}}
 
+* Kendo UI and Angular.js
 
+{{<youtube fWB38DYbLM0>}}
 
-
-#### WEBINAR: SINGLE PAGE APPLICATIONS: YOUR BROWSER IS THE OS!
+## Webinar: Single Page Apps (SPA): Your Browser is the OS
 
 _March 25, 2015_
 
-[Full Source](https://github.com/JeremyLikness/SPAAppsExplained)
+{{<github "JeremyLikness/SPAAppsExplained">}}
 
-[Watch the Video](https://vimeo.com/123883668)
+<i class="fab fa-vimeo"></i>[Watch the Video](https://vimeo.com/123883668)
 
-#### GWINNETT MICROSOFT .NET USER GROUP MEETUP: C# ASYNC/AWAIT EXPLAINED
+## Gwinnett Microsoft .NET User Group Meetup
 
 _March 13, 2015 — Lawrenceville, GA_
 
-[Full Source and Deck](https://github.com/JeremyLikness/AsyncAwaitExplained)
+* C# async/await Explained
 
-#### MICROSOFT VIRTUAL ACADEMY (MVA): WEB API DESIGN
+{{<github "JeremyLikness/AsyncAwaitExplained">}}
 
-[Click here for the source code/demo projects](https://github.com/MicrosoftLearning/WebAPIDesign)
+## Microsoft Virtual Academy
 
 _February 4, 2015 — Redmond, WA_
 
-[View the Course on Channel 9](https://channel9.msdn.com/Series/Web-API-Design)
+* Web API Design 
 
-*   [Introduction](https://channel9.msdn.com/Series/Web-API-Design/01)
-*   [Basic Design](https://channel9.msdn.com/Series/Web-API-Design/02)
-*   [Configuration](https://channel9.msdn.com/Series/Web-API-Design/03)
-*   [Validation and Error Handling](https://channel9.msdn.com/Series/Web-API-Design/04)
-*   [Security](https://channel9.msdn.com/Series/Web-API-Design/05)
-*   [Advanced Design](https://channel9.msdn.com/Series/Web-API-Design/06)
+{{<github "MicrosoftLearning/WebAPIDesign">}}
 
-#### ATLANTA JAVASCRIPT MEETUP: ANGULARJS FROM A DIFFERENT ANGLE
+* 👀 [View the Course on Channel 9](https://channel9.msdn.com/Series/Web-API-Design)
+  * [Introduction](https://channel9.msdn.com/Series/Web-API-Design/01)
+  * [Basic Design](https://channel9.msdn.com/Series/Web-API-Design/02)
+  * [Configuration](https://channel9.msdn.com/Series/Web-API-Design/03)
+  * [Validation and Error Handling](https://channel9.msdn.com/Series/Web-API-Design/04)
+  * [Security](https://channel9.msdn.com/Series/Web-API-Design/05)
+  * [Advanced Design](https://channel9.msdn.com/Series/Web-API-Design/06)
+
+## Atlanta JavaScript Meetup October 2014
 
 _October 20, 2014 — Atlanta, GA_
 
+* Angular.js from a Different Angle
 
+{{<youtube l-Vm4q4ioBw>}}
 
-
-
-
-#### ATLANTA CODE CAMP: LET’S BUILD AN ANGULARJS APP!
+## Atlanta Code Camp 2014
 
 _October 11, 2014 — Marietta, GA_
 
-[Grab the project](https://github.com/JeremyLikness/AngularHealthApp/) and use the Git checkouts to follow along, [try it yourself](http://jeremylikness.github.io/AngularHealthApp/) and [run all 83 specifications](http://jeremylikness.github.io/AngularHealthApp/test.html) online.
+* Angular Health App
 
-#### WEBINAR: ALM WITH TFS: FROM THE DRAWING BOARD TO THE CLOUD
+    {{<github "JeremyLikness/AngularHealthApp">}}
+
+## Webinar: ALM with TFS: From the Drawing Board to the Cloud
 
 _September 17, 2014 — Atlanta, GA_
 
-#### DEVLINK: ADVANCED ANGULARJS TIPS AND TRICKS
+## DevLink 2014
 
 _August 27, 2014 — Chattanooga, TN_
 
-Download the [source code](https://github.com/JeremyLikness/AngularTipsAndTricks) for this presentation and [view the online demo](http://jeremylikness.github.io/AngularTipsAndTricks/).
+* Advanced Angular.js Tips and Tricks
 
-#### DEVLINK: LEARN ZONEJS
+    {{<github "JeremyLikness/AngularTipsAndTricks">}}
 
-_August 27, 2014 — Chattanooga, TN_
+* Learn Zone.js
 
-Download the [source code](https://github.com/jeremylikness/learnzonejs) and [run the demo online](http://jeremylikness.github.io/LearnZoneJs/).
+    {{<github "JeremyLiknes/learnzonejs">}}
 
-#### CODESTOCK: THREAD LOCAL STORAGE EXECUTION CONTEXTS IN JAVASCRIPT WITH ZONEJS
+## CodeStock 2014
 
 _July 11, 2014 — Knoxville, TN_
 
-View the interactive presentation that is written entirely in AngularJS with Zone [here](http://jeremylikness.github.io/ZoneJS/) and download the source from [this GitHub repository.](https://github.com/jeremylikness/zonejs)
+* Thread Local Storage Execution Contexts in JavaScript with Zone.js
 
-#### RE//BUILD: WHAT’S NEW WITH WINJS
+    {{<github "jeremylikness/zonejs">}}
+
+## Re//Build
 
 _May 24, 2014 — Alpharetta, GA_
 
-Visit the [interactive slide presentation](http://jeremylikness.github.io/RebuildWinJSWeb/default.html) written in WinJS.
+* What's New with Win.js 
 
-#### **LINKEDIN .NET USER GROUP: ENTERPRISE TYPESCRIPT**
+    👀 [interactive slide presentation](http://jeremylikness.github.io/RebuildWinJSWeb/default.html) written in WinJS.
+
+## LinkedIn .NET User Group (LIDNUG)
 
 _May 22, 2014_
 
+* Enterprise TypeScript
 
+{{<youtube UspdjzPyOB4>}}
 
-
-
-
-#### ATLANTA .NET USER GROUP: WINDOWS 8.1 SOCKETS
+## Atlanta .NET User Group April 2014
 
 _April 7, 2014 — Alpharetta, GA_
 
-[View the Deck](https://www.slideshare.net/jeremylikness/windows-81-sockets)
+* Windows 8.1 Sockets
 
-#### CHATTANOOGA .NET USER GROUP: THE WINDOWS RUNTIME AND THE WEB
+    👀 [View the Deck](https://www.slideshare.net/jeremylikness/windows-81-sockets)
+
+## Chattanooga .NET User Group December 2013
 
 _December 10, 2013 — Chattanooga, TN_
 
-[View the Deck](https://www.slideshare.net/jeremylikness/likness-win-rt-and-the-web)
+* The Windows Runtime and the Web
 
-#### **GWINNETT GEORGIA MICROSOFT USER GROUP: MY XML IS ALIVE! AN INTRO TO XAML**
+    👀 [View the Deck](https://www.slideshare.net/jeremylikness/likness-win-rt-and-the-web)
+
+## Gwinnett Georgia Microsoft User Group (GGMUG) October 2013
 
 _October 10, 2013 — Lawrenceville, GA_
 
-[View the Deck](https://www.slideshare.net/jeremylikness/ggmug-likness-my-xml-is-alive-intro-to-xaml)
+* My XML is Alive! An Intro to XAML
 
-#### **DEVLINK: WINRT AND THE WEB (KEEPING WINDOWS STORE APPS ALIVE AND CONNECTED)**
+    👀 [View the Deck](https://www.slideshare.net/jeremylikness/ggmug-likness-my-xml-is-alive-intro-to-xaml)
 
-_August 30, 2013 — Chattanooga, TN_
-
-[View the Deck](http://www.slideshare.net/jeremylikness/winrt-and-the-web-keeping-windows-store-apps-alive-and-connected)
-
-#### DEVLINK: ANGULARJS AND TYPESCRIPT FOR MODERN WEB APP DEVELOPMENT
+## DevLink 2013 
 
 _August 30, 2013 — Chattanooga, TN_
 
-[View the Deck](http://www.slideshare.net/jeremylikness/dev-link-likness-angularjs-and-typescript)
+* WinRT and the Web (Keeping Windows Store Apps Alive and Connected)
 
-#### GWINNETT GEORGIA MICROSOFT USER GROUP: INTRODUCTION TO TYPESCRIPT
+    👀 [View the Deck](http://www.slideshare.net/jeremylikness/winrt-and-the-web-keeping-windows-store-apps-alive-and-connected)
+
+* Angular.js and TypeScript for Modern Web App Development
+
+    👀 [View the Deck](http://www.slideshare.net/jeremylikness/dev-link-likness-angularjs-and-typescript)
+
+## Gwinnett Georgia Microsoft User Group (GGMUG) January 2013
 
 _January 10, 2013 — Lawrenceville, GA_
 
-[View the Slide Deck](http://www.slideshare.net/jeremylikness/introduction-to-typescript)
+* Introduction to TypeScript
 
-#### DEVSCOVERY: ENTERPRISE JAVASCRIPT (OXYMORON?)
+    👀 [View the Slide Deck](http://www.slideshare.net/jeremylikness/introduction-to-typescript)
 
-_October 3, 2012_ — _Houston, TX_  
-
-[View the Slide Deck Part 1](http://www.slideshare.net/jeremylikness/wintellect-devscovery-enterprise-javascript-development-1-of-2)  
-[View the Slide Deck Part 2](http://www.slideshare.net/jeremylikness/wintellect-devscovery-enterprise-javascript-development-2-of-2)
-
-#### DEVSCOVERY: THE PORTABLE CLASS LIBRARY: BUILDING TOMORROW’S APPLICATIONS TODAY
+## DevScovery 2012 
 
 _October 3, 2012_ — _Houston, TX_  
-   
-[View the Slide Deck](http://www.slideshare.net/jeremylikness/wintellect-devscovery-portable-class-library)
 
-#### DEVLINK: WINDOWS 8 FOR THE SILVERLIGHT AND WPF DEVELOPER
+* Enterprise JavaScript (OxyMoron?)
+
+    👀 [View the Slide Deck Part 1](http://www.slideshare.net/jeremylikness/wintellect-devscovery-enterprise-javascript-development-1-of-2)  
+
+    👀 [View the Slide Deck Part 2](http://www.slideshare.net/jeremylikness/wintellect-devscovery-enterprise-javascript-development-2-of-2)
+
+* The Portable Class Library (PCL): Building Tomorrow's Applications, Today
+
+    👀 [View the Slide Deck](http://www.slideshare.net/jeremylikness/wintellect-devscovery-portable-class-library)
+
+## DevLink 2012 
 
 _August 30, 2012_ — _Chattanooga, TN_
 
-[View the Slide Deck](http://www.slideshare.net/jeremylikness/wintellect-windows-8-for-the-silverlight-and-wpf-developer-jeremy-likness)
+* Windows 8 for the Silverlight and WPF Developer
 
-#### LINKEDIN .NET USER GROUP: WINDOWS 8: A TALE OF TWO STACKS
+    👀 [View the Slide Deck](http://www.slideshare.net/jeremylikness/wintellect-windows-8-for-the-silverlight-and-wpf-developer-jeremy-likness)
+
+## LinkedIn .NET User Group (LIDNUG) July 2012
 
 _July 18, 2012_
 
+* Windows 8: A Tale of Two Stacks
 
+{{<youtube rgCAgotLdGA>}}
 
-
-
-
-#### LINKEDIN .NET USER GROUP: THE TOP 10 11 FEATURES WINDOWS 8 METRO DEVELOPERS WILL LOVE
+## LinkedIn .NET User Group (LIDNUG) June 2012
 
 _June 20, 2012_
 
+* The Top 11 Features Windows 8 Metro Developers will Love
 
+{{<youtube -30y-2gZhfo>}}
 
-
-
-
-#### CODESTOCK: MVVM FOR MODERN APPLICATION DEVELOPMENT
+## CodeStock 2012
 
 _June 15, 2012 — Knoxville, TN_
 
-#### **ATLANTA XAML MEETUP: DESIGNING SILVERLIGHT BUSINESS APPLICATIONS**
+* MVVM for Modern Application Development
+
+## Atlanta XAML Meetup January 2012
 
 _January 18, 2012_ — _Atlanta, GA_
 
-#### ATLANTA .NET USER GROUP: //BUILD RECAP
+* Designing Silverlight Business Applications
+
+## Atlanta .NET User Group September 2011
 
 _September 26, 2011 —_ _Alpharetta, GA_
 
-#### DEVLINK: STERLING FOR WINDOWS PHONE 7
+* //Build recap
+
+## DevLink 2011 
 
 _August 17, 2011 — Chattanooga, TN_
 
-#### REMIX SOUTH: TABLET DEVELOPMENT WITH SILVERLIGHT
+* Sterling for Windows Phone 7
+
+## ReMix South 2011
 
 _August 6, 2011_ — _Atlanta, GA_
 
-#### MICROSOFT WORLDWIDE PARTNER CONFERENCE (WPC): THE CONSUMERIZATION OF IT
+* Tablet Development with Silverlight
+
+## Microsoft Worldwide Partner Conference (WPC) 2011
 
 _July 13, 2011_ — _Los Angeles, CA_
 
-#### **CODESTOCK: SILVERLIGHT 5 FOR LINE OF BUSINESS APPLICATIONS**
+* The Consumerization of IT
+
+## CodeStock 2011
 
 _June 3, 2011_ — _Knoxville, TN_
 
+* Silverlight 5 for Line of Business Applications
 
+{{<youtube QWELU7v5GxA>}}
 
-
-
-
-#### MSDN GEEKSPEAK: PROJECT STERLING
+## MSDN GeekSpeak 2011
 
 _April 20, 2011_
 
-#### **ATLANTA SILVERLIGHT MEETUP: INTRODUCTION TO MEF FOR SILVERLIGHT**
+* Project Sterling
+
+## Atlanta Silverlight Meetup February 2011
 
 _February 23, 2011_ — _Atlanta, GA_
 
-#### ATLANTA SILVERLIGHT MEETUP: SILVERLIGHT’S VISUAL STATE MANAGER
+* Introduction to MEF for Silverlight 
+
+## Atlanta Silverlight Meetup January 2011
 
 _January 31, 2011 — Alpharetta, GA_
 
-#### PDC RECAP: “ASK THE EXPERTS Q&amp;A”
+* Silverlight's Visual State Manager
+
+## PDC Recap 2010
 
 _October 29, 2010 — Alpharetta, GA_
 
-#### LINKEDIN .NET USER GROUP: ISOLATED STORAGE FOR OBJECT-ORIENTATED DATABASES IN SILVERLIGHT AND WINDOWS PHONE 7 APPLICATIONS
+* Ask the Experts Q&A
+
+## LinkedIn .NET User Group (LIDNUG) October 2010
 
 _October 20, 2010_
 
-#### ATLANTA SILVERLIGHT MEETUP: INTRO TO MVVM
+* Isolated Storage for Object-oriented Databases in Silverlight and Windows Phone 7 Applications
+
+## Atlanta Silverlight Meetup September 2010
 
 _September 22, 2010 — Atlanta, GA_
 
-#### GWINNETT .NET USER GROUP: MVVM AND MEF FOR SILVERLIGHT
+* Intro to MVVM
+
+## Gwinnett .NET User Group (GGMUG) August 2010
 
 _August 12, 2010 — Duluth, GA_
 
-#### **MSDN FRIDAYS WEBINAR: MEF FOR LOB APPLICATIONS IN .NET 4.0**
+* MVVM and MEF for Silverlight
+
+## MSDN Fridays July 2010
 
 _July 20, 2010_
 
-#### CODESTOCK : ADVANCED SILVERLIGHT APPLICATIONS USING THE MANAGED EXTENSIBILITY FRAMEWORK
+* MEF for LOB Applications in .NET 4.0
+
+## CodeStock 2010
 
 _June 25, 2010 — Knoxville, TN_
 
-#### ATLANTA .NET USER GROUP: THE MANAGED EXTENSIBILITY FRAMEWORK FOR LINE OF BUSINESS APPLICATIONS IN .NET 4.0
+* Advanced Silverlight Applications using the Managed Extensibility Framework
+
+## Atlanta .NET User Group June 2010
 
 _June 7, 2010 — Alpharetta, GA_
 
-#### MSDN GEEKSPEAK: SILVERLIGHT UNIT TESTING FRAMEWORK
+* The Managed Extensibility Framework for Line of Business Applications in .NET 4.0
+
+## MSDN GeekSpeak February 2010
 
 _February 25, 2010_
 
-[View Interview](https://channel9.msdn.com/shows/geekSpeak/geekSpeak-Recording-Silverlight-Testing-with-Jeremy-Likness/)
+* Silverlight Unit Testing Framework
 
-#### ATLANTA SILVERLIGHT USER GROUP: SILVERLIGHT BUSINESS APPLICATIONS
+    👀 [View Interview](https://channel9.msdn.com/shows/geekSpeak/geekSpeak-Recording-Silverlight-Testing-with-Jeremy-Likness/)
+
+## Atlanta Silverlight User Group January 2010
 
 _January 20, 2010 — Atlanta, GA_
 
-#### GWINNETT GEORGIA .NET USER GROUP: MANAGED EXTENSIBILITY FRAMEWORK
+* Silverlight Business Applications
+
+## Gwinnett Georgia .NET User Group January 2010
 
 _January 19, 2010 — Duluth, GA_
+
+* Managed Extensibility Framework
