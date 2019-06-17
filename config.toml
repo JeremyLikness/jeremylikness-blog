@@ -8,6 +8,7 @@ disqusShortname = "developerforlife"
 googleAnalytics = "UA-1227465-12"
 enableEmoji = true
 enableRobotsTXT = true
+pygmentsStyle = "friendly"
 
 [taxonomies]
   tag = "tags"
