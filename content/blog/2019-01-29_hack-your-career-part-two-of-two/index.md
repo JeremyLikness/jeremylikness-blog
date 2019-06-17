@@ -4,6 +4,8 @@ author: "Jeremy Likness"
 date: 2019-01-29T06:38:16.783Z
 years: "2019"
 lastmod: 2019-06-13T10:45:29-07:00
+toc: true
+comments: true
 
 description: "Tips and tricks from 25 years of professional development experience to help you hack your technology career."
 
@@ -27,28 +29,22 @@ aliases:
     - "/hack-your-career-part-two-of-two-d1f0e5542553"
 ---
 
-#### More Tips and Tricks from a Software Development Veteran
-
 In [part one](https://blog.jeremylikness.com/hack-your-career-part-one-of-two-b0c25ef9d58f) I shared my background and tips that covered doing what you’re told (or not), assumptions, changing your mind, fear, and being you.
 
 _That’s just the beginning!_
 
 Here are a few more tips to help you hack your own career (not to be confused with a career in hacking).
 
-### 6. Raise the Signal-to-Noise Ratio in Your Life
+## 6. Raise the Signal-to-Noise Ratio in Your Life
 
 Your time is valuable. You know how much it’s worth.
 
 I once saw a consultant who earns over $100/hour spend an hour arguing over a $5 overcharge. I completely understand the principle behind it, but is it _really_ worth the $5 when you could actively bill another hour instead? Personally, I’d chalk that up as a $95 loss.
 
-
-
-
-![image](/blog/2019-01-29_hack-your-career-part-two-of-two/images/1.jpeg)
-
-
+![Picture of analog synthesizer](/blog/2019-01-29_hack-your-career-part-two-of-two/images/1.jpeg)
 
 I learned to value my time when I decided to change my life by eating healthier and working out. Like many people, I was under the impression that I just didn’t have enough time. Then I learned the truth:
+
 > You don’t have a time problem. You have a priority problem.
 
 I learned this when I met someone who worked multiple jobs, went to night school, and still found time to prepare meals and workout. We were talking about fitness and they randomly asked me a question about an episode of a television series I was watching. I responded, they nodded, and then hit me with this:
@@ -67,16 +63,15 @@ You may be surprised how much time you gain back if you decide to focus on how m
 
 Some specific email-related tips that helped my productivity explode:
 
-*   Stop reading emails as they come in. Instead, pick a few times per day to catch up.
-*   Consider creating a folder and an inbox rule to dump emails that don’t explicitly have your name on the _to_ line. These are typically mass/group emails and not as important, so check that folder less frequently.
-*   Turn off email alerts. If someone really needs you in real-time, let them text or Slack or message you some other urgent way.
+* Stop reading emails as they come in. Instead, pick a few times per day to catch up.
+* Consider creating a folder and an inbox rule to dump emails that don’t explicitly have your name on the _to_ line. These are typically mass/group emails and not as important, so check that folder less frequently.
+* Turn off email alerts. If someone really needs you in real-time, let them text or Slack or message you some other urgent way.
 
 If you are curious how I maximize my personal productivity, take a few minutes to read this:
 
-[Raise Your Signal-to-Noise Ratio](https://medium.com/that-conference/raise-your-signal-to-noise-ratio-333ebc8ec49d)
+🔗 [Raise Your Signal-to-Noise Ratio](/raise-your-signal-to-noise-ratio-333ebc8ec49d)
 
-
-### 7. Network FOR REAL
+## 7. Network FOR REAL
 
 I’ve spent most of my life online. I’m not exaggerating. I was using [Bulletin Board Systems (BBS)](https://en.wikipedia.org/wiki/Bulletin_board_system) in the 1980s to collaborate with people around the world. In the 1990s it was [Internet Relay Chat (IRC)](https://en.wikipedia.org/wiki/Internet_Relay_Chat) (where I also happened to meet my wife), followed by [Friendster](http://web.archive.org/web/20031015211349/http://friendster.com/index.jsp), [MySpace](http://web.archive.org/web/20041001082041/http://www.myspace.com:80/index.cfm?fuseaction=splash), Facebook and Twitter. I get online community.
 
@@ -88,18 +83,12 @@ My first steps to transform weren’t related to technology or my job, but my he
 
 I hit my goal.
 
-
-
-
-![image](/blog/2019-01-29_hack-your-career-part-two-of-two/images/2.jpeg)
-
-My bodybuilding days
-
-
+{{<figure src="/blog/2019-01-29_hack-your-career-part-two-of-two/images/2.jpeg" caption="My bodybuilding days" alt="Bodybuilding picture">}}
 
 The changes inspired me to start my own fitness business, and I was forced to transform again when I left the technology industry to focus on personal training full time. Suddenly I had to sell my own services, provide customer support and coach clients. This helped me break further out of my comfort zone and gain a little more confidence interacting with people. After I sold my fitness business and got back into technology, I purposefully focused on fostering “in person” relationships.
 
 It’s not as hard as it may seem. It can be as simple as attending a local user group meeting, traveling to a conference or attending a technology-related event. Having that experience can pay major dividends and create synergy because your return on investment is greater than the energy you put into it.
+
 > “I’m an introvert” may be true (and there is absolutely nothing wrong with that), but “I’m not comfortable around people” is one of those thoughts you just may be able to change.
 
 For example, I was contacted online to be the technical editor for a book. I was on the project for several months when the publisher came to town for a conference and invited me to meet over coffee. We connected in person, and that led to an invitation to write my first book. That led to several other books and a lasting relationship.
@@ -114,20 +103,24 @@ If it feels like politics, _don’t do it!_ It should be about relationships.
 
 I use [Meetup.com](https://www.meetup.com/members/10127361/) to connect with local developers, and then follow up on [LinkedIn.com](https://linkedin.com/in/jeremylikness) to maintain business relationships over time.
 
-### 8. Pause. Résumé.
+## 8. Pause. Résumé.
 
 By my best estimate I’ve conducted more than 100 interviews over my career and looked at thousands of resumes. I’ve also revised mine over the past 25 years and sat in the interviewee chair many times. Unfortunately, the resume is often the first touch point and filter in the process and a poorly done resume may prevent a perfectly qualified candidate from getting a foot in the door. There are tons of sites that promise to improve your resume, so instead of making this a comprehensive “how to” guide I want to share a few highlights that I believe can make or break a _curriculum vitae_.
 
 First, what is your mission? It’s tough for me to understand this:
+
 > Extremely qualified and experienced professional with amazing skills that has received dozens of industry awards.
 
 OK, that’s great … but why are you submitting your resume to me? Selfishly, I want to know if you are simply looking to check another box on a long list of projects, want to get exposed to new technology or singled out our company and really want to join. I urge you to think about _what you really want_ and declare it on your resume. Not, “This is who I am” but rather, “This is what I’m looking for.”
+
 > Seeking an exciting position in developer relations that will use my extensive experience and skills to drive value by forging deep relationships in the developer community.
 
 For illustration, here’s another example:
+
 > Straight “A” student with three Azure certifications.
 
 How about …
+
 > Passionate developer seeking to partner with a company willing to tap into my enthusiasm and ability to learn new technologies to drive successful cloud adoption.
 
 Don’t worry about the words I use so much, that’s my style, but try to go from “This is who I am” to “This is what I’m seeking and willing to do.” It will make your resume stand out!
@@ -136,17 +129,19 @@ Always put your strengths at the top of the resume. If you are newer to the indu
 
 Tie your skills into your experience. There is nothing more frustrating than reading that someone has extensive Web API experience, then finding no mention of it in their job history. When XML and XSLT were important skills (now I’m dating myself again), I didn’t just list “3 years’ experience with XML” … I also demonstrated how I used it:
 
-*   Built a mobile device management system that leveraged XML definitions with XSLT transformations to drive a dynamic UI capable of quickly adapting to custom settings
+* Built a mobile device management system that leveraged XML definitions with XSLT transformations to drive a dynamic UI capable of quickly adapting to custom settings
 
 Try to tie your skills into your experience. Speaking of experience, when you are listing history, please list what you did, not what you were supposed to do. Put yourself in a hiring manager’s shoes. You see one resume that looks like this:
+
 > Senior Developer responsible for setting coding standards, mentoring junior developers, and exploring new technologies.
 
 Then another that looks like this:
+
 > As a Senior Developer, successfully established coding standards to accelerate delivery and improve quality. Mentored several junior developers, one who was later promoted to senior. Led the team with successfully transitioning from WCF to REST.
 
 Finally, don’t feel like it must be just about your mainline job duties and accomplishments. I include publications, videos, presentations and projects I worked on. The interview team has a very well-rounded view of my experience, passion, and abilities.
 
-### 9. Just Say “NO.”
+## 9. Just Say “NO.”
 
 Learning to say, “no” may just be the most powerful tool you can add to your arsenal.
 
@@ -160,9 +155,10 @@ I learned early on to value time and focus on maximum return on investment. That
 
 Ask any of my colleagues at Microsoft. I’m not afraid to say “no” when appropriate.
 
-### 10. It’s not ONLY about the Benjamins.
+## 10. It’s not ONLY about the Benjamins.
 
 Have you heard that love makes the world go ‘round? That may be true, but money pays for the trip. There is nothing more annoying than someone who has tons of money proudly declaring that “money isn’t important.” It’s a core part of modern society, but people often forget…
+
 > Money isn’t the **thing**. It’s the thing that gets you the **thing**.
 
 It’s important to understand what the thing is.
@@ -173,14 +169,7 @@ I’ve always wanted to travel the world. In one of my early roles I built the s
 
 Understanding this is important because sometimes you must go backwards to move forwards. This is a plot of my salary over my career.
 
-
-
-
-![image](/blog/2019-01-29_hack-your-career-part-two-of-two/images/3.png)
-
-Salary over time
-
-
+{{<figure src="/blog/2019-01-29_hack-your-career-part-two-of-two/images/3.png" caption="Salary over time" alt="Line chart showing salary over time">}}
 
 Notice the first huge dip. That’s when I took a major risk and started my own business. That career exposed me to the power of coaching and mentoring and helped me become confident speaking in public. I learned major lessons about what it takes to build and scale a company. You can see the first year I had no idea what I was doing but by the third year was earning more than I made in my previous technology role.
 
@@ -190,13 +179,10 @@ The last dip in salary happened as a sacrifice I made for the opportunity to ste
 
 The first several years I focused on the money and the money came grudgingly. The last several years I focused on what I wanted to do and how I wanted to balance my life, and the money seemed to click into place. Your mileage may vary but please remember it’s not _only_ about the Benjamins. Figure out the thing and focus on it.
 
-### Summary
+## Summary
 
 That’s it! We’ve made it through the ten top tips I believe helped shape my career. I hope they have a positive impact on yours. Did something stand out in particular? Do you disagree with any points? Are there other tips you have or stories you’d like to share? Let me know by sharing in the comments below!
 
 Wishing you the best of success,
 
-
-
-
-![image](/blog/2019-01-29_hack-your-career-part-two-of-two/images/4.gif)
+![Jeremy Likness](/blog/2019-01-29_hack-your-career-part-two-of-two/images/4.gif)
