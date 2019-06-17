@@ -4,6 +4,8 @@ author: "Jeremy Likness"
 date: 2018-10-08T20:36:37.556Z
 years: "2018"
 lastmod: 2019-06-13T10:45:15-07:00
+comments: true
+toc: true
 
 description: "Comprehensive presentation includes information about serverless with implementation illustrated in video demos  featuring Azure Functions, Azure Logic Apps, and Azure Event Grid."
 
@@ -25,83 +27,53 @@ aliases:
     - "/enterprise-serverless-acc826616d4c"
 ---
 
-#### The ghost isn’t _in_ the machine, it _is_ the machine!
-
 I delivered a session at [TechBash 2018](https://techbash.com) about [serverless](https://jlik.me/eiz). It covers:
 
-*   What is serverless?
-*   Why is serverless useful?
-*   How is serverless implemented (with Azure examples)
+* What is serverless?
+* Why is serverless useful?
+* How is serverless implemented (with Azure examples)
 
+![Image of first slide in deck](/blog/2018-10-08_enterprise-serverless/images/1.png)
 
+You can download the full presentation ⬇ [here](https://jlikme.blob.core.windows.net/presentations/Enterprise-Serverless-TechBash.pptx).
 
-![image](/blog/2018-10-08_enterprise-serverless/images/1.png)
-
-
-
-You can download the full presentation [here](https://jlikme.blob.core.windows.net/presentations/Enterprise-Serverless-TechBash.pptx).
-
-> {{<twitter 1047582372785532929>}}
-
+{{<twitter 1047582372785532929>}}
 
 I delivered several demos during the presentation that I pre-recorded to avoid Internet hiccups and edited to zoom to the right information. These are all “live” in the sense the only editing is cutting out some of the delays. The videos are designed to be self-explanatory and contain no audio.
 
-#### Azure Functions
+## Azure Functions
 
 The first demo illustrates creating a [serverless Azure Function](https://jlik.me/ei0) from the portal. In addition, it shows how auto-scale works. After creating the function, I run a load-balancing tool called [artillery](https://jlik.me/ei1) to hit the endpoint 10,000 times and then show live metrics as it’s happening.
 
+{{<youtube TSRM0zkHxJs>}}
+<figcaption>Create an Azure Function and watch it scale</figcaption>
 
+The next demo uses my open source serverless <i class="fab fa-github"></i> [ShortLink project](https://github.com/jeremylikness/shortlink) to illustrate how to publish it to the cloud.
 
+{{<youtube G9tIdh6ZY8c>}}
+<figcaption>Publish an Azure Function to Azure</figcaption>
 
-Create an Azure Function and watch it scale
-
-
-
-The next demo uses my open source serverless [ShortLink project](https://github.com/jeremylikness/shortlink) to illustrate how to publish it to the cloud.
-
-
-
-
-Publish an Azure Function to Azure
-
-
-
-#### Logic Apps
+## Logic Apps
 
 I demonstrated a simple workflow to introduce [Logic Apps](https://jlik.me/ei2). The scenario is that I have “the world’s loneliest Slack channel” and need a way to get things going. I create a Logic App that triggers on a file upload. The workflow grabs the stream of bytes for an image, passes it over to the [Cognitive Services Computer Vision API](https://jlik.me/ei3) and applies some machine learning to create an automated caption. It then sends the results into the Slack channel. This is all built and demoed live.
 
+{{<youtube PCkhgH2t6lA>}}
+<figcaption>Visual Workflows with Azure Logic Apps</figcaption>
 
-
-
-Visual Workflows with Azure Logic Apps
-
-
-
-#### Event Grid
+## Event Grid
 
 I concluded the presentation with my favorite topic and what I believe is an underappreciated and underused service in Azure: [Event Grid](https://jlik.me/ei4). The first demo shows how easy it is to connect different Azure services together with Event Grid by subscribing to a storage event from an Azure Function.
 
-
-
-
-Event Grid inside Azure
-
-
+{{<youtube -XsPiF1ET6I>}}
+<figcaption>Event Grid inside Azure</figcaption>
 
 The next demo illustrates how to create a custom event that you can publish to from any language or platform and subscribe to from any platform that supports [WebHooks](https://jlik.me/ei5).
 
-
-
-
-Event Grid outside Azure (REST API and WebHooks)
-
-
+{{<youtube MFFQBkFMoOk>}}
+<figcaption>Event Grid outside Azure (REST API and WebHooks)</figcaption>
 
 I hope you find this presentation and related demos informative and valuable. As always, comments, feedbacks, and suggestions are welcome. For a comprehensive look at the content from this session, be sure to view/download the free eBook “[Serverless apps: Architecture, patterns, and Azure implementation](https://jlik.me/eiz).”
 
 Regards,
 
-
-
-
-![image](/blog/2018-10-08_enterprise-serverless/images/2.gif)
+![Jeremy Likness](/blog/2018-10-08_enterprise-serverless/images/2.gif)

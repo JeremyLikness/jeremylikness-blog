@@ -4,6 +4,7 @@ author: "Jeremy Likness"
 date: 2018-12-27T17:54:30.939Z
 years: "2018"
 lastmod: 2019-06-13T10:45:22-07:00
+comments: true
 
 description: "Learn how to quickly and easily get up and running with MongoDB on your local machine using Docker and persisted volumes. Includes how to set up authentication."
 
@@ -27,28 +28,17 @@ aliases:
     - "/mongodb-on-windows-in-minutes-with-docker-3e412f076762"
 ---
 
-#### A fast, easy way to get up and running with NoSQL on your local machine.
-
 Recently, I was working on a demo for an upcoming series of talks that required a (preferably local) instance of [MongoDB](https://www.mongodb.com/). If you aren’t familiar with MongoDB, it’s a very popular and mature document database. The API for MongoDB is supported by [Azure Cosmos DB](https://jlik.me/evo) and the demo illustrates how to migrate from a local instance of MongoDB for development purposes to a cloud-based production instance of Cosmos DB. There was just one catch: I had no desire to install MongoDB on my Windows 10 machine!
+
 > **Note**: although I’m focusing on Windows-based steps, the same steps should work fine on macOS and Linux.
 
 Fortunately, this is precisely the type of scenario [Docker](https://www.docker.com/) was designed to address. Using containers, you can quickly get up and running with any number of predefined images and services. Mongo maintains a set of official Docker images.
 
-
-
-
-![image](/blog/2018-12-27_mongodb-on-windows-in-minutes-with-docker/images/1.png)
-
-
+![Official Mongo Docker Image](/blog/2018-12-27_mongodb-on-windows-in-minutes-with-docker/images/1.png)
 
 I assume you have Docker installed and are using Linux (not Windows) containers. I am running a Windows-specific version of desktop for community.
 
-
-
-
-![image](/blog/2018-12-27_mongodb-on-windows-in-minutes-with-docker/images/2.png)
-
-
+![Docker desktop dialog](/blog/2018-12-27_mongodb-on-windows-in-minutes-with-docker/images/2.png)
 
 Now that the prerequisites are out of the way, there are two steps to getting MongoDB up and running. First, create a volume to persist data between runs. If you skip this step, any changes you make will disappear when the container stops running.
 
@@ -62,12 +52,7 @@ You can give the running container any name you like. The first time may feel li
 
 That’s it. You’re done. You have a fully functional version of MongoDB running on your machine! (Here’s mine running, mapped to a different port).
 
-
-
-
-![image](/blog/2018-12-27_mongodb-on-windows-in-minutes-with-docker/images/3.png)
-
-
+![Screenshot of Docker process list](/blog/2018-12-27_mongodb-on-windows-in-minutes-with-docker/images/3.png)
 
 Of course, you probably want to tweak it a bit. By default, it’s running without authentication. To set up authentication, you need to create a login and then restart the service with the “authentication” switch.
 
@@ -85,7 +70,7 @@ Let’s assume your database is called “mydatabase” and you want to set up a
 
 `use mydatabase`
 
-`db.createUser({user:&#34;myuser&#34;, pwd:&#34;secret&#34;, roles:[{role:&#34;readWrite&#34;, db: &#34;mydatabase&#34;}]});`
+`db.createUser({user:"myuser", pwd:"secret", roles:[{role:"readWrite", db: "mydatabase"}]});`
 
 After that, you can exit out of the MongoDB terminal and the bash shell that’s running. Next, stop and remove the existing instance and launch a new one with authentication active:
 
@@ -103,7 +88,4 @@ That’s it! Hopefully this simple set of steps is helpful for you to get up and
 
 Regards,
 
-
-
-
-![image](/blog/2018-12-27_mongodb-on-windows-in-minutes-with-docker/images/4.gif)
+![Jeremy Likness](/blog/2018-12-27_mongodb-on-windows-in-minutes-with-docker/images/4.gif)
