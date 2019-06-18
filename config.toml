@@ -13,6 +13,7 @@ pygmentsStyle = "friendly"
 [taxonomies]
   tag = "tags"
   year = "years"
+  series = "series"
 
 [outputs]
   page = ["HTML", "RSS"]

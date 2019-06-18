@@ -6,6 +6,7 @@ years: "2019"
 lastmod: 2019-06-13T10:45:36-07:00
 comments: true
 toc: true
+series: "TypeScript for JavaScript Developers"
 
 description: "Learn TypeScript by taking a journey refactoring an existing JavaScript application. Step by step, with short 1–2 minute video clips, you discover the immediate benefits of using TypeScript."
 

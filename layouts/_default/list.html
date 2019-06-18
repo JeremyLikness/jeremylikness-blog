@@ -5,23 +5,27 @@
 {{ define "main" }}
 {{- partial "_shared/title.html" . -}}
 {{ $pages := .Pages }}
-            {{ $pageSize := 6 }}
-            {{ if eq .Page.Kind "taxonomyTerm" }}
-            {{ $pageSize = 12 }}
-            {{ if eq .Page.Type "tags" }}
-            {{ $pages = .Pages.ByTitle }}
-            {{ else }}
-            {{ $pages = .Pages.ByDate }}
-            {{ end }}
-            {{ end }}
-            {{ $post_paginator := .Paginate ($pages) $pageSize }}
-            
+{{ $pageSize := 6 }}
+{{ if and (eq .Page.Kind "taxonomy") (eq .Page.Type "series")}}
+{{ $pages = .Pages.ByDate }}
+{{ else}}
+{{ if eq .Page.Kind "taxonomyTerm" }}
+{{ $pageSize = 12 }}
+{{ if eq .Page.Type "tags" }}
+{{ $pages = .Pages.ByTitle }}
+{{ else }}
+{{ $pages = .Pages.ByDate }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ $post_paginator := .Paginate ($pages) $pageSize }}
+
 <div class="main-content">
     <!-- Posts Index
         ================================================== -->
     <section class="recent-posts">
         <div class="section-title">
-            <strong><a href="/blog">All</a>&nbsp;|&nbsp;<a href="/tags">Tags</a>
+            <strong><a href="/blog">All</a>&nbsp;|&nbsp;<a href="/series">Series</a>&nbsp;|&nbsp;<a href="/tags">Tags</a>
                 |&nbsp;<a href="/years">Years</a></strong>
             <h2>&nbsp;</h2>
             {{if eq .Page.Kind "taxonomyTerm"}}

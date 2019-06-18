@@ -6,6 +6,7 @@ years: "2019"
 lastmod: 2019-06-13T10:45:41-07:00
 comments: true
 toc: true
+series: "Vanilla.js"
 
 description: "Build a fully functional dynamic and interactive web app that loads data from a Web API using nothing but pure HTML, CSS, and JavaScript."
 

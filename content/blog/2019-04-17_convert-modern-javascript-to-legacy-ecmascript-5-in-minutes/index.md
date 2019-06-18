@@ -5,6 +5,7 @@ date: 2019-04-17T17:19:54.142Z
 years: "2019"
 lastmod: 2019-06-13T10:45:44-07:00
 comments: true
+series: "Vanilla.js"
 
 description: "Learn how to use TypeScript to convert and transform modern JavaScript to legacy ECMAScript 5."
 

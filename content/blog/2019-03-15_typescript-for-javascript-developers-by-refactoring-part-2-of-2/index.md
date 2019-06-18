@@ -6,6 +6,7 @@ years: "2019"
 lastmod: 2019-06-13T10:45:39-07:00
 comments: true
 toc: true
+series: "TypeScript for JavaScript Developers"
 
 description: "Learn advanced TypeScript features by refactoring JavaScript to use interfaces, apply type guards, and create aspect-oriented reusable behaviors with experimental decorators."
 
