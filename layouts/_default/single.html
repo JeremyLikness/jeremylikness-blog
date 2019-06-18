@@ -48,22 +48,19 @@
                     {{ end }}
                 </div>
 
-                                <!-- Series -->
-                                {{ if .Params.series }}
-                                <div class="after-post-tags">
-                                    Part of the series: 
-                                    <ul class="tags">
-                                        <li>
-                                            <a href="{{ "/series/" | relLangURL }}{{ .Params.series | urlize }}">{{.Params.series}}</a>
-                                        </li>                        
-                                    </ul>
-                                </div>
-                                
-                                {{ end }}
-                
+                <!-- Series -->
+                {{ if .Params.series }}
+                <p>
+                    Part of the series:
+                    <a href="{{ "/series/" | relLangURL }}{{ .Params.series | urlize }}">{{.Params.series}}</a>                    
+                </p>
+                {{ end }}
+
                 {{ if (.Params.toc) }}
                 <aside>
-                    <ul><li><i>In this blog post...</i></li></ul>
+                    <ul>
+                        <li><i>In this blog post...</i></li>
+                    </ul>
                     {{ .TableOfContents }}
                 </aside>
                 {{ end }}
@@ -73,21 +70,18 @@
                     {{ .Content}}
                 </div>
 
-                <!-- Amazon ad -->
-                <div id="amzn-assoc-ad-652d987d-0b8e-4c43-82d1-7fae63ee185b"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=652d987d-0b8e-4c43-82d1-7fae63ee185b"></script>
-
                 <!-- Series -->
                 {{ if .Params.series }}
-                <div class="after-post-tags">
-                    Part of the series: 
-                    <ul class="tags">
-                        <li>
-                            <a href="{{ "/series/" | relLangURL }}{{ .Params.series | urlize }}">{{.Params.series}}</a>
-                        </li>                        
-                    </ul>
-                </div>
-                
+                <p>
+                    Part of the series:
+                    <a href="{{ "/series/" | relLangURL }}{{ .Params.series | urlize }}">{{.Params.series}}</a>                    
+                </p>
                 {{ end }}
+
+                <!-- Amazon ad -->
+                <div id="amzn-assoc-ad-652d987d-0b8e-4c43-82d1-7fae63ee185b"></div>
+                <script async
+                    src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=652d987d-0b8e-4c43-82d1-7fae63ee185b"></script>
 
                 <!-- Post Categories -->
                 <div class="after-post-tags">
