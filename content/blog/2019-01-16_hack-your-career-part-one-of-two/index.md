@@ -6,6 +6,7 @@ years: "2019"
 lastmod: 2019-06-13T10:45:26-07:00
 toc: true
 comments: true
+series: "Hack Your Career"
 
 description: "Five tips to move forward in your technology career from a 25-year professional development veteran."
 

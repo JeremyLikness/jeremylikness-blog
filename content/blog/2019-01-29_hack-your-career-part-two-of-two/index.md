@@ -6,6 +6,7 @@ years: "2019"
 lastmod: 2019-06-13T10:45:29-07:00
 toc: true
 comments: true
+series: "Hack Your Career"
 
 description: "Tips and tricks from 25 years of professional development experience to help you hack your technology career."
 

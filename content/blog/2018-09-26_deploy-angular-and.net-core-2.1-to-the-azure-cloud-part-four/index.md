@@ -6,6 +6,7 @@ years: "2018"
 lastmod: 2019-06-13T10:45:12-07:00
 comments: true
 toc: true
+series: "Angular and .NET Core"
 
 description: "Learn how to deploy an Angular application with a .NET Core backend to the cloud using serverless, static websites, and Platform-as-a-Service (PaaS) on Azure."
 

@@ -5,6 +5,7 @@ date: 2018-09-19T14:11:46.980Z
 years: "2018"
 lastmod: 2019-06-13T10:45:10-07:00
 comments: true
+series: "Angular and .NET Core"
 
 description: "Take advantage of Angular Universal and integration with .NET Core to pre-render single page application pages using server-side rendering (SSR)."
 
