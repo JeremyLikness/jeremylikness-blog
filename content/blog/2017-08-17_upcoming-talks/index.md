@@ -3,7 +3,7 @@ title: "Upcoming Talks"
 author: "Jeremy Likness"
 date: 2017-08-17T14:11:13.204Z
 years: "2017"
-lastmod: 2019-06-13T10:43:33-07:00
+lastmod: 2019-06-23T10:43:33-07:00
 toc: true
 
 description: "Visit this page to see where and when I’ll be speaking and what topics I’ll be covering."
@@ -26,16 +26,9 @@ aliases:
 ![Racoon "Bit" Mascot](/blog/2017-08-17_upcoming-talks/images/1.png)
 <figcaption>“Bit” mascot by [@ashleymcnamara](https://twitter.com/ashleymcnamara)</figcaption>
 
-Visit this page to see where and when I’ll be speaking and what topics I’ll be covering. If you run a conference or user group and are looking for speakers, please don’t hesitate to [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I’ll be happy to consider your venue!
+Visit this page to see where and when I’ll be speaking and what topics I’ll be covering. If you run a conference or user group and are looking for speakers, please don’t hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I’ll be happy to consider your venue!
 
-### June 17–21, 2019 NDC { Oslo }
-[NDC { Oslo }](https://ndcoslo.com/)
-
-* [Advanced Serverless Workflows with Durable Functions](https://ndcoslo.com/talk/advanced-serverless-workflows-with-durable-functions/)
-
-{{<gmap "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2000.1542106144725!2d10.752554!3d59.912988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeaab41e737da924c!2sOslo+Spektrum!5e0!3m2!1sen!2sus!4v1560547798882!5m2!1sen!2sus" "Oslo Spektrum | Sonja Henies plass 2, 0185 Oslo, Norway">}}
-
-### July 1-2, 2019 .NET Developer Association (Eastside, Westside Seattle)
+## July 1-2, 2019 .NET Developer Association (Eastside, Westside Seattle)
 
 ![.NET Dev Association Logo](/blog/2017-08-17_upcoming-talks/images/3.jpeg)
 
@@ -51,7 +44,7 @@ Visit this page to see where and when I’ll be speaking and what topics I’ll 
 
 {{<gmap "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2689.537199560269!2d-122.338178!3d47.615688!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490154a6062c1b7%3A0xf5aa24fe86fc8be9!2s1918+8th+Ave+3rd+Floor%2C+Seattle%2C+WA+98101!5e0!3m2!1sen!2sus!4v1560548448063!5m2!1sen!2sus" "Westside: AWS Puget Sound Room | 1918 8th Ave — 3rd Floor · Seattle, WA">}}
 
-### August 5–8, 2019 THAT Conference (Wisconsin)
+## August 5–8, 2019 THAT Conference (Wisconsin)
 
 ![THAT Conference Logo](/blog/2017-08-17_upcoming-talks/images/4.png)
 [THAT Conference](https://thatconference.com)
@@ -60,7 +53,7 @@ Visit this page to see where and when I’ll be speaking and what topics I’ll 
 
 {{<gmap "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2890.704555197011!2d-89.776242!3d43.571039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3bf1f250efce2062!2sKalahari+Resorts+Dells!5e0!3m2!1sen!2sus!4v1560548593861!5m2!1sen!2sus" "Kalahari Resorts Dells | 1305 Kalahari Dr, Wisconsin Dells, WI 53965">}}
 
-### September 29-October 3, 2019 VS Live! San Diego
+## September 29-October 3, 2019 VS Live! San Diego
 
 [VS Live! San Diego](https://vslive.com/events/san-diego-2019/home.aspx)
 
@@ -69,7 +62,7 @@ Visit this page to see where and when I’ll be speaking and what topics I’ll 
 
 {{<gmap "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3356.933527979728!2d-117.16539400000002!3d32.714394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff5335f61fb7c8b9!2sThe+Westin+San+Diego+Gaslamp+Quarter!5e0!3m2!1sen!2sus!4v1560549389899!5m2!1sen!2sus" "Westin San Diego Gaslamp Quarter | 910 Broadway Cir, San Diego, CA 92101">}}
 
-### October 6–10, 2019 VS Live! Chicago
+## October 6–10, 2019 VS Live! Chicago
 
 [VS Live! Chicago](https://vslive.com/Events/Chicago-2019/Home.aspx)
 
