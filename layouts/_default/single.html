@@ -78,11 +78,16 @@
                 </p>
                 {{ end }}
 
-                <!-- Amazon ad -->
-                <div id="amzn-assoc-ad-652d987d-0b8e-4c43-82d1-7fae63ee185b"></div>
-                <script async
-                    src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=652d987d-0b8e-4c43-82d1-7fae63ee185b"></script>
+                {{ if .Params.canonicalUrl }}
+                <p>
+                    <em>This post originally appeared at 
+                        <a href="{{ .Params.canonicalUrl }}" target="_blank" title="{{ .Title }}">{{ .Title }}</a>
+                    </em>
+                </p>
+                {{end}}
 
+                {{ partial "_shared/banner.html" }}
+                
                 <!-- Post Categories -->
                 <div class="after-post-tags">
                     <ul class="tags">
