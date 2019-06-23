@@ -2,18 +2,17 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	{{ hugo.Generator }}
-	{{ with .Site.Params.logo }}
-	<link rel="icon" href="{{ . | urlize | relURL }}">{{ end }}
-	{{ if .Params.canonicalUrl }}
-	<link rel="canonical" href="{{ .Params.canonicalUrl }}">{{ end }}
-	<title>{{ .Page.Title }} | {{ .Site.Title }}</title>
-	{{ with or .Page.Description .Site.Params.description }}
-	<meta name="description" content="{{ . }}">{{ end }}
-	{{ with or .Params.tags .Site.Params.keywords  }}
-	{{ with delimit . "," }}
-	<meta name="keywords" content="{{ . }}">{{ end }}{{ end }}
-	{{ range .AlternativeOutputFormats -}}
-	<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">{{ end }}
+	{{ with .Site.Params.logo }}<link rel="icon" href="{{ . | urlize | relURL }}">{{ end }}
+	{{ if .Params.canonicalUrl }}<link rel="canonical" href="{{ .Params.canonicalUrl }}">{{ end }}
+	{{ $title := printf "%s | %s" .Page.Title .Site.Title }}{{ $mainPage := false }}{{ if eq .Page.Title .Site.Title }}{{ $title = .Page.Title }}{{ $mainPage = true }}{{ end }}
+	<title>{{ $title }}</title>
+	{{ with or .Page.Description .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with or .Params.tags .Site.Params.keywords  }}{{ with delimit . "," }}<meta name="keywords" content="{{ . }}">{{ end }}{{ end }}
+	
+	{{ with .OutputFormats.Get "rss" -}}{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $title | safeHTML }}{{ end -}}
+
+	{{ if not $mainPage }}
+	{{ printf `<link rel="alternate" type="application/rss+xml" href="%s" title="%s"/>` ( "/index.html" | urlize | absURL) .Site.Title | safeHTML }}{{ end }}
 	<!-- twitter and open graph support -->
 	{{ if or .Params.image .Site.Params.author.thumbnail }}
 	<meta name="twitter:card" content="summary_large_image" />

@@ -1,5 +1,5 @@
 ---
-title: "Deploy WebAssembly from GitHub toAzure Storage Static Websites with Azure Pipelines"
+title: "Deploy WebAssembly from GitHub to Azure Storage Static Websites with Azure Pipelines"
 author: "Jeremy Likness"
 date: 2019-05-06T23:29:23.987Z
 years: "2019"
