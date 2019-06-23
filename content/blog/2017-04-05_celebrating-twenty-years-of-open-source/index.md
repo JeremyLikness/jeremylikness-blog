@@ -15,14 +15,14 @@ tags:
  - Programming 
  - Typescript 
 
-image: "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/1." 
+image: "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/1.png" 
 images:
- - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/1." 
- - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/2." 
- - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/3." 
- - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/4." 
- - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/5." 
- - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/6." 
+ - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/1.png" 
+ - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/2.png" 
+ - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/3.gif" 
+ - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/4.png" 
+ - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/5.png" 
+ - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/6.png" 
  - "/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/7.gif" 
 
 
@@ -58,7 +58,7 @@ MidCTF was a “server modification” so it could be played without any downloa
 
 
 
-![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/1.)
+![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/1.png)
 
 
 
@@ -69,13 +69,13 @@ This game, called [SWAT Quake](http://web.archive.org/web/19970611181331/http://
 
 
 
-![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/2.)
+![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/2.png)
 
 
 
 
 
-![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/3.)
+![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/3.png)
 
 
 
@@ -104,7 +104,7 @@ On June 28th, 2010 I “checked in” the code to my first open source project t
 
 
 
-![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/4.)
+![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/4.png)
 
 
 
@@ -117,7 +117,7 @@ The first iteration of Sterling came fairly quickly, but it was the optimization
 
 
 
-![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/5.)
+![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/5.png)
 
 
 
@@ -136,7 +136,7 @@ On October 4, 2010 I committed the [initial build](https://github.com/JeremyLikn
 
 
 
-![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/6.)
+![image](/blog/2017-04-05_celebrating-twenty-years-of-open-source/images/6.png)
 
 
 

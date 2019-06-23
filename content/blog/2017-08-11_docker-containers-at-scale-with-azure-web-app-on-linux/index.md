@@ -14,9 +14,9 @@ tags:
  - Azure 
  - Linux 
 
-image: "/blog/2017-08-11_docker-containers-at-scale-with-azure-web-app-on-linux/images/1." 
+image: "/blog/2017-08-11_docker-containers-at-scale-with-azure-web-app-on-linux/images/1.png" 
 images:
- - "/blog/2017-08-11_docker-containers-at-scale-with-azure-web-app-on-linux/images/1." 
+ - "/blog/2017-08-11_docker-containers-at-scale-with-azure-web-app-on-linux/images/1.png" 
  - "/blog/2017-08-11_docker-containers-at-scale-with-azure-web-app-on-linux/images/2.gif" 
 
 
@@ -29,7 +29,7 @@ The Azure team recently announced a new feature that is currently in preview cal
 
 
 
-![image](/blog/2017-08-11_docker-containers-at-scale-with-azure-web-app-on-linux/images/1.)
+![image](/blog/2017-08-11_docker-containers-at-scale-with-azure-web-app-on-linux/images/1.png)
 
 
 

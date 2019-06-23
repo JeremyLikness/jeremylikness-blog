@@ -15,9 +15,9 @@ tags:
  - Typescript 
  - Presentations 
 
-image: "/blog/2017-06-07_music-city-code-2017/images/1." 
+image: "/blog/2017-06-07_music-city-code-2017/images/1.png" 
 images:
- - "/blog/2017-06-07_music-city-code-2017/images/1." 
+ - "/blog/2017-06-07_music-city-code-2017/images/1.png" 
  - "/blog/2017-06-07_music-city-code-2017/images/2.gif" 
 
 
@@ -30,7 +30,7 @@ This was my first year to attend the [Music City Code](https://www.musiccitycode
 
 
 
-![image](/blog/2017-06-07_music-city-code-2017/images/1.)
+![image](/blog/2017-06-07_music-city-code-2017/images/1.png)
 
 
 
