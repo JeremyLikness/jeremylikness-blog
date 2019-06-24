@@ -47,6 +47,11 @@ pygmentsStyle = "friendly"
     identifier = ""
     url = "/"
 [[menu.main]]
+    name = "🔍"
+    weight = 75
+    identifier = "search"
+    url = "/search"
+[[menu.main]]
     name = "📃 Blog"
     weight = 100
     identifier = "blog"
