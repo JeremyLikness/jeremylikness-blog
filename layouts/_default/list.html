@@ -11,7 +11,7 @@
 {{ else}}
 {{ if eq .Page.Kind "taxonomyTerm" }}
 {{ $pageSize = 12 }}
-{{ if eq .Page.Type "tags" }}
+{{ if or (eq .Page.Type "tags") (eq .Page.Type "series") }}
 {{ $pages = .Pages.ByTitle }}
 {{ else }}
 {{ $pages = .Pages.ByDate }}

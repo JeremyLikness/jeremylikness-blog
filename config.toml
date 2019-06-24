@@ -40,6 +40,63 @@ pygmentsStyle = "friendly"
   thumbnail = "/images/author.png"
   description = "Empowering developers to be their best."
 
+[params.csp]
+  childsrc = ["'self'"]
+  fontsrc = ["'self'",
+    "https://use.fontawesome.com",
+    "https://fonts.gstatic.com",
+    "https://public.slidesharecdn.com"]
+  formaction = ["'self'",
+    "https://syndication.twitter.com/",
+    "https://platform.twitter.com"]
+  framesrc = ["'self'",
+    "https://cse.google.com",
+    "www.youtube.com",
+    "https://platform.twitter.com",
+    "https://syndication.twitter.com",
+    "jsfiddle.net",
+    "www.instagram.com",
+    "https://kuula.co",
+    "https://www.slideshare.net",
+    "https://www.google.com"]
+  imgsrc = ["'self'",
+    "https://jeremylikness.visualstudio.com",
+    "https://www.google-analytics.com",
+    "https://stats.g.doubleclick.net",
+    "*.google.com",
+    "*.gstatic.com",
+    "*.amazon-adsystem.com",
+    "https://www.googleapis.com",
+    "https://images-na.ssl-images-amazon.com",
+    "https://platform.twitter.com",
+    "*.twimg.com",
+    "https://syndication.twitter.com",
+    "data:",
+    "https://files.kuula.io"]
+  objectsrc = ["'none'"]
+  stylesrc = ["'self'",
+    "'unsafe-inline'",
+    "https://stackpath.bootstrapcdn.com",
+    "https://use.fontawesome.com",
+    "https://fonts.googleapis.com",
+    "https://www.google.com",
+    "https://platform.twitter.com",
+    "*.twimg.com"]
+  scriptsrc = ["'self'",
+    "'unsafe-eval'", 
+    "'unsafe-inline'",
+    "https://platform.twitter.com",
+    "https://cdn.syndication.twimg.com",
+    "*.amazon-adsystem.com",
+    "https://code.jquery.com",
+    "https://cdnjs.cloudflare.com",
+    "https://stackpath.bootstrapcdn.com",
+    "https://www.google-analytics.com",
+    "cse.google.com",
+    "https://www.google.com",
+    "jsfiddle.net",
+    "www.instagram.com"]
+
 ## Main Menu
 [[menu.main]]
     name = "🏠 Home"

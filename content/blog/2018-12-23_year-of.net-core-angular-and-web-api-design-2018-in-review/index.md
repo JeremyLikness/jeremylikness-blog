@@ -6,6 +6,7 @@ years: "2018"
 lastmod: 2019-06-13T10:45:18-07:00
 comments: true
 toc: true
+series: "Year End Summaries"
 
 description: "My personal and technical retrospective and analysis of 2018, using Twitter, blog statistics and link tracking statistics for data."
 

@@ -6,6 +6,7 @@ years: "2017"
 lastmod: 2019-06-13T10:44:30-07:00
 comments: true
 toc: true
+series: "Year End Summaries"
 
 description: "A recap of activity from 2017 with statistics that focuses on popular tweets, articles, and clicks to uncover trends including serverless, Docker containers, .NET Core 2.0 and more."
 

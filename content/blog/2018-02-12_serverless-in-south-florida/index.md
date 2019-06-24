@@ -26,8 +26,6 @@ aliases:
     - "/serverless-in-south-florida-2fdc8147d3df"
 ---
 
-#### Recap of my presentation about Azure Functions, Logic Apps and Event Grid
-
 This year I attended the [South Florida Code Camp](http://www.fladotnet.com/codecamp) for the first time. The event is held on the [Nova University](http://www.nova.edu/) campus in Davie, Florida. My main session covered building serverless apps on Azure. I have the full deck including video of demos embedded below, along with a section that contains links to explore further examples and documentation and the GitHub repo for my sample code.
 
 ![Presentation](/blog/2018-02-12_serverless-in-south-florida/images/1.png)

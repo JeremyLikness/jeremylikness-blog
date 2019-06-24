@@ -1,5 +1,6 @@
 <head>
 	<meta charset="utf-8">
+	{{ partialCached "_shared/csp.html" . }}
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	{{ hugo.Generator }}
 	{{ with .Site.Params.logo }}<link rel="icon" href="{{ . | urlize | relURL }}">{{ end }}

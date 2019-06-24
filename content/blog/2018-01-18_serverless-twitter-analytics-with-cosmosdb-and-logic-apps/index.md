@@ -5,6 +5,7 @@ date: 2018-01-18T16:22:26.138Z
 years: "2018"
 lastmod: 2019-06-13T10:44:36-07:00
 comments: true
+series: "Serverless Link Shortener"
 
 description: "Learn how to use Logic Apps to query CosmosDB documents, authenticate with and search Twitter, and provide insightful analytics without writing code."
 

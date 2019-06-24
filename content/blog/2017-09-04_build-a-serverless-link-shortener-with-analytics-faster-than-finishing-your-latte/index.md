@@ -6,6 +6,7 @@ years: "2017"
 lastmod: 2019-06-13T10:43:45-07:00
 comments: true
 toc: true
+series: "Serverless Link Shortener"
 
 description: "How to leverage Azure Functions, Azure Table Storage, and Application Insights to build a serverless custom URL shortening tool."
 
