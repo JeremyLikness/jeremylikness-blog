@@ -9,7 +9,8 @@ description: "Search across blog posts."
 aliases:
     - "/search"
 ---
-## Search Developer for Life
+Enter your search terms below to find content on this blog.
+
 {{<gsearch>}}
 
 ### Search Results
