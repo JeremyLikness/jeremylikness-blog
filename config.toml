@@ -46,13 +46,13 @@ pygmentsStyle = "friendly"
     "https://use.fontawesome.com",
     "https://fonts.gstatic.com",
     "https://public.slidesharecdn.com",
-    "*.disqus.com",
-    "*.disquscdn.com"]
+    "disqus.com",
+    "disquscdn.com"]
   formaction = ["'self'",
     "https://syndication.twitter.com/",
     "https://platform.twitter.com",
-    "*.disqus.com",
-    "*.disquscdn.com"]
+    "disqus.com",
+    "disquscdn.com"]
   framesrc = ["'self'",
     "https://cse.google.com",
     "www.youtube.com",
@@ -63,8 +63,8 @@ pygmentsStyle = "friendly"
     "https://kuula.co",
     "https://www.slideshare.net",
     "https://www.google.com",
-    "*.disqus.com",
-    "*.disquscdn.com"]
+    "disqus.com",
+    "disquscdn.com"]
   imgsrc = ["'self'",
     "https://jeremylikness.visualstudio.com",
     "https://www.google-analytics.com",
@@ -79,8 +79,8 @@ pygmentsStyle = "friendly"
     "https://syndication.twitter.com",
     "data:",
     "https://files.kuula.io",
-    "*.disqus.com",
-    "*.disquscdn.com"]
+    "disqus.com",
+    "disquscdn.com"]
   objectsrc = ["'none'"]
   stylesrc = ["'self'",
     "'unsafe-inline'",
@@ -90,8 +90,8 @@ pygmentsStyle = "friendly"
     "https://www.google.com",
     "https://platform.twitter.com",
     "*.twimg.com",
-    "*.disqus.com",
-    "*.disquscdn.com"]
+    "disqus.com",
+    "disquscdn.com"]
   scriptsrc = ["'self'",
     "'unsafe-eval'", 
     "'unsafe-inline'",
@@ -106,8 +106,8 @@ pygmentsStyle = "friendly"
     "https://www.google.com",
     "jsfiddle.net",
     "www.instagram.com",
-    "*.disqus.com",
-    "*.disquscdn.com"]
+    "disqus.com",
+    "disquscdn.com"]
 
 ## Main Menu
 [[menu.main]]
