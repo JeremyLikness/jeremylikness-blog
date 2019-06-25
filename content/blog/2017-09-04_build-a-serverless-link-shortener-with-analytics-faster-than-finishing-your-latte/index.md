@@ -444,8 +444,6 @@ What are you waiting for? Head over to the <i class="fab fa-github"></i> [reposi
 
 ![Jeremy Likness](/blog/2017-09-04_build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte/images/12.gif)
 
-
-
 Read the next article in this series:
 
-[Expanding Azure Functions to the Cosmos](https://blog.jeremylikness.com/expanding-azure-functions-to-the-cosmos-423d0cb920a)
+{{<relativelink "/blog/2017-10-10_expanding-azure-functions-to-the-cosmos">}}

@@ -46,8 +46,6 @@ The list goes on, but instead of writing about what it _can_ do, I wrote this po
 
 {{<relativelink "blog/2017-09-04_build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte">}}
 
-🔗 [Build a Serverless Link Shortener with Analytics Faster than Finishing your Latte](/build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte-8c094bb1df2c)
-
 In the article I show how to click a checkbox and add a few lines of code to track App Analytics. In fact, following is the code that tracks three custom items: how long it takes to access an entry in [Azure Table Storage](https://jlik.me/bdy), a count of page views(where the shortening tool is redirecting to), and a summary of custom events (which channel or medium such as Twitter or Facebook is associated with the request). Just look for “BOOM” in the comments.
 
 {{<highlight CSharp>}}
