@@ -2,23 +2,18 @@
 	<meta charset="utf-8">
 	{{ partialCached "_shared/csp.html" . }}
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	{{ if .Params.image }}{{ $original := print "images/" (path.Base .Params.image) }}{{ $originalImg := .Resources.GetMatch $original }}{{ if $originalImg }}{{ $thumbnailImg := $originalImg.Resize "90x" }}{{ printf `<meta name="thumbnail" content="%s">` $thumbnailImg.RelPermalink | safeHTML }}{{end}}{{end}}
 	{{ hugo.Generator }}
-	{{ with .Site.Params.logo }}<link rel="icon" href="{{ . | urlize | relURL }}">{{ end }}
-	{{ if .Params.canonicalUrl }}<link rel="canonical" href="{{ .Params.canonicalUrl }}">{{ end }}
-	{{ $title := printf "%s | %s" .Page.Title .Site.Title }}{{ $mainPage := false }}{{ if eq .Page.Title .Site.Title }}{{ $title = .Page.Title }}{{ $mainPage = true }}{{ end }}
+	{{ with .Site.Params.logo }}<link rel="icon" href="{{ . | urlize | relURL }}">{{ end }}{{ if .Params.canonicalUrl }}
+	<link rel="canonical" href="{{ .Params.canonicalUrl }}">{{ end }}{{ $title := printf "%s | %s" .Page.Title .Site.Title }}{{ $mainPage := false }}{{ if eq .Page.Title .Site.Title }}{{ $title = .Page.Title }}{{ $mainPage = true }}{{ end }}
 	<title>{{ $title }}</title>
 	{{ with or .Page.Description .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with or .Params.tags .Site.Params.keywords  }}{{ with delimit . "," }}<meta name="keywords" content="{{ . }}">{{ end }}{{ end }}
-	
 	{{ with .OutputFormats.Get "rss" -}}{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $title | safeHTML }}{{ end -}}
-
-	{{ if not $mainPage }}
-	{{ printf `<link rel="alternate" type="application/rss+xml" href="%s" title="%s"/>` ( "/index.html" | urlize | absURL) .Site.Title | safeHTML }}{{ end }}
+	{{ if not $mainPage }}{{ printf `<link rel="alternate" type="application/rss+xml" href="%s" title="%s"/>` ( "/index.html" | urlize | absURL) .Site.Title | safeHTML }}{{ end }}
 	<!-- twitter and open graph support -->
-	{{ if or .Params.image .Site.Params.author.thumbnail }}
-	<meta name="twitter:card" content="summary_large_image" />
-	{{ with or .Params.image .Site.Params.author.thumbnail }}
-	<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+	{{ if or .Params.image .Site.Params.author.thumbnail }}<meta name="twitter:card" content="summary_large_image" />
+	{{ with or .Params.image .Site.Params.author.thumbnail }}<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
 	{{ else }}
 	<meta name="twitter:card" content="summary" />{{ end }}
 	<meta name="twitter:creator" content="@JeremyLikness" />

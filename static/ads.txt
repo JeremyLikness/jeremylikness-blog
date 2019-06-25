@@ -1,0 +1,2 @@
+google.com, pub-6260988440727507, DIRECT, f08c47fec0942fa0
+amazon-adsystem.com, cei0e-20, DIRECT
