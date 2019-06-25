@@ -76,6 +76,7 @@ pygmentsStyle = "friendly"
     "https://jeremylikness.visualstudio.com",
     "https://www.google-analytics.com",
     "https://stats.g.doubleclick.net",
+    "https://pagead2.googlesyndication.com",
     "*.google.com",
     "*.gstatic.com",
     "*.amazon-adsystem.com",
