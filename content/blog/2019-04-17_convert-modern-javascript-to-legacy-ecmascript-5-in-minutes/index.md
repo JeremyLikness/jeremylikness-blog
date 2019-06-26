@@ -26,7 +26,7 @@ aliases:
 
 I recently posted a “quick start” guide for building Single Page Apps using the “Vanilla” JavaScript framework:
 
-[🔗 Vanilla.js — Getting Started](https://blog.jeremylikness.com/vanilla-js-getting-started-5df2553df0f0)
+{{<relativelink "/blog/2019-04-09_vanilla.jsgetting-started">}}
 
 It is intended as a bit of a parody and mimics the quick start of a very popular framework. I’m not trying to state that all frameworks are bad, but it is important to point out how far the JavaScript language specification has evolved. It illustrates what is possible without loading third-party frameworks or involving complicated build processes.
 

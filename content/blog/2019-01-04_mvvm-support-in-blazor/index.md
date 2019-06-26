@@ -28,7 +28,7 @@ aliases:
 
 I recently ported an Angular app to Blazor and wrote about it here:
 
-🔗 [From Angular to Blazor: The Health App](/from-angular-to-blazor-the-health-app-2e36077d641c)
+{{<relativelink "blog/2019-01-03_from-angular-to-blazor-the-health-app">}}
 
 I noticed immediately that Blazor’s built in change detection works great inside of components (i.e. if you mutate a property on the model, dependent HTML will re-render). You don’t have to do anything special with your model. Updates simply refresh the component! The catch is that other components don’t automatically refresh, so you need to implement a mechanism for change detection across components.
 

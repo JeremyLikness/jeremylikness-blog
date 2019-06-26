@@ -333,7 +333,7 @@ _“But wait — what if I have to support legacy browsers?”_
 
 Read this!
 
-{{<iconlink "https://blog.jeremylikness.com/convert-modern-javascript-to-legacy-ecmascript-5-in-minutes-464b3d75f01f" "Convert Modern JavaScript to Legacy (ECMAScript 5) in Minutes">}}
+{{<relativelink "/blog/2019-04-17_convert-modern-javascript-to-legacy-ecmascript-5-in-minutes">}}
 
 Regards,
 

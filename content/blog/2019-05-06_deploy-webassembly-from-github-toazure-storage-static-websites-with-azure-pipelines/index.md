@@ -57,7 +57,7 @@ Wasm is stored in a static file that can be loaded along with HTML, JavaScript, 
 
 I wrote a series of articles to document my investigation of WebAssembly beginning with a unique framework called [Blazor](https://jlik.me/fux). Start with the .NET Framework — including the Common Language Runtime (CLR) — build it on top of WebAssembly, then add functionality to render and manage Single Page Applications using Razor templates and C#, and the result is Blazor (Browser + Razor templates). My first step in learning the framework was to [port an existing Angular 2 app](https://jlik.me/fuy). I then [created a Blazor presentation](https://jlik.me/fu1) with several example applications:
 
-[🔗 Presentation: WebAssembly, C#, and Blazor at CodeStock 2019](https://blog.jeremylikness.com/presentation-webassembly-c-and-blazor-at-codestock-2019-ab2f8636356)
+{{<relativelink "/blog/2019-04-16_presentation-webassembly-c-sharp-and-blazor-at-codestock-2019">}}
 
 After recording and publishing a video series about [Azure DevOps for .NET Developers](https://jlik.me/fu2), I immediately realized that because the demo apps are Single Page Apps deployed as a set of static assets, I can host them on storage and automate the build and deployment.
 
@@ -145,7 +145,7 @@ Someone wiser than me once said that to truly learn a technology, you should alw
 
 I wrote about my experiments here:
 
-[🔗 Play the Chaos Game to Understand WebAssembly Memory Management](https://blog.jeremylikness.com/play-the-chaos-game-to-understand-webassembly-memory-management-5feaa7553a5)
+{{<relativelink "/blog/2019-04-22_play-the-chaos-game-to-understand-webassembly-memory-management">}}
 
 Installing the tool chain is not straightforward and involves several steps. Fortunately, the entire development environment is configured and hosted in a Docker container. I chose to take advantage of that for my [Emscripten build pipeline](https://github.com/JeremyLikness/wasm-trees/blob/master/azure-pipelines.yml).
 
@@ -194,7 +194,7 @@ Go is a powerful language that supported multiple platforms from the beginning. 
 
 I wrote about it here:
 
-[🔗 Gopher meet Plasma: A WebAssembly Experiment](https://blog.jeremylikness.com/gopher-meet-plasma-a-webassembly-experiment-4048e4d3b8d7)
+{{<relativelink "/blog/2019-03-03_gopher-meet-plasma-a-webassembly-experiment">}}
 
 Go also provides a fully configured Docker container. Here is the [build pipeline](https://github.com/JeremyLikness/PlasmaWasmGo/blob/master/azure-pipelines.yml):
 
@@ -246,7 +246,7 @@ The Rust 🦀 language is ideally suited to WebAssembly development. Unlike Go a
 
 I wrote about the experience here:
 
-[🔗 Plasma gets Rust-y: Another WebAssembly Experiment](https://blog.jeremylikness.com/plasma-gets-rust-y-another-webassembly-experiment-bde6abf3061c)
+{{<relativelink "/blog/2019-03-07_plasma-gets-rusty-another-webassembly-experiment">}}
 
 The [Rust build pipeline](https://github.com/JeremyLikness/PlasmaWasmRust/blob/master/azure-pipelines.yml) is significantly different that the previous ones.
 
