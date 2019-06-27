@@ -31,13 +31,19 @@ aliases:
 
 ![Screenshot of Health App](/blog/2019-01-03_from-angular-to-blazor-the-health-app/images/1.png)
 
-To see the application in action, [click here](https://jlik.me/ev5) for a compiled version. This post was written with version 0.7.0 of Blazor.
+To see the application in action: 
 
-Over four years ago, I wrote a “[health app](https://github.com/JeremyLikness/AngularHealthApp/)” in [Angular.js 1.2.9](https://code.angularjs.org/1.2.9/). The goal was to create a very simple reference application that went beyond “Hello, world” and “todo list” to demonstrate features like dependency injection, reusable components, and databinding. The app itself features controls for the user to input information and computes Basal Metabolic Rate, Body Mass Index, and Target Heart Rate in real-time.
+👀 [Live Demo](https://jlik.me/ev5)
 
-I later migrated the app to [leverage a new version of JavaScript](https://github.com/JeremyLikness/AngularES6HealthApp), ported it to [Angular 2](https://github.com/JeremyLikness/Angular2HealthApp/), and updated it to use [Redux](https://github.com/JeremyLikness/Angular2ReduxKendoUIHealthApp). I chose this app to port to Blazor because it is a lightweight Single Page Application with no external dependencies and makes a great clementines-to-tangerines comparison.
+This post was written with version 0.7.0 of Blazor.
 
-Source code for the Blazor app is available [here](https://github.com/JeremyLikness/BlazorHealthApp).
+Over four years ago, I wrote a “<i class="fab fa-github"></i> [health app](https://github.com/JeremyLikness/AngularHealthApp/)” in [Angular.js 1.2.9](https://code.angularjs.org/1.2.9/). The goal was to create a very simple reference application that went beyond “Hello, world” and “todo list” to demonstrate features like dependency injection, reusable components, and databinding. The app itself features controls for the user to input information and computes Basal Metabolic Rate, Body Mass Index, and Target Heart Rate in real-time.
+
+I later migrated the app to <i class="fab fa-github"></i> [leverage a new version of JavaScript](https://github.com/JeremyLikness/AngularES6HealthApp), ported it to <i class="fab fa-github"></i> [Angular 2](https://github.com/JeremyLikness/Angular2HealthApp/), and updated it to use <i class="fab fa-github"></i> [Redux](https://github.com/JeremyLikness/Angular2ReduxKendoUIHealthApp). I chose this app to port to Blazor because it is a lightweight Single Page Application with no external dependencies and makes a great clementines-to-tangerines comparison.
+
+Source code for the Blazor app is available here:
+
+{{<github "JeremyLikness/BlazorHealthApp">}}
 
 I built the app quickly, so I did not write an exhaustive suite of tests. In the future I may refactor this app and leverage tests (probably once Blazor reaches a stable version) but for now I just wanted to get to something functional.
 
@@ -469,7 +475,11 @@ The weight component uses very similar logic. This is one of those areas it may 
 
 ## Deployment
 
-Client-side Blazor produces a set of static assets that can be served from any web platform. The only caveat is that the web server needs to understand the appropriate MIME types. I hosted this sample app in an extremely inexpensive instance of [Azure storage](https://jlik.me/ev6). If you wish to do the same, follow Anthony Chu’s excellent blog post: [Hosting a Blazor App in Azure Storage Static Websites](https://jlik.me/ev7).
+Client-side Blazor produces a set of static assets that can be served from any web platform. The only caveat is that the web server needs to understand the appropriate MIME types. I hosted this sample app in an extremely inexpensive instance of [Azure storage](https://jlik.me/ev6).
+
+If you're curious about the steps involved, check out:
+
+{{<relativelink "/blog/2019-05-06_deploy-webassembly-from-github-toazure-storage-static-websites-with-azure-pipelines">}}
 
 ## Summary
 
