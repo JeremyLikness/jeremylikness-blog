@@ -7,10 +7,21 @@ trigger:
 - master
 
 pool:
-  vmImage: 'vs2017-win2016'
+  vmImage: 'ubuntu-16.04'
 
 steps:
+
+- task: DockerInstaller@0
+  inputs:
+    dockerVersion: '17.09.0-ce'
+  displayName: 'Install Docker CLI'
   
+- task: Docker@2
+  inputs:
+    containerRegistry: 'DeveloperforLifeRegistry'
+    command: 'login'
+  displayName: 'Login to registry'
+
 - script: git submodule init
   workingDirectory: '$(Build.Repository.LocalPath)/themes/mediumish-gohugo-theme'
   displayName: 'Init theme'
@@ -19,11 +30,8 @@ steps:
   workingDirectory: '$(Build.Repository.LocalPath)/themes/mediumish-gohugo-theme'
   displayName: 'Update theme'
 
-- script: choco install hugo -confirm
-  displayName: 'Install Hugo'
-
-- script: hugo
-  workingDirectory: '$(Build.Repository.LocalPath)'
+- script: docker run --rm -v $(Build.Repository.LocalPath):/usr/site -w /usr/site developerforlife.azurecr.io/dev4lifehugo:v2 hugo
+  workingDirectory: $(Build.Repository.LocalPath)
   displayName: 'Generate website'
 
 - task: PublishBuildArtifacts@1
