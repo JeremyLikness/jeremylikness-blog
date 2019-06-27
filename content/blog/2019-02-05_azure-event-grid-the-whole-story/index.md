@@ -67,7 +67,7 @@ In response to the events, three workflows are kicked off:
 
 The important thing to note is that all these processes are built independently of the main application. After it sends the appropriate messages, the rest of the application can be built independently with multiple workflows kicked off by the same messages. This enables not only application scale, but the ability to scale development teams as the product grows.
 
-🔗 [Access the GitHub repository for the Tailwind Traders example](https://jlik.me/e12)
+<i class="fab fa-github"></i>  [Access the GitHub repository for the Tailwind Traders example](https://jlik.me/e12)
 
 ## Terminology
 
@@ -139,7 +139,7 @@ public async Task RaiseEvent(SkuMessageType type, IInventoryItem item)
 
 It is not necessary to use the SDK. Any language or platform that supports setting an authentication header and issuing an HTTP POST is capable of publishing to Event Grid. This is the .NET Core code to publish without using the SDK.
 
-🔗 [Access the GitHub repository for the “//build Event Grid” example](https://jlik.me/e13)
+<i class="fab fa-github"></i> [Access the GitHub repository for the “//build Event Grid” example](https://jlik.me/e13)
 
 {{<highlight CSharp>}}
 private static async Task SendEvent(string msg)
@@ -225,7 +225,7 @@ Event Grid uses a proprietary schema to wrap messages. The Event Grid team worke
 
 {{<youtube YtleFM0tZxk>}}
 
-#### Consume Event Grid Messages from Azure Logic Apps
+### Consume Event Grid Messages from Azure Logic Apps
 
 The final video shows an alternate way to consume events via [Azure Logic Apps](https://jlik.me/e1z) to kick of integrations and workflows.
 
@@ -241,6 +241,6 @@ A major benefit of Event Grid is the ability to manage all of your events in one
 
 👍🏻 You can learn more about Azure Event Grid and get started by visiting the comprehensive [Event Grid documentation](https://jlik.me/e1r).
 
-🔗[Access the GitHub repository for the Tailwind Traders example](https://jlik.me/e12)
+<i class="fab fa-github"></i> [Access the GitHub repository for the Tailwind Traders example](https://jlik.me/e12)
 
-🔗 [Access the GitHub repository for the “//build Event Grid” example](https://jlik.me/e13)
+<i class="fab fa-github"></i> [Access the GitHub repository for the “//build Event Grid” example](https://jlik.me/e13)

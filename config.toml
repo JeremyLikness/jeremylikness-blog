@@ -59,6 +59,7 @@ pygmentsStyle = "friendly"
     "*.disquscdn.com"]
   framesrc = ["'self'",
     "https://cse.google.com",
+    "https://player.vimeo.com",
     "www.youtube.com",
     "https://platform.twitter.com",
     "https://syndication.twitter.com",

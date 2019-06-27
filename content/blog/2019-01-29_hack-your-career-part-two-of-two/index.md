@@ -70,7 +70,7 @@ Some specific email-related tips that helped my productivity explode:
 
 If you are curious how I maximize my personal productivity, take a few minutes to read this:
 
-🔗 [Raise Your Signal-to-Noise Ratio](/raise-your-signal-to-noise-ratio-333ebc8ec49d)
+{{<relativelink "/blog/2018-02-22_raise-your-signaltonoise-ratio">}}
 
 ## 7. Network FOR REAL
 

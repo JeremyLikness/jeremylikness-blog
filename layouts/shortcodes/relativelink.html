@@ -1,4 +1,4 @@
-{{$page := .Site.GetPage (.Get 0)}}<div class="alert alert-secondary">
+{{$page := .Site.GetPage (.Get 0)}}<div class="container alert alert-secondary">
     <div><a href="{{$page.RelPermalink}}" alt="{{$page.Title}}"><strong>{{ $page.Title }}</strong></a></div>
     <div class="float-left m-2">
 {{ if $page.Params.image }}{{ $original := print "images/" (path.Base $page.Params.image) }}{{ $originalImg := $page.Resources.GetMatch $original }}{{ if $originalImg }}{{ $thumbnailImg := $originalImg.Fit "200x100" }}{{ printf `<img src="%s">` $thumbnailImg.RelPermalink | safeHTML }}{{end}}{{end}}

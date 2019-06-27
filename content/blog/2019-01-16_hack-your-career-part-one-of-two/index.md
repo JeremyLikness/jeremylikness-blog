@@ -45,7 +45,7 @@ I’ve always been into computers. It’s hard to read the text, but below is a 
 
 Yes, even in middle school I was a software engineer. As a side note, for the history of languages and platforms I’ve developed on, check out this article:
 
-🔗 [30 Years of “Hello, World”](/30-years-of-hello-world-6f2982d8ee83)
+{{<relativelink "blog/2016-02-28_30-years-of-hello-world">}}
 
 I’ve done very well over the course of my career. What do I mean by “well”? Success means something different to everyone. To me, it’s been a balance of doing what I enjoy and impacting others, while selfishly having more time to spend with family and increasing my income. I’ve left the 100-hour start-up work week far behind, associate with amazing people I learn from every day, and travel around the world to connect with developers where they live.
 
@@ -76,7 +76,7 @@ I told you this was a selfish presentation! Seriously, though, the reason I’m 
 With that, here are my tips to hack your career (not to be confused with pursuing a career in hacking).
 
 ![LinkedIn Profile Image](/blog/2019-01-16_hack-your-career-part-one-of-two/images/3.png)
-<figcaption>My [LinkedIn](https://linkedin.com/in/jeremylikness) Profile</figcaption>
+<figcaption>My <i class="fab fa-linkedin"></i> [LinkedIn](https://linkedin.com/in/jeremylikness) Profile</figcaption>
 
 ## 1. Stop Doing What You’re Told
 
