@@ -1,0 +1,10 @@
+archetypes
+content
+data
+layouts
+public
+resources
+static
+themes
+azure-pipelines.yml
+config.toml
