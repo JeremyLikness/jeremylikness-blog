@@ -5,6 +5,7 @@ date: 2003-06-13T00:00:00.000Z
 lastmod: 2019-06-13T10:43:10-07:00
 comments: true
 toc: true
+noads: true
 
 description: "Privacy Policy for Developer for Life."
 

@@ -86,8 +86,10 @@
                 </p>
                 {{end}}
 
+                {{ if not .Params.noads }}
                 {{ partial "_shared/banner.html" }}
-                
+                {{ end }}
+
                 <!-- Post Categories -->
                 <div class="after-post-tags">
                     <ul class="tags">
@@ -117,7 +119,7 @@
     </div>
     <!-- End Article
         ================================================== -->
-    {{ if .Params.comments }}
+    {{ if and (.Params.comments) (not .Params.noads) }}
     {{- partial "single-partials/comments.html" . -}}
     {{ end }}
 </div>
