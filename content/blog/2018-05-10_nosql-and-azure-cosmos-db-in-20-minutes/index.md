@@ -40,7 +40,7 @@ The flights example leveraging the Gremlin Graph API and the SQL API is availabl
 
 You can download the full deck by [clicking here](https://jlikme.blob.core.windows.net/presentations/THR3511_Likness.pptx). One topic I was not able to cover in detail is consistency levels. This can be confusing to developers who haven’t worked with distributed non-relational databases, so I wrote a blog post to help explain consistency levels using the analogy of a billiards tournament.
 
-🔗 [Getting Behind the 9-Ball: CosmosDB Consistency Levels](/cloud-nosql-azure-cosmosdb-consistency-levels-cfe8348686e6)
+{{<relativelink "/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels">}}
 
 This is the full video of my Build presentation:
 
@@ -50,9 +50,11 @@ If you like what you see and want to dig deeper, be sure to check out the recap 
 
 A few other blog posts you may want to explore:
 
-* [Video: getting started with the SQL API](/getting-started-with-cosmosdb-sql-api-da52719f30de)
-* [Integrating Azure Cosmos DB with Power BI](/exploring-cosmosdb-with-powerbi-9192317087d8)
-* [Expanding Azure Functions to the Cosmos](/expanding-azure-functions-to-the-cosmos-423d0cb920a)
+{{<relativelink "/blog/2017-12-18_get-started-with-cosmosdb-sql-api">}}
+
+{{<relativelink "/blog/2017-10-12_exploring-the-cosmosdb-with-power-bi">}}
+
+{{<relativelink "/blog/2017-10-10_expanding-azure-functions-to-the-cosmos">}}
 
 Ready to get started? You can [click here](https://jlik.me/dhi) to get started with the full Azure Cosmos DB documentation.
 
