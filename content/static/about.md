@@ -13,6 +13,8 @@ aliases:
     - "/@jeremylikness"
 ---
 
+[Click here](/privacy) to view our privacy policy.
+
 My name is Jeremy Likness. I've been writing code for a _long time_... over 30 years! I am a developer for life.
 
 My current mission is to **empower developers to be their best.** I do this several ways: connecting with community (both online and offline), creating and curating great content, and working directly with engineers. Keep up with my curated content by [following me on Twitter](https://twitter.com/jeremylikness). The content I create is mostly hosted here, on this blog!
