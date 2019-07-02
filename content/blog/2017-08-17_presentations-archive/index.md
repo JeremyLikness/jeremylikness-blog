@@ -35,6 +35,25 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
+## .NET Developers Association (Eastside and Westside) 2019
+
+* Bare Metal Web Assembly
+
+    ⬇[Download presentation deck](https://jlikme.blob.core.windows.net/presentations/Likness-WebAssembly-BareMetal.pptx)
+
+## NDC Oslo 2019
+
+_Oslo, Norway (June 17-21, 2019)_
+
+<i class="fab fa-twitter"></i> [Twitter highlights](https://twitter.com/i/moments/1141302379285045249)
+
+* Advanced Serverless Workflows with Durable Functions
+    {{<twitter 1141390186250739717>}}
+
+Watch the related article (includes full video of presentation):
+
+{{<relativelink "/blog/stateful-serverless-long-running-workflows-with-durable-functions">}}
+
 ## Refactr.Tech 2019
 
 _Atlanta, GA (Jun 7-8, 2019)_
@@ -57,6 +76,8 @@ I had the opportunity to travel to several cities, including Toronto, Johannesbu
 ## Inaugural .NET South Conference 2019  
 
 _Atlanta, GA (May 13–14, 2019)_
+
+<i class="fab fa-twitter"></i> [Twitter Highlights](https://twitter.com/i/moments/1129119097461985280)
 
 [Managing Data 📈 in the Cloud ☁](https://blog.jeremylikness.com/managing-data-in-the-cloud-82c5fa0be9d1)
 

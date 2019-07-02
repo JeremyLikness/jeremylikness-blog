@@ -1,12 +1,12 @@
 ---
 title: "Stateful Serverless: Long-Running Workflows with Durable Functions"
 author: "Jeremy Likness"
-date: 2019-07-01T00:00:00.000Z
+date: 2019-07-02T00:00:00.000Z
 years: "2019"
-lastmod: 2019-07-01T00:00:00.000Z
-canonicalUrl: https://blog.jeremylikness.com
+lastmod: 2019-07-02T00:00:00.000Z
+canonicalUrl: https://medium.com/microsoftazure/stateful-serverless-long-running-workflows-with-durable-functions-39ef5c96440b
 toc: true
-draft: true
+draft: false
 
 description: "Learn how to implement long running stateful workflows in a serverless architecture using Durable Functions, the combination of the open source Durable Task Framework and Azure Functions."
 
