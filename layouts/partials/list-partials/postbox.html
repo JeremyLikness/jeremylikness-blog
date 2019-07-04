@@ -13,7 +13,7 @@
             {{if eq .Page.Kind "taxonomy"}}
             <h4 class="card-text">{{ len .Data.Pages }} post(s).</h4>
             {{else}}
-            <h4 class="card-text">{{ .Summary }}</h4>{{end}}            
+            <h4 class="card-text">{{ .Description }}</h4>{{end}}            
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
