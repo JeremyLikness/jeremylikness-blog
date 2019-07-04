@@ -14,3 +14,8 @@ p.subtitle {
     src: local();
     font-display: auto;
 }
+.smallerthumb {
+    max-height: 100px;
+    padding: 2px;
+    overflow: hidden;
+}

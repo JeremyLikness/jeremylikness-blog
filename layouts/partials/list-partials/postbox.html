@@ -1,9 +1,9 @@
 <!-- begin post -->
 <div class="col-lg-4 col-md-6 mb-30px card-group">
-    <div class="card h-100">
-        <div class="maxthumb">
+    <div class="card h-100">{{ $image := .Params.image }}{{ $class := "maxthumb" }}{{if eq .Page.Kind "taxonomy"}}{{ $class = "smallerthumb" }}{{ range first 1 .Data.Pages }}{{ $image = .Params.image }}{{ end }}{{ end }}
+        <div class="{{ $class }}">
             <a href="{{ .RelPermalink }}">                
-                {{with .Params.image}}
+                {{with $image}}
                     <img class="img-fluid" src="{{ . | urlize | relURL }}" alt="A thumbnail image">
                 {{end}}                
             </a>
