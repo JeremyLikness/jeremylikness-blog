@@ -1,11 +1,11 @@
 ---
-title: "Migrate From Medium to Hugo"
+title: "Migrate from Medium to Hugo"
 author: "Jeremy Likness"
-date: 2019-07-02T10:43:25-07:00
+date: 2019-07-04T10:43:25-07:00
 years: "2019"
-lastmod: 2019-07-02T10:43:25-07:00
+lastmod: 2019-07-04T10:43:25-07:00
 
-draft: true
+draft: false
 comments: true
 toc: true
 
@@ -35,7 +35,7 @@ In 2017 I set out to migrate my blog from the aged Blogger platform to something
 
 {{<relativelink "2017-08-20_reflecting-on-15-years-of-blogging">}}
 
-Fast forward a few years, and although all of the reasons for migrating still hold true, there are new developments that made me rethink my strategy. Like most companies, Medium has figured out they need to profit. On the surface, they _really_ want me to make money.
+Fast forward a few years, and although all the reasons for migrating still hold true, there are new developments that made me rethink my strategy. Like most companies, Medium has figured out they need to profit. On the surface, they _really_ want me to make money.
 
 ![A new option to get rich](/blog/migrate-from-medium-to-hugo/images/earnmoney.jpg)
 <figcaption>A new option to get rich</figcaption>
@@ -45,45 +45,45 @@ Of course, Medium gets to take a cut of profits so they are very motivated to ge
 ![Paywall shaming](/blog/migrate-from-medium-to-hugo/images/paywall.jpg)
 <figcaption>Paywall shaming</figcaption>
 
-I have nothing against a company earning a profit. I do, however, prefer that my articles remain free and in the open. Would I like to make some pocket change and become a hundrednaire for my efforts? Who wouldn't! But I prefer less invasive ways, such as advertisements that you can easily block or opt-out of. I am also concerned that if Medium doesn't start turning profits, they could likely become more aggressive or even out of business. Just recently, I was reading an article and was presented with this:
+I have nothing against a company earning a profit. I do, however, prefer that my articles remain free and in the open. Would I like to make some pocket change and become a hundredaire for my efforts? Who wouldn't! But I prefer less invasive ways, such as advertisements that you can easily block or opt-out of. I am also concerned that if Medium doesn't start turning profits, they could likely become more aggressive or even out of business. Just recently, I was reading an article and was presented with this:
 
 ![Upgrade](/blog/migrate-from-medium-to-hugo/images/nextchapter.jpg)
 <figcaption>Upgrade</figcaption>
 
 This is _not_ what I want my readers to see! So, I set out once again to move. This time, I chose to take control of my own fate and not use a service but build, generate, and host everything on my own.
 
-Medium allows authors to retain the full rights to their publications and has an export option to download stories I've written. Unfortunately, the export provides an ill-formatted dump of HTML that isn't directly migratable to other platforms. After extensive research, I decided that I would go with [Hugo](https://gohugo.io) as my platform. There are several reasons I chose this platform:
+Medium allows authors to retain the full rights to their publications and has an export option to download stories I've written. Unfortunately, the export provides an ill-formatted dump of HTML that isn't directly migratable to most other platforms. After extensive research, I decided that I would go with [Hugo](https://gohugo.io) as my platform. There are several reasons I chose Hugo over the other options I explored:
 
 * Hugo generates static content, period. I don't have to layer something on top like the React library as is the case with Gatsby.
 * Hugo is extremely fast.
 * Hugo provides a local live-reload server so I can see exactly what I'm editing.
-* Hugo has a huge ecosystem of themes that would make porting my articles over easier. 
+* Hugo has a huge ecosystem of themes that made it easier to style my ported articles.
 * Hugo is very customizable.
-* It's based on Go, and Go is just fun.
+* It's based on [Go](https://golang.org) and Go is just fun.
 
-This doesn't mean the same reasons apply to you, so I encourage you to do your own research and download various tools to take them for a spin. I felt I was able to figure out Hugo and get to a basic site faster than other tools. The only caveat is that you have to learn Hugo's syntax for generating templates, but that felt easy to me.
+This doesn't mean the same reasons apply to you, so I encourage you to do your own research and download various tools to take them for a spin. I felt I was able to figure out Hugo and get to a basic site faster than other tools. The only caveat is that you must learn Hugo's syntax for generating templates, but that felt easy to me.
 
 The decision was made, next I had to figure out the migration.
 
 ## First Pass
 
-After researching my options I decided to start with a tool for migrating Medium to Hugo:
+After researching my options, I decided to start with a tool for migrating Medium to Hugo:
 
 {{<github "bgadrian/medium-to-hugo">}}
 
-This tool takes the Medium export (there are instructions on the site on how to obtain this) and parses it into markdown. Although Medium treats comments like stories of their own, this tool is smart enough to skip comments and just bring over posts. I also really liked the format it used, with created separate folders for the friendly URLs and organizing images together. Instead of referencing images on Medium's network, it downloads them and stores them locally so there are absolutely no dependencies on Medium when it's done.
+This tool takes the Medium export (there are instructions on the site on how to obtain this) and parses it into markdown. Although Medium treats comments like stories of their own, this tool is smart enough to skip comments and just bring over posts. I also really liked the format it used, creating separate folders for each article to provide friendly URLs and organize related images together. Instead of referencing images on Medium's network, it downloads them and stores them locally so there are absolutely no dependencies on Medium when it's done.
 
-Hugo works with templates, and after a short search I found the [mediumish](https://themes.gohugo.io/mediumish-gohugo-theme/) theme that provides a look-and-feel very similar to Medium. I like the clean style and design, so I pulled that in. I love Hugo's approach to customizations: I can import the theme "as is" then override templates by copying them into a local project folder for the changes. This way the original theme stays intact and my custom changes can iterate independently.
+Hugo works with templates, and after a short search I found the [mediumish](https://themes.gohugo.io/mediumish-gohugo-theme/) theme that provides a look-and-feel very similar to Medium. I like the clean style and design, so I pulled that in. I love Hugo's approach to customizations: I can import the theme "as is" then override templates by copying them into a local project folder for the changes. This way the original theme stays intact, and my custom changes can iterate independently.
 
-After running the import tool I eagerly spun up the website and was very happy with the results ... until I started spot checking posts. It turns out there is a lot of content the tool doesn't bring over. I embed a lot of video, used [Gist](https://gist.github.com/) for code highlighting, and had some other embeds including slide decks and 360° photos.
+After running the import tool, I eagerly spun up the website and was very happy with the results ... until I started spot-checking posts. It turns out there is a lot of content the tool doesn't bring over. I embed a lot of video, used [Gist](https://gist.github.com/) for code highlighting, and had some other embeds including slide decks and 360° photos.
 
-In Medium, a YouTube video is completely embedded and the export contains the video markup. A YouTube link looks something like this: `https://youtu.be/XXX`. In Hugo, the syntax to embed the video is this:
+In Medium, a YouTube video is completely embedded, and the export contains the video markup. A YouTube link looks something like this: `https://youtu.be/XXX`. In Hugo, the syntax to embed the video is this:
 
 ```text
 {{</* youtube XXX */>}}
 ```
 
-In Medium, I used Gist to embed code. Using Hugo you can embed code inline and highlight it as part of the generated page:
+In Medium, I used Gist to embed code. Using Hugo, you can embed code inline and highlight it as part of the generated page:
 
 ```text
 {{</* highlight CSharp */>}}
@@ -107,17 +107,17 @@ private static readonly Regex youtube =
 A parser then extracts the matches and converts them to Hugo-style code:
 
 {{<highlight CSharp>}}
-Parse("YouTube", youtube, input, sb, match => $"{{{{</*% youtube {match.Groups[1]} */>}}}}");
+Parse("YouTube", youtube, input, sb, match => $"{{{{</* youtube {match.Groups[1]} */>}}}}");
 {{</highlight>}}
 
 The "gist" extraction was a little more involved. The pseudo-code:
 
-1. Find the embeds in the page
-2. For each embed, download the actual gist
-3. Use the extension to map a code type (i.e. `.js` -> `JavaScript`)
-4. Parse the link to the raw code from the downloaded gist
-5. Fetch the raw code
-6. Write it out inside a set of `highlight` tags
+1. Finds the gist embeds in the page
+2. For each embed, downloads the actual gist
+3. Uses the extension on the filename of the gist to map a code type (i.e. `.js` -> `JavaScript`)
+4. Parses the link for raw code from the downloaded gist
+5. Fetches the raw code
+6. Writes it out inside a set of `highlight` tags
 
 Here's the code for those interested (yeah, I used synchronous code, don't @ me!):
 
@@ -152,7 +152,7 @@ private string ParseGist(Match match)
 }
 {{</highlight>}}
 
-> **Pro Tip:** It is possible to embed Hugo short codes if you know how to escape them. Using `{{</*highlight*/>}}` in a code snippet for example will try to expand that code snippet as a shortcode. The reason you are able to see it as text is because I escape it in the source, like this: `{{</*/*highlight*/*/>}}`. The asterisks instruct Hugo to pass through whatever is inside the braces without interpreting it as a short code.
+> **Pro Tip:** It is possible to embed Hugo short codes in your code samples if you know how to escape them. Using `{{</*highlight*/>}}` in a code snippet for example will try to expand that code snippet as a short code. The reason it shows as text and doesn't get evaluated is because I escaped it in the source, like this: `{{</*/*highlight*/*/>}}`. The asterisks instruct Hugo to pass through whatever is inside the braces without interpreting it as a short code.
 
 The output after running the utility is a text file with the same name as the blog post, with content like this:
 
@@ -184,7 +184,7 @@ Although I still had to manually copy and paste, I now had entire blocks that I 
 
 ## The Power of Short Codes
 
-A Hugo feature I absolutely love is the ability to generate HTML from your markdown using custom short codes. For example, many of my blog posts feature 360° photos hosted by [Kuula](https://kuula.co/profile/JeremyLikness). Hugo doesn't have an existing way to render these. No problem! In my `shortcodes` folder I drop an HTML file named `kuula.html` with this content:
+A Hugo feature I absolutely love is the ability to generate HTML from your markdown using custom short codes. For example, many of my blog posts feature 360° photos hosted by [Kuula](https://kuula.co/profile/JeremyLikness). Hugo doesn't have an existing way to render these. No problem! In my `shortcodes` folder I dropped an HTML file named `kuula.html` with this content:
 
 {{<highlight html>}}
 <iframe width="100%" height="640" 
@@ -210,7 +210,7 @@ There was no easy way to migrate comments from Medium to the static website. Unf
 ![Disqus comments](/blog/migrate-from-medium-to-hugo/images/comments.jpg)
 <figcaption>Disqus comments</figcaption>
 
-> **Disqus tip:** by default the free Disqus tracks information about visitors to your site that is shared with advertisers. I assume this is part of the model that supports the free version. This is "on" by default, but you can turn it off in your control panel. I turned off everything but the bare minimum needed to comment/reply.
+> **Disqus tip:** By default, the free Disqus tracks information about visitors to your site that is shared with advertisers. I assume this is part of the model that supports the free version. This is "on" by default, but you can turn it off in your control panel. I turned off everything but the bare minimum needed to comment/reply.
 
 ## Table of Contents
 
@@ -264,9 +264,9 @@ aliases:
 ---
 {{</highlight>}}
 
-The "years" and "series" tags I created for taxonomy purposes, more on that in the next section. Date was auto-migrated. The image is the featured image. I removed the auto-display of the featured image from the post template so I can place it in a logical spot within the article. The "images" list is useful for parsing resources programmatically like I did for a few advanced customizations I'll describe in future blog posts. Finally, the alias is auto-imported from Medium and preserves the original link. Hugo generates a permanent redirect to the new article URL.
+The "years" and "series" tags I created for taxonomy purposes, more on that in the next section. Date was automatically set as part of the migration. The image is the featured image. I removed the auto-display of the featured image from the post template so I can place it in a logical spot within the article. The "images" list is useful for parsing resources programmatically like I did for a few advanced customizations I'll describe in future blog posts. Finally, the alias is automatically imported from Medium to preserve the original link. Hugo generates a permanent redirect to the new article URL.
 
-With my default template in place, I can create an _archetype_ to simply creating new content:
+With my default template in place, I can create an _archetype_ to simplify creating new content:
 
 {{<highlight yaml>}}
 ---
@@ -315,7 +315,7 @@ Another feature I love about Hugo is the ability to group articles in custom dim
   tag = "tags"
 {{</highlight>}}
 
-This will generate a list of tags at the `/tags` path, and a list of articles that belong to a tag at `/tags/tag`. For example, this article is sets the tags like this:
+This will generate a list of tags at the `/tags` path, and a list of articles that belong to a tag at `/tags/tag`. For example, this article sets the tags like this:
 
 {{<highlight yaml>}}
 tags:
@@ -349,7 +349,7 @@ When the page type is `taxonomy` it is rendering an actual dimension, so it will
 
 To make it easier to scroll through archives, I also wanted a taxonomy by year. I defined this in the `config.toml` with `year = "years"` and for any article I want to appear in the archive listing, I add `year = "2019"` in the front matter. This will ensure it appears in [/years/2019](/years/2019). (Yes, it's really as simple as that.)
 
-I also decided certain article can be grouped together as a "series" so I created a series taxonomy: `series = "series"` and set the series title in the front matter: `series = "From Medium to Hugo"` and that creates a page at [/series/from-medium-to-hugo/](/series/from-medium-t-hugo). The default sort for pages is most recent first. In the view by year and the view for a series, I want the articles sorted ascending order by date so that "2013" comes before "2014" and the first article in the series comes before the second article in the series.
+I also decided that because certain articles can be grouped together logically as a "series" I should create a _series_ taxonomy: `series = "series"` and set the series title in the front matter: `series = "From Medium to Hugo"` and that creates a page at [/series/from-medium-to-hugo/](/series/from-medium-t-hugo). The default sort for pages is most recent first. In the view by year and the view for a series, I want the articles sorted ascending order by date so that "2013" comes before "2014" and the first article in the series comes before the second article in the series.
 
 {{<highlight html>}}
 {{ if and (eq .Page.Kind "taxonomy") (eq .Page.Type "series")}}
@@ -362,7 +362,7 @@ To improve navigation, I modified the `list.html` template to provide links for 
 ![Tags navigation](/blog/migrate-from-medium-to-hugo/images/tags.jpg)
 <figcaption>Tags navigation</figcaption>
 
-This is the logic. I don't mind nested if/then and convoluted code because it's just used for generation of the end website and my main goal is the right static content on the other side.
+This is the logic. I don't mind the nested if/then statements and convoluted code because it's just used for generation of the end website and my main goal is the right static content on the other side.
 
 {{<highlight html>}}
 <div class="section-title">
