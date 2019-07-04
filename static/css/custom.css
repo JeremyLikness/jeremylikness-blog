@@ -15,7 +15,9 @@ p.subtitle {
     font-display: auto;
 }
 .smallerthumb {
-    max-height: 100px;
+    max-height: 75px;
     padding: 2px;
     overflow: hidden;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
 }
