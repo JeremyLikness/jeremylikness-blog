@@ -3,6 +3,7 @@
     <ul>
         <li class="ml-1 mr-1">
             <a target="_blank"
+                title="Share on Twitter"
                 href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink | absLangURL }}"
                 onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
                 <i class="fab fa-twitter"></i>
@@ -11,13 +12,15 @@
 
         <li class="ml-1 mr-1">
             <a target="_blank" href="https://facebook.com/sharer/sharer.php?u={{ .Permalink | absLangURL }}"
-                onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+            title="Share on Facebook"    
+            onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
                 <i class="fab fa-facebook-f"></i>
             </a>
         </li>
 
         <li class="ml-1 mr-1">
             <a target="_blank"
+                title="Share on LinkedIn"
                 href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink | absLangURL }}&title={{ .Title }}&summary={{ .Summary }}"
                 onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
                 <i class="fab fa-linkedin"></i>

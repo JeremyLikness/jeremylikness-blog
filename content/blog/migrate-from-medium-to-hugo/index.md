@@ -203,7 +203,7 @@ And the result is this:
 
 I created short codes for embedding Google Maps, JavaScript "fiddles", Slideshare decks, and even my own Twitter feed (haven't used that one yet). I also created a more involved short code that allows me to interlink blog posts with an image and summary. I'll write more about that in a separate post.
 
-## Comments
+## Supporting Comments
 
 There was no easy way to migrate comments from Medium to the static website. Unfortunately, I had to go with a third-party service for this and the easiest appeared to be [disqus](https://disqus.com). The template I used had Disqus built in, so I simply added my the appropriate short name to the configuration and turned it on for specific posts by adding the `comments: true` metadata. I don't turn on comments for syndicated posts, only ones that were written originally on my blog. This is what comments end up looking like:
 
