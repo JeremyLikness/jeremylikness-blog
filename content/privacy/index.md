@@ -7,11 +7,17 @@ comments: false
 toc: true
 noads: true
 
-description: "Privacy Policy for Developer for Life."
+description: "This is the full privacy policy for Developer for Life. Learn exactly what services are used and what we track."
 
+image: "/images/privacy.png"
+
+images:
+    - "/images/privacy.png"
 ---
 
 ## Privacy Policy
+
+![Privacy Policy](/images/privacy.png)
 
 Effective date: June 28, 2019
 
@@ -107,7 +113,11 @@ We may use third-party Service Providers to monitor and analyze the use of our S
 
     For more information on the privacy practices of Google, please visit the Google [Privacy & Terms web page](https://policies.google.com/privacy?hl=en">https://policies.google.com/privacy?hl=en)
 
-#### Advertising
+* **Disqus** Disqus is a third-party service used to managed comments on the website. Disqus uses data collected to track comments and discussion threads. In some cases, Disqus can be configured to track usage and deliver advertisements. These features have been turned off for our Service.
+
+    For more information on the privacy practices of Disqus, please visit the Disqus [Privacy Policy web page](https://help.disqus.com/en/articles/1717103-disqus-privacy-policy)
+
+### Advertising
 
 We may use third-party Service Providers to show advertisements to you to help support and maintain our Service.
 

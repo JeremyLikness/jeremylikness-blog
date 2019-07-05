@@ -12,5 +12,5 @@ aliases:
 
 * [All posts](/blog/)
 * [Posts by Tag](/tags/)
+* [Posts in Series](/series/)
 * [Posts by Year](/years/)
- 
