@@ -2,8 +2,11 @@
 	<meta charset="utf-8">
 	{{ partialCached "_shared/csp.html" . }}
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#FFFFFF">
+	<link rel="manifest" href="{{ "/manifest.json" | urlize | relURL }}">
 	{{ if .Params.image }}{{ $original := print "images/" (path.Base .Params.image) }}{{ $originalImg := .Resources.GetMatch $original }}{{ if $originalImg }}{{ $thumbnailImg := $originalImg.Resize "90x" }}{{ printf `<meta name="thumbnail" content="%s">` $thumbnailImg.RelPermalink | safeHTML }}{{end}}{{end}}
 	{{ hugo.Generator }}
+	{{ partialCached "_shared/icons.html" . }}
 	{{ with .Site.Params.logo }}<link rel="icon" href="{{ . | urlize | relURL }}">{{ end }}{{ if .Params.canonicalUrl }}
 	<link rel="canonical" href="{{ .Params.canonicalUrl }}">{{ end }}{{ $title := printf "%s | %s" .Page.Title .Site.Title }}{{ $mainPage := false }}{{ if eq .Page.Title .Site.Title }}{{ $title = .Page.Title }}{{ $mainPage = true }}{{ end }}
 	<title>{{ $title }}</title>

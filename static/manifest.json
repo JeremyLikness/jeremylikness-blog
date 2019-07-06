@@ -1,0 +1,30 @@
+{
+    "name": "Developer for Life",
+    "short_name": "dev4life",
+    "icons": [{
+      "src": "/appicons/favicon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "/appicons/apple-touch-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "/appicons/apple-touch-icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "/appicons/favicon-196x196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    }, {
+      "src": "//appicons/splash.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+    "start_url": "/",
+    "display": "standalone",
+    "orientation" : "portrait",
+    "background_color": "#FFFFFF",
+    "theme_color": "#FFFFFF"
+  }
