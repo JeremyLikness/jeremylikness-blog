@@ -1,4 +1,4 @@
-const CACHE_VERSION = 2;
+const CACHE_VERSION = 2.1;
 
 const BASE_CACHE_FILES = [
     '/',
@@ -15,7 +15,6 @@ const BASE_CACHE_FILES = [
     '/js/mediumish.js',
     '/blog',
     '/blog/2017-08-17_upcoming-talks/',
-    '/blog/2017-08-17_presentations-archive/',
     '/static/about',
     '/privacy'
 ];
