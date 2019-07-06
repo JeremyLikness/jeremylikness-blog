@@ -48,9 +48,7 @@ const MAX_TTL = {
 
 const CACHE_BLACKLIST = [
     (str) => !str.startsWith('http://localhost') &&
-        !str.startsWith('https://blog.jeremylikness.com') &&
-        !str.startsWith('https://code.jquery.com') &&
-        !str.startsWith('https://stackpath.bootstrapcdn.com')
+        !str.startsWith('https://blog.jeremylikness.com')
 ];
 
 const SUPPORTED_METHODS = [
