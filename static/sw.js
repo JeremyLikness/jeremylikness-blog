@@ -12,7 +12,12 @@ const BASE_CACHE_FILES = [
     '/manifest.json',
     '/images/logo.png',
     '/images/jumbotron.jpg',
-    '/js/mediumish.js'
+    '/js/mediumish.js',
+    '/blog',
+    '/blog/2017-08-17_upcoming-talks/',
+    '/blog/2017-08-17_presentations-archive/',
+    '/static/about',
+    '/privacy'
 ];
 
 const OFFLINE_CACHE_FILES = [
