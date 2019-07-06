@@ -118,7 +118,6 @@ pygmentsStyle = "friendly"
   objectsrc = ["'none'"]
   stylesrc = ["'self'",
     "'unsafe-inline'",
-    "https://stackpath.bootstrapcdn.com",
     "https://use.fontawesome.com",
     "https://fonts.googleapis.com",
     "https://www.google.com",
@@ -134,9 +133,7 @@ pygmentsStyle = "friendly"
     "https://platform.twitter.com",
     "https://cdn.syndication.twimg.com",
     "*.amazon-adsystem.com",
-    "https://code.jquery.com",
     "https://cdnjs.cloudflare.com",
-    "https://stackpath.bootstrapcdn.com",
     "https://www.google-analytics.com",
     "cse.google.com",
     "https://www.google.com",

@@ -1,12 +1,12 @@
-const CACHE_VERSION = 2.1;
+const CACHE_VERSION = 2.2;
 
 const BASE_CACHE_FILES = [
     '/',
-    'https://code.jquery.com/jquery-3.3.1.min.js',
-    'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js',
+    '/js/jquery-3.3.1.min.js',
     '/404.html',
     '/offline',
     '/css/medium.css',
+    '/css/bootstrap.min.css',
     '/css/additional.css',
     '/css/custom.css',
     '/manifest.json',
