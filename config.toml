@@ -133,7 +133,6 @@ pygmentsStyle = "friendly"
     "https://platform.twitter.com",
     "https://cdn.syndication.twimg.com",
     "*.amazon-adsystem.com",
-    "https://cdnjs.cloudflare.com",
     "https://www.google-analytics.com",
     "cse.google.com",
     "https://www.google.com",

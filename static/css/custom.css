@@ -9,11 +9,6 @@ p.subtitle {
    font-style: italic;
    color: darkslategray; 
 }
-@font-face {
-    font-family: Arial, Helvetica, sans-serif;
-    src: local();
-    font-display: auto;
-}
 .smallerthumb {
     max-height: 75px;
     padding: 2px;

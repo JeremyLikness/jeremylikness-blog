@@ -1,4 +1,6 @@
 <iframe title="Google Map"
+onerror="this.setAttribute('srcdoc', '<p>Google Maps are not available offline.</p>');this.setAttribute('onerror','');"
+onload="if(navigator && navigator.onLine === false) eval(this.getAttribute('onerror'));"
 src="{{ .Get 0 }}" 
 width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 {{ if .Get 1 }}
