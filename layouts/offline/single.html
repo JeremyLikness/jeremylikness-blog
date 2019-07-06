@@ -13,7 +13,7 @@
             <div class="col-md-12 flex-first flex-md-unordered">
                 <div class="mainheading">
                     <!-- Post Title -->
-                    <h1 class="posttitle">{{ .Title }}</h1>                    
+                    <h1 class="posttitle">{{ .Title }}</h1>
                 </div>
 
                 <!-- Post Content -->
@@ -29,8 +29,150 @@
     </div>
     <!-- End Article
         ================================================== -->
- </div>
- <script src="{{ "/js/offline.js" | urlize | relURL }}"></script>
+</div>
+<script>
+    const offline = () => {
+
+        const canvas = document.getElementById("offlinecanvas");
+
+        let x = canvas.getContext('2d');
+        const R = (r, g, b, a) => `rgba(${r},${g},${b},${a})`;
+
+        const draw = () => {
+            i = 700;
+            r = () => Math.random() * 6 - 2.5;
+            b = (d, e, f) => {
+                x.fillStyle = R(0, 0, 99, f / i);
+                x.fillRect(d, e, 4, 4);
+                if (f) {
+                    b(d + r(), e + r(), f - 1);
+                    if (f % 300 === 0) {
+                        b(d + r(), e + r(), f - 1);
+                    }
+                }
+            };
+            b(Math.random() * 5 + 5, Math.random() * 5 + 5, i);
+        };
+
+        (function (c) {
+            var ctx = c.getContext('2d'),
+                palette = [],
+                sine = [],
+                width = c.clientWidth,
+                height = c.clientHeight,
+                buffer = new Uint8ClampedArray(width * height * 4),
+                pos1 = 0,
+                pos3 = 0,
+                tpos1 = 0,
+                tpos2 = 0,
+                tpos3 = 0,
+                tpos4 = 0;
+
+            const fillPalette = () => {
+                var i, r, g;
+                for (i = 0; i < 64; i += 1) {
+                    r = i << 2;
+                    g = 255 - (r + 1);
+                    palette[i] = {
+                        r: r,
+                        g: g,
+                        b: 0
+                    };
+                    g = r + 1;
+                    palette[i + 64] = {
+                        r: 255,
+                        g: g,
+                        b: 0
+                    };
+                    r = g = 255 - ((i << 2) + 1);
+                    palette[i + 128] = {
+                        r: r,
+                        g: g,
+                        b: 0
+                    };
+                    g = (i << 2) + 1;
+                    palette[i + 192] = {
+                        r: 0,
+                        g: g,
+                        b: 0
+                    };
+                }
+            }
+
+            const createSineTable = (table) => {
+                var i, rad;
+                for (i = 0; i < 512; i += 1) {
+                    rad = (i * 0.703125) * 0.0174532;
+                    table[i] = Math.floor(Math.sin(rad) * 1024);
+                }
+            }
+
+            const render = (table, pal, w, h) => {
+                let i, j, idx, x;
+                tpos4 = 0;
+                tpos3 = pos3;
+
+                let pidx = (Math.random() * 250 + 2) | 0;
+                let left = pal[pidx - 1];
+                let right = pal[pidx + 1];
+                pal[pidx].r = ((left.r + right.r) / 2) | 0;
+                pal[pidx].g = ((left.g + right.g) / 2) | 0;
+                pal[pidx].b = ((left.b + right.b) / 2) | 0;
+
+                for (i = 0; i < h; i += 1) {
+
+                    tpos1 = pos1 + 5;
+                    tpos2 = 3;
+                    tpos3 &= 511;
+                    tpos4 &= 511;
+
+                    for (j = 0; j < w; j += 1) {
+                        tpos1 = tpos1 & 511;
+                        tpos2 = tpos2 & 511;
+                        x = table[tpos1] + table[tpos2] + table[tpos3] + table[tpos4];
+                        idx = Math.abs(Math.floor(128 + (x >> 4)) % 256);
+                        let base = (i * w + j) * 4;
+                        buffer[base] = pal[idx].r;
+                        buffer[base + 1] = pal[idx].g;
+                        buffer[base + 2] = pal[idx].b;
+                        buffer[base + 3] = 255;
+                        tpos1 += 5;
+                        tpos2 += 3;
+                    }
+
+                    tpos4 += 3;
+                    tpos3 += 1;
+                }
+
+                pos1 += 9;
+                pos3 += 8;
+            }
+
+            const paint = (ctx, w, h) => {
+                var imageData = new ImageData(buffer, w, h);
+                ctx.putImageData(imageData, 0, 0);
+                draw();
+            };
+
+            fillPalette();
+            createSineTable(sine);
+
+            var iterate = (c, s, p) => {
+                requestAnimationFrame(() => {
+                    render(s, p, width, height);
+                    paint(c, width, height);
+                    iterate(c, s, p);
+                });
+            };
+
+            iterate(ctx, sine, palette);
+
+        })(canvas);
+
+    };
+
+    setTimeout(offline, 0);
+</script>
 {{- partial "_shared/alertbar.html" . -}}
 {{ end }}
 

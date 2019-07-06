@@ -1,8 +1,11 @@
-const CACHE_VERSION = 1;
+const CACHE_VERSION = 2;
 
 const BASE_CACHE_FILES = [
     '/',
+    'https://code.jquery.com/jquery-3.3.1.min.js',
+    'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js',
     '/404.html',
+    '/offline',
     '/css/medium.css',
     '/css/additional.css',
     '/css/custom.css',
@@ -13,27 +16,14 @@ const BASE_CACHE_FILES = [
 ];
 
 const OFFLINE_CACHE_FILES = [
-    '/offline/',
-    '/css/medium.css',
-    '/css/additional.css',
-    '/css/custom.css',
-    '/manifest.json',
-    '/images/logo.png',
-    '/js/mediumish.js',
-    '/js/offline.js'
+    '/offline/'
 ];
 
 const NOT_FOUND_CACHE_FILES = [
-    '/404.html',
-    '/css/medium.css',
-    '/css/additional.css',
-    '/css/custom.css',
-    '/manifest.json',
-    '/images/logo.png',
-    '/js/mediumish.js'
+    '/404.html'
 ];
 
-const OFFLINE_PAGE = '/offline.html';
+const OFFLINE_PAGE = '/offline/';
 const NOT_FOUND_PAGE = '/404.html';
 
 const CACHE_VERSIONS = {
@@ -54,7 +44,9 @@ const MAX_TTL = {
 
 const CACHE_BLACKLIST = [
     (str) => !str.startsWith('http://localhost') &&
-        !str.startsWith('https://blog.jeremylikness.com')
+        !str.startsWith('https://blog.jeremylikness.com') &&
+        !str.startsWith('https://code.jquery.com') &&
+        !str.startsWith('https://stackpath.bootstrapcdn.com')
 ];
 
 const SUPPORTED_METHODS = [
