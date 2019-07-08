@@ -231,7 +231,7 @@ To render the Table of Contents, which by default is a nested unordered bulleted
 
 The `.TableOfContents` function renders everything needed based on the article content.
 
-## The Archetypical Post
+## The Archetypal Post
 
 This is an example migrated post:
 
