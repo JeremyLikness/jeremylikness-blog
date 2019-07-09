@@ -6,8 +6,12 @@ lastmod: 2019-06-13T10:43:10-07:00
 comments: false
 toc: true
 noads: true
+tags: 
+    - "privacy"
 
 description: "This is the full privacy policy for Developer for Life. Learn exactly what services are used and what we track."
+
+subtitle: ""
 
 image: "/images/privacy.png"
 

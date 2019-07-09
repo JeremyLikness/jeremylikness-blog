@@ -7,7 +7,15 @@ noads: true
 
 description: "Learn about Jeremy Likness and his 'Developer for Life' blog."
 
+tags:
+    - about
+
 subtitle: "Empowering developers to be their best."
+
+image: "/images/jeremymicrosoft.jpg"
+
+images:
+    - "/images/jeremymicrosoft.jpg"
 
 aliases:
     - "/about"
@@ -15,6 +23,9 @@ aliases:
 ---
 
 [Click here](/privacy) to view our privacy policy.
+
+![Jeremy Likness](/images/jeremymicrosoft.jpg)
+<figcaption>Microsoft Ignite 2017</figcaption>
 
 My name is Jeremy Likness. I've been writing code for a _long time_... over 30 years! I am a developer for life.
 
