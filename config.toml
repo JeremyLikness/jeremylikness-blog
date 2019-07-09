@@ -129,7 +129,6 @@ pygmentsStyle = "friendly"
     "*.disqus.com",
     "*.disquscdn.com"]
   scriptsrc = ["'self'",
-    "'unsafe-eval'", 
     "'unsafe-inline'",
     "https://platform.twitter.com",
     "https://cdn.syndication.twimg.com",

@@ -1,5 +1,16 @@
 "use strict";
 var searchFn = function () {
+    var stopwords = ["i", "me", "my", "we", "our", "you", "it",
+        "its", "this", "that", "am", "is", "are", "was", "be",
+        "has", "had", "do", "a", "an", "the", "but", "if", "or", "as",
+        "of", "at", "by", "for", "with", "to", "then", "no", "not",
+        "so", "too", "can", "and", "but"];
+    var normalizer = document.createElement("textarea");
+    var normalize = function (input) {
+        normalizer.innerHTML = input;
+        var inputDecoded = normalizer.value;
+        return " " + inputDecoded.trim().toLowerCase().replace(/[^0-9a-z ]/gi, " ").replace(/\s+/g, " ") + " ";
+    }
     var limit = 30;
     var minChars = 2;
     var searching = false;
@@ -9,9 +20,10 @@ var searchFn = function () {
             var result = results[i].item;
             var resultPane = "<div class=\"container\">" +
                 ("<div class=\"row\"><a href=\"" + result.permalink + "\" ") +
-                ("alt=\"" + result.showTitle + "\">" + result.showTitle + "</a></div>") +
+                ("alt=\"" + result.showTitle + "\">" + result.showTitle + "</a>" +
+                    "</div>") +
                 "<div class=\"row\"><div class=\"float-left col-2\">" +
-                ("<img src=\"" + result.image + "\" alt=\"" + result.showTitle + "\" class=\"circle img-thumbnail\">") +
+                ("<img src=\"" + result.image + "\" alt=\"" + result.showTitle + "\" class=\"rounded img-thumbnail\">") +
                 "</div>" +
                 ("<div class=\"col-10\"><small>" + result.showDescription + "</small></div>") +
                 "</div></div>";
@@ -22,7 +34,11 @@ var searchFn = function () {
         var weightResult = 0;
         terms.forEach(function (term) {
             if (~target.indexOf(term.term)) {
-                weightResult += term.weight * weight;
+                var idx = target.indexOf(term.term);
+                while (~idx) {
+                    weightResult += term.weight * weight;
+                    idx = target.indexOf(term.term, idx + 1);
+                }
             }
         });
         return weightResult;
@@ -34,7 +50,7 @@ var searchFn = function () {
                 var weight_1 = 0;
                 terms.forEach(function (term) {
                     if (item.title.startsWith(term.term)) {
-                        weight_1 += term.weight * 12;
+                        weight_1 += term.weight * 32;
                     }
                 });
                 weight_1 += checkTerms(terms, 1, item.content);
@@ -43,7 +59,7 @@ var searchFn = function () {
                 item.tags.forEach(function (tag) {
                     weight_1 += checkTerms(terms, 4, tag);
                 });
-                weight_1 += checkTerms(terms, 8, item.title);
+                weight_1 += checkTerms(terms, 16, item.title);
                 if (weight_1) {
                     results.push({
                         weight: weight_1,
@@ -68,12 +84,13 @@ var searchFn = function () {
         if (searching) {
             return;
         }
-        var term = $("#searchBox").val().trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
+        var term = normalize($("#searchBox").val()).trim();
         if (term.length < minChars) {
             $("#results").html('<p>No items found.</p>');
             return;
         }
         searching = true;
+        var startSearch = new Date();
         $("#results").html('<p>Processing search...</p>');
         var terms = term.split(" ");
         var termsTree = [];
@@ -84,14 +101,19 @@ var searchFn = function () {
                 for (var k = i; k <= j; k += 1) {
                     str += (terms[k] + " ");
                 }
-                termsTree.push({
-                    weight: weight,
-                    term: str.trim()
-                });
+                var newTerm = str.trim();
+                if (newTerm.length >= minChars && stopwords.indexOf(newTerm) < 0) {
+                    termsTree.push({
+                        weight: weight,
+                        term: " " + str.trim() + " "
+                    });
+                }
             }
         }
         search(termsTree);
         searching = false;
+        var endSearch = new Date();
+        $("#results").append("<p><small>Search took " + (endSearch - startSearch) + "ms.</small></p>");
     };
     var initSearch = function () {
         $("#searchBox").keyup(function () {
@@ -108,12 +130,14 @@ var searchFn = function () {
                 var res = {};
                 res.showTitle = result.title;
                 res.showDescription = result.description;
-                res.title = result.title.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
-                res.subtitle = result.subtitle.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
-                res.description = result.description.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
-                res.content = result.content.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
+                res.title = normalize(result.title);
+                res.subtitle = normalize(result.subtitle);
+                res.description = normalize(result.description);
+                res.content = normalize(result.content);
                 var newTags_1 = [];
-                result.tags.forEach(function (tag) { return newTags_1.push(tag.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "")); });
+                result.tags.forEach(function (tag) {
+                    return newTags_1.push(normalize(tag));
+                });
                 res.tags = newTags_1;
                 res.permalink = result.permalink;
                 res.image = result.image;
