@@ -38,6 +38,7 @@ pygmentsStyle = "friendly"
   series = "series"
 
 [outputs]
+  home = ["HTML", "RSS", "JSON"]
   page = ["HTML", "RSS"]
 
 [params]
