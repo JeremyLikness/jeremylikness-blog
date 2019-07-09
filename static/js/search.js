@@ -18,14 +18,15 @@ var searchFn = function () {
         results.sort(function (a, b) { return b.weight - a.weight; });
         for (var i = 0; i < results.length && i < limit; i += 1) {
             var result = results[i].item;
+            var openAnchor = "<a href=\"" + result.permalink + "\" " +
+                "alt=\"" + result.showTitle + "\">";
             var resultPane = "<div class=\"container\">" +
-                ("<div class=\"row\"><a href=\"" + result.permalink + "\" ") +
-                ("alt=\"" + result.showTitle + "\">" + result.showTitle + "</a>" +
-                    "</div>") +
-                "<div class=\"row\"><div class=\"float-left col-2\">" +
-                ("<img src=\"" + result.image + "\" alt=\"" + result.showTitle + "\" class=\"rounded img-thumbnail\">") +
-                "</div>" +
-                ("<div class=\"col-10\"><small>" + result.showDescription + "</small></div>") +
+            "<div class=\"row\">" +    
+            openAnchor + result.showTitle + "</a></div>" +
+            "<div class=\"row\">" + 
+            "<div class=\"col-12 col-md-4 col-lg-2\">" + 
+                openAnchor + "<img src=\"" + result.image + "\" alt=\"" + result.showTitle + "\" class=\"rounded w-100\"></a></div>" +
+                ("<div class=\"col-12 col-md-8 col-lg-10\"><small>" + result.showDescription + "</small></div>") +
                 "</div></div>";
             $("#results").append(resultPane);
         }
