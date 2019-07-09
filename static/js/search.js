@@ -106,8 +106,9 @@ const searchFn = () => {
     $.getJSON("/index.json", results => {
         searchHost.index = results;
         $("#loading").hide();
-        $("#searchBox").show();
-        $("#searchBox").removeAttr("disabled");
+        $("#searchBox").show()
+            .removeAttr("disabled")
+            .focus();
         initSearch();
     });
 
