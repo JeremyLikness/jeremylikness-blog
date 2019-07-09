@@ -38,7 +38,7 @@ const searchFn = () => {
                 let weight = 0;
                 terms.forEach(term => {
                     if (item.title.startsWith(term.term)) {
-                        weight += term.weight * 16;
+                        weight += term.weight * 12;
                     }
                 });
                 weight += checkTerms(terms, 1, item.content);
