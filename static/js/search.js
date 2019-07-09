@@ -1,22 +1,22 @@
 const searchFn = () => {
 
-    const limit = 50; 
+    const limit = 30; 
     const minChars = 2;
-
+    
     let searching = false;
 
     const render = (results) => {    
         results.sort((a, b) => b.weight - a.weight);
-        for (let i = 0; i < results.length && i < 20; i += 1) {
+        for (let i = 0; i < results.length && i < limit; i += 1) {
             const result = results[i].item;
             const resultPane = `<div class="container">` +
-                `<div><a href="${result.permalink}" ` +
+                `<div class="row"><a href="${result.permalink}" ` +
                 `alt="${result.title}">${result.title}</a></div>` +
-                `<div class="float-left col-2">` +
+                `<div class="row"><div class="float-left col-2">` +
                 `<img src="${result.image}" alt="${result.title}" class="circle img-thumbnail">` +
                 `</div>` +
-                `<p><small>${result.description}</small></p>` +
-                `</div><div class="clearfix"></div>`;
+                `<div class="col-10"><small>${result.description}</small></div>` +
+                `</div></div>`;
            $("#results").append(resultPane);     
         }
     };
@@ -24,7 +24,7 @@ const searchFn = () => {
     const checkTerms = (terms, weight, target) => {
         let weightResult = 0;
         terms.forEach(term => {
-            if (~target.trim().toLowerCase().indexOf(term.term)) {
+            if (~target.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "").indexOf(term.term)) {
                 weightResult += term.weight * weight;
             }
         });
@@ -36,6 +36,11 @@ const searchFn = () => {
         searchHost.index.forEach(item => {
             if (item.tags) {
                 let weight = 0;
+                terms.forEach(term => {
+                    if (item.title.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "").startsWith(term.term)) {
+                        weight += term.weight * 16;
+                    }
+                });
                 weight += checkTerms(terms, 1, item.content);
                 weight += checkTerms(terms, 2, item.description);
                 weight += checkTerms(terms, 2, item.subtitle);
@@ -74,7 +79,8 @@ const searchFn = () => {
             return;
         }
         searching = true;
-        const terms = term.trim().toLowerCase().split(" ");
+        $("#results").html('<p>Processing search...</p>');
+        const terms = term.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "").split(" ");
         const termsTree = [];
         for (let i = 0; i < terms.length; i += 1) {
             for (let j = i; j < terms.length; j += 1) {
