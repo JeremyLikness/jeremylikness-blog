@@ -1,30 +1,30 @@
 const searchFn = () => {
 
-    const limit = 30; 
+    const limit = 30;
     const minChars = 2;
-    
+
     let searching = false;
 
-    const render = (results) => {    
+    const render = (results) => {
         results.sort((a, b) => b.weight - a.weight);
         for (let i = 0; i < results.length && i < limit; i += 1) {
             const result = results[i].item;
             const resultPane = `<div class="container">` +
                 `<div class="row"><a href="${result.permalink}" ` +
-                `alt="${result.title}">${result.title}</a></div>` +
+                `alt="${result.showTitle}">${result.showTitle}</a></div>` +
                 `<div class="row"><div class="float-left col-2">` +
-                `<img src="${result.image}" alt="${result.title}" class="circle img-thumbnail">` +
+                `<img src="${result.image}" alt="${result.showTitle}" class="circle img-thumbnail">` +
                 `</div>` +
-                `<div class="col-10"><small>${result.description}</small></div>` +
+                `<div class="col-10"><small>${result.showDescription}</small></div>` +
                 `</div></div>`;
-           $("#results").append(resultPane);     
+            $("#results").append(resultPane);
         }
     };
 
     const checkTerms = (terms, weight, target) => {
         let weightResult = 0;
         terms.forEach(term => {
-            if (~target.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "").indexOf(term.term)) {
+            if (~target.indexOf(term.term)) {
                 weightResult += term.weight * weight;
             }
         });
@@ -37,7 +37,7 @@ const searchFn = () => {
             if (item.tags) {
                 let weight = 0;
                 terms.forEach(term => {
-                    if (item.title.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "").startsWith(term.term)) {
+                    if (item.title.startsWith(term.term)) {
                         weight += term.weight * 16;
                     }
                 });
@@ -53,7 +53,7 @@ const searchFn = () => {
                         weight: weight,
                         item: item
                     });
-                }                
+                }
             }
         });
         if (results.length) {
@@ -110,7 +110,22 @@ const searchFn = () => {
     searchHost = {};
 
     $.getJSON("/index.json", results => {
-        searchHost.index = results;
+        searchHost.index = [];
+        results.forEach(result => {
+            if (result.tags) {
+                result.showTitle = result.title;
+                result.showDescription = result.description;
+                result.title = result.title.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
+                result.subtitle = result.subtitle.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
+                result.description = result.description.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
+                result.content = result.content.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
+                const newTags = [];
+                result.tags.forEach(tag => newTags.push(tag.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "")));
+                result.tags = newTags;
+                searchHost.index.push(result);
+            }
+        });
+
         $("#loading").hide();
         $("#searchBox").show()
             .removeAttr("disabled")
