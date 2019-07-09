@@ -73,14 +73,14 @@ const searchFn = () => {
         if (searching) {
             return;
         }
-        const term = $("#searchBox").val();
+        const term = $("#searchBox").val().trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
         if (term.length < minChars) {
             $("#results").html('<p>No items found.</p>');
             return;
         }
         searching = true;
         $("#results").html('<p>Processing search...</p>');
-        const terms = term.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "").split(" ");
+        const terms = term.split(" ");
         const termsTree = [];
         for (let i = 0; i < terms.length; i += 1) {
             for (let j = i; j < terms.length; j += 1) {
@@ -111,18 +111,23 @@ const searchFn = () => {
 
     $.getJSON("/index.json", results => {
         searchHost.index = [];
+        const dup = {};
         results.forEach(result => {
-            if (result.tags) {
-                result.showTitle = result.title;
-                result.showDescription = result.description;
-                result.title = result.title.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
-                result.subtitle = result.subtitle.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
-                result.description = result.description.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
-                result.content = result.content.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
+            if (result.tags && !dup[result.permalink]) {
+                let res = {};
+                res.showTitle = result.title;
+                res.showDescription = result.description;
+                res.title = result.title.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
+                res.subtitle = result.subtitle.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
+                res.description = result.description.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
+                res.content = result.content.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "");
                 const newTags = [];
                 result.tags.forEach(tag => newTags.push(tag.trim().toLowerCase().replace(/[^0-9a-z ]/gi, "")));
-                result.tags = newTags;
-                searchHost.index.push(result);
+                res.tags = newTags;
+                res.permalink = result.permalink;
+                res.image = result.image;
+                searchHost.index.push(res);
+                dup[result.permalink] = true;
             }
         });
 
