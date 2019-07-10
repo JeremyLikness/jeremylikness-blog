@@ -2,8 +2,9 @@
 <label for="searchBox">Enter your search below to find content on this blog:</label>
 <input disabled placeholder="Enter search text" type="text" name="searchBox" id="searchBox" class="w-75 float-left"/>
 <button id="btnGo" disabled class="btn btn-primary ml-3 float-left">Go</button>
-<br/>
+<div>&nbsp;</div>
 {{ partial "_shared/banner.html" . }}
-<div class="sep"></div><a name="resultsArea"></a>
+<div class="sep"></div>
+<div>&nbsp;</div>
 <div id="results"></div>
 <script src="{{"/js/search.js" | urlize | relURL }}"></script>
