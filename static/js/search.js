@@ -1,5 +1,6 @@
 "use strict";
 var searchFn = function () {
+    var lastTerm = "You are likely to be eaten by a grue.";
     var stopwords = ["i", "me", "my", "we", "our", "you", "it",
         "its", "this", "that", "am", "is", "are", "was", "be",
         "has", "had", "do", "a", "an", "the", "but", "if", "or", "as",
@@ -21,10 +22,10 @@ var searchFn = function () {
             var openAnchor = "<a href=\"" + result.permalink + "\" " +
                 "alt=\"" + result.showTitle + "\">";
             var resultPane = "<div class=\"container\">" +
-            "<div class=\"row\">" +    
-            openAnchor + result.showTitle + "</a></div>" +
-            "<div class=\"row\">" + 
-            "<div class=\"col-12 col-md-4 col-lg-2\">" + 
+                "<div class=\"row\">" +
+                openAnchor + result.showTitle + "</a></div>" +
+                "<div class=\"row\">" +
+                "<div class=\"col-12 col-md-4 col-lg-2\">" +
                 openAnchor + "<img src=\"" + result.image + "\" alt=\"" + result.showTitle + "\" class=\"rounded w-100\"></a></div>" +
                 ("<div class=\"col-12 col-md-8 col-lg-10\"><small>" + result.showDescription + "</small></div>") +
                 "</div></div>";
@@ -86,10 +87,16 @@ var searchFn = function () {
             return;
         }
         var term = normalize($("#searchBox").val()).trim();
-        if (term.length < minChars) {
-            $("#results").html('<p>No items found.</p>');
+        if (term === lastTerm) {
             return;
         }
+        lastTerm = term;
+        if (term.length < minChars) {
+            $("#results").html('<p>No items found.</p>');
+            $("#btnGo").attr("disabled", true);
+            return;
+        }
+        $("#btnGo").removeAttr("disabled");
         searching = true;
         var startSearch = new Date();
         $("#results").html('<p>Processing search...</p>');
@@ -120,8 +127,13 @@ var searchFn = function () {
         $("#searchBox").keyup(function () {
             runSearch();
         });
+        $("#btnGo").click(function () {
+            runSearch();
+        });
+        runSearch();
     };
     $("#searchBox").hide();
+    $("#btnGo").hide();
     var searchHost = {};
     $.getJSON("/index.json", function (results) {
         searchHost.index = [];
@@ -147,6 +159,7 @@ var searchFn = function () {
             }
         });
         $("#loading").hide();
+        $("#btnGo").show();
         $("#searchBox").show()
             .removeAttr("disabled")
             .focus();
