@@ -91,7 +91,9 @@ I am extremely happy that several of my talks were recorded so that I can share 
 * Vacation with my wife in a place we haven’t been before
 * Increase my giving (not just dollars, but mentoring, community service, etc.)
 
-That’s it for the deep retrospection … let’s move on to the technical statistics and insights!### Open Source
+That’s it for the deep retrospection … let’s move on to the technical statistics and insights!
+
+## Open Source
 
 This year I contributed about 2/3 of what I contributed in 2017.
 
