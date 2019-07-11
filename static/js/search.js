@@ -129,6 +129,9 @@ var searchFn = function () {
         });
         $("#btnGo").click(function () {
             runSearch();
+            var loc = window.location.href.split("#")[0];
+            loc = loc + "#" + "resultsArea";
+            window.location.href = loc;
         });
         runSearch();
     };

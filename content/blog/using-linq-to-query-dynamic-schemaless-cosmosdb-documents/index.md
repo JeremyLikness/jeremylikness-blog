@@ -1,11 +1,11 @@
 ---
 title: "Using LINQ to Query Dynamic Schema-less Cosmos DB Documents"
 author: "Jeremy Likness"
-date: 2019-07-10T00:00:53-07:00
+date: 2019-07-11T00:00:53-07:00
 years: "2019"
-lastmod: 2019-07-10T00:00:53-07:00
+lastmod: 2019-07-11T00:00:53-07:00
 
-draft: true
+draft: false
 comments: true
 toc: true
 
@@ -23,17 +23,18 @@ tags:
 image: "/blog/using-linq-to-query-dynamic-schemaless-cosmosdb-documents/images/cosmossdk.jpg" 
 images:
  - "/blog/using-linq-to-query-dynamic-schemaless-cosmosdb-documents/images/cosmossdk.jpg" 
+ - "/blog/using-linq-to-query-dynamic-schemaless-cosmosdb-documents/images/cosmosdatabase.jpg" 
 ---
 
-On July 9, 2019 a new set of libraries for working with Azure services was announced. These SDKs target multiple languages including 🐍 Python, ☕ Java, JavaScript, and .NET. A few popular services are covered including [Azure Cosmos DB](https://jlik.me/f7d).
+On July 9, 2019, a new set of libraries for working with Azure services was announced. These SDKs target multiple languages including 🐍 Python, ☕ Java, JavaScript, and .NET. A few popular services are covered including [Azure Cosmos DB](https://jlik.me/f7d).
 
 {{<twitter 1149009392127356928>}}
 
-I decided to take them for a spin and build something useful for my [link shortener project](/series/serverless-link-shortener/). Right now I have a Power BI dashboard that I wrote about:
+I decided to take them for a spin and build something useful for my [link shortener project](/series/serverless-link-shortener/). Right now, I have a Power BI dashboard that I wrote about:
 
 {{<relativelink "/blog/2017-10-12_exploring-the-cosmosdb-with-power-bi">}}
 
-The dashboard is useful, but is only refreshed once a day. What if I could write something quick and easy to give me a real-time snapshot of things? To keep it simple, I decided to start with a console app. Oh, look at that! It's done, and it appears my post about the new SDKs is the most popular page over the past 24 hours!
+The dashboard is useful but is only refreshed once a day. What if I could write something quick and easy to give me a real-time snapshot of things? To keep it simple, I decided to start with a console app. Oh, look at that. It's done, and it appears my post about the new SDKs is the most popular page over the past 24 hours!
 
 ![The finished app](/blog/using-linq-to-query-dynamic-schemaless-cosmosdb-documents/images/cosmossdk.jpg)
 <figcaption>The finished app</figcaption>
@@ -99,7 +100,7 @@ To ensure the settings are published locally, I added this to my `.csproj` confi
 </ItemGroup>
 {{</highlight>}}
 
-The code to create the client is fairly simple. This instantiates the client and disposes of it when done. 
+The code to create the client is just a few lines of code. This instantiates the client and disposes of it when done.
 
 {{<highlight CSharp>}}
 using (CosmosClient client = new CosmosClient(endpoint, authKey))
@@ -112,7 +113,12 @@ I ran it at this point and no exceptions were thrown, so of course I knew it was
 
 ## Open the Container
 
-Azure Cosmos DB organizes data into databases that contain information about regions, failover, the type of API to use and other properties. Inside a database you can then have multiple containers that are partitioned and provisioned differently. I have a database named `url-tracking` with a container named `url-stats`. I set up these names in my code:
+Azure Cosmos DB organizes data into [database accounts](https://jlik.me/f7i) that contain information about regions, failover, the type of API to use and other properties. Inside a database you can then have multiple containers that are partitioned and provisioned differently. I have a database named `url-tracking` with a container named `url-stats`. 
+
+![Cosmos DB Database and Container](/blog/using-linq-to-query-dynamic-schemaless-cosmosdb-documents/images/cosmosdatabase.jpg)
+<figcaption>Cosmos DB Database and Container</figcaption>
+
+I set up these names in my code:
 
 {{<highlight CSharp>}}
 private static readonly string CosmosDatabaseId = "url-tracking";
@@ -133,7 +139,7 @@ Now it's time to pull out the data!
 
 ## The Shape of Data
 
-There are a few interesting things to know about the metadata in my container. In what may have been a poor design choice but seemed fine at the time, I decided to take advantage of the fact that I don't need a fixed schema with NoSQL. I track a _medium_ that tells me where links are posted (for example, <i class="fab fa-twitter"></i> Twitter, <i class="fab fa-facebook"></i>Facebook, or even inside of a PowerPoint presentation). A sample entry for a Twitter click looks like this:
+There are a few interesting things to know about the metadata in my container. In what may have been a poor design choice but seemed fine at the time, I decided to take advantage of the fact that I don't need a fixed schema with NoSQL. I track a _medium_ that tells me where links are posted (for example, <i class="fab fa-twitter"></i> Twitter, <i class="fab fa-facebook"></i> Facebook, or even inside of a PowerPoint presentation). A sample entry for a Twitter click looks like this:
 
 {{<highlight JSON>}}
 {
@@ -158,7 +164,7 @@ There are a few interesting things to know about the metadata in my container. I
 }
 {{</highlight>}}
 
-If the same entry was from LinkedIn, it would look like this:
+If the same entry were from LinkedIn, it would look like this:
 
 {{<highlight JSON>}}
 {
@@ -171,7 +177,7 @@ If the same entry was from LinkedIn, it would look like this:
 }
 {{</highlight>}}
 
-Notice the property is different based on the medium. This poses a unique challenge for parsing the data. Dynamic languages like JavaScript handle it fine, but what about a strongly typed language like C#? In retrospect, I could have made it easier to intuit the "wildcard" property by doing this:
+Notice the property is different based on the medium. This poses a unique challenge for parsing the data. Dynamic languages like JavaScript handle it fine, but what about a strongly typed language like C#? In retrospect, I could have made it easier to intuit the "wildcard" property by doing this (note the added _medium_ property):
 
 {{<highlight JSON>}}
 {
@@ -204,21 +210,23 @@ But I didn't, so ... for now the best I could come up with on short notice was _
 
 ## The Query
 
-One advantage of the Azure Cosmos DB [SQL API]() is that you can use SQL syntax to query the document. This is a perfectly valid query:
+One advantage of the Azure Cosmos DB [SQL API](https://jlik.me/f7j) is that you can use SQL syntax to query the document. This is a perfectly valid query:
 
 `SELECT * FROM c WHERE <filter> ORDER BY c.timestamp DESC`
 
 However, I prefer to use LINQ because I don't have to manipulate strings and can take a more fluent approach.
 
-> Wait, Jeremy. What is this _LINQ_ you keep speaking of? If you're new to C# and/or .NET, have no fear. LINQ stands for (and here's the docs link) [Language Integrated Query](https://jlik.me/f7g). It's a way to write queries using C# methods without resorting to string manipulation. The example above becomes: `query.Select(c=>c).Where(c=>{//filter}).OrderByDescending(c=>c.timestamp)`
+> Wait, Jeremy. What is this _LINQ_ you keep speaking of? If you're new to C# and/or .NET, have no fear. LINQ stands for (and here's the docs link) [Language Integrated Query](https://jlik.me/f7g). It's a way to write queries using C# methods without resorting to string manipulation. The example above becomes `query.Select(c=>c).Where(c=>{//filter}).OrderByDescending(c=>c.timestamp)`
 
-The goal is simple: grab all entries from the past 24 hours and aggregate them on page and medium. Sort to list the most popular page first with a total click count, then within the page sort by the most popular mediums and show click count by medium. To hold the data I created this:
+The goal is simple: grab all entries from the past 24 hours and aggregate them on page and medium. Sort to list the most popular page first with a total click count, then within the page sort by the most popular mediums and show click count by medium. To hold the data, I created this:
 
 {{<highlight CSharp>}}
 var documents = new Dictionary<string,IDictionary<string,int>>();
 {{</highlight>}}
 
-Then I built my query. Here's the cool part: the new SDKs fully support LINQ and have no problem with dynamic data! Instead of trying to project to a `dynamic` type, I used an `IDictionary<string, object>`. This code sets up the query and creates an iterator so that I can asynchronously fetch the results. Notice it's perfectly fine to cast the dictionary value to a proper `DateTime` property (see what I did there?) to filter my query!
+The dictionary indexes by page, then within page has a nested dictionary indexed by medium and click count.
+
+Next, I built my query. Here's the cool part: the new SDKs fully support LINQ and have no problem with dynamic data! Instead of trying to project to a `dynamic` type, I used an `IDictionary<string, object>` to emulate a "property bag" (the strings are property names, the objects their respective values). The following code sets up the query and creates an iterator so that I can asynchronously fetch the results. Notice it's perfectly fine to cast the value of an item in the dictionary to a proper `DateTime` property (see what I did there?) to filter my query.
 
 {{<highlight CSharp>}}
 var queryable = container
@@ -230,9 +238,9 @@ var query = queryable
 var iterator = query.ToFeedIterator();
 {{</highlight>}}
 
-What the heck?
+That's a LINQ query for you.
 
-> Even though the dictionary value is an `object` type so I don't have to lock into a schema, the SDK is smart enough to serialize the values to their appropriate .NET types, in this case for `timestamp` a `DateTime`.
+> Even though the dictionary value is an `object` type so I don't have to lock into a specific schema, the SDK is smart enough to serialize the values to their appropriate .NET types, in this case for `timestamp` a `DateTime`.
 
 The generic strategy to iterate over the results is straightforward and as far as I can tell automatically handles throttling requests appropriately (I haven't dug in deep enough to claim that with a certainty, but I had no issues with my datasets).
 
@@ -281,7 +289,7 @@ foreach(var key in document.Keys)
 }
 {{</highlight>}}
 
-I'm finding the property _after_ the `host` property and using that to pivot and sum the data. Yes, this requires trust in the column ordering and is why I explained the big caveat earlier on. Fortunately if for some reason the "wildcard" property doesn't exist, the loop will just exit after `host` none the wiser.
+I'm finding the property _after_ the `host` property and using that to pivot and sum the data. Yes, this requires trust in the column ordering and is why I explained the big caveat earlier on. Fortunately, if for some reason the "wildcard" property doesn't exist, the loop will just exit after `host` none the wiser.
 
 ## Generate the Report
 
@@ -302,11 +310,17 @@ foreach (var page in documents
 }
 {{</highlight>}}
 
-Wow! That was easy. It took me about 30 minutes to write the code, and far longer to write this blog post.
+Wow! That was easy. It took me about 30 minutes to write the code, and far longer to write this blog post. You can bet throughout the day I'll run:
+
+`dotnet run`
+
+...and check to see how things are tracking.
 
 ## Summary
 
-The new SDKs are here, and so far they look good. I was able to get up and running quickly, and from intuition and examples work out how to solve my problem. I look forward to seeing these evolve based on feedback and see more services covered in future releases. I hope you found this useful. As always, please feel free to share your personal experiences and feedback in the comments below!
+The new SDKs are here, and so far, they look good. I was able to get up and running quickly, the API felt intuitive and the examples helped me work out how to solve my problem. I look forward to seeing these evolve based on feedback and see more services covered in future releases. I hope you found this useful. As always, please feel free to share your personal experiences and feedback in the comments below!
+
+🔗 [Get started with the new Azure SDKs](https://jlik.me/f7h).
 
 Regards,
 
