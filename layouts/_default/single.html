@@ -26,15 +26,12 @@
                                 alt="{{ .Site.Params.author.name }}">
                         </div>
                         <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left md-nopad-left">
-                            <a target="_blank" class="link-dark">{{ .Site.Params.author.name }}</a><br>
+                            <a href="/about" class="link-dark">{{ .Site.Params.author.name }}</a><br>
                             <span class="author-description">
                                 {{ .Site.Params.author.description }}<br>
-                                <i class="far fa-star"></i>
-                                {{ dateFormat "Jan 2, 2006" .PublishDate }}
-                                <i class="far fa-clock clock"></i>
-                                {{ .ReadingTime }} min read
-                                &nbsp;&hellip;
-                                {{ .WordCount }} words
+                                📅 {{ dateFormat "Jan 2, 2006" .PublishDate }}
+                                🕘 {{ .ReadingTime }} min read
+                                💬 {{ .WordCount }} words
                             </span>
                         </div>
                     </div>
