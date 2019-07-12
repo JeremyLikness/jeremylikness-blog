@@ -79,10 +79,14 @@ _Atlanta, GA (May 13–14, 2019)_
 
 <i class="fab fa-twitter"></i> [Twitter Highlights](https://twitter.com/i/moments/1129119097461985280)
 
-[Managing Data 📈 in the Cloud ☁](https://blog.jeremylikness.com/managing-data-in-the-cloud-82c5fa0be9d1)
+{{<relativelink "/blog/2019-05-16_managing-data-in-the-cloud-">}}
 
 * .NET is now your Browser OS With Blazor
+    
+    <i class="fab fa-vimeo"></i> [Watch Presentation](https://www.recallact.com/presentation/net-now-your-browser-os-blazor)
+    
     {{<twitter 1128366868966793216>}}
+
 
 ## CodeStock 2019  
 
