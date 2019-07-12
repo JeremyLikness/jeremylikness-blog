@@ -1,11 +1,11 @@
 ---
 title: "Create a Content Security Policy (CSP) in Hugo"
 author: "Jeremy Likness"
-date: 2019-07-11T10:21:55-07:00
+date: 2019-07-12T00:21:55-07:00
 years: "2019"
-lastmod: 2019-07-11T10:21:55-07:00
+lastmod: 2019-07-12T00:21:55-07:00
 
-draft: true
+draft: false
 comments: true
 toc: false
 
