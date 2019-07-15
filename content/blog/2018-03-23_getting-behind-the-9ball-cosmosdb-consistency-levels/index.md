@@ -1,5 +1,5 @@
 ---
-title: "Getting Behind the 9-Ball: CosmosDB Consistency Levels"
+title: "Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained"
 author: "Jeremy Likness"
 date: 2018-03-23T11:22:52.280Z
 years: "2018"
@@ -7,15 +7,15 @@ lastmod: 2019-06-13T10:44:51-07:00
 comments: true
 toc: true
 
-description: "Explore cloud NoSQL Azure CosmosDB database consistency levels in the like “strong”, “bounded staleness” and “consistent prefix” using a billiards game analogy to explain what they mean."
+description: "Explore cloud NoSQL Azure Cosmos DB database consistency levels like “strong”, “bounded staleness” and “consistent prefix” using a billiards game analogy to explain what they mean."
 
-subtitle: "Understand what strong, bounded staleness, session, consistent prefix and eventual consistency levels mean"
+subtitle: "Understand with examples what strong, bounded staleness, session, consistent prefix and eventual consistency levels mean"
 tags:
  - Programming 
  - NoSQL 
  - Cloud 
  - Database 
- - Cosmosdb 
+ - CosmosDB 
 
 image: "/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/images/1.jpeg" 
 images:
