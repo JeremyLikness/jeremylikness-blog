@@ -12,7 +12,7 @@ subtitle: "A solution for property change notification across components"
 tags:
  - JavaScript 
  - Blazor 
- - Webassembly 
+ - WebAssembly 
  - Single Page Applications 
  - Web Development 
 
