@@ -47,8 +47,7 @@ const MAX_TTL = {
 };
 
 const CACHE_BLACKLIST = [
-    (str) => !str.startsWith('http://localhost') &&
-        !str.startsWith('https://blog.jeremylikness.com')
+    (str) => !str.startsWith('https://blog.jeremylikness.com')
 ];
 
 const SUPPORTED_METHODS = [
