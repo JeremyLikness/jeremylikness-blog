@@ -1,6 +1,7 @@
 {
     "name": "Developer for Life",
     "short_name": "dev4life",
+    "description": "Developer for Life is a blog publication about modern software development.",
     "icons": [{
       "src": "/appicons/favicon-128.png",
       "sizes": "128x128",
@@ -24,7 +25,7 @@
     }],
     "start_url": "/",
     "display": "standalone",
-    "orientation" : "portrait",
+    "orientation" : "any",
     "background_color": "#FFFFFF",
     "theme_color": "#FFFFFF"
   }
