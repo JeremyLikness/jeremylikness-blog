@@ -3,7 +3,7 @@ title: "Upcoming Talks"
 author: "Jeremy Likness"
 date: 2017-08-17T14:11:13.204Z
 years: "2017"
-lastmod: 2019-06-23T10:43:33-07:00
+lastmod: 2019-07-17T10:43:33-07:00
 toc: true
 
 description: "Visit this page to see where and when I’ll be speaking and what topics I’ll be covering."
@@ -27,6 +27,12 @@ aliases:
 <figcaption>“Bit” mascot by [@ashleymcnamara](https://twitter.com/ashleymcnamara)</figcaption>
 
 Visit this page to see where and when I’ll be speaking and what topics I’ll be covering. If you run a conference or user group and are looking for speakers, please don’t hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I’ll be happy to consider your venue!
+
+## July 31, 2019 Certified Fresh Events (Free and Online)
+
+[Certified Fresh Events](https://cfe.dev)
+
+* [Exploring Blazor: Building interactive web apps using C#](https://cfe.dev/events/csharp-blazor/)
 
 ## August 5–8, 2019 THAT Conference (Wisconsin)
 
