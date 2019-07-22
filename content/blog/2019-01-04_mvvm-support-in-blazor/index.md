@@ -32,6 +32,8 @@ I recently ported an Angular app to Blazor and wrote about it here:
 
 I noticed immediately that Blazor’s built in change detection works great inside of components (i.e. if you mutate a property on the model, dependent HTML will re-render). You don’t have to do anything special with your model. Updates simply refresh the component! The catch is that other components don’t automatically refresh, so you need to implement a mechanism for change detection across components.
 
+> Examples in this post/repo are for version `3.0.0-preview6.19307.2`
+
 I did some initial research, and the team is adamant this won’t be baked into the framework. Here is the relevant quote from [this issue](https://github.com/aspnet/Blazor/issues/374):
 
 > Our goal with Blazor is target a broad audience with Web developers, so we’re specifically not targeting compatibility with WPF/UWP/Xamarin.Forms. We are also trying to give the you the flexibility to use the patterns you want without baking too much in the framework. So you should be able to implement MVVM patterns on top of Blazor’s core concepts (much like you are doing already). It doesn’t sound like you are blocked with this, and we don’t plan to do more in this direction.
@@ -90,7 +92,7 @@ I decided to name this `ViewModelRegion` because it indicates a region that watc
 @ChildContent
 @using System.ComponentModel
 
-@functions {
+@code {
     [Parameter]
     private RenderFragment ChildContent { get; set; }
 
@@ -112,7 +114,7 @@ Given a component that binds to the number model:
 
 <div>
     <p>Enter a number:</p>
-    <input type="number" bind="Model.Number"/>
+    <input type="number" @bind="Model.Number"/>
 </div>
 {{</highlight>}}
 
