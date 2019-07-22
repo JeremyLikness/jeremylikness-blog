@@ -3,7 +3,7 @@ title: "From Angular to Blazor: The Health App"
 author: "Jeremy Likness"
 date: 2019-01-03T14:20:39.133Z
 years: "2019"
-lastmod: 2019-06-13T10:45:24-07:00
+lastmod: 2019-07-21T10:45:24-07:00
 toc: true
 comments: true
 
@@ -35,7 +35,7 @@ To see the application in action:
 
 👀 [Live Demo](https://jlik.me/ev5)
 
-This post was written with version 0.7.0 of Blazor.
+This post was written with version `3.0.0-preview6.19307.2` of Blazor.
 
 Over four years ago, I wrote a “<i class="fab fa-github"></i> [health app](https://github.com/JeremyLikness/AngularHealthApp/)” in [Angular.js 1.2.9](https://code.angularjs.org/1.2.9/). The goal was to create a very simple reference application that went beyond “Hello, world” and “todo list” to demonstrate features like dependency injection, reusable components, and databinding. The app itself features controls for the user to input information and computes Basal Metabolic Rate, Body Mass Index, and Target Heart Rate in real-time.
 
@@ -154,7 +154,7 @@ After building the model, I started working on the components. Each component is
 
 ## A Toggle Button for Gender
 
-The toggle button displays the current setting for the property, then toggles to the alternative when clicked. I did not abstract the concept of the toggle button because I only had two, but they are implemented the same way. First, the model is injected into the component as described previously. The template then calls methods on the model directly, so it looks like this:
+The toggle button displays the current setting for the property, then toggles to the alternative when clicked. I did not abstract the concept of the toggle button because I only had two, but they are implemented the same way. First, the model is injected into the component as described previously. The template then calls methods on the model directly, so it looks like this in `Shared\GenderToggle.razor`:
 
 {{<highlight HTML>}}
 <div class="unit">
@@ -162,7 +162,7 @@ The toggle button displays the current setting for the property, then toggles to
         <label for="btnGenderToggle">Click to Toggle Gender:</label>
     </div>
     <div class="labelTarget">
-        <button id="btnGenderToggle" onclick="@Model.ToggleGender">@ToggleText</button>
+        <button id="btnGenderToggle" @onclick="@Model.ToggleGender">@ToggleText</button>
     </div>
 </div>
 {{</highlight>}}
@@ -172,7 +172,7 @@ The classes are ported directly from the Angular apps. I dropped the CSS file in
 Note the call simply invokes the toggle function on the model. There is a local property named `ToggleText` that is defined in C# code like this (in Angular it would likely be implemented as a pipe):
 
 {{<highlight CSharp>}}
-@functions {       
+@code {       
     string ToggleText
     {
         get
@@ -209,7 +209,7 @@ The output components are straightforward because they simply display the proper
 To simplify things, I created a class named the same as the category, so I simply apply the appropriate class in addition to the `tile` class to get the desired result. Here is the code for the component:
 
 {{<highlight CSharp>}}
-@functions {
+@code {
     string BmiClass
     {
         get
@@ -255,7 +255,7 @@ I created a very simple implementation that stores callbacks and calls them in s
 > And this is when I also wonder, “Am I understanding the framework right, or did I miss something that is built-in to notify components already?” If you know the answer, let me know in the comments … otherwise I may create a simple library specifically to handle pub/sub for Blazor apps.
 
 {{<highlight CSharp>}}
-private List<Action> registrations = new List<Action>();
+private readonly List<Action> registrations = new List<Action>();
 
 public void Register(Action callback)
 {
@@ -288,10 +288,15 @@ public double HeightInches
 In the last step I updated the output components to register for the notifications and raise the state change.
 
 {{<highlight CSharp>}}
-@functions {
+@code {
+    bool registered = false;
     protected override void OnAfterRender()
     {
-        Model.Register(() => base.StateHasChanged());
+        if (registered == false)
+        {
+            Model.Register(() => base.StateHasChanged());
+            registered = true;
+        }
         base.OnAfterRender();
     }
 }
@@ -303,7 +308,7 @@ After this, everything started working properly.
 
 Tackling the height slider was a bit more involved. It must do some extra lifting because I allow either imperial (U.S.) or metric measurements. Therefore, the slider must change its minimum and maximum range depending on whether metric (centimeters) or imperial (inches) are used, output the proper display value that is currently selected, and furthermore convert from centimeters to inches when updating the shared model.
 
-Let’s dive in! The template is simple enough:
+Let’s dive in! The template is simple enough at `Shared\Height.razor`:
 
 {{<highlight HTML>}}
 <div class="unit">
@@ -314,13 +319,16 @@ Let’s dive in! The template is simple enough:
                step="1"
                min="@MinHeight"
                max="@MaxHeight"
-               bind="@HeightAmt"/>
+               @bind-value="@HeightAmt"
+               @bind-value:event="oninput"/>
         @MaxHeightText
         <br/>
         @HeightDisplay
     </div>
 </div>
 {{</highlight>}}
+
+> The `@bind-value:event` informs the data-bindings to refresh each time the `oninput` event is fired. This results in the slider working _as_ you slide it. Otherwise, it would only update after you release the slider.
 
 The height on the slider may be centimeters or inches, but the model only has inches, so the value is initialized for the component and updated when the model changes.
 
@@ -416,7 +424,7 @@ int HeightAmt
 
 Weight and age both use text boxes for input. For numeric input I have two helpers: first, the HTML specification which allows me to tag the field as numeric; and second, Blazor is smart enough to know that alphanumeric input can’t be transformed into an integer. I also want to make sure that the model is not corrupted with out of range values and show a visible indicator when the input is invalid.
 
-This is the template for age:
+This is the template for age at `Shared\Age.razor`:
 
 {{<highlight HTML>}}
 <div class="unit">
@@ -424,7 +432,8 @@ This is the template for age:
     <div class="labelTarget">
         <input type="number"
                class="@InputClass"
-               bind="@AgeAmt" /> years
+               @bind-value="@AgeAmt"
+               @bind-value:event="oninput" /> years
     </div>
 </div>
 {{</highlight>}}
