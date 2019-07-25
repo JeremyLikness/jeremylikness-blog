@@ -31,11 +31,11 @@ aliases:
 
 ![Screenshot of Health App](/blog/2019-01-03_from-angular-to-blazor-the-health-app/images/1.png)
 
-To see the application in action: 
+To see the application in action:
 
 👀 [Live Demo](https://jlik.me/ev5)
 
-This post was written with version `3.0.0-preview6.19307.2` of Blazor.
+This post was written with version `3.0.0-preview7.19365.7` of Blazor.
 
 Over four years ago, I wrote a “<i class="fab fa-github"></i> [health app](https://github.com/JeremyLikness/AngularHealthApp/)” in [Angular.js 1.2.9](https://code.angularjs.org/1.2.9/). The goal was to create a very simple reference application that went beyond “Hello, world” and “todo list” to demonstrate features like dependency injection, reusable components, and databinding. The app itself features controls for the user to input information and computes Basal Metabolic Rate, Body Mass Index, and Target Heart Rate in real-time.
 
