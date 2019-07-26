@@ -37,7 +37,11 @@
                 {{ if eq .Page.Type "years" }}
                     <h2><span>All Posts From {{ .Page.Title }} ({{ len .Data.Pages }} Total)
                 {{ else }}
+                    {{ if eq .Page.Type "series" }}
+                    <h2><span>{{ .Page.Title }} (Series: {{ len .Data.Pages }} Parts Total)</span></h2>
+                    {{ else }}
                     <h2><span>All Posts ({{ len .Pages}} Total){{ end }}
+                    {{ end }}
                 {{ end }}{{ end }}
             {{ if gt $post_paginator.TotalPages 1 }}
                 <em style="color: lightslategray">Page {{ $post_paginator.PageNumber }} of {{ $post_paginator.TotalPages }}</em>
