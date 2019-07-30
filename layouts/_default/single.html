@@ -69,10 +69,25 @@
 
                 <!-- Series -->
                 {{ if .Params.series }}
+                {{ $seriesUrl := .Params.series | urlize }}
+                {{ $this := .Permalink }}
                 <p>
                     Part of the series:
-                    <a href="{{ "/series/" | relLangURL }}{{ .Params.series | urlize }}">{{.Params.series}}</a>                    
+                    <a href="{{ "/series/" | relLangURL }}{{ $seriesUrl }}">{{.Params.series}}</a>                    
                 </p>
+                {{ range $taxonomyname, $taxonomy := .Site.Taxonomies.series }}
+                {{ if eq $taxonomyname $seriesUrl }}
+                <ol>
+                    {{ range $taxonomy.Pages.ByDate }} 
+                    {{ if (eq $this .Permalink) }}
+                    <li><strong>{{ .LinkTitle }}</strong></li>
+                    {{ else }}
+                    <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+                    {{ end }}
+                    {{ end }}
+                </ol>
+                {{ end }}
+                {{ end }}
                 {{ end }}
 
                 {{ if .Params.canonicalUrl }}

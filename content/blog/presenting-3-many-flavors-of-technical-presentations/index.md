@@ -5,7 +5,7 @@ date: 2019-04-15T13:46:00-07:00
 years: "2019"
 lastmod: 2019-06-24T13:46:00-07:00
 
-draft: true
+draft: false
 comments: true
 toc: true
 
