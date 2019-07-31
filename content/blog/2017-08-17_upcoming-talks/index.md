@@ -28,12 +28,6 @@ aliases:
 
 Visit this page to see where and when I’ll be speaking and what topics I’ll be covering. If you run a conference or user group and are looking for speakers, please don’t hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I’ll be happy to consider your venue!
 
-## July 31, 2019 Certified Fresh Events (Free and Online)
-
-[Certified Fresh Events](https://cfe.dev)
-
-* [Exploring Blazor: Building interactive web apps using C#](https://cfe.dev/events/csharp-blazor/)
-
 ## August 5–8, 2019 THAT Conference (Wisconsin)
 
 ![THAT Conference Logo](/blog/2017-08-17_upcoming-talks/images/4.png)
