@@ -1,23 +1,24 @@
 ---
 title: "Build Data-Driven Web Apps Blazing Fast with Blazor and OData"
 author: "Jeremy Likness"
-date: 2019-08-06T12:17:28-07:00
+date: 2019-08-09T00:17:28-07:00
 years: "2019"
-lastmod: 2019-08-06T12:17:28-07:00
+lastmod: 2019-08-09T00:17:28-07:00
 
-draft: true
+draft: false
 comments: true
 toc: true
 
 subtitle: "Step aside GraphQL, this is WCF RIA reborn!"
 
-description: "Learn how to build data-driven applications with seamless client-server communication using LINQ over OData."
+description: "Build data-driven .NET applications with seamless client-server communication using fluent C# LINQ over OData (like GraphQL but without the JSON)."
 
 tags:
  - .NET Core 
  - OData
  - Blazor
  - Web Development
+ - GraphQL
 
 image: "/blog/build-data-driven-apps-blazing-fast-with-blazor-and-odata/images/todoapp.jpg" 
 images:
@@ -373,14 +374,14 @@ public interface ITodoDataAccess
 }
 {{</highlight>}}
 
-Before event worrying about calling APIs or communicating with the server, I created a `MockTodoData` implementation you can [view here](https://github.com/JeremyLikness/BlazorOData/blob/master/BlazorOData.Client/Models/MockTodoData.cs). It satisfies the interface using an in-memory list. Because Blazor has built-in dependency injection (DI), I can register the viewmodel and mock service like this in `Startup.cs`:
+Before even worrying about calling APIs or communicating with the server, I created a `MockTodoData` implementation you can [view here](https://github.com/JeremyLikness/BlazorOData/blob/master/BlazorOData.Client/Models/MockTodoData.cs). It satisfies the interface using an in-memory list. Because Blazor has built-in dependency injection (DI), I can register the viewmodel and mock service like this in `Startup.cs`:
 
 {{<highlight CSharp>}}
 services.AddSingleton<ITodoDataAccess, MockTodoData>();
 services.AddSingleton<TodoViewModel>();
 {{</highlight>}}
 
-If I give the viewmodel a constructor that accepts `ITodoDataAccess` as a parameter, the Blazor DI service will pass in the service for me when it constructs the viewmodel.
+If I give the viewmodel a constructor that accepts `ITodoDataAccess` as a parameter, the Blazor DI service will pass in the right instance for me when it constructs the viewmodel.
 
 The full implementation of the viewmodel is available [here](https://github.com/JeremyLikness/BlazorOData/blob/master/BlazorOData.Client/Models/TodoViewModel.cs). A few highlights:
 
@@ -419,7 +420,7 @@ The view component uses these properties to change the class of the input field 
 
 ### Handling Asynchronous Operations
 
-The viewmodel uses a simple method to notify when it is waiting on asynchronous operations to complete. I've used this pattern for a decade now and it works for 90% of the use cases. An operation simply increments a count when it begins, and decrements when completed. This wait multiple parallel operations can work together and it simply changes state when they all complete. The main code to facilitate this is here:
+The viewmodel uses a simple method to notify when it is waiting on asynchronous operations to complete. I've used this pattern for a decade now and it works for 90% of the use cases. An operation simply increments a count when it begins, and decrements when completed. This way multiple parallel operations can work together and it simply changes state when they all complete. The main code to facilitate this is here:
 
 {{<highlight CSharp>}}
 private int _asyncCount = 0;
@@ -500,7 +501,7 @@ Vagif coached me on what to expect from the international audience and provided 
 
 This client has everything I wanted. It inspects the metadata endpoint for the OData client, builds and internal model based on what is passed back, and exposes manual, fluent, and dynamic interfaces to everything. It's easiest just to explain how I built the implementation of the service client that I named [TodoSimpleOData](https://github.com/JeremyLikness/BlazorOData/blob/master/BlazorOData.Client/Models/TodoSimpleOData.cs).
 
-First, because Blazor requires a specially configured version of the `HttpClient` that is aware of browser limitations, I take advantage of the client's settings to pass in the instance I want to use. That instance, in turn, is passed into the service via dependency injection (it's internally wired to be available to Blazor code). 
+First, because Blazor requires a specially configured version of the `HttpClient` that is aware of browser limitations, I take advantage of the client's settings to pass in the instance I want to use. That instance, in turn, is passed into the service via dependency injection (it's internally wired to be available to Blazor code).
 
 {{<highlight CSharp>}}
 public TodoSimpleOData(HttpClient client)
@@ -511,11 +512,11 @@ public TodoSimpleOData(HttpClient client)
 }
 {{</highlight>}}
 
-Here I'm hard coding the URL address to keep the demo simple. You could set it up to read from standard .NET Core configuration settings and generate the endpoint as part of your build process. Also, I tend to run the OData client from the shell with a simple `dotnet run` that defaults to port 5000. If you run it as a startup project from Visual Studio, the port may be different so please keep that in mind and update accordingly.
+Here I'm hard coding the base URL address to keep the demo simple. You could set it up to read from standard .NET Core configuration settings and generate the endpoint as part of your build process. Also, I tend to run the OData client from the shell with a simple `dotnet run` that defaults to port 5000. If you run it as a startup project from Visual Studio, the port may be different so please keep that in mind and update accordingly.
 
-> _Psssst_ I have a little secret. That endpoint is the only time I need to specify a URL or endpoint, ever. The client can request whatever entities are available, what their endpoints are and how to perform any operations against them. Wait and see for yourself!
+> _Psssst_ I have a little secret. That endpoint is the only time I need to specify a URL or endpoint, ever. The client can request whatever entities are available, what their endpoints are and how to perform any operations against them automatically once it "knows" the base address. Wait and see for yourself!
 
-Right now, I have a bunch of methods throwing "I'm not implemented" exceptions. To work with the list, I need to add new items, so I'll do that first. I never trust that validation has already occurred, so much of this method is building a validation context and verifying the model is valid before passing it to the client (which in turn will further validate it on the server).
+Right now, I have a bunch of methods throwing "I'm not implemented" exceptions. To work with the list, I need to add new items, so I'll do that first. I never trust that validation has already occurred, so most of this method is building a validation context and verifying the model is valid before passing it to the client (which in turn will further validate it on the server).
 
 {{<highlight CSharp>}}
 public async Task<Todo> AddAsync(Todo itemToAdd)
@@ -557,7 +558,7 @@ public async Task<bool> DeleteAsync(Todo item)
 }
 {{</highlight>}}
 
-That's only half implemented ... if an exception is thrown, I'd catch it and return `false` but we're keeping the demo simple. Running delete:
+I return `true` by default but for a production application would also capture errors, log them and return `false` when/if it fails. Running delete:
 
 ![OData Delete](/blog/build-data-driven-apps-blazing-fast-with-blazor-and-odata/images/odatadelete.jpg)
 <figcaption>OData delete</figcaption>
@@ -590,7 +591,7 @@ public async Task<IEnumerable<Todo>> GetAsync(
 }
 {{</highlight>}}
 
-Nice and fluent! Here is the default query:
+Nice and fluent! Notice how I can conditionally chain options, just like any other LINQ over `IQueryable` interface. Here is the default query:
 
 ![OData filtered query](/blog/build-data-driven-apps-blazing-fast-with-blazor-and-odata/images/filteredquery.jpg)
 <figcaption>OData filtered query</figcaption>
@@ -604,7 +605,7 @@ That's just a simple example. If you dig into the client a bit deeper, you'll fi
 
 ## Putting it all Together
 
-The nice thing about dependency injection is that I simply changed the version of the service I registered to go from "in memory" to live. The full repository is available online here:
+The nice thing about dependency injection is that I can change the version of the service I register in `Startup.cs` to go from "in memory" to live. The full repository is available online here:
 
 {{<github "JeremyLikness/BlazorOData">}}
 
