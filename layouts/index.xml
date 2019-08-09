@@ -28,13 +28,16 @@
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid isPermaLink="true">{{ .Permalink }}</guid>
+      {{ $description := printf "<p>%s</p>" (or .Params.Description .Summary) }}
       {{ if .Params.image }}
         {{ $original := print "images/" (path.Base .Params.image) }}
         {{ $originalImg := .Resources.GetMatch $original }}
         {{ if $originalImg }}
-            {{ $len := len $originalImg.Content }}{{ $url := printf "%s%s" .Permalink $original }}
+            {{ $len := len $originalImg.Content }}
+            {{ $url := printf "%s%s" .Permalink $original }}
+            {{ $description = printf "<p><img src='%s' alt='%s'/></p>%s" $url .Title $description }} 
         <enclosure url="{{$url}}" length="{{$len}}" type="{{$originalImg.MediaType}}" />{{end}}{{end}}
-      <description>{{ if .Params.Description }}{{ .Params.Description | html }}{{ else }}{{ .Summary | html }}{{end}}</description>
+      <description>{{ $description | html }}</description>
     </item>
     {{ end }}
   </channel>
