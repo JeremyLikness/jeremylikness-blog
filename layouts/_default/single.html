@@ -49,7 +49,7 @@
                 {{ if .Params.series }}
                 <p>
                     Part of the series:
-                    <a href="{{ "/series/" | relLangURL }}{{ .Params.series | urlize }}">{{.Params.series}}</a>                    
+                    <a href="{{ "/series/" | relLangURL }}{{ .Params.series | urlize }}">{{.Params.series}}</a>
                 </p>
                 {{ end }}
 
@@ -67,18 +67,19 @@
                     {{ .Content}}
                 </div>
 
+                {{ $this := .Permalink }}
+
                 <!-- Series -->
                 {{ if .Params.series }}
                 {{ $seriesUrl := .Params.series | urlize }}
-                {{ $this := .Permalink }}
                 <p>
                     Part of the series:
-                    <a href="{{ "/series/" | relLangURL }}{{ $seriesUrl }}">{{.Params.series}}</a>                    
+                    <a href="{{ "/series/" | relLangURL }}{{ $seriesUrl }}">{{.Params.series}}</a>
                 </p>
                 {{ range $taxonomyname, $taxonomy := .Site.Taxonomies.series }}
                 {{ if eq $taxonomyname $seriesUrl }}
                 <ol>
-                    {{ range $taxonomy.Pages.ByDate }} 
+                    {{ range $taxonomy.Pages.ByDate }}
                     {{ if (eq $this .Permalink) }}
                     <li><strong>{{ .LinkTitle }}</strong></li>
                     {{ else }}
@@ -88,32 +89,51 @@
                 </ol>
                 {{ end }}
                 {{ end }}
+                <!-- end series -->
                 {{ else }}
-                {{ $tagName := index (shuffle .Params.Tags) 0 }}
-                {{ $tag := lower $tagName | urlize }}
-                <p>Related articles to '{{ $tagName }}':</p>
-                {{ range $taxonomyname, $taxonomy := .Site.Taxonomies.tags }}
-                {{ if eq $taxonomyname $tag }}
+                <!-- related articles -->
+                {{ $tags := .Params.Tags }}
+                {{ $related := newScratch }}
+                {{ $related.Add "pages" slice }}
+                {{ $globalTags := .Site.Taxonomies.tags }}
+                {{ range $tagname, $tagitem := $globalTags }}
+                {{ range $tag := $tags }}
+                {{ if eq (lower $tag | urlize) $tagname }}
+                {{ range $tagitem.Pages }}
+                {{ if and (not ($related.Get .Permalink)) (not (eq $this .Permalink)) }}
+                {{ $related.Add "pages" . }}
+                {{ $related.Set .Permalink $tag }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ end }}
+                {{ if gt (len ($related.Get "pages")) 0 }}
+                <p>Related articles:</p>
                 <ul>
-                    {{ range $taxonomy.Pages.ByTitle | first 3 }} 
-                    <li><a href="{{ .Permalink }}" title="{{ .Params.Description }}">{{ .LinkTitle }}</a></li>
+                    {{ range ((shuffle ($related.Get "pages")) | first 5).ByTitle }}
+                    {{ $originalTag := ($related.Get .Permalink) }}
+                    <li>
+                        <a href="{{ .Permalink }}" title="{{ .Params.Description }}">
+                            {{ .LinkTitle }}
+                        </a>&nbsp;
+                        <a href="/tags/{{$originalTag | urlize }}" title="Articles tagged '{{$originalTag}}'">
+                            <strong>({{ $originalTag }})</strong>
+                        </a>
+                    </li>
                     {{ end }}
                 </ul>
                 {{ end }}
-                {{ end }}
+                <!-- end related articles -->
                 {{ end }}
 
                 {{ if .Params.canonicalUrl }}
                 <p>
-                    <em>This post originally appeared at 
+                    <em>This post originally appeared at
                         <a href="{{ .Params.canonicalUrl }}" target="_blank" title="{{ .Title }}">{{ .Title }}</a>
                     </em>
                 </p>
                 {{end}}
-
-                {{ if not .Params.noads }}
-                {{ partial "_shared/banner.html" }}
-                {{ end }}
 
                 <!-- Post Categories -->
                 <div class="after-post-tags">
@@ -126,6 +146,12 @@
                     </ul>
                 </div>
                 <!-- End Categories -->
+
+                {{ if not .Params.noads }}
+                <div>&nbsp;</div>
+                {{ partial "_shared/banner.html" }}
+                <div>&nbsp;</div>
+                {{ end }}
 
                 <!-- Next and PrevPage inside current section -->
                 <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
