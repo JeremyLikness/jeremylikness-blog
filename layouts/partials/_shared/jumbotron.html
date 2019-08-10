@@ -8,10 +8,10 @@
 			</div>
 		</div>
 		<div class="col-md-8 p-5 align-self-center text-center">
-			{{ range .Site.Taxonomies.tags.ByCount }}
-			{{ if gt .Count 1 }}
-			<a class="mt-1 mb-1" href="{{ "/tags/" | relLangURL }}{{ .Name | urlize }}">{{ .Name }}</a>
-			{{ end }}{{ end }}
+			{{ $randomPosts := shuffle (where .Site.Pages "Type" "blog") | first 7 }}
+			{{ range $randomPosts.ByTitle }}
+			<a class="mt-2 mb-2" href="{{ .Permalink }}" title="{{ .Params.description }}">{{.Title}}</a>&nbsp;
+			{{ end }}			
 		</div>
 	</div>
 </div>
