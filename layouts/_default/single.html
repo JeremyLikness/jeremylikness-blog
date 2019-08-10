@@ -88,6 +88,19 @@
                 </ol>
                 {{ end }}
                 {{ end }}
+                {{ else }}
+                {{ $tagName := index (shuffle .Params.Tags) 0 }}
+                {{ $tag := lower $tagName | urlize }}
+                <p>Related articles to '{{ $tagName }}':</p>
+                {{ range $taxonomyname, $taxonomy := .Site.Taxonomies.tags }}
+                {{ if eq $taxonomyname $tag }}
+                <ul>
+                    {{ range $taxonomy.Pages.ByTitle | first 3 }} 
+                    <li><a href="{{ .Permalink }}" title="{{ .Params.Description }}">{{ .LinkTitle }}</a></li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+                {{ end }}
                 {{ end }}
 
                 {{ if .Params.canonicalUrl }}
