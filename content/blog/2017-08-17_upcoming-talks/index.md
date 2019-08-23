@@ -28,15 +28,6 @@ aliases:
 
 Visit this page to see where and when I’ll be speaking and what topics I’ll be covering. If you run a conference or user group and are looking for speakers, please don’t hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I’ll be happy to consider your venue!
 
-## August 5–8, 2019 THAT Conference (Wisconsin)
-
-![THAT Conference Logo](/blog/2017-08-17_upcoming-talks/images/4.png)
-[THAT Conference](https://thatconference.com)
-
-* [WebAssembly: The Swiss Army Knife of Browser Apps](https://www.thatconference.com/Sessions/Session/13189)
-
-{{<gmap "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2890.704555197011!2d-89.776242!3d43.571039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3bf1f250efce2062!2sKalahari+Resorts+Dells!5e0!3m2!1sen!2sus!4v1560548593861!5m2!1sen!2sus" "Kalahari Resorts Dells | 1305 Kalahari Dr, Wisconsin Dells, WI 53965">}}
-
 ## September 29-October 3, 2019 VS Live! San Diego
 
 [VS Live! San Diego](https://vslive.com/events/san-diego-2019/home.aspx)

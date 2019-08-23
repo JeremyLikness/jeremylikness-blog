@@ -35,6 +35,12 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
+## THAT Conference 2019
+
+* WebAssembly: The Swiss Army Knife of Browser Apps 
+
+{{<twitter 1158861556526080008>}}
+
 ## .NET Developers Association (Eastside and Westside) 2019
 
 * Bare Metal Web Assembly
