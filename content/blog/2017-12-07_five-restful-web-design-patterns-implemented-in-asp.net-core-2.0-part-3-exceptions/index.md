@@ -14,7 +14,7 @@ tags:
  - Aspnet 
  - Webap 
  - API 
- - Dotnet 
+ -  .NET 
  - Api Design 
 
 image: "/blog/2017-12-07_five-restful-web-design-patterns-implemented-in-asp.net-core-2.0-part-3-exceptions/images/3.jpeg" 

@@ -12,8 +12,8 @@ description: "Learn about the new features available in .NET Core 2.0 and how to
 subtitle: "Learn about the features available in .NET Core 2.0 via the Sterling port that depends on binary serialization, reflection, and more."
 tags:
  - Microsoft 
- - Dotnet 
- - Dotnet Core 
+ -  .NET 
+ -  .NET Core 
  - Azure 
 
 image: "/blog/2017-08-23_.net-core-2.0-is-ready-and-sterling-proves-it/images/1.png" 

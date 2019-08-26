@@ -13,7 +13,7 @@ tags:
  - NoSQL 
  - Mongodb 
  - Sql 
- - Dotnet 
+ -  .NET 
  - Azure 
 
 image: "/blog/2018-10-08_say-yes-to-nosql-for.net-sql-developers/images/1.png" 

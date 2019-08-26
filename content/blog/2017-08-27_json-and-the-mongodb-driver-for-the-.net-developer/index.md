@@ -15,7 +15,7 @@ tags:
  - Cosmosdb 
  - Mongodb 
  - NoSQL 
- - Dotnet Core 
+ -  .NET Core 
 
 image: "/blog/2017-08-27_json-and-the-mongodb-driver-for-the-.net-developer/images/1.jpeg" 
 images:

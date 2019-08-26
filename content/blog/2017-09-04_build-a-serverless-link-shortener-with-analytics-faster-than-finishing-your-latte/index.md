@@ -13,7 +13,7 @@ description: "How to leverage Azure Functions, Azure Table Storage, and Applicat
 subtitle: "How to leverage Azure Functions, Azure Table Storage, and Application Insights to build a serverless custom URL shortening tool."
 tags:
  - Azure 
- - Dotnet 
+ -  .NET 
  - Serverless 
  - Cloud Computing 
  - Azure Functions 

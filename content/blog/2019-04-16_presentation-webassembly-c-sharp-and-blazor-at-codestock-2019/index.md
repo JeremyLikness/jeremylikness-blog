@@ -13,7 +13,7 @@ tags:
  - JavaScript 
  - Single Page Applications 
  - Blazor 
- - DotNet
+ -  .NET
  - Presentation
 
 image: "/blog/2019-04-16_presentation-webassembly-c-sharp-and-blazor-at-codestock-2019/images/2.png" 

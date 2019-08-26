@@ -13,8 +13,8 @@ description: "Learn how to deploy an Angular application with a .NET Core backe
 subtitle: "A tale of static websites, Web Apps, serverless functions and containers."
 tags:
  - Angular 
- - Dotnet 
- - Dotnet Core 
+ -  .NET 
+ -  .NET Core 
  - Azure 
  - Serverless 
 

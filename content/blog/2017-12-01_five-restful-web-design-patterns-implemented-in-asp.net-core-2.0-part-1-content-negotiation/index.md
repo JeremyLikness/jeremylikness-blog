@@ -13,7 +13,7 @@ subtitle: "Leveraging cross-platform C# and .NET to build consumer-friendly Web 
 tags:
  - Rest Api 
  - Webapi 
- - Dotnet Core 
+ -  .NET Core 
  - API 
  - Api Development 
 

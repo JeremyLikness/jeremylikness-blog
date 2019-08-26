@@ -11,7 +11,7 @@ description: "Learn about the Azure CosmosDB database w/ DocumentDB, MongoDB, Gr
 subtitle: "Learn about the Azure CosmosDB database w/ DocumentDB, MongoDB, Gremlin (Graph) and Table storage APIs and .NET Core 2.0 examples."
 tags:
  - Presentation 
- - DotNet Core 
+ -  .NET Core 
  - Cosmosdb 
  - NoSQL 
  - Mongodb 

@@ -12,7 +12,7 @@ description: "My recap of a visit to St. Petersburg, Russia to present Explore t
 subtitle: "A .NET-focused conference that is incredibly well organized and valuable to attend."
 tags:
  - Conference 
- - Dotnet 
+ -  .NET 
  - Cosmosdb 
  - Russia 
 

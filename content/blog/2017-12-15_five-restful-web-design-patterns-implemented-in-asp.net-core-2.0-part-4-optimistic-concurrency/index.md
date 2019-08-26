@@ -13,8 +13,8 @@ subtitle: "Authoring APIs that respect change"
 tags:
  - API 
  - Api Development 
- - Dotnet 
- - Dotnet Core 
+ -  .NET 
+ -  .NET Core 
  - Concurrency 
 
 image: "/blog/2017-12-15_five-restful-web-design-patterns-implemented-in-asp.net-core-2.0-part-4-optimistic-concurrency/images/1.png" 

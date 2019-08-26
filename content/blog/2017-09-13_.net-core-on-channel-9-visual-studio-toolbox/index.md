@@ -10,7 +10,7 @@ description: "A deep dive of .NET Core 2.0, .NET Standard 2.0 and why it’s rea
 
 subtitle: "A deep dive of .NET Core 2.0, .NET Standard 2.0 and why it’s ready for developers to migrate their code today."
 tags:
- - Dotnet Core 
+ -  .NET Core 
  - Database 
  - Development 
 

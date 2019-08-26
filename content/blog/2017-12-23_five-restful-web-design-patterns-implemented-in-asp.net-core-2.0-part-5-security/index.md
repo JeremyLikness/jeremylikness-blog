@@ -16,7 +16,7 @@ tags:
  - Api Development 
  - Security 
  - Jwt 
- - Dotnet Core 
+ -  .NET Core 
 
 image: "/blog/2017-12-23_five-restful-web-design-patterns-implemented-in-asp.net-core-2.0-part-5-security/images/1.png" 
 images:

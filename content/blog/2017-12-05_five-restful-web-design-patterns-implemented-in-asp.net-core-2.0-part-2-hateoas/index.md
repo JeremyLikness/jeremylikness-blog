@@ -13,8 +13,8 @@ subtitle: "Hypertext as the Engine of Application State"
 tags:
  - API 
  - Api Development 
- - Dotnet 
- - Dotnet Core 
+ -  .NET 
+ -  .NET Core 
  - Rest Api 
 
 image: "/blog/2017-12-05_five-restful-web-design-patterns-implemented-in-asp.net-core-2.0-part-2-hateoas/images/1.png" 

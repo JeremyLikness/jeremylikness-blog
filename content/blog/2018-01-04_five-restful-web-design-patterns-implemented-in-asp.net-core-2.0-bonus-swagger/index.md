@@ -15,7 +15,7 @@ tags:
  - Swagger 
  - Openapi 
  - Api Development 
- - Dotnet Core 
+ -  .NET Core 
 
 image: "/blog/2018-01-04_five-restful-web-design-patterns-implemented-in-asp.net-core-2.0-bonus-swagger/images/2.png" 
 images:

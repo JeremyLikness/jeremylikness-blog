@@ -14,7 +14,7 @@ tags:
  - JavaScript 
  - Typescript 
  - Angular 
- - Dotnet 
+ -  .NET 
  - Azure 
 
 image: "/blog/2018-09-06_get-started-with-angular-on.net-core-2.1-part-one/images/3.png" 

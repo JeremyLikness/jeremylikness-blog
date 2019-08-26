@@ -11,8 +11,8 @@ description: ".NET Core 2 is out — are you ready to migrate? Carl and Rich
 subtitle: "Fun podcast covering .NET Core 2.0 and the lessons I learned migrating the open source NoSQL Sterling database."
 tags:
  - Aspnet 
- - Dotnet 
- - Dotnet Core 
+ -  .NET 
+ -  .NET Core 
  - Podcast 
  - Programming 
 

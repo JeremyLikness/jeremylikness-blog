@@ -12,7 +12,7 @@ description: "Build a sample app in Blazor, a .NET-based framework for building
 subtitle: "A reference application built with cross-platform WebAssembly-based Blazor."
 tags:
  - JavaScript 
- - Dotnet 
+ -  .NET 
  - Blazor 
  - Single Page Applications 
  - Angular 
