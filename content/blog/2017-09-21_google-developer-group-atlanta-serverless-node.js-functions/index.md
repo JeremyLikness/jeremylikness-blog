@@ -12,7 +12,7 @@ subtitle: "Learn how easy it is to build microservices leveraging JavaScript and
 tags:
  - Nodejs 
  - JavaScript 
- - Presentations 
+ - Presentation 
  - Azure 
  - Azure Functions 
 

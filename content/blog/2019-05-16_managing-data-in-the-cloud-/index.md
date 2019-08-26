@@ -15,7 +15,7 @@ tags:
  - NoSQL 
  - Mongodb 
  - Sql
- - Presentations 
+ - Presentation
 
 image: "/blog/2019-05-16_managing-data-in-the-cloud/images/1.png" 
 images:

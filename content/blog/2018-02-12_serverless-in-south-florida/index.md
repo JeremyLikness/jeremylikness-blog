@@ -14,7 +14,7 @@ tags:
  - Azure 
  - Azure Functions 
  - Logic Apps 
- - Presentations 
+ - Presentation 
 
 image: "/blog/2018-02-12_serverless-in-south-florida/images/1.png" 
 images:

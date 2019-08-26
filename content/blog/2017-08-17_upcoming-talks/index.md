@@ -11,7 +11,7 @@ description: "Visit this page to see where and when I’ll be speaking and what 
 subtitle: "Where and when Jeremy Likness is speaking and the topics he will cover."
 tags:
  - Speaking
- - Presentations 
+ - Presentation 
 
 image: "/blog/2017-08-17_upcoming-talks/images/1.png" 
 images:

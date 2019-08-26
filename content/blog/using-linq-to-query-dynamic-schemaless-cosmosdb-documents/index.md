@@ -17,8 +17,8 @@ tags:
  - Azure
  - Cosmos DB
  - NoSQL 
- - .NET
- - .NET Core
+ - DotNet
+ - DotNet Core
 
 image: "/blog/using-linq-to-query-dynamic-schemaless-cosmosdb-documents/images/cosmossdk.jpg" 
 images:

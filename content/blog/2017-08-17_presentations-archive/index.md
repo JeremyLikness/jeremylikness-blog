@@ -11,7 +11,7 @@ description: "This article contains descriptions of presentations Jeremy Likness
 subtitle: "Comprehensive list of presentations by Jeremy Likness with links to decks, videos, and source code."
 tags:
  - JavaScript 
- - Presentations 
+ - Presentation 
 
 image: "/blog/2017-08-17_presentations-archive/images/1.jpeg" 
 images:

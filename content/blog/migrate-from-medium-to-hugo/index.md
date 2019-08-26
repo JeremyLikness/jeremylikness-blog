@@ -247,13 +247,14 @@ canonicalUrl: "https://medium.com/microsoftazure/serverless-video-less-servers-m
 description: "A video that covers the definition of serverless, describes scenarios that serverless makes sense and provides practical, working examples using Azure Functions, Logic Apps, and Event Grid."
 
 subtitle: "Learn about the Azure serverless platform and how Azure Functions, Event Grid, and Logic Apps work together to deliver cloud native experiences."
+
 tags:
  - Serverless 
  - Azure 
  - Azure Functions 
  - Logic Apps 
  - Cloud Native
- - Presentations
+ - Presentation
 
 image: "/blog/2019-05-28_serverless-video-less-servers-more-code/images/1.png" 
 images:

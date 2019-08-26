@@ -13,7 +13,7 @@ tags:
  - Docker 
  - Azure 
  - Kubernetes 
- - Presentations 
+ - Presentation
 
 image: "/blog/2017-08-15_herding-cattle-with-the-azure-container-service-acs/images/1.png" 
 images:

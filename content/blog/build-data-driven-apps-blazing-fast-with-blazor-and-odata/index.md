@@ -14,7 +14,7 @@ subtitle: "Step aside GraphQL, this is WCF RIA reborn!"
 description: "Build data-driven .NET applications with seamless client-server communication using fluent C# LINQ over OData (like GraphQL but without the JSON)."
 
 tags:
- - .NET Core 
+ - DotNet Core 
  - OData
  - Blazor
  - Web Development

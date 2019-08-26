@@ -11,7 +11,7 @@ description: "Introduction to Node.js, how to deploy Node.js apps to Azure and c
 subtitle: "Recap of my full day Node.js workshop and TypeScript for Node.js talk at Connect.Tech 2017."
 tags:
  - Nodejs 
- - Presentations 
+ - Presentation 
  - Typescript 
  - Azure 
  - JavaScript 

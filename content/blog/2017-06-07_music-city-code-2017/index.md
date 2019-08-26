@@ -14,7 +14,7 @@ tags:
  - Kubernetes 
  - Angularjs 
  - Typescript 
- - Presentations 
+ - Presentation 
 
 image: "/blog/2017-06-07_music-city-code-2017/images/1.png" 
 images:

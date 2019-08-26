@@ -15,7 +15,7 @@ tags:
  - Azure Functions 
  - Logic Apps 
  - Cloud Native
- - Presentations
+ - Presentation
 
 image: "/blog/2019-05-28_serverless-video-less-servers-more-code/images/1.png" 
 images:

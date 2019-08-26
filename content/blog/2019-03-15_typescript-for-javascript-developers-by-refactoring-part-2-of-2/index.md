@@ -16,7 +16,7 @@ tags:
  - Javscript 
  - Nodejs 
  - Training 
- - Presentations
+ - Presentation
 
 image: "/blog/2019-03-15_typescript-for-javascript-developers-by-refactoring-part-2-of-2/images/1.png" 
 images:
