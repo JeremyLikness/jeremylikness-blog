@@ -36,9 +36,11 @@
                 <h2><span>Most Recent Posts</span></h2>
             </div>
             <div class="row listrecent">
-                {{ range first 3 (.Pages.ByDate.Reverse ) }}
+                {{ $recent := where .Site.Pages "Type" "blog" }}
+                {{ $recentPages := where $recent "IsPage" true }}
+                {{ range first 3 $recentPages.ByDate.Reverse }}
                 {{- partial "list-partials/postbox.html" . -}}
-                {{end}}
+                {{ end }}                
             </div>
         </section>
     </section>
