@@ -3,7 +3,7 @@ title: "Build Data-Driven Web Apps Blazing Fast with Blazor and OData"
 author: "Jeremy Likness"
 date: 2019-08-09T00:17:28-07:00
 years: "2019"
-lastmod: 2019-08-09T00:17:28-07:00
+lastmod: 2019-09-012T00:17:28-07:00
 
 draft: false
 comments: true
@@ -319,7 +319,7 @@ I show the loading prompt if the list is `null` (if there are no items it will b
 After the component is initialized, I load the initial list and set up property changed notification to update the button status. This fires any time the user is entering text, so I only want to refresh the list when it's needed (and _not_ on every key press). I assume the viewmodel will raise a property changed notification for `TodosAsync` whenever the list needs to be refreshed. The `StateHasChanged` causes the template to re-render.
 
 {{<highlight CSharp>}}
-protected override async Task OnInitAsync()
+protected override async Task OnInitializedAsync()
 {
     todos = (await ViewModel.TodosAsync()).ToList();
     ViewModel.NewDescription = string.Empty;
@@ -332,7 +332,7 @@ protected override async Task OnInitAsync()
         }
         StateHasChanged();
     };
-    await base.OnInitAsync();
+    await base.OnInitializedAsync();
 }
 {{</highlight>}}
 
