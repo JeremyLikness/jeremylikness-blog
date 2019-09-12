@@ -71,7 +71,9 @@ After the app is migrated and deployed, review how Azure resources are organized
 
 ## Build, Test, Run and Deploy from your Local Machine
 
-(coming soon)
+Use the cross-platform [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=link-blog-jelikness) to create a local functions project and run it. Then, using free and cross-platform [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=link-blog-jeliknes), build and debug a project in just a few short steps. After implementing the fully migrated function, deploy it to Azure directly from Visual Studio Code.
+
+{{<youtube 3keA9GXYQDc>}}
 
 ## Review Advanced Features: Security, CI/CD (DevOps) and More
 
