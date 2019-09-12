@@ -3,7 +3,7 @@ title: "From Angular to Blazor: The Health App"
 author: "Jeremy Likness"
 date: 2019-01-03T14:20:39.133Z
 years: "2019"
-lastmod: 2019-07-21T10:45:24-07:00
+lastmod: 2019-09-12T10:45:24-07:00
 toc: true
 comments: true
 
@@ -35,7 +35,7 @@ To see the application in action:
 
 👀 [Live Demo](https://jlik.me/ev5)
 
-This post was written with version `3.0.0-preview7.19365.7` of Blazor.
+This post was written with version `3.0.0-preview9.19424.4` of Blazor.
 
 Over four years ago, I wrote a “<i class="fab fa-github"></i> [health app](https://github.com/JeremyLikness/AngularHealthApp/)” in [Angular.js 1.2.9](https://code.angularjs.org/1.2.9/). The goal was to create a very simple reference application that went beyond “Hello, world” and “todo list” to demonstrate features like dependency injection, reusable components, and databinding. The app itself features controls for the user to input information and computes Basal Metabolic Rate, Body Mass Index, and Target Heart Rate in real-time.
 
@@ -290,14 +290,14 @@ In the last step I updated the output components to register for the notificatio
 {{<highlight CSharp>}}
 @code {
     bool registered = false;
-    protected override void OnAfterRender()
+    protected override void OnAfterRender(bool firstRender)
     {
         if (registered == false)
         {
             Model.Register(() => base.StateHasChanged());
             registered = true;
         }
-        base.OnAfterRender();
+        base.OnAfterRender(firstRender);
     }
 }
 {{</highlight>}}
@@ -335,13 +335,13 @@ The height on the slider may be centimeters or inches, but the model only has in
 {{<highlight CSharp>}}
 private int _height;
 
-protected override void OnInit()
+protected override void OnInitialized()
 {
-    base.OnInit();
+    base.OnInitialized();
     _height = (int)(Math.Round(Model.HeightInches));
 }
 
-protected override void OnAfterRender()
+protected override void OnAfterRender(bool firstRender)
 {
     Model.Register(() =>
     {
@@ -349,7 +349,7 @@ protected override void OnAfterRender()
             (int)(Model.InchesToCentimeters(Model.HeightInches));
         base.StateHasChanged();
     });
-    base.OnAfterRender();
+    base.OnAfterRender(firstRender);
 }
 {{</highlight>}}
 

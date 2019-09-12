@@ -3,7 +3,7 @@ title: "MVVM Support in Blazor"
 author: "Jeremy Likness"
 date: 2019-01-04T17:54:22.777Z
 years: "2019"
-lastmod: 2019-06-13T10:45:25-07:00
+lastmod: 2019-09-12T10:45:25-07:00
 comments: true
 
 description: "Simple solution for change detection across Blazor components by supporting the MVVM pattern and INotifiyPropertyChanged."
@@ -32,7 +32,7 @@ I recently ported an Angular app to Blazor and wrote about it here:
 
 I noticed immediately that Blazor’s built in change detection works great inside of components (i.e. if you mutate a property on the model, dependent HTML will re-render). You don’t have to do anything special with your model. Updates simply refresh the component! The catch is that other components don’t automatically refresh, so you need to implement a mechanism for change detection across components.
 
-> Examples in this post/repo are for version `3.0.0-preview7.19365.7`
+> Examples in this post/repo are for version `3.0.0-preview9.19424.4`
 
 I did some initial research, and the team is adamant this won’t be baked into the framework. Here is the relevant quote from [this issue](https://github.com/aspnet/Blazor/issues/374):
 
@@ -94,14 +94,14 @@ I decided to name this `ViewModelRegion` because it indicates a region that watc
 
 @code {
     [Parameter]
-    private RenderFragment ChildContent { get; set; }
+    public RenderFragment ChildContent { get; set; }
 
     [Parameter]
-    private INotifyPropertyChanged ViewModel { get; set; }
+    public INotifyPropertyChanged ViewModel { get; set; }
 
-    protected override void OnInit()
+    protected override void OnInitialized()
     {
-        base.OnInit();
+        base.OnInitialized();
         ViewModel.PropertyChanged += (o, e) => StateHasChanged();
     }
 }
