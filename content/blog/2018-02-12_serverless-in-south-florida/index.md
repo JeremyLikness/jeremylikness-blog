@@ -95,8 +95,6 @@ Overall, I received positive feedback.
 
 {{<twitter 962452767913709568>}}
 
-{{<twitter 962480662233124864>}}
-
 I look forward to evolving this talk and sharing it with more developers later this year! As always, you can see my upcoming talk schedule [here](/upcoming-talks-eaf27ff8a3a7).
 
 Regards,
