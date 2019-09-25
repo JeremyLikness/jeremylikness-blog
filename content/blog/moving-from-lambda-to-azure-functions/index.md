@@ -51,23 +51,45 @@ The first video provides and overview of the sample application and shows how to
 
 {{<youtube iflBlF9JEIY>}}
 
+* [AWS to Azure Services Comparison](https://docs.microsoft.com/azure/architecture/aws-professional/services?WT.mc_id=awsmigration-blog-jeliknes)
+
 ## Create an Azure Functions App
 
-The next video walks through how to create an Azure Functions app: the solution for hosting serverless functions in Azure.
+The Azure Functions app serves as the host for serverless functions. It is a unit of deployment and scale that defines features for your app such as your language and runtime, security settings, and root URL endpoint.
+
+This video is designed for anyone new to Azure Functions, even if you're not migrating from AWS Lambda. It walks through how to create the host, write simple code using JavaScript and Node.js, and test the function from your browser and the command line.
 
 {{<youtube YgcUqPzk63c>}}
 
+* [Create your free Azure account](https://azure.com/free?WT.mc_id=awsmigration-blog-jeliknes)
+* [JavaScript Developer Reference for Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-reference-node?WT.mc_id=awsmigration-blog-jeliknes)
+* [How to Use Azure Table Storage from Node.js](https://docs.microsoft.com/azure/cosmos-db/table-storage-how-to-use-nodejs?WT.mc_id=awsmigration-blog-jeliknes)
+
 ## Integrate Code and Implement Cache
 
-Learn how to migrate the code and move from using Amazon DynamoDB to Azure’s inexpensive and easy-to-use Azure Table Storage for the application cache.
+The Azure Functions app is created (see previous article) and ready to host our _real_ code.
+
+In this episode, a new HTTP endpoint is implemented using an existing Azure Functions app to compute primes. Watch how easy it is to migrate the code to Azure then install a Node.js package for Azure Storage. Finally, use [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview?WT.mc_id=awsmigration-blog-jeliknes) to cache the results.
 
 {{<youtube kdG0r12RU0U>}}
 
+* [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview?WT.mc_id=awsmigration-blog-jeliknes)
+
 ## Azure Overview
 
-After the app is migrated and deployed, review how Azure resources are organized and accessed compared to Amazon AWS.
+The previous episodes in this series reviewed how to migrate an existing AWS Lambda JavaScript Node.js function to Azure Functions. This episode takes a step back to review general concepts.
+
+* Organize related assets using _resource groups_
+* Manage infrastructure using _Azure Resource Management (ARM) templates_ and the single-click _deploy to Azure_ capability
+* Customize your at-a-glance experience using _Azure dashboards_
+* Drill into configuration settings for resources
+* Explore data with the web-based _storage explorer_
 
 {{<youtube HD3iwH1Q64s>}}
+
+* [Azure Portal Overview](https://docs.microsoft.com/azure/azure-portal/azure-portal-overview?WT.mc_id=awsmigration-blog-jeliknes)
+* [ARM Templates](https://docs.microsoft.com/azure/azure-resource-manager/template-deployment-overview?WT.mc_id=awsmigration-blog-jeliknes)
+* [Fundamentals of Azure (free hands-on course)](https://docs.microsoft.com/learn/paths/azure-fundamentals/?WT.mc_id=awsmigration-blog-jeliknes)
 
 ## Build, Test, Run and Deploy from your Local Machine
 
