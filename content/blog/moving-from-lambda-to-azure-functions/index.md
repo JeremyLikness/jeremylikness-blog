@@ -3,7 +3,7 @@ title: "Moving From Lambda ƛ to Azure Functions <⚡>"
 author: "Jeremy Likness"
 date: 2019-09-05T07:32:13-07:00
 years: "2019"
-lastmod: 2019-09-05T07:32:13-07:00
+lastmod: 2019-09-30T07:32:13-07:00
 
 draft: false
 comments: false
@@ -93,9 +93,14 @@ The previous episodes in this series reviewed how to migrate an existing AWS Lam
 
 ## Build, Test, Run and Deploy from your Local Machine
 
-Use the cross-platform [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=link-blog-jeliknes) to create a local functions project and run it. Then, using free and cross-platform [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=link-blog-jeliknes), build and debug a project in just a few short steps. After implementing the fully migrated function, deploy it to Azure directly from Visual Studio Code.
+This episode shows how to use the cross-platform [Azure Functions core tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=awsmigration-blog-jeliknes) to create and run a local serverless project. Use the command or an editor like [Visual Studio Code](https://code.visualstudio.com?WT.mc_id=awsmigration-blog-jeliknes). See how to set a breakpoint, debug, and even modify local variables. Interact with storage using the cross-platform [storage emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator?WT.mc_id=awsmigration-blog-jeliknes). Finally, deploy your app to the cloud with just a few clicks.
 
 {{<youtube 3keA9GXYQDc>}}
+
+* [Azure Functions core tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local?WT.mc_id=awsmigration-blog-jeliknes)
+* [Visual Studio Code](https://code.visualstudio.com?WT.mc_id=awsmigration-blog-jeliknes)
+* [Azure Storage Emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator?WT.mc_id=awsmigration-blog-jeliknes)
+* [Azure Storage Explorer](https://docs.microsoft.com/azure/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows&WT.mc_id=awsmigration-blog-jeliknes)
 
 ## Review Advanced Features: Security, CI/CD (DevOps) and More
 
