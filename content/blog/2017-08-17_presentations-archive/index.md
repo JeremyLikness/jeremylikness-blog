@@ -35,6 +35,19 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
+## VS Live! San Diego 2019
+
+* WebAssembly: Your Browser is the OS
+* Advanced Stateful Workflows with Durable Functions
+
+{{<twitter 1179774010101391360>}}
+
+## .NET Conf 2019
+
+* Lightning Talk: Durable Functions
+
+{{<twitter 1176198208407498753>}}
+
 ## THAT Conference 2019
 
 * WebAssembly: The Swiss Army Knife of Browser Apps 
