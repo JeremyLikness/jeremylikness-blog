@@ -63,6 +63,15 @@ Online, or in person with the group at:
 
 {{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.259223503092!2d0.02765731602038982!3d51.50846007963538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a80ce609e50d%3A0xa0de5f705d7aec7!2sExCeL%20London!5e0!3m2!1sen!2sus!4v1570205848624!5m2!1sen!2sus" "ExCeL London | Royal Victoria Dock, 1 Western Gateway, Royal Docks, London E16 1XL, United Kingdom">}}
 
+## February 19-21, 2020 DevNexus Atlanta, GA
+
+[DevNexus](https://devnexus.com/)
+
+* Vanilla.js: Modern 1st-Party JavaScript
+* WebAssembly for Modern Cross-Platform Web Development
+
+{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.0828707513438!2d-84.39833688389885!3d33.75852434059675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f504818f955259%3A0xd22b449e2718746b!2sGeorgia%20World%20Congress%20Center!5e0!3m2!1sen!2sus!4v1570472662387!5m2!1sen!2sus" "Georgia World Congress Center | 285 Andrew Young International Blvd NW, Atlanta, GA 30313">}}
+
 ## March 4-5, 2020 Microsoft Ignite | The Tour Zurich
 
 [Microsoft Ignite | The Tour](https://www.microsoft.com/ignite-the-tour/?WT.mc_id=link-blog-jeliknes)
