@@ -31,11 +31,26 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 🎥 [Watch recorded presentations on YouTube](https://www.youtube.com/playlist?list=PL1VfiVM16kp-sQ3D3XDLopmScoaOQibFb) | [Channel 9 Shows](https://channel9.msdn.com/niners/jeremylikness)
 
-🔎 [Read Presentation Recaps and Trip Reports](/tags/presentations)
+🔎 [Read Presentation Recaps and Trip Reports](/tags/presentation)
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
+## GLUGNet User Group
+
+_Lansing, MI (October 17, 2019)_
+
+* The Durable Dungeon: Stateful Serverless Workflows
+
+## VS Live! Chicago 2019
+
+_Chicago, IL (October 7-10, 2019)_
+
+* WebAssembly: Your Browser is the OS
+* What's new with Bootstrap 4
+
 ## VS Live! San Diego 2019
+
+_San Diego, CA (October 1-3, 2019)_
 
 * WebAssembly: Your Browser is the OS
 * Advanced Stateful Workflows with Durable Functions
@@ -44,17 +59,23 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 ## .NET Conf 2019
 
+_Redmond, WA (September 23, 2019)_
+
 * Lightning Talk: Durable Functions
 
 {{<twitter 1176198208407498753>}}
 
 ## THAT Conference 2019
 
+_Wisconsin Dells, WI (August 6, 2019)_
+
 * WebAssembly: The Swiss Army Knife of Browser Apps 
 
 {{<twitter 1158861556526080008>}}
 
 ## .NET Developers Association (Eastside and Westside) 2019
+
+_Redmond, WA (July 1, 2019)_
 
 * Bare Metal Web Assembly
 
