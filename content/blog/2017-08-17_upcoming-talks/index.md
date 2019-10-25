@@ -49,8 +49,8 @@ Visit this page to see where and when I’ll be speaking and what topics I’ll 
 
 [DevNexus](https://devnexus.com/)
 
-* Vanilla.js: Modern 1st-Party JavaScript
-* WebAssembly for Modern Cross-Platform Web Development
+* [Vanilla.js: Modern 1st-Party JavaScript](https://devnexus.com/presentations/4520/)
+* [WebAssembly for Modern Cross-Platform Web Development](https://devnexus.com/presentations/4519/)
 
 {{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.0828707513438!2d-84.39833688389885!3d33.75852434059675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f504818f955259%3A0xd22b449e2718746b!2sGeorgia%20World%20Congress%20Center!5e0!3m2!1sen!2sus!4v1570472662387!5m2!1sen!2sus" "Georgia World Congress Center | 285 Andrew Young International Blvd NW, Atlanta, GA 30313">}}
 
@@ -60,6 +60,12 @@ Visit this page to see where and when I’ll be speaking and what topics I’ll 
 
 * MOD30 - Enhancing Web Applications with Cloud Intelligence
 * MOD40 - Debugging and Interacting with Cloud Applications
+
+## March 30-April 3, 2020 VS Live! Austin
+
+[VS Live! Austin](https://vslive.com/Events/Austin-2020/Home.aspx)
+
+{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.177816249239!2d-97.74932908453233!3d30.260514381804125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b504282be4a9%3A0x827e1b9c0ba012e3!2sHyatt%20Regency%20Austin!5e0!3m2!1sen!2sus!4v1572021784878!5m2!1sen!2sus" "Hyatt Regency Austin | 208 Barton Springs Rd, Austin, TX 78704">}}
 
 ## April 29-30, 2020 Microsoft Ignite | The Tour Berlin
 
