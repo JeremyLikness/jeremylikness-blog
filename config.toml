@@ -173,7 +173,7 @@ pygmentsStyle = "friendly"
     identifier = "presentations"
     url = "/blog/2017-08-17_presentations-archive/"
 [[menu.main]]
-    name = "▶Videos"
+    name = "▶ Videos"
     weight = 250
     identifier = "videos"
     url = "https://www.youtube.com/playlist?list=PL1VfiVM16kp-sQ3D3XDLopmScoaOQibFb"
