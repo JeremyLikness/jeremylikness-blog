@@ -622,6 +622,9 @@ This post demonstrated:
 
 Want to learn more? I'm building an entire [series of Blazor articles](/tags/blazor) so be sure to check them out!
 
+Watch another Blazor and OData video:
+{{<youtube gxBXvJKC4ow>}}
+
 What are your thoughts, comments, and feedback? What would you like to see more of? Please share your comments below.
 
 Regards,
