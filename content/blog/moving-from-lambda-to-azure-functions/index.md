@@ -3,7 +3,7 @@ title: "Moving From Lambda ƛ to Azure Functions <⚡>"
 author: "Jeremy Likness"
 date: 2019-09-05T07:32:13-07:00
 years: "2019"
-lastmod: 2019-09-30T07:32:13-07:00
+lastmod: 2019-10-28T07:32:13-07:00
 
 draft: false
 comments: false
@@ -104,7 +104,11 @@ This episode shows how to use the cross-platform [Azure Functions core tools](ht
 
 ## Review Advanced Features: Security, CI/CD (DevOps) and More
 
-(coming soon)
+Friends don’t let friends right-click publish. That’s why in this final video we’ll make your DevOps team proud by implementing continuous deployment. The function will also get a security lift in two areas: first, it will require authentication for access. Second, it will get assigned a managed identity to securely access other resources and assets.
+
+{{<youtube TOLplqari7g>}}
+
+* Check out a [full day of free, hands-on serverless training](https://aka.ms/learnazfuncs) (no account or credit card required)
 
 ## Summary
 
