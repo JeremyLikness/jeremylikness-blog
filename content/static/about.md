@@ -22,7 +22,11 @@ aliases:
     - "/@jeremylikness"
 ---
 
-[Click here](/privacy) to view our privacy policy.
+<i class="fa fa-user-secret"></i> [Click here](/privacy) to view our privacy policy.
+
+<i class="fab fa-github"></i> Browse the [source for this blog](https://github.com/JeremyLikness/jeremylikness-blog)
+
+<i class="fa fa-lightbulb"></i> [Submit an idea for a blog post](https://github.com/JeremyLikness/jeremylikness-blog/issues/new)
 
 ![Jeremy Likness](/images/jeremymicrosoft.jpg)
 <figcaption>Microsoft Ignite 2017</figcaption>
