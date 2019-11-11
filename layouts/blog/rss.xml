@@ -21,7 +21,7 @@
        {{ if .Site.GoogleAnalytics }}
     <webfeeds:analytics id="{{.Site.GoogleAnalytics}}" engine="GoogleAnalytics"/>
     {{ end }}
- {{ range .Pages }}
+ {{ range first 20 .Pages.ByPublishDate.Reverse }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
