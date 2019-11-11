@@ -12,8 +12,7 @@
 	<title>{{ $title }}</title>
 	{{ with or .Page.Description .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with or .Params.tags .Site.Params.keywords  }}{{ with delimit . "," }}<meta name="keywords" content="{{ . }}">{{ end }}{{ end }}
-	{{ with .OutputFormats.Get "rss" -}}{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $title | safeHTML }}{{ end -}}
-	{{ if not $mainPage }}{{ printf `<link rel="alternate" type="application/rss+xml" href="%s" title="%s"/>` ( "/index.xml" | urlize | absURL) .Site.Title | safeHTML }}{{ end }}
+	<link rel=alternate type=application/rss+xml href=https://blog.jeremylikness.com/blog/index.xml title="Developer for Life">
 	<!-- twitter, google, and open graph support -->
 	{{ if or .Params.image .Site.Params.author.thumbnail }}
 		<meta name="twitter:card" content="summary_large_image" />
