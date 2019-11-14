@@ -178,7 +178,7 @@ pygmentsStyle = "friendly"
     identifier = "videos"
     url = "https://www.youtube.com/playlist?list=PL1VfiVM16kp-sQ3D3XDLopmScoaOQibFb"
 [[menu.main]]
-    name = "ℹ About Me"
+    name = "ℹ About"
     identifier = "about"
     weight = 300
     url = "/static/about"
