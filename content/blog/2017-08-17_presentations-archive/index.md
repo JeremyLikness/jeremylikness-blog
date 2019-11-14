@@ -35,6 +35,12 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
+## Microsoft Ignite 2019
+
+_Orlando, FL (November 4 - 8, 2019)_
+
+* Introduction to Azure Tools and Utilities
+
 ## GLUGNet User Group
 
 _Lansing, MI (October 17, 2019)_

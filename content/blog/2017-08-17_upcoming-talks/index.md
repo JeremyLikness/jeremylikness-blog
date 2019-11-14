@@ -28,14 +28,6 @@ aliases:
 
 Visit this page to see where and when I’ll be speaking and what topics I’ll be covering. If you run a conference or user group and are looking for speakers, please don’t hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I’ll be happy to consider your venue!
 
-## November 4-8, 2019 Microsoft Ignite Orlando
-
-[Microsoft Ignite](https://www.microsoft.com/ignite?WT.mc_id=link-blog-jeliknes)
-
-* [Discovering Azure tooling and utilities](https://myignite.techcommunity.microsoft.com/sessions/83203?WT.mc_id=link-blog-jeliknes)
-
-{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.741361097527!2d-81.46799828395365!3d28.42706010009934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77e378ec5a9a9%3A0x2feec9271ed22c5b!2sOrange%20County%20Convention%20Center!5e0!3m2!1sen!2sus!4v1569367506592!5m2!1sen!2sus" "Orange County Convention Center | 9800 International Dr, Orlando, FL 32819">}}
-
 ## January 16-17, 2020 Microsoft Ignite | The Tour London
 
 [Microsoft Ignite | The Tour London](https://www.microsoft.com/en-gb/ignite-the-tour/London?WT.mc_id=link-blog-jeliknes)
