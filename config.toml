@@ -145,6 +145,11 @@ pygmentsStyle = "friendly"
     "disquscdn.com",
     "*.disqus.com",
     "*.disquscdn.com"]
+  prefetchsrc = ["'self'",
+    "disqus.com",
+    "disquscdn.com",
+    "*.disqus.com",
+    "*.disquscdn.com"]
 
 ## Main Menu
 [[menu.main]]
