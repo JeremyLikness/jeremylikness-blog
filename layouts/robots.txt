@@ -1,6 +1,7 @@
 Sitemap: https://blog.jeremylikness.com/sitemap.xml
 User-agent: *
 Disallow: /static
+Disallow: /apps
 Allow: /static/about
 Allow: /static/archive
 Allow: /static/search
