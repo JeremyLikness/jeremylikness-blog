@@ -49,4 +49,66 @@
 	<link href="{{ "/css/medium.css" | urlize | relURL }}" rel="stylesheet">
 	<link href="{{ "/css/additional.css" | urlize | relURL }}" rel="stylesheet">
 	<link href="{{ "/css/custom.css" | urlize | relURL }}" rel="stylesheet">
+	{{ if .IsPage }}
+	{{ if eq .Type "blog" }}
+	<script type="application/ld+json">
+	{
+		"@context"	:	"http://schema.org",
+		"@type"		:	"BlogPosting",
+		"@id"		:	"{{ .Permalink }}",
+		"mainEntityOfPage"	:	{
+			"@type"	: 	"WebPage",
+			"@id"	:	"{{ .Permalink }}"
+		},
+		"name"		: 	"{{ .Title | safeJS }}",
+		{{ if .Params.comments }}
+		"discussionUrl" : "{{ .Permalink }}#comments",
+		{{ end }}
+		"headline"	:	"{{ .Title | safeJS }}",
+		"description"	: "{{ if .Description }}{{ .Description | safeJS }}{{else}}{{ .Summary | safeJS}}{{ end }}",
+		"abstract"	:	"{{ if .Description }}{{ .Description | safeJS }}{{else}}{{ .Summary | safeJS}}{{ end }}",
+		"inLanguage"	: "en-US",
+		"isFamilyFriendly"	: 	"true",
+		"author"		: {
+			"@type"	: "Person",
+			"name"	: "{{ .Params.author }}",
+			"url"	: "{{"/about" | absURL}}"
+		},
+		"creator"		: {
+			"@type"	: "Person",
+			"name"	: "{{ .Params.author }}",
+			"url"	: "{{"/about" | absURL}}"
+		},
+		"accountablePerson"	: {
+			"@type"	: "Person",
+			"name"	: "{{ .Params.author }}",
+			"url"	: "{{"/about" | absURL}}"
+		},
+		"copyrightHolder"	: {
+			"@type"	: "Person",
+			"name"	: "{{ .Params.author }}",
+			"url"	: "{{"/about" | absURL}}"
+		},
+		"copyrightYear"	: "{{ dateFormat "2006" (default .Date (.PublishDate)) }}",
+		"datePublished"	: "{{ dateFormat "2006-01-02" (default .Date (.PublishDate)) }}",
+		"dateCreated"	: "{{ dateFormat "2006-01-02" (default .Date (.PublishDate)) }}",
+		"dateModified"  : "{{ dateFormat "2006-01-02" (default .Date (.Params.lastmod)) }}",
+		"publisher"	:	{
+			"@type" : "Organization",
+			"name":	"{{ .Site.Title }}",
+			"url": "https://blog.jeremylikness.com/",
+			"logo": {
+				"@type"	:	"ImageObject",
+				"contentUrl"	:	"{{ .Site.Params.logo | absURL }}",
+				"url"	:	"{{ .Site.Params.logo | absURL }}"
+			}
+		},
+		"url"	:	"{{ .Permalink }}",
+		"wordCount"	:	"{{ .WordCount }}",
+		"image"	:	"{{ .Params.image | absURL }}",
+		"keywords"	:	"{{ range $i, $e := .Params.tags }}{{ if $i }},{{ end }}{{ $e }}{{ end}}"
+	}
+	</script>
+	{{ end }}
+	{{ end }}
 </head>
