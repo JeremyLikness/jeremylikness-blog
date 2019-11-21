@@ -51,6 +51,7 @@
 	<link href="{{ "/css/custom.css" | urlize | relURL }}" rel="stylesheet">
 	{{ if .IsPage }}
 	{{ if eq .Type "blog" }}
+	{{ $titleMeta := printf "%s" .Title }}
 	<script type="application/ld+json">
 	{
 		"@context"	:	"http://schema.org",
@@ -60,11 +61,11 @@
 			"@type"	: 	"WebPage",
 			"@id"	:	"{{ .Permalink }}"
 		},
-		"name"		: 	"{{ .Title | safeJS }}",
+		"name"		: 	{{ $titleMeta }},
 		{{ if .Params.comments }}
 		"discussionUrl" : "{{ .Permalink }}#comments",
 		{{ end }}
-		"headline"	:	"{{ .Title | safeJS }}",
+		"headline"	:	{{ $titleMeta }},
 		"description"	: "{{ if .Description }}{{ .Description | safeJS }}{{else}}{{ .Summary | safeJS}}{{ end }}",
 		"abstract"	:	"{{ if .Description }}{{ .Description | safeJS }}{{else}}{{ .Summary | safeJS}}{{ end }}",
 		"inLanguage"	: "en-US",
