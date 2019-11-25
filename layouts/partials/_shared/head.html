@@ -52,6 +52,10 @@
 	{{ if .IsPage }}
 	{{ if eq .Type "blog" }}
 	{{ $titleMeta := printf "%s" .Title }}
+	{{ $description := printf "%s" .Summary }}
+	{{ if .Description }}
+	{{ $description = printf "%s" .Description }}
+	{{ end }}
 	<script type="application/ld+json">
 	{
 		"@context"	:	"http://schema.org",
@@ -66,8 +70,8 @@
 		"discussionUrl" : "{{ .Permalink }}#comments",
 		{{ end }}
 		"headline"	:	{{ $titleMeta }},
-		"description"	: "{{ if .Description }}{{ .Description | safeJS }}{{else}}{{ .Summary | safeJS}}{{ end }}",
-		"abstract"	:	"{{ if .Description }}{{ .Description | safeJS }}{{else}}{{ .Summary | safeJS}}{{ end }}",
+		"description"	: {{ $description }},
+		"abstract"	:	{{ $description }},
 		"inLanguage"	: "en-US",
 		"isFamilyFriendly"	: 	"true",
 		"author"		: {
