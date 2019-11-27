@@ -8,6 +8,7 @@ lastmod: 2019-11-27T10:47:18-08:00
 draft: false
 comments: true
 toc: true
+series: "Vanilla.js"
 
 subtitle: "This module brought to you by Vanilla.js"
 
