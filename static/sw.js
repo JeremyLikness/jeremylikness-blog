@@ -21,11 +21,18 @@ class Pwa {
             '/static/about/',
             '/privacy/'
         ];
+        this.host = `${self.location.protocol}//${self.location.host}`;
+        console.info(`Host: ${this.host}`);
         this.OFFLINE_PAGE = '/offline/';
         this.NOT_FOUND_PAGE = '/404.html';
         this.CACHE_NAME = `content-v${this.CACHE_VERSION}`;
         this.MAX_TTL = 86400;
         this.TTL_EXCEPTIONS = ["jpg", "jpeg", "png", "gif", "mp4"];
+    }
+
+    canCache(url) {
+        const result = url.toString().startsWith(this.host);
+        return result;
     }
 
     getFileExtension(url) {
@@ -37,7 +44,7 @@ class Pwa {
         if (typeof url === 'string') {
             const extension = this.getFileExtension(url);
             return ~this.TTL_EXCEPTIONS.indexOf(extension) ?
-                null : this.MAX_TTL;            
+                null : this.MAX_TTL;
         }
         return null;
     }
@@ -110,6 +117,9 @@ class Pwa {
         this.scope.addEventListener('fetch', event => {
             event.respondWith(
                 caches.open(this.CACHE_NAME).then(async cache => {
+                    if (!this.canCache(event.request.url)) {
+                        return fetch(event.request);
+                    }
                     const response = await cache.match(event.request);
                     if (response) {
                         const headers = response.headers.entries();
@@ -131,7 +141,9 @@ class Pwa {
                     }
                     return fetch(event.request.clone()).then(resp => {
                         if (resp.status < 400) {
-                            cache.put(event.request, resp.clone());
+                            if (this.canCache(event.request.url)) {
+                                cache.put(event.request, resp.clone());
+                            }
                             return resp;
                         }
                         else {
