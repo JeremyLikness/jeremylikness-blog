@@ -41,6 +41,7 @@
 	<meta itemprop="description" content="{{ . }}" />
 	{{ end }}
 	<!-- end twitter support -->
+	<noscript>
 	<link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | urlize | relURL }}">		
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
 		integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -49,6 +50,7 @@
 	<link href="{{ "/css/medium.css" | urlize | relURL }}" rel="stylesheet">
 	<link href="{{ "/css/additional.css" | urlize | relURL }}" rel="stylesheet">
 	<link href="{{ "/css/custom.css" | urlize | relURL }}" rel="stylesheet">
+	</noscript>
 	{{ if .IsPage }}
 	{{ if eq .Type "blog" }}
 	{{ $titleMeta := printf "%s" .Title }}

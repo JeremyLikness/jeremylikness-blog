@@ -150,7 +150,7 @@ class Pwa {
                             return cache.match(this.NOT_FOUND_PAGE);
                         }
                     }).catch(err => {
-                        console.error("Error resulting in offline", err);
+                        console.error(`Error fetching ${event.request.url} resulted in offline`, err);
                         return cache.match(this.OFFLINE_PAGE);
                     })
                 }));

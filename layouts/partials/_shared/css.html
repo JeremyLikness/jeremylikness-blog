@@ -1,0 +1,27 @@
+<script>
+const css = [
+    "{{ "/css/bootstrap.min.css" | urlize | relURL }}",
+    "https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i",
+    "{{ "/css/medium.css" | urlize | relURL }}",
+    "{{ "/css/additional.css" | urlize | relURL }}",
+    "{{ "/css/custom.css" | urlize | relURL }}"
+];
+const setCss = () => {
+    const firstLink = document.getElementsByTagName("link")[0];
+    css.forEach(item => {
+        const cssLink = document.createElement("link");
+        cssLink.rel = "stylesheet";
+        cssLink.href = item;
+        cssLink.type = "text/css";
+        firstLink.parentNode.insertBefore(cssLink, firstLink);
+    }); 
+    const fontLink = document.createElement("link");
+    fontLink.rel = "stylesheet";
+    fontLink.href = "https://use.fontawesome.com/releases/v5.0.13/css/all.css";
+    fontLink.integrity = "sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp";
+    fontLink.crossOrigin = "anonymous";
+    fontLink.type = "text/css";
+    firstLink.parentNode.insertBefore(fontLink, firstLink); 
+}
+setTimeout(setCss, 0);
+</script>
