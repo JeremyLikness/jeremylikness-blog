@@ -34,6 +34,12 @@ Visit this page to see where and when I’ll be speaking and what topics I’ll 
 
 * Blazor: .NET in Your Browser
 
+## January 14, 2020 .NET Conf "Focus on Blazor" Webinar
+
+[.NET Conf - Focus on Blazor](https://focus.dotnetconf.net)
+
+* [State Management in Blazor Apps](https://focus.dotnetconf.net/agenda)
+
 ## January 15, 2020 Nottingham IoT Nottingham, United Kingdom
 
 [Nottingham IoT](https://www.meetup.com/Nottingham-IoT-Meetup/)
