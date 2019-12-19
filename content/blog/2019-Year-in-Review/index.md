@@ -1,5 +1,5 @@
 ---
-title: "2019: The Year of Angular on .NET Core, WebAssembly, and Blazor"
+title: "The Year of Angular on .NET Core, WebAssembly, and Blazor: 2019 in Review"
 author: "Jeremy Likness"
 date: 2019-12-19T00:40:52-08:00
 years: "2019"
