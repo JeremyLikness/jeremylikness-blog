@@ -35,6 +35,12 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
+## Tech Webinar Nepal (Series 12)
+
+* [Blazor: .NET in your Browser](https://www.youtube.com/watch?v=glU0SOfHEag)
+
+{{<youtube glU0SOfHEag>}}
+
 ## Microsoft Ignite 2019
 
 _Orlando, FL (November 4 - 8, 2019)_

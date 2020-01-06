@@ -28,12 +28,6 @@ aliases:
 
 Visit this page to see where and when I’ll be speaking and what topics I’ll be covering. If you run a conference or user group and are looking for speakers, please don’t hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I’ll be happy to consider your venue!
 
-## December 29, 2019 Tech Webinar Nepal
-
-[Tech Webinar Nepal](https://www.facebook.com/events/2417968015108615/)
-
-* Blazor: .NET in Your Browser
-
 ## January 14, 2020 .NET Conf "Focus on Blazor" Webinar
 
 [.NET Conf - Focus on Blazor](https://focus.dotnetconf.net)
@@ -90,9 +84,28 @@ Visit this page to see where and when I’ll be speaking and what topics I’ll 
 
 {{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.177816249239!2d-97.74932908453233!3d30.260514381804125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b504282be4a9%3A0x827e1b9c0ba012e3!2sHyatt%20Regency%20Austin!5e0!3m2!1sen!2sus!4v1572021784878!5m2!1sen!2sus" "Hyatt Regency Austin | 208 Barton Springs Rd, Austin, TX 78704">}}
 
+## April 17-18, 2020 CodeStock Conference Knoxville, TN
+
+[CodeStock Conference](https://codestock.org)
+
+* Add Resiliency and Scale to Cloud Apps ... without a Rewrite
+* Beyond SQL: Chose the Right Data Strategy for Your App
+
+{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3229.4166049267583!2d-83.92468268387277!3d35.961238922170125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c17dcc14da6b5%3A0x407d6bb5a41cb909!2sKnoxville%20Convention%20Center!5e0!3m2!1sen!2sus!4v1578338512583!5m2!1sen!2sus" "Knoxville Convention Center | 701 Henley St, Knoxville, TN 37902">}}
+
 ## April 29-30, 2020 Microsoft Ignite | The Tour Berlin
 
 [Microsoft Ignite | The Tour](https://www.microsoft.com/ignite-the-tour/WT.mc_id=link-blog-jeliknes)
 
 * MOD30 - Enhancing Web Applications with Cloud Intelligence
 * MOD40 - Debugging and Interacting with Cloud Applications
+
+## May 17-21, 2020 VS Live! Nashville
+
+[VS Live! Nashville](https://vslive.com/Events/Nashville-2020/Home.aspx)
+
+* [Fast Focus: Lap Around WebAssembly - The Power of One](https://vslive.com/Events/Nashville-2020/Sessions/Wednesday/W11-Fast-Focus-Lap-around-WebAssembly-The-Power-of-One.aspx)
+* [Managing Data in the Cloud](https://vslive.com/Events/Nashville-2020/Sessions/Wednesday/W19-Managing-Data-in-the-Cloud.aspx)
+* [Visual Studio Code for the Cloud Developer](https://vslive.com/Events/Nashville-2020/Sessions/Thursday/TH04-Visual-Studio-Code-for-the-Cloud-Developer.aspx)
+
+{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.655452818128!2d-86.80415148387044!3d36.15060161169273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88646695faf2fe49%3A0x9d38b6aa62ae3eaf!2sLoews%20Vanderbilt%20Hotel!5e0!3m2!1sen!2sus!4v1578338953062!5m2!1sen!2sus" "Loews Vanderbilt Hotel | 2100 West End Ave, Nashville, TN 37203">}}
