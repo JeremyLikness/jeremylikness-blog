@@ -10,6 +10,9 @@ enableEmoji = true
 enableRobotsTXT = true
 pygmentsStyle = "friendly"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [privacy]
   [privacy.disqus]
     disable = false
