@@ -2,7 +2,7 @@ class Pwa {
 
     constructor(self) {
         this.scope = self;
-        this.CACHE_VERSION = 2.5;
+        this.CACHE_VERSION = 2.6;
         this.BASE_CACHE_FILES = [
             '/',
             '/js/jquery-3.3.1.min.js',
@@ -31,6 +31,9 @@ class Pwa {
     }
 
     canCache(url) {
+        if (url.startsWith("http://localhost")) {
+            return false;
+        }
         const result = url.toString().startsWith(this.host);
         return result;
     }
