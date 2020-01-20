@@ -28,30 +28,7 @@ aliases:
 
 Visit this page to see where and when I’ll be speaking and what topics I’ll be covering. If you run a conference or user group and are looking for speakers, please don’t hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I’ll be happy to consider your venue!
 
-## January 14, 2020 .NET Conf "Focus on Blazor" Webinar
-
-[.NET Conf - Focus on Blazor](https://focus.dotnetconf.net)
-
-* [State Management in Blazor Apps](https://focus.dotnetconf.net/agenda)
-
-## January 15, 2020 Nottingham IoT Nottingham, United Kingdom
-
-[Nottingham IoT](https://www.meetup.com/Nottingham-IoT-Meetup/)
-
-* [WebAssembly and WASI: One Platform to Rule Them All](https://www.meetup.com/Nottingham-IoT-Meetup/events/266776343/)
-
-{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2403.3400074543256!2d-1.1515482841760671!3d52.96029767989997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c19d1d44c9bd%3A0x7a868692f73fe616!2sRebel%20Recruiters!5e0!3m2!1sen!2sus!4v1575665494071!5m2!1sen!2sus" "Rebel Recruiters | 2nd Floor, Blenheim Court, Huntingdon St, Nottingham NG1 3BY, United Kingdom">}}
-
-## January 16-17, 2020 Microsoft Ignite | The Tour London
-
-[Microsoft Ignite | The Tour London](https://www.microsoft.com/en-gb/ignite-the-tour/London?WT.mc_id=link-blog-jeliknes)
-
-* [MOD30 - Enhancing Web Applications with Cloud Intelligence](https://london.myignitetour.techcommunity.microsoft.com/sessions/84409)
-* [MOD40 - Debugging and Interacting with Cloud Applications](https://london.myignitetour.techcommunity.microsoft.com/sessions/84410)
-
-{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.259223503092!2d0.02765731602038982!3d51.50846007963538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a80ce609e50d%3A0xa0de5f705d7aec7!2sExCeL%20London!5e0!3m2!1sen!2sus!4v1570205848624!5m2!1sen!2sus" "ExCeL London | Royal Victoria Dock, 1 Western Gateway, Royal Docks, London E16 1XL, United Kingdom">}}
-
-## February 18, 2020 Azure in the ATL Alpharetta, GA
+# February 19, 2020 Azure in the ATL Alpharetta, GA
 
 [Azure in the ATL](https://www.meetup.com/Azure-in-the-ATL/)
 

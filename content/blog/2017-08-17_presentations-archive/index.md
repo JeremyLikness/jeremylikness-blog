@@ -35,7 +35,34 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
+## Microsoft Ignite | The Tour London
+
+_London, UK (January 16 - 17, 2020)_
+
+* Enhancing Web Applications with Cloud Intelligence
+* Debugging and Interacting with Cloud Applications in Production
+
+## Nottingham IoT Nottingham, United Kingdom
+
+_Nottingham, UK (January 15, 2020)_ 
+
+[Nottingham IoT](https://www.meetup.com/Nottingham-IoT-Meetup/)
+
+* [WebAssembly and WASI: One Platform to Rule Them All](https://www.meetup.com/Nottingham-IoT-Meetup/events/266776343/)
+
+{{<twitter 1217555471994933249>}}
+
+## .NET Conf "Focus on Blazor" Webinar
+
+_January 14, 2020_
+
+* [State Management in Blazor Apps](https://www.youtube.com/watch?v=zjlUstW7ISU)
+
+{{<youtube zjlUstW7ISU>}}
+
 ## Tech Webinar Nepal (Series 12)
+
+_December 29, 2019_
 
 * [Blazor: .NET in your Browser](https://www.youtube.com/watch?v=glU0SOfHEag)
 
