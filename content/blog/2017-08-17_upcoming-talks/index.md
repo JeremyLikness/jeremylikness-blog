@@ -28,7 +28,7 @@ aliases:
 
 Visit this page to see where and when I’ll be speaking and what topics I’ll be covering. If you run a conference or user group and are looking for speakers, please don’t hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I’ll be happy to consider your venue!
 
-# February 19, 2020 Azure in the ATL Alpharetta, GA
+## February 19, 2020 Azure in the ATL Alpharetta, GA
 
 [Azure in the ATL](https://www.meetup.com/Azure-in-the-ATL/)
 
