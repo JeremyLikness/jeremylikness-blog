@@ -5,7 +5,7 @@ date: 2020-01-14T06:03:07-08:00
 years: "2020"
 lastmod: 2020-01-14T06:03:07-08:00
 
-draft: true
+draft: false
 comments: true
 toc: true
 
@@ -135,7 +135,7 @@ The service will persist in memory when the components are destroyed/recreated a
 
 ## Browser Cache
 
-One option to maintain state is to take advantage of the browser cache using [HTML5 Web Storage](https://www.w3schools.com/html/html5_webstorage.asp). The API is very simple. The `stateManagement.js` file in `BlazorState.Shared` defines a simple, globally accessible interface.
+One option to maintain state is to take advantage of the browser cache using [HTML5 Web Storage](https://www.w3schools.com/html/html5_webstorage.asp). The API is very simple. The `stateManagement.js` file in `BlazorState.Shared` defines a simple, globally accessible interface. It uses the `localStorage` JavaScript API, but you may choose to use `sessionStorage` instead.
 
 {{<highlight JavaScript>}}
 window.stateManager = {
@@ -225,7 +225,7 @@ Model.PropertyChanged += async (o, e) =>
 hasLoaded = true;
 {{</highlight>}}
 
-If the properties on the viewmodel change, the viewmodel is serialized and stored in the cache. This is skipped when the property change was fired because of the initial load (hence the `isDeserializing` flag). Now the component is ready for use! Both `Blazor.ServerLocal` and `Blazor.WasmLocal` use the helper, and it is implemented the same way in `App.razor`:
+If the properties on the viewmodel change, the viewmodel is serialized and stored in the cache. This is skipped when the property change was fired because of the initial load (hence the `isDeserializing` flag, otherwise it will serialize while trying to deserialize). Now the component is ready for use! Both `Blazor.ServerLocal` and `Blazor.WasmLocal` use the helper, and it is implemented the same way in `App.razor`:
 
 {{<highlight XML>}}
 <BlazorState.Shared.StorageHelper>
@@ -296,7 +296,7 @@ The service is demonstrated for Blazor WebAssembly but will work the same for Bl
 
 ## Conclusion
 
-Blazor is not opinionated about how you manage state. The services and component model make it easy to implement project-wide solutions. This post focused on an implementation of the Model-View-ViewModel pattern and leveraged property changed notifications to handle serializing state either locally or over an API. The same approach will work if you are using a different approach such as [Redux](https://github.com/torhovland/blazor-redux). The important steps are to update your store when properties mutate and load from your state management solution when components initialize. The rest is browser history!
+Blazor is not opinionated about how you manage state. The services and component model make it easy to implement project-wide solutions. This post focused on an implementation of the Model-View-ViewModel pattern and registered for property changed notifications to handle serializing state either locally or over an API. The same approach will work if you are using a different approach such as [Redux](https://github.com/torhovland/blazor-redux). The important steps are to update your store when properties mutate and load from your state management solution when components initialize. The rest is browser history!
 
 > <i class="fa fa-star"></i> Check out the official documentation for [ASP.NET Core Blazor state management](https://jlik.me/g7u).
 
