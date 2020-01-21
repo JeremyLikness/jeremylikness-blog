@@ -11,7 +11,7 @@ toc: true
 
 subtitle: "Don't forget to add memory to your Blazor apps"
 
-description: "There will be blood."
+description: "Blazor Server and Blazor WebAssembly (client) don't store state by default, resulting in a subpar user experience. Learn what makes up state in Blazor apps and discover solutions implemented in shared, easy to use libraries that take advantage of browser cache and server persistence to solve Blazor state management."
 
 tags:
  - Blazor 
