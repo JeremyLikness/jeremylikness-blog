@@ -32,7 +32,7 @@ I recently ported an Angular app to Blazor and wrote about it here:
 
 I noticed immediately that Blazor’s built in change detection works great inside of components (i.e. if you mutate a property on the model, dependent HTML will re-render). You don’t have to do anything special with your model. Updates simply refresh the component! The catch is that other components don’t automatically refresh, so you need to implement a mechanism for change detection across components.
 
-> Examples in this post/repo are for version `3.0.0-preview9.19424.4`
+> Examples in this post/repo are for version `3.2.0-preview1.20073.1`
 
 I did some initial research, and the team is adamant this won’t be baked into the framework. Here is the relevant quote from [this issue](https://github.com/aspnet/Blazor/issues/374):
 
@@ -40,7 +40,7 @@ I did some initial research, and the team is adamant this won’t be baked into 
 
 There are certainly other frameworks available, some that even support XAML. For example, take a look at [Uno](https://platform.uno/) that is supported by [MVVMLight](http://www.mvvmlight.net/). But what if you want to use HTML and expect change detection in your underlying models? I investigated a few solutions. In the issue thread, one suggestion was to make a base component. That felt like extra work to tag everything to inherit the component and then override a method to set the model that might change.
 
-Blazor is brand new and it might make sense, as suggested by Tim Heuer and Oren Novotny , to take a different approach:
+Blazor is brand new and it might make sense, as suggested by Tim Heuer and Oren Novotny, to take a different approach:
 
 {{<twitter 1081233514094182400>}}
 
