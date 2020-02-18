@@ -35,7 +35,7 @@ To see the application in action:
 
 👀 [Live Demo](https://jlik.me/ev5)
 
-This post was written with version `3.0.0-preview9.19424.4` of Blazor.
+This post was written with version `3.2.0-preview1.20073.1` of Blazor.
 
 Over four years ago, I wrote a “<i class="fab fa-github"></i> [health app](https://github.com/JeremyLikness/AngularHealthApp/)” in [Angular.js 1.2.9](https://code.angularjs.org/1.2.9/). The goal was to create a very simple reference application that went beyond “Hello, world” and “todo list” to demonstrate features like dependency injection, reusable components, and databinding. The app itself features controls for the user to input information and computes Basal Metabolic Rate, Body Mass Index, and Target Heart Rate in real-time.
 
@@ -135,13 +135,10 @@ public string InchesToFeetDisplay(double inches)
 }
 {{</highlight>}}
 
-The model is shared by all components and represents the overall state of the application. Therefore, I register it as a singleton in Blazor’s `Startup` class. I implemented an interface to facilitate the creation of mock classes for testing if necessary.
+The model is shared by all components and represents the overall state of the application. Therefore, I register it as a singleton in Blazor’s `Program` class. I implemented an interface to facilitate the creation of mock classes for testing if necessary.
 
 {{<highlight CSharp>}}
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddSingleton<IModel, MainModel>();
-}
+builder.Services.AddSingleton<IModel, MainModel>();
 {{</highlight>}}
 
 Blazor uses Razor templates to define reusable components, and the model can be injected simply by providing the requested interface and the name the instance will be referenced as. This line can be read as:
