@@ -113,13 +113,10 @@ public class CounterService
 }
 {{</highlight>}}
 
-Register the service in `Startup.cs`:
+Register the service in `Program.cs`:
 
 {{<highlight CSharp>}}
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddSingleton<CounterService, CounterService>();
-}
+builder.Services.AddSingleton<CounterService, CounterService>();
 {{</highlight>}}
 
 ...then remove the code-behind in the `@code` block in `Counter.razor`, inject the counter service and data-bind directly:
