@@ -374,11 +374,11 @@ public interface ITodoDataAccess
 }
 {{</highlight>}}
 
-Before even worrying about calling APIs or communicating with the server, I created a `MockTodoData` implementation you can [view here](https://github.com/JeremyLikness/BlazorOData/blob/master/BlazorOData.Client/Models/MockTodoData.cs). It satisfies the interface using an in-memory list. Because Blazor has built-in dependency injection (DI), I can register the viewmodel and mock service like this in `Startup.cs`:
+Before even worrying about calling APIs or communicating with the server, I created a `MockTodoData` implementation you can [view here](https://github.com/JeremyLikness/BlazorOData/blob/master/BlazorOData.Client/Models/MockTodoData.cs). It satisfies the interface using an in-memory list. Because Blazor has built-in dependency injection (DI), I can register the viewmodel and mock service like this in `Program.cs`:
 
 {{<highlight CSharp>}}
-services.AddSingleton<ITodoDataAccess, MockTodoData>();
-services.AddSingleton<TodoViewModel>();
+builder.Services.AddSingleton<ITodoDataAccess, MockTodoData>();
+builder.Services.AddSingleton<TodoViewModel>();
 {{</highlight>}}
 
 If I give the viewmodel a constructor that accepts `ITodoDataAccess` as a parameter, the Blazor DI service will pass in the right instance for me when it constructs the viewmodel.
@@ -605,7 +605,7 @@ That's just a simple example. If you dig into the client a bit deeper, you'll fi
 
 ## Putting it all Together
 
-The nice thing about dependency injection is that I can change the version of the service I register in `Startup.cs` to go from "in memory" to live. The full repository is available online here:
+The nice thing about dependency injection is that I can change the version of the service I register in `Program.cs` to go from "in memory" to live. The full repository is available online here:
 
 {{<github "JeremyLikness/BlazorOData">}}
 
