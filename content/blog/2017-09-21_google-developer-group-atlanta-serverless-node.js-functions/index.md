@@ -33,8 +33,6 @@ Recently I was invited to speak at the [Google Developer Group in Atlanta](https
 
 The format was two presentations and I learned about Android and Arduino from the first presenter. I then covered serverless Azure Functions with a focus on the support for JavaScript and Node.js.
 
-{{<twitter 910302698205011968>}}
-
 As with previous talks, I recorded the demos and posted them to my <i class="fab fa-youtube"></i> [YouTube channel](https://www.youtube.com/user/MrLikness). The full deck with embedded video is available here:
 
 {{<slideshare "ebg3pSur1NLDcd" "jeremylikness/code-first-in-the-cloud-serverless-azure-functions-with-nodejs">}}

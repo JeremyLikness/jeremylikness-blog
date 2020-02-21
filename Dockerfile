@@ -1,6 +1,6 @@
 FROM alpine:3.5 as build
 
-ENV HUGO_VERSION 0.62.2
+ENV HUGO_VERSION 0.65.2
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
 
 # Certificates
