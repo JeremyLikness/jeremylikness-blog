@@ -35,6 +35,20 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
+## DevNexus 2020
+
+_Atlanta, GA (February 20 - 21, 2020)_
+
+{{<twitter 1231985226106036224>}}
+
+{{<twitter 1230626891121467393>}}
+
+## Azure in the ATL 2020
+
+_Alpharetta, GA (February 19, 2020)_
+
+* Stateful Serverless Workflows with Durable Functions
+
 ## Microsoft Ignite | The Tour London
 
 _London, UK (January 16 - 17, 2020)_

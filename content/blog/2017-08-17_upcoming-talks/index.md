@@ -28,23 +28,6 @@ aliases:
 
 Visit this page to see where and when I’ll be speaking and what topics I’ll be covering. If you run a conference or user group and are looking for speakers, please don’t hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I’ll be happy to consider your venue!
 
-## February 19, 2020 Azure in the ATL Alpharetta, GA
-
-[Azure in the ATL](https://www.meetup.com/Azure-in-the-ATL/)
-
-* [Stateful Workflows at Scale with Serverless Durable Functions](https://www.meetup.com/Azure-in-the-ATL/events/266931385/)
-
-{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.963773528273!2d-84.27421489999999!3d34.070442899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f57586b4239add%3A0x2722e54730158c44!2s8000%20Avalon%20Blvd%20%23900%2C%20Alpharetta%2C%20GA%2030009!5e0!3m2!1sen!2sus!4v1575666242533!5m2!1sen!2sus" "Microsoft Avalon | 8000 Avalon Blvd #900, Alpharetta, GA 30009">}}
-
-## February 19-21, 2020 DevNexus Atlanta, GA
-
-[DevNexus](https://devnexus.com/)
-
-* [Vanilla.js: Modern 1st-Party JavaScript](https://devnexus.com/presentations/4520/)
-* [WebAssembly for Modern Cross-Platform Web Development](https://devnexus.com/presentations/4519/)
-
-{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.0828707513438!2d-84.39833688389885!3d33.75852434059675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f504818f955259%3A0xd22b449e2718746b!2sGeorgia%20World%20Congress%20Center!5e0!3m2!1sen!2sus!4v1570472662387!5m2!1sen!2sus" "Georgia World Congress Center | 285 Andrew Young International Blvd NW, Atlanta, GA 30313">}}
-
 ## March 4-5, 2020 Microsoft Ignite | The Tour Zurich
 
 [Microsoft Ignite | The Tour](https://www.microsoft.com/ignite-the-tour/?WT.mc_id=link-blog-jeliknes)
