@@ -18,6 +18,8 @@ images:
  - "/blog/2017-08-17_upcoming-talks/images/1.png" 
  - "/blog/2017-08-17_upcoming-talks/images/3.jpeg" 
  - "/blog/2017-08-17_upcoming-talks/images/4.png" 
+ - "/blog/2017-08-17_upcoming-talks/images/Jeremy_Likness_Austin.jpg" 
+ - "/blog/2017-08-17_upcoming-talks/images/Jeremy_Likness_Nashville.jpg" 
 
 aliases:
     - "/upcoming-talks-eaf27ff8a3a7"
@@ -28,14 +30,28 @@ aliases:
 
 Visit this page to see where and when I’ll be speaking and what topics I’ll be covering. If you run a conference or user group and are looking for speakers, please don’t hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I’ll be happy to consider your venue!
 
-## March 4-5, 2020 Microsoft Ignite | The Tour Zurich
+## March 3, 2020 .NET User Group Zürich
+
+[.NET Zürich User Group](https://www.meetup.com/dotnet-zurich/)
+
+* [Advanced Blazor: Shared Code, Debugging, and State Management](https://www.meetup.com/dotnet-zurich/events/267725200/)
+
+{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.5846268736404!2d8.510513!3d47.361507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDIxJzQxLjQiTiA4wrAzMCczNy45IkU!5e0!3m2!1sen!2sus!4v1582738976822!5m2!1sen!2sus" "Grubenstrasse 49, 8045 Zürich, Switzerland">}}
+
+## March 4-5, 2020 Microsoft Ignite | The Tour Zürich
 
 [Microsoft Ignite | The Tour](https://www.microsoft.com/ignite-the-tour/?WT.mc_id=link-blog-jeliknes)
 
-* MOD30 - Enhancing Web Applications with Cloud Intelligence
-* MOD40 - Debugging and Interacting with Cloud Applications
+* [MOD30 - Enhancing Web Applications with Cloud Intelligence](https://zurich.myignitetour.techcommunity.microsoft.com/sessions/87051?source=sessions)
+* [MOD40 - Debugging and Interacting with Cloud Applications](https://zurich.myignitetour.techcommunity.microsoft.com/sessions/87049?source=sessions)
+
+{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.036772269466!2d8.549505916258747!3d47.411223909446335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a82487bbd17%3A0x11cbbd4097290cc9!2sHallenstadion!5e0!3m2!1sen!2sus!4v1582739115406!5m2!1sen!2sus" "Hallenstadion | Wallisellenstrasse 45, 8050 Zürich, Switzerland">}}
 
 ## March 30-April 3, 2020 VS Live! Austin
+
+![VS Live! Austin Sessions](/blog/2017-08-17_upcoming-talks/images/Jeremy_Likness_Austin.jpg)
+
+> Use code `SPKAU14` for a $400 discount!
 
 [VS Live! Austin](https://vslive.com/Events/Austin-2020/Home.aspx)
 
@@ -61,6 +77,10 @@ Visit this page to see where and when I’ll be speaking and what topics I’ll 
 * MOD40 - Debugging and Interacting with Cloud Applications
 
 ## May 17-21, 2020 VS Live! Nashville
+
+![VS Live! Nashville Sessions](/blog/2017-08-17_upcoming-talks/images/Jeremy_Likness_Nashville.jpg)
+
+> Use code `SPKNV21` for a $400 discount!
 
 [VS Live! Nashville](https://vslive.com/Events/Nashville-2020/Home.aspx)
 

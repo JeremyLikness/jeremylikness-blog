@@ -108,9 +108,66 @@ The `observable.js` module contains a simple implementation of the observer patt
 
 ## Databinding
 
-The databinding module provides databinding services to the application. 
+The databinding module provides databinding services to the application. The pair of methods `execute` and `executeInContext` are used to evaluate scripts with a designated `this`. Essentially, each "slide" has a context that is used for setting up expressions for databinding, and the scripts included in the slide are run in that context. The context is defined in the "slide" class that will be explored later.
+
+> It's important to note this does not provide security: malicious scripts could still be executed, it only serves to provide a databinding scope. Building for production would require a much more involved process to parse out only "acceptable" expressions to avoid security exploits.
+
+The `observable` and `computed` methods are simply helpers to create new instances of the related classes. They are used in the slides to set up databinding expressions. This is something easier "seen than said" so I'll provide an end-to-end example shortly.
+
+The `bindValue` method sets up two-way databinding between an `HTMLInputElement` and an `Observable` instance. In this example, it uses the `onkeyup` event to signal whenever the input value changes. The converter helps handle the special case of binding to a `number` type.
+
+{{<highlight JavaScript>}}
+bindValue(input, observable) {
+   const initialValue = observable.value;
+   input.value = initialValue;
+   observable.subscribe(() => input.value = observable.value);
+   let converter = value => value;
+   if (typeof initialValue === "number") {
+      converter = num => isNaN(num = parseFloat(num)) ? 0 : num;
+   }
+   input.onkeyup = () => {
+      observable.value = converter(input.value);
+   };
+}
+{{</highlight>}}
+
+It is called from `bindObservables` that finds any elements with a `data-bind` attribute. Note again this code is simplified because it assumes the elements are input elements and does not do any validation.
+
+{{<highlight JavaScript>}}
+ bindObservables(elem, context) {
+   const dataBinding = elem.querySelectorAll("[data-bind]");
+   dataBinding.forEach(elem => {
+      this.bindValue(elem, 
+         context[elem.getAttribute("data-bind")]);
+   });
+}
+{{</highlight>}}
+
+The `bindLists` is a little more complicated. It assumes it will iterate a (non-observable) list. First, any elements with a `repeat` attribute are found. The value is assumed to be a list reference and is iterated to produce a list of child elements. A regular expression is used to replace binding statements `{{item.x}}` with the actual value using `executeInContext`.
+
+At this stage it makes sense to take a step back and see the bigger picture. You can run see the data-binding example <i class="fas fa-external-link-alt"></i> [here](https://jlikme.z13.web.core.windows.net/vanillajs/#23).
+
+In the HTML the data-binding for `n1` is declared like this:
+
+{{<highlight HTML>}}
+<label for="first">
+   <div>Number:</div>
+   <input type="text" id="first" data-bind="n1"/>
+</label>
+{{</highlight>}}
+
+In the `script` tag it is set up like this:
+
+{{<highlight JavaScript>}}
+const n1 = this.observable(2);
+this.n1 = n1;
+{{</highlight>}}
+
+The context exists on the slide: `slide.ctx = {}` so when the script is evaluated, it becomes `slide.ctx = { n1: Observable(2) }`. The binding is then set up between the input field and the observable. In the case of the list, each list item is evaluated based on the databinding template to grab the corresponding value. What's missing here is the "context" that exists on the slide. Let's look at the `slide` and `sideLoader` modules next.
 
 ## Slide and Slide Loader
+
+
 
 ## Router
 
