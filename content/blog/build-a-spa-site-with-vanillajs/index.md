@@ -5,7 +5,7 @@ date: 2020-02-26T09:06:36-08:00
 years: "2020"
 lastmod: 2020-02-26T09:06:36-08:00
 
-draft: true
+draft: false
 comments: true
 toc: true
 series: "Vanilla.js"
