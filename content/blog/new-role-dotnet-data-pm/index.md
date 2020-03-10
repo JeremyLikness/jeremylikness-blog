@@ -27,11 +27,11 @@ images:
  - "/blog/new-role-dotnet-data-pm/images/escalator.jpg"
  - "/blog/new-role-dotnet-data-pm/images/advocateteam.png" 
 ---
-I've said that life is like walking up the down escalator: if you stand still, you fall behind. 
+I've said that life is like walking up the down escalator: if you stand still, you fall behind.
 
 ![Escalator](/blog/new-role-dotnet-data-pm/images/escalator.jpg)
 
-I've never been a fan or member of the "not much club" (membership is simple: meet a friend you haven't seen in a while and reply, "Not much" when they ask, "What's new?"). Recently I had a flagship week with some life-changing personal news (I'll write about that in a separate post) and some exciting professional news. I'm moving to a new role!
+I've never been a fan or member of the "not much club" (membership is simple: meet a friend you haven't seen in a while and reply, "Not much" when they ask, "What's new?"). Recently I had a flagship week with some [life-changing personal news](https://www.strengthwithparkinsons.com/post/finding-strength-in-my-weakness) (I'll write about that in a [separate post](https://www.strengthwithparkinsons.com/post/finding-strength-in-my-weakness)) and some exciting professional news. I'm moving to a new role!
 
 I shared my 2020 goals here:
 
