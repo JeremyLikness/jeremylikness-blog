@@ -5,14 +5,11 @@
 {{ define "main" }}
 <div class="main-content">
     <header class="text-center">
-        {{ with .Site.Params.index.picture }}
-        <img alt="Site Header" src="{{ . | urlize | relURL }}" class="rounded-circle text-center index-image">
-        {{ end }}
-        <h1 class="index-title">{{ .Site.Params.index.title }}</h1>
+        <div class="mainheading"><h1 class="sitetitle">{{ .Site.Params.index.title }}</h1></div>
     </header>
 
     <section class="text-center">
-        {{ with .Site.Params.index.subtitle }}
+        <span class="lead">{{ with .Site.Params.index.subtitle }}</span>
         <h3 class="index-sub">{{ . }}</h3>
         {{ end }}
         {{ with .Site.Params.index.mdtext }}

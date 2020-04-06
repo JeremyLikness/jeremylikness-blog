@@ -2,13 +2,11 @@
 ================================================== -->
 <div class="jumbotron fortags">
 	<div class="d-md-flex h-100">
-		<div class="col-md-4 transpdark align-self-center text-center h-100">
-			<div class="d-md-flex align-items-center justify-content-center h-100">
-				<h2 class="d-md-block d-none align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
-			</div>
-		</div>
-		<div class="col-md-8 p-5 align-self-center text-center">
-			{{ $randomPosts := shuffle (where .Site.Pages "Type" "blog") | first 7 }}
+		<div class="col-md-12 p-5 align-self-center text-center">
+			<a href="https://fundraise.michaeljfox.org/tf-2020/strengthwithparkinsons" target="_blank" title="Parkinson's Disease Research">
+				Support Parkinson's Disease research
+				</a>			
+			{{ $randomPosts := shuffle (where .Site.Pages "Type" "blog") | first 15 }}
 			{{ range $randomPosts.ByTitle }}
 			<a class="mt-2 mb-2" href="{{ .Permalink }}" title="{{ .Params.description }}">{{.Title}}</a>&nbsp;
 			{{ end }}			

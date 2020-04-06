@@ -30,7 +30,7 @@ steps:
   workingDirectory: '$(Build.Repository.LocalPath)/themes/mediumish-gohugo-theme'
   displayName: 'Update theme'
 
-- script: docker run --rm -v $(Build.Repository.LocalPath):/usr/site -w /usr/site developerforlife.azurecr.io/dev4lifehugo:v7 hugo --minify
+- script: docker run --rm -v $(Build.Repository.LocalPath):/usr/site -w /usr/site developerforlife.azurecr.io/dev4lifehugo:v8 hugo --minify
   workingDirectory: $(Build.Repository.LocalPath)
   displayName: 'Generate website'
 
