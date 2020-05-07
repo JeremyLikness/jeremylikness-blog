@@ -29,14 +29,11 @@ aliases:
 
 Visit this page to see where and when I'll be speaking and what topics I'll be covering. If you run a conference or user group and are looking for speakers, please don't hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I'll be happy to consider your venue!
 
-## August 3-7, 2020 VS Live! Microsoft HQ (Redmond)
+## May 21 Louisville .NET Meetup Group
 
-[VS Live! Microsoft HQ](https://vslive.com/events/redmond-2020/)
+[Louisville .NET Meetup Group](https://www.meetup.com/Louisville-DotNet/)
 
-* [Enterprise Blazor API Strategies](https://vslive.com/Events/Redmond-2020/Sessions/Wednesday/VW13-Enterprise-Blazor-API-Strategies.aspx)
-* [Managing Data in the Cloud](https://vslive.com/Events/Redmond-2020/Sessions/Tuesday/VT10-Managing-Data-in-the-Cloud.aspx)
-
-{{<gmap "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.146345955525!2d-122.12695258369999!3d47.64272289347398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906d70e672b1ef%3A0x8e1d9c69e4727f5b!2sMicrosoft%20Conference%20Center!5e0!3m2!1sen!2sus!4v1582916267092!5m2!1sen!2sus" "Microsoft Conference Center | 16070 NE 36th Way, Redmond, WA 98052">}}
+* [ONLINE: Entity Framework Past and Future](https://www.meetup.com/Louisville-DotNet/events/270049199/)
 
 ## September 8 - 11 NDC Minnesota
 
