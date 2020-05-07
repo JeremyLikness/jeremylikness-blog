@@ -2,11 +2,44 @@
 ================================================== -->
 <div class="jumbotron fortags">
 	<div class="d-md-flex h-100">
-		<div class="col-md-12 p-5 align-self-center text-center">
-			<a href="https://fundraise.michaeljfox.org/tf-2020/strengthwithparkinsons" target="_blank" title="Parkinson's Disease Research">
-				Support Parkinson's Disease research
-				</a>			
-			{{ $randomPosts := shuffle (where .Site.Pages "Type" "blog") | first 15 }}
+		<div class="col-md-4 p-5 align-self-center text-center">
+			<h4>Let's Connect!</h4>
+			<p><a href="https://fundraise.michaeljfox.org/tf-2020/strengthwithparkinsons" 
+				class="link mb-1" target="_blank" title="Parkinson's Disease Research">
+				Support Parkinson's Disease
+				</a>&nbsp;
+				<a href="https://strengthwithparkinsons.com/" target="_blank" 
+				class="link mb-1" title="Strength in Weakness: My journey with Parkinson's disease">
+					Parkinson's Disease Blog
+				</a>&nbsp;						
+				<a class="link mb-1" href="https://twitter.com/JeremyLikness" 
+				target="_blank" title="@JeremyLikness"> 
+				<i class="fab fa-twitter"></i>&nbsp;@JeremyLikness</a>
+				&nbsp;
+				<a class="link mb-1" href="https://github.com/JeremyLikness" 
+				target="_blank" title="JeremyLikness"> 
+				<i class="fab fa-github"></i>&nbsp;JeremyLikness</a>
+				&nbsp;
+				<a class="link mb-1" href="https://youtube.com/user/MrLikness" 
+				target="_blank" title="MrLikness"> 
+				<i class="fab fa-youtube"></i>&nbsp;MrLikness</a>
+				&nbsp;
+				<a class="link mb-1" href="https://linkedin.com/in/JeremyLikness" 
+				target="_blank" title="JeremyLikness"> 
+				<i class="fab fa-linkedin"></i>&nbsp;JeremyLikness</a>
+				&nbsp;
+				<a class="link mb-1" href="https://facebook.com/cdaJeremyLikness" 
+				target="_blank" title="cdaJeremyLikness"> 
+				<i class="fab fa-facebook"></i>&nbsp;cdaJeremyLikness</a>
+				&nbsp;
+				<a class="link mb-1" href="https://instagram.com/JeremyLikness" 
+				target="_blank" title="@JeremyLikness"> 
+				<i class="fab fa-instagram"></i>&nbsp;@JeremyLikness</a>				
+			</p>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+			<h4>Try these articles</h4>
+			{{ $randomPosts := shuffle (where .Site.Pages "Type" "blog") | first 5 }}
 			{{ range $randomPosts.ByTitle }}
 			<a class="mt-2 mb-2" href="{{ .Permalink }}" title="{{ .Params.description }}">{{.Title}}</a>&nbsp;
 			{{ end }}			
