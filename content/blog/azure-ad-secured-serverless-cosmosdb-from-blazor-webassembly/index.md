@@ -1,9 +1,9 @@
 ---
 title: "Azure AD Secured Serverless Cosmos DB from Blazor WebAssembly"
 author: "Jeremy Likness"
-date: 2020-05-24T00:00:38-07:00
+date: 2020-05-25T00:00:38-07:00
 years: "2020"
-lastmod: 2020-05-24T12:50:38-07:00
+lastmod: 2020-05-25T00:00:38-07:00
 
 draft: false
 comments: true
