@@ -29,12 +29,6 @@ aliases:
 
 Visit this page to see where and when I'll be speaking and what topics I'll be covering. If you run a conference or user group and are looking for speakers, please don't hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I'll be happy to consider your venue!
 
-## May 21 Louisville .NET Meetup Group
-
-[Louisville .NET Meetup Group](https://www.meetup.com/Louisville-DotNet/)
-
-* [ONLINE: Entity Framework Past and Future](https://www.meetup.com/Louisville-DotNet/events/270049199/)
-
 ## September 8 - 11 NDC Minnesota
 
 [NDC Minnesota](https://ndcminnesota.com/)
