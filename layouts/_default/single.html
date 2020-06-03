@@ -104,7 +104,7 @@
                 {{ range $tagname, $tagitem := $globalTags }}
                 {{ range $tag := $tags }}
                 {{ if eq (lower $tag | urlize) $tagname }}
-                {{ range $tagitem.Pages }}
+                {{ range first 3 $tagitem.Pages }}
                 {{ if and (not ($related.Get .Permalink)) (not (eq $this .Permalink)) }}
                 {{ $related.Add "pages" . }}
                 {{ $related.Set .Permalink $tag }}
@@ -116,7 +116,7 @@
                 {{ if gt (len ($related.Get "pages")) 0 }}
                 <p>Related articles:</p>
                 <ul>
-                    {{ range ((shuffle ($related.Get "pages")) | first 5).ByTitle }}
+                    {{ range ((shuffle ($related.Get "pages")) | first 6).ByTitle }}
                     {{ $originalTag := ($related.Get .Permalink) }}
                     <li>
                         <a href="{{ .Permalink }}" title="{{ .Params.Description }}">
