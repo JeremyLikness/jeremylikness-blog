@@ -2,7 +2,7 @@ class Pwa {
 
     constructor(self) {
         this.scope = self;
-        this.CACHE_VERSION = 3.1;
+        this.CACHE_VERSION = 3.2;
         this.BASE_CACHE_FILES = [
             '/',
             '/js/jquery-3.3.1.min.js',

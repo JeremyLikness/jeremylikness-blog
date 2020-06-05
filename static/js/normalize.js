@@ -87,8 +87,10 @@
     if (elem) {
         content = elem.getAttribute('content');
         if (content) {
-            if (location.href != content) {
-                location.href = content;
+            var here = `${location.origin}${location.pathname}${location.search}`;
+            if (here != content) {
+                location.href = location.hash ? `${content}${location.hash}`
+                    : content;
             }
         }
     }
