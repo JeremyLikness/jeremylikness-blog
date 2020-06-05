@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title">Site Information</h2>
+    </div>
+    <div class="card-body">
+        <div class="card-text container">
+            <div class="row">
+                <div class="col-6 text-right"><strong>Site generated on:</strong></div>
+                <div class="col-6">{{now.Format "Mon, 02 Jan 2006 15:04:05 PT"}}</div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-right"><strong>Service worker (cache) version:</strong></div>
+                <div class="col-6">{{ .Site.Params.swVersion }}</div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-right"><strong><a href="https://gohugo.io" target="_blank">Hugo</a>
+                        version:</strong></div>
+                <div class="col-6">{{ hugo.Version }}</div>
+            </div>
+            <div class="row">
+                <div class="col-6 text-right"><strong>Pages generated:</strong></div>
+                <div class="col-6">{{ len .Site.RegularPages }}</div>
+            </div>
+            {{range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+            <div class="row">
+                <div class="col-6 text-right"><strong><a href="/{{ $taxonomyname | urlize }}">{{ title $taxonomyname }}</a> generated:</strong></div>
+                <div class="col-6">{{ len $taxonomy }}</div>
+            </div>
+            {{end}}            
+        </div>
+    </div>
+</div>
+<hr />

@@ -22,14 +22,14 @@ aliases:
     - "/about"
     - "/@jeremylikness"
 ---
+## Quick Links:
 
-<i class="fa fa-user-secret"></i> [Click here](/privacy) to view our privacy policy.
+- <i class="fa fa-user-secret"></i> [Click here](/privacy) to view our privacy policy.
+- <i class="fa fa-rss"></i> [RSS Feed](/blog/index.xml)
+- <i class="fab fa-github"></i> Browse the [source for this blog](https://github.com/JeremyLikness/jeremylikness-blog)
+- <i class="fa fa-lightbulb"></i> [Submit an idea for a blog post](https://github.com/JeremyLikness/jeremylikness-blog/issues/new)
 
-<i class="fa fa-rss"></i> [RSS Feed](/blog/index.xml)
-
-<i class="fab fa-github"></i> Browse the [source for this blog](https://github.com/JeremyLikness/jeremylikness-blog)
-
-<i class="fa fa-lightbulb"></i> [Submit an idea for a blog post](https://github.com/JeremyLikness/jeremylikness-blog/issues/new)
+## About
 
 ![Jeremy Likness](/images/jeremymicrosoft.jpg)
 <figcaption>Microsoft Ignite 2017</figcaption>
@@ -53,3 +53,5 @@ Some random facts about me:
 Welcome and enjoy!
 
 ![Jeremy Likness](/images/jeremylikness.gif)
+
+{{<sitestatus>}}
