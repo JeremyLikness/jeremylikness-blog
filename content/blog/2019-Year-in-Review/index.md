@@ -106,9 +106,7 @@ I had to pause for a moment writing this blog post to celebrate 25 years (cough,
 
 ## Retrospective: Major Goals for 2019
 
-Let's get into some more interesting goals and stats. For reference, this was my 2018 post:
-
-{{<relativelink "blog/2018-12-23_year-of.net-core-angular-and-web-api-design-2018-in-review">}}
+Let's get into some more interesting goals and stats. For reference, [this was my 2018 post](/blog/2018-12-23_year-of.net-core-angular-and-web-api-design-2018-in-review).
 
 How did I do with my goals for 2019? Here are my retrospective comments.
 
