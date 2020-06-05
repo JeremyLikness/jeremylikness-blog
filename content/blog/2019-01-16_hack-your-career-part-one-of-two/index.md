@@ -104,7 +104,7 @@ _“Silverlight will last forever.”_
 
 OK, I didn’t assume that … but I was very much on the “bandwagon.”
 
-{{<twitter 63646800371920896>}}
+{{<customtwitter 63646800371920896>}}
 
 I witnessed a lot of strife from people who did.
 

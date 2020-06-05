@@ -40,7 +40,7 @@ Your presentation may be in the office down the hall. Or it may be on the other 
 
 This one is obvious: don't forget your computer! This should be the same computer you practiced your presentation on. Some conferences provide a laptop and offer to load your presentations. If that's the case, be sure to arrive early so you can access the machine and confirm everything works fine. You might be surprised how something simple like not having the same fonts can throw a presentation off! 
 
-{{<twitter 1099446621908144130>}}
+{{<customtwitter 1099446621908144130>}}
 
 Some speakers prefer to bring a backup laptop. This is a second machine they can turn to in case their primary machine fails (it's not a question of *if* but *when*). I take the risk of only having one machine, only because my second computer is a massive gaming machine that would cause neck injuries if I tried to lug it around.
 
@@ -132,7 +132,7 @@ I break my clothes down into four basic categories:
 
 Remember, you *may* end up acquiring additional clothes at the event.
 
-{{<twitter 1012289018296459267>}}
+{{<customtwitter 1012289018296459267>}}
 
 > ⭐ **Tip**: workout clothes are never fun to pack. If you aren't able to launder them before you return, most hotels provide a plastic laundry bag that I re-purpose by stuffing with my workout clothes and sealing them off from the rest of my suitcase when I return home.
 

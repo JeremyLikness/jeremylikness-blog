@@ -37,7 +37,7 @@ I delivered a session at [TechBash 2018](https://techbash.com) about [serverless
 
 You can download the full presentation ⬇ [here](https://jlikme.blob.core.windows.net/presentations/Enterprise-Serverless-TechBash.pptx).
 
-{{<twitter 1047582372785532929>}}
+{{<customtwitter 1047582372785532929>}}
 
 I delivered several demos during the presentation that I pre-recorded to avoid Internet hiccups and edited to zoom to the right information. These are all “live” in the sense the only editing is cutting out some of the delays. The videos are designed to be self-explanatory and contain no audio.
 

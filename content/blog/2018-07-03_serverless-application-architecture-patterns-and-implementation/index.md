@@ -28,7 +28,7 @@ aliases:
 
 I blogged and tweeted about serverless the first time just over a year ago.
 
-{{<twitter 850433555830276096>}}
+{{<customtwitter 850433555830276096>}}
 
 I am amazed how much momentum serverless has gained over time and am very happy with the advanced tools that are available to implement serverless in Azure. There is still a lot of confusion around what serverless is, when to choose it, how to implement it and what scenarios exist that are suited to serverless. To address this knowledge gap over the past several months I’ve been working on a project that I’m happy to announce was released just last night: a free online eBook titled “[Serverless apps: Architecture, patterns, and Azure implementation.](https://jlik.me/duy)”
 

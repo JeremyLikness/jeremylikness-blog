@@ -4,7 +4,7 @@ author: "Jeremy Likness"
 date: 2003-06-13T00:00:00.000Z
 lastmod: 2019-06-13T10:43:10-07:00
 comments: false
-toc: true
+toc: false
 noads: true
 tags: 
     - "privacy"
@@ -19,17 +19,19 @@ images:
     - "/images/privacy.png"
 ---
 
-## Privacy Policy
-
 ![Privacy Policy](/images/privacy.png)
 
-Effective date: June 28, 2019
+Effective date: June 5, 2020
+
+{{<getconsent>}}
 
 Jeremy Likness ("us", "we", or "our") operates the Developer for Life website at https://blog.jeremylikness.com (hereinafter referred to as the "Service").
 
 This page informs you of our policies regarding the collection, use and disclosure of personal data when you use our Service and the choices you have associated with that data.
 
-We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. 
+We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.
+
+> This Service does not directly collect any personal data. Your choice to opt-in or opt-out will saved to the browser's local storage. This data is not transmitted and, unlike cookies, is not readable by the server. You can view the consent and change or delete it at any time by navigating to local storage and choosing the `consent` key or by tapping the button at the top of this page. Opting out will disable third-party cookies but also results in a more limited experience. For example, online discussions and comments are powered by the third party app Disqus and cannot be accessed without cookies. Twitter integration will also be limited. The remainder of this page outlines the details of our privacy policy and what actions you can take.
 
 ### Definitions
 
@@ -151,4 +153,4 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 ### Contact Us
 
-If you have any questions about this Privacy Policy, please <i class="fab fa-twitter"></i> [Contact Us](https://twitter.com/JeremyLikness)
+If you have any questions about this Privacy Policy, please <i class="fab fa-twitter"></i> [Contact Us](https://twitter.com/JeremyLikness) or [file an issue](https://github.com/JeremyLikness/jeremylikness-blog/issues/new).

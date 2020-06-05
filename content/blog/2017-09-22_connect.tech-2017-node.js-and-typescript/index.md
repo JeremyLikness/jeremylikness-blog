@@ -59,7 +59,7 @@ The second session on Thursday, September 21st, 2017 was a presentation about Ty
 
 I was happy to see <i class="fab fa-twitter"></i> [David Neal](https://twitter.com/reverentgeek) in the audience, but had no idea he was taking “visual notes” of the presentation. These were cool. How is the likeness of Likness?
 
-{{<twitter 910931932778778624>}}
+{{<customtwitter 910931932778778624>}}
 
 Wow! What an honor! I was a little rushed at the end of the presentation and didn’t get to do a full demonstration of creating a TypeScript for Node.js presentation “from scratch,” so I recorded this short video:
 

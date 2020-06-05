@@ -33,11 +33,11 @@ Knoxville, Tennessee is not only a fun city and great place to visit; it happens
 
 The conference started back in 2007 and for 12 years has helped deliver the latest content to developers with topics ranging from women in technology and leadership skills to database design, cloud native applications, and more. This year I was asked to open the conference with a keynote.
 
-{{<twitter 1116706599807139840>}}
+{{<customtwitter 1116706599807139840>}}
 
 In addition to the keynote, I delivered a presentation about WebAssembly and Blazor. I don’t just have a passing interest in WebAssembly; I believe it’s the future.
 
-{{<twitter 1111646069320871936>}}
+{{<customtwitter 1111646069320871936>}}
 
 If you’re not familiar with WebAssembly, take a minute to read this high-level overview that I wrote (it only takes a few minutes to read):
 

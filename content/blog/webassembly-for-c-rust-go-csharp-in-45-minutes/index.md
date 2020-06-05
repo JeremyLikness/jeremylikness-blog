@@ -26,7 +26,7 @@ images:
 
 In June of 2019 I presented a 45-minute session about WebAssembly at Refactr.Tech in Atlanta.
 
-{{<twitter 1137041533625032704>}}
+{{<customtwitter 1137041533625032704>}}
 
 In this presentation I reviewed:
 

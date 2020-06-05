@@ -38,7 +38,7 @@ Today I had the extreme pleasure of presenting at an Atlanta-based Java conferen
 
 Although my two live presentations weren’t recorded, I did have the opportunity to stop by Channel 9 studios in Warsaw, Poland.
 
-{{<twitter 989493283142422528>}}
+{{<customtwitter 989493283142422528>}}
 
 To view the deck, scroll down later in this article or download the full PowerPoint presentation ⬇ [here](https://jlikme.blob.core.windows.net/presentations/Docker%20Management%20and%20Orchestration.pptx).
 
@@ -185,7 +185,7 @@ You can access the Dockerfile definitions and source code <i class="fab fa-githu
 
 According to Google’s [Kelsey Hightower](https://twitter.com/kelseyhightower) in his DevNexus keynote, containers are the future.
 
-{{<twitter 967040036620390403>}}
+{{<customtwitter 967040036620390403>}}
 
 He just may be right.
 

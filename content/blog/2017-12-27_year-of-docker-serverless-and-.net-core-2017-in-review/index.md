@@ -70,7 +70,7 @@ When I moved to this blog, I also took an “all-time” snapshot of my legacy b
 
 This tweet captures what I feel are the highlights from 2017 and what I look forward to in 2018.
 
-{{<twitter 942843348913704960>}}
+{{<customtwitter 942843348913704960>}}
 
 In addition, I also believe that I will see and learn a lot more Artificial Intelligence and Machine Learning in the year to come.
 
@@ -115,19 +115,19 @@ The top age category of followers is 25–34 or so-called _millennials_. Thank y
 
 The most eyeballs landed on a post I shared about building a web service with F# in .NET Core. It was viewed 16,213 times.
 
-{{<twitter 913374382910820352>}}
+{{<customtwitter 913374382910820352>}}
 
 The most liked tweet was one I shared to demonstrate how to install a Chrome extension that blurs sensitive information in the Azure portal while giving presentations or sharing your desktop.
 
-{{<twitter 922806397586345985>}}
+{{<customtwitter 922806397586345985>}}
 
 The most re-tweets I had was a tie between the previous tweet and the link I shared to the Azure Kubernetes Service (AKS) documentation.
 
-{{<twitter 922863240077553664>}}
+{{<customtwitter 922863240077553664>}}
 
 The tweet about the Chrome extension also had the most link clicks (159). Second place at 118 was this status about debugging ASP. NET Core on Linux:
 
-{{<twitter 930125127718785025>}}
+{{<customtwitter 930125127718785025>}}
 
 Finally, looking back at my most popular tweets based on engagement, the topics followers found most interesting were:
 
@@ -142,7 +142,7 @@ Finally, looking back at my most popular tweets based on engagement, the topics 
 
 I also experimented a little bit with sharing some of my non-technology related hobbies, like hiking. I was surprised and pleased to see the pictures of my hike to [Ramsey cascades](https://www.nps.gov/grsm/planyourvisit/ramsey-cascades.htm) was one of my more popular tweets (and no one complained that is wasn’t about software development!)
 
-{{<twitter 929458361950720010>}}
+{{<customtwitter 929458361950720010>}}
 
 ## Legacy (C#:er Image) Blog in Review
 

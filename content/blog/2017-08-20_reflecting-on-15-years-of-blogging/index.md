@@ -49,7 +49,7 @@ I’ve moved to Medium for blogging. My old blog, C#er : IMage will remain onlin
 
 This feels like the perfect time to transition, considering the recent change in my life.
 
-{{<twitter 884522810663510017>}}
+{{<customtwitter 884522810663510017>}}
 
 It’s been over a month since I started, and it _still_ seems surreal!
 
@@ -170,7 +170,7 @@ My new career in consulting resulted in a slight re-brand of the blog. I despera
 
 You know you just can’t resist clicking on that left-side slider tab to reveal my mind-blowing tweets, like the one I used to introduce the object-oriented database I wrote for Silverlight and Windows Phone apps:
 
-{{<twitter 17600489674>}}
+{{<customtwitter 17600489674>}}
 
 I wrote a bit more about Sterling in my blog:
 
@@ -188,11 +188,11 @@ It turned out that Silverlight wasn’t the answer to [life, the universe, and e
 
 At the company I worked for before Microsoft I had the opportunity to build an application development practice and grow a team of developers. It was a great, rewarding experience with a phenomenal group of people. Only a few years later, however, that I noticed something strange happening on the Internet. It started with this:
 
-{{<twitter 832706103343341569>}}
+{{<customtwitter 832706103343341569>}}
 
 … and was followed by myriad similar proclamations. The following tweet not only became incredibly popular and famous, but also explained the position so well I just point people here when they ask what I do.
 
-{{<twitter 880509730703134720>}}
+{{<customtwitter 880509730703134720>}}
 
 I knew something special was happening, but ironically my first thought was, “good for them, that looks exciting.” That’s when I received an email from a Microsoft recruiter. The rest, as they say, was history. I’m not quite sure who “they” are, but they seem to show up often.
 

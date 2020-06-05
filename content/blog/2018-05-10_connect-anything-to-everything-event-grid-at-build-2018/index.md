@@ -36,15 +36,15 @@ At <i class="fab fa-youtube"></i> [Build 2018](https://www.youtube.com/playlist?
 
 The session was well-attended. I appreciate all of those who were able to make it!
 
-{{<twitter 993990834956611584>}}
+{{<customtwitter 993990834956611584>}}
 
-{{<twitter 993991154327695360>}}
+{{<customtwitter 993991154327695360>}}
 
 Here is the full video of the session:
 
 {{<youtube HirD7AkbqBI>}}
 
-{{<twitter 993994059378184193>}}
+{{<customtwitter 993994059378184193>}}
 
 Interested in learning more? Click to [get started with Event Grid](https://jlik.me/dhe).
 

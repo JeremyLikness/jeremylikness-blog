@@ -39,9 +39,9 @@ Although the presentation was scheduled for early afternoon (the second presenta
 
 The slide deck (linked at the end of this story) covers the evolution of deployment options from on-premises architecture through Infrastructure-as-a-Service (IaaS) and Platform-as-a-Service (PaaS) to Servless (and I emphasize that the same way NoSQL means “not only” SQL, Serverless really means “less server.”).
 
-{{<twitter 909133579216662528>}}
+{{<customtwitter 909133579216662528>}}
 
-{{<twitter 909131172357144576>}}
+{{<customtwitter 909131172357144576>}}
 
 It also includes several business cases and examples for leveraging serverless functions.
 

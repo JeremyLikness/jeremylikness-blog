@@ -56,7 +56,7 @@ To illustrate, I'll give two examples.
 
 One presentation I deliver that consistently receives positive reviews is about [serverless technology](/blog/2018-10-08_enterprise-serverless).
 
-{{<twitter 1047582372785532929>}} 
+{{<customtwitter 1047582372785532929>}} 
 
 In the beginning, I briefly introduce the concept of serverless and jump right into a demo showing how servers auto-scale when I run a load test against an API. This creates an initial reaction and provides some "wow factor."
 
@@ -66,7 +66,7 @@ The resolution I offer is a set of demos and solutions using serverless.
 
 Another [presentation I deliver](/blog/2019-04-16_presentation-webassembly-c-sharp-and-blazor-at-codestock-2019) is about a newer technology called WebAssembly and a framework built on top of it named Blazor.
 
-{{<twitter 1117068673003544577>}}
+{{<customtwitter 1117068673003544577>}}
 
 For this presentation, I pose the challenge right away: it doesn't matter if you are a C, Ruby, PHP, C#, Rust, Go, or other developer, if you are writing client-side web code you are forced to use JavaScript or TypeScript. Or are you? The "wow" is that you *can* use the language of your choice with WebAsssembly.
 

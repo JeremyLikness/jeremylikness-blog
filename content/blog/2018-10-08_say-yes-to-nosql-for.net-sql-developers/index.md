@@ -32,7 +32,7 @@ I was delighted when I discovered my [TechBash 2018](https://techbash.com) prese
 
 The presentation includes an in-depth overview of NoSQL, including common NoSQL “flavors” such as key/value pair, document, graph, and column-based databases. I then demonstrate how these databases are implemented using the fully managed [Azure CosmosDB](https://jlik.me/eiu). The presentation includes demonstrations of several types of database, a dive into the portal to examine partition keys at work (and why they are important for partition-optimized queries) and lots of .NET and .NET Core source code.
 
-{{<twitter 1048273124511440897>}}
+{{<customtwitter 1048273124511440897>}}
 
 Download the full deck ⬇ [here](https://jlikme.blob.core.windows.net/presentations/yes-to-nosql-likness.pptx).
 

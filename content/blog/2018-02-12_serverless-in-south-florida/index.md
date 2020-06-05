@@ -37,11 +37,11 @@ I have to admit I was a bit spoiled when I left 32°F weather at home to experie
 
 The code camp itself was amazing. There was an overwhelming number of sessions being presented.
 
-{{<twitter 962330568913453057>}}
+{{<customtwitter 962330568913453057>}}
 
 Well over 1,000 developers registered to attend the various talks. I took this quick picture of the lobby area before the first talk began.
 
-{{<twitter 962312534048075776>}}
+{{<customtwitter 962312534048075776>}}
 
 For tradition, I kicked off the talk with a 360 degree photo to better “capture the moment.” Everyone had a great time participating. About 10 more attendees joined after the talk began, so it ended up being standing room only. There is a lot of interest in serverless applcations!
 
@@ -87,13 +87,13 @@ The deck contains several links for further reading. I have them summarized here
 
 Overall, I received positive feedback.
 
-{{<twitter 962395111706554368>}}
+{{<customtwitter 962395111706554368>}}
 
-{{<twitter 962396478990962690>}}
+{{<customtwitter 962396478990962690>}}
 
-{{<twitter 962418795758411776>}}
+{{<customtwitter 962418795758411776>}}
 
-{{<twitter 962452767913709568>}}
+{{<customtwitter 962452767913709568>}}
 
 I look forward to evolving this talk and sharing it with more developers later this year! As always, you can see my upcoming talk schedule [here](/upcoming-talks-eaf27ff8a3a7).
 

@@ -100,7 +100,7 @@ I had to pause for a moment writing this blog post to celebrate 25 years (cough,
   * The company was known for their managed services, so I allocated budget for sponsoring, speaking, and blogging to build the application development brand and connect with the Atlanta-centric community
 * **2017** this was when a single tweet would change my life. I read this:
 
-{{<twitter 832706103343341569>}}
+{{<customtwitter 832706103343341569>}}
 
 ...and immediately thought to myself, "Good for him." I knew it a had to be a great role for him to make the switch, and I enjoyed watching the updates coming from the team with envy. I wasn't unhappy and wasn't looking, but a random email would change everything. A recruiter from Microsoft reached out, and after overcoming my initial shock ("Why are they interested in _me_?") I went on to interview and, well, here I am today, a [Cloud Developer Advocate](/blog/2017-10-01_what-is-a-cloud-developer-advocate/). What will the _next_ 25 years bring?
 
@@ -239,15 +239,15 @@ There are a lot of other stats that I don't pay too much attention to as they ar
 
 The most impressions for any tweet this year was a reference to a [Microsoft Learn](https://docs.microsoft.com/learn?WT.mc_id=endofyear2019-blog-jeliknes) module with a hands-on lab to build a real-time app.
 
-{{<twitter 1135983820673572865>}}
+{{<customtwitter 1135983820673572865>}}
 
 My top mention (don't @ me!) was a post by [Christian Nwamba](https://www.twitter.com/codebeast) that featured a picture with [Anders Hejlsberg](https://twitter.com/ahejlsberg), the creator/co-creator of C#, TypeScript, Turbo Pascal and lead architect of Delphi.
 
-{{<twitter 1125510635695951872>}}
+{{<customtwitter 1125510635695951872>}}
 
 Finally, the top "media tweet" was a post showing how to build, edit, view, design, and deploy Azure Logic Apps.
 
-{{<twitter 1113495385283223554>}}
+{{<customtwitter 1113495385283223554>}}
 
 Although Twitter is an important way for me to connect with developers, my focus last year was on authoring more original content and not simply curating other articles.
 
@@ -314,13 +314,13 @@ The top three sites I sent traffic to were:
 The top three clicked tweets based on my own link tracker were:
 
 **One 1️⃣ 🥇**
-{{<twitter 1080857460557168640>}}
+{{<customtwitter 1080857460557168640>}}
 
 **Two 2️⃣ 🥈**
-{{<twitter 1171861975741194240>}}
+{{<customtwitter 1171861975741194240>}}
 
 **Three 3️⃣ 🥉**
-{{<twitter 1103777412108701697>}}
+{{<customtwitter 1103777412108701697>}}
 
 17% of clicks were from mobile devices.
 

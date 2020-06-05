@@ -39,9 +39,9 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 _Atlanta, GA (February 20 - 21, 2020)_
 
-{{<twitter 1231985226106036224>}}
+{{<customtwitter 1231985226106036224>}}
 
-{{<twitter 1230626891121467393>}}
+{{<customtwitter 1230626891121467393>}}
 
 ## Azure in the ATL 2020
 
@@ -64,7 +64,7 @@ _Nottingham, UK (January 15, 2020)_
 
 * [WebAssembly and WASI: One Platform to Rule Them All](https://www.meetup.com/Nottingham-IoT-Meetup/events/266776343/)
 
-{{<twitter 1217555471994933249>}}
+{{<customtwitter 1217555471994933249>}}
 
 ## .NET Conf "Focus on Blazor" Webinar
 
@@ -108,7 +108,7 @@ _San Diego, CA (October 1-3, 2019)_
 * WebAssembly: Your Browser is the OS
 * Advanced Stateful Workflows with Durable Functions
 
-{{<twitter 1179774010101391360>}}
+{{<customtwitter 1179774010101391360>}}
 
 ## .NET Conf 2019
 
@@ -116,7 +116,7 @@ _Redmond, WA (September 23, 2019)_
 
 * Lightning Talk: Durable Functions
 
-{{<twitter 1176198208407498753>}}
+{{<customtwitter 1176198208407498753>}}
 
 ## THAT Conference 2019
 
@@ -124,7 +124,7 @@ _Wisconsin Dells, WI (August 6, 2019)_
 
 * WebAssembly: The Swiss Army Knife of Browser Apps 
 
-{{<twitter 1158861556526080008>}}
+{{<customtwitter 1158861556526080008>}}
 
 ## .NET Developers Association (Eastside and Westside) 2019
 
@@ -141,7 +141,7 @@ _Oslo, Norway (June 17-21, 2019)_
 <i class="fab fa-twitter"></i> [Twitter highlights](https://twitter.com/i/moments/1141302379285045249)
 
 * Advanced Serverless Workflows with Durable Functions
-    {{<twitter 1141390186250739717>}}
+    {{<customtwitter 1141390186250739717>}}
 
 Watch the related article (includes full video of presentation):
 
@@ -152,7 +152,7 @@ Watch the related article (includes full video of presentation):
 _Atlanta, GA (Jun 7-8, 2019)_
 
 * WebAssembly: Your Browser is the New OS
-    {{<twitter 1137041533625032704>}}
+    {{<customtwitter 1137041533625032704>}}
 
 ## Microsoft Ignite | The Tour 2018-2019
 
@@ -178,7 +178,7 @@ _Atlanta, GA (May 13–14, 2019)_
     
     <i class="fab fa-vimeo"></i> [Watch Presentation](https://www.recallact.com/presentation/net-now-your-browser-os-blazor)
     
-    {{<twitter 1128366868966793216>}}
+    {{<customtwitter 1128366868966793216>}}
 
 
 ## CodeStock 2019  
@@ -186,10 +186,10 @@ _Atlanta, GA (May 13–14, 2019)_
 _Knoxville, TN (April 12–13, 2019)_
 
 * Keynote
-    {{<twitter 1116706599807139840>}}
-    {{<twitter 1116698835588399106>}}
+    {{<customtwitter 1116706599807139840>}}
+    {{<customtwitter 1116698835588399106>}}
 * WebAssembly: The Browser _is_ Your OS (with Blazor)
-    {{<twitter 1117068673003544577>}}
+    {{<customtwitter 1117068673003544577>}}
 
 ## DEVIntersection and Microsoft Azure and AI Conference 2018
 
@@ -204,18 +204,18 @@ _Las Vegas, CA (December 3–7, 2018)_
 _Sofia, Bulgaria (November 13-14, 2018)_
 
 * Enterprise Serverless
-    {{<twitter 1062682236506509313>}}
+    {{<customtwitter 1062682236506509313>}}
 * (Hitch) Hiker's Guide to the Cosmos (DB)
-    {{<twitter 1062324380938702848>}}
+    {{<customtwitter 1062324380938702848>}}
 
 ## Connect.Tech 2018
 
 _Atlanta, GA (October 18-19, 2018)_
 
 * TypeScript from JavaScript
-    {{<twitter 1053360382826360832>}}
+    {{<customtwitter 1053360382826360832>}}
 * The Three D's of Modern Web Development
-    {{<twitter 1052937597058613248>}}
+    {{<customtwitter 1052937597058613248>}}
     View the video of this presentation: [<i class="fab fa-vimeo"></i> https://vimeo.com/303443966](https://vimeo.com/303443966)
 
 ## Azure in the ATL October 2018
@@ -223,7 +223,7 @@ _Atlanta, GA (October 18-19, 2018)_
 _Atlanta, GA (October 16, 2018)_
 
 * A Lap Around Azure Storage
-    {{<twitter 1052381006022541312>}}
+    {{<customtwitter 1052381006022541312>}}
 
 ## Angular Air episode: Angular on .NET
 
@@ -246,7 +246,7 @@ Delivered two sessions: Event Grid and overview of Azure Serverless
 
 _Atlanta, GA (September 15, 2018)_
 
-{{<twitter 1040943070827700225>}}
+{{<customtwitter 1040943070827700225>}}
 
 * Atlanta Code Camp 2018 Keynote: [https://twitter.com/i/moments/1040961613099089921](https://twitter.com/i/moments/1040961613099089921)
 
@@ -255,7 +255,7 @@ _Atlanta, GA (September 15, 2018)_
 _(September 12, 2018)_
 
 * Serverless .NET from Surface Book to Azure Cloud
-    {{<twitter 1039930388942966784>}}
+    {{<customtwitter 1039930388942966784>}}
 
 ## ngHouston Meetup
 
@@ -266,14 +266,14 @@ _(September 12, 2018)_
 _Wisconsin Dells, WI (August 8, 2018)_
 
 * (Hitch) Hiker's Guide to the Cosmos (DB)
-    {{<twitter 1027185811555536896>}}
+    {{<customtwitter 1027185811555536896>}}
 
 ## Kansas City Developer Conference (KCDC)
 
 _Kansas City, MO (July 12, 2018)_
 
 * Cloud Native Azure Cosmos DB for NoSQL at Scale
-    {{<twitter 1017603515450118146>}}
+    {{<customtwitter 1017603515450118146>}}
 
 ## WeRise Women in Tech Conference 2018 
 
@@ -287,13 +287,13 @@ _Atlanta, GA_
 
 🔗 [Docker Containers and Orchestration](https://www.meetup.com/gdg-atlanta/events/250791821/)
 
-{{<twitter 1009256118588239872>}}
+{{<customtwitter 1009256118588239872>}}
 
 ### Music City Code 2018
 
 _Nashville, TN (June 2, 2018)_
 
-{{<twitter 1003010769703833601>}}
+{{<customtwitter 1003010769703833601>}}
 
 ### //Build 2018
 
@@ -306,7 +306,7 @@ _Seattle, WA (May 7-9, 2018)_
 
 _Warsaw, Poland (April 29, 2018)_
 
-{{<twitter 990661206020009985>}}
+{{<customtwitter 990661206020009985>}}
 
 ## DotNext Piter 2018
 
@@ -322,7 +322,7 @@ _St. Petersburg, Russia (April 22-23, 2018)_
 
 _Orlando, FL (March 27, 2018)_
 
-{{<twitter 978661365647904771>}}
+{{<customtwitter 978661365647904771>}}
 
 ## Tech Summit Switzerland 2018
 
@@ -334,7 +334,7 @@ _Zurich, Switzerland (February 2018)_
 
 _Zurich, Switzerland (February 28, 2018)_
 
-{{<twitter 968773402617171968>}}
+{{<customtwitter 968773402617171968>}}
 
 ## DevNexus 2018
 

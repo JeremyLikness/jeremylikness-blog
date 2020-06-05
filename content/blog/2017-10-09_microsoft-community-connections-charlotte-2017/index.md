@@ -37,17 +37,17 @@ The first day was a full day training session that focused on how to create grea
 
 This was my first time on the Charlotte campus. I really enjoyed it!
 
-{{<twitter 916328466693459969>}}
+{{<customtwitter 916328466693459969>}}
 
 Ultimately, the event was about connections, so we headed out to a local venue to have a little fun.
 
-{{<twitter 916616410880794624>}}
+{{<customtwitter 916616410880794624>}}
 
 Then it was back to the hotel for some rest and to prepare for the next day. On Saturday we started out with a few great keynote presentations that covered organizational structure, discussed roles at Microsoft, recapped the [MVP Program](https://jlik.me/bn4), and more. To capture that eight-second attention span, we started with an “ice breaker” game called “💣 [Keep Talking and Nobody Explodes](http://www.keeptalkinggame.com/).” It was a lot of fun and the teams quickly tackled more complex scenarios and started cheering when they successfully defused a bomb.
 
 The premise is that one person has access to the “bomb” while everyone else has a manual. The two have to work together. For example, if the bomb has wires, the bomb defuser describes the wires and the team uses the manual to figure out which wire to cut. The manual has directions like “if there are six wires, cut the third” or “if there are less than six total wires, and two yellow wires, cut the first” etc.
 
-{{<twitter 916666234439057408>}}
+{{<customtwitter 916666234439057408>}}
 
 After this exercise, I decided everyone was sufficiently hyped to take the traditional 360° photo. Does this group look excited to you?
 
@@ -58,37 +58,37 @@ Next was a series of “How Cool” presentations. These were fast, 10–15 minu
 
 We learned about “Industry 4.0” and how to control Halloween props with Kinect.
 
-{{<twitter 916675464860700673>}}
+{{<customtwitter 916675464860700673>}}
 
 I shared the story of my [URL Shortener](/build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte-8c094bb1df2c).
 
-{{<twitter 916684013280120833>}}
+{{<customtwitter 916684013280120833>}}
 
 We even learned how to brew beer!
 
-{{<twitter 916684442005065733>}}
+{{<customtwitter 916684442005065733>}}
 
 There was a presentation about creative uses for Docker containers.
 
-{{<twitter 916688424198983680>}}
+{{<customtwitter 916688424198983680>}}
 
 We learned about global mentoring.
 
-{{<twitter 916693135476043776>}}
+{{<customtwitter 916693135476043776>}}
 
 I discovered how flexible (and powerful) PowerApps are in this cool presentation.
 
-{{<twitter 916701473307807745>}}
+{{<customtwitter 916701473307807745>}}
 
 We finished off with a short presentation I wouldn’t have thought possible just a few years ago: controlling software with the power of your mind using only a few hundred dollars worth of equipment!
 
-{{<twitter 916709420511481856>}}
+{{<customtwitter 916709420511481856>}}
 
 After a delicious lunch we participated in a diversity and inclusion panel. This was very informative and we learned a lot about each other and ways we can make a positive impact across the industry.
 
 I followed this up with a presentation on some of Azure’s new features including Azure Functions, Logic Apps, App Service (including Web App for Containers), Cosmos DB, Event Grid, Container Instances and Container Service.
 
-{{<twitter 916744600370536448>}}
+{{<customtwitter 916744600370536448>}}
 
 We wrapped with a general Q&A panel discussion and then headed our separate ways. I reconnected with several awesome people I’ve known for years and created new connections I look forward to following, ranging from an Atlanta entrepreneur to a Birmingham user group organizer to several consultants looking to transition from their traditional roles to have more active, hands-on Azure experiences.
 

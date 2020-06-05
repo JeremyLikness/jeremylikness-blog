@@ -58,11 +58,11 @@ Yeah, I’m the bald “short” one in the middle.
 
 One of the most common questions I’m asked is, “What is a cloud developer advocate?” It’s a great question. A little over one week after my own start date, an industry analyst firm published an article about this “hot streak”:
 
-{{<twitter 888096965447307264>}}
+{{<customtwitter 888096965447307264>}}
 
 Our team has been growing steadily since my start date in early July 2017, with diverse hires that continue to spark interest and speculation. Recently the public learned that high profile Linux and container expert <i class="fab fa-twitter"></i> [Jessie Frazelle](https://twitter.com/jessfraz) joined our team.
 
-{{<twitter 905437789319294976>}}
+{{<customtwitter 905437789319294976>}}
 
 This was followed by an article about how we’ve become the “destination for a new generation of open source developers”:
 
@@ -82,7 +82,7 @@ Although I considered writing this article in the past, each time someone new jo
 
 One of the first posts to go viral about our team that describes it so well was by <i class="fab fa-twitter"></i> [Ashley McNamara](https://twitter.com/ashleymcnamara).
 
-{{<twitter 880509730703134720>}}
+{{<customtwitter 880509730703134720>}}
 
 My favorite quote (she even highlights it) is:
 
@@ -94,11 +94,11 @@ Another very important point:
 
 That expertise has spread to our team, as evidenced by many of the advocates with Linux, Go, Containers, and other open source backgrounds. I learned more about how Linux works on Windows in one blog post than I had the entire year prior.
 
-{{<twitter 908089626623176704>}}
+{{<customtwitter 908089626623176704>}}
 
 Although the industry focus and excitement has mainly been around traditionally “non-Microsoft” open source, our team is very much aligned around the more traditional Microsoft technologies like .NET and SQL Server as well. Long-time friend and fellow (former) MVP <i class="fab fa-twitter"></i> [Laurent Bugnion](https://twitter.com/LBugnion), perhaps best known for his [MVVM Light Toolkit](http://www.mvvmlight.net/), recently joined and shared his own perspective.
 
-{{<twitter 892331970482638848>}}
+{{<customtwitter 892331970482638848>}}
 
 His succinct take on what we do:
 
@@ -106,7 +106,7 @@ His succinct take on what we do:
 
 Enter <i class="fab fa-twitter"></i> [Cecil Phillip](https://twitter.com/cecilphillip), who also focuses on .NET:
 
-{{<twitter 888148983385907200>}}
+{{<customtwitter 888148983385907200>}}
 
 He captures it here:
 
@@ -114,11 +114,11 @@ He captures it here:
 
 We represent locations like New York.
 
-{{<twitter 889893642349023233>}}
+{{<customtwitter 889893642349023233>}}
 
 Countries like Canada.
 
-{{<twitter 886938604341268481>}}
+{{<customtwitter 886938604341268481>}}
 
 I love his motivation in this quote:
 
@@ -126,7 +126,7 @@ I love his motivation in this quote:
 
 We’re even overseas in places like London.
 
-{{<twitter 855043556100231168>}}
+{{<customtwitter 855043556100231168>}}
 
 I’ve mentioned Linux, Go, and .NET, but what about Java? We are truly committed to reaching _all_ developers on _all_ platforms. Listen to <i class="fab fa-twitter"></i> [Brian Benz](http://twitter.com/bbenz) share his thoughts on a recent podcast:
 
@@ -134,7 +134,7 @@ I’ve mentioned Linux, Go, and .NET, but what about Java? We are truly committe
 
 You can also get a good sense of this openness in <i class="fab fa-twitter"></i> [Erik St. Martin](https://twitter.com/erikstmartin)’s post.
 
-{{<twitter 913521961594126336>}}
+{{<customtwitter 913521961594126336>}}
 
 He highlights …
 
@@ -183,7 +183,7 @@ More importantly, we are part of a bigger vision to reach individuals across the
 
 We’re here to help catalyze that mission and I encourage you to challenge us to keep the bar high. We do promise to have a little fun along the way!
 
-{{<twitter 913561384717373441>}}
+{{<customtwitter 913561384717373441>}}
 <figcaption>Cloud Developer Advocates: Paige Bailey, Christina Warren, Jeremy Likness, Bernd Verst and Damian Brady</figcaption>
 
 I was only able to share a few of many tweets, posts, pictures and stories so please don’t hesitate to visit the official [Cloud Developer Advocates](https://jlik.me/bii) page to learn more about _all_ of us.

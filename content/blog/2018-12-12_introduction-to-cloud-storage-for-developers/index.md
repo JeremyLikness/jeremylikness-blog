@@ -70,7 +70,7 @@ Confused or concerned about cost? Azure provides a [pricing calculator](https://
 
 To see a practical "real world" example (I use a storage account to run a [link shortener](https://jlik.me/et3) take a look at [this tweet](https://twitter.com/jeremylikness/status/1072534557193310209)
 
-{{<twitter 1072534557193310209>}}
+{{<customtwitter 1072534557193310209>}}
 
 If you're ready to get started, here is a [quickstart: create an Azure storage account](https://jlik.me/et0). I recommend creating a `V2` account.
 

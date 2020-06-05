@@ -1,0 +1,15 @@
+{{- $gtag := .Site.Params.customgtag.gtag -}}
+{{ with $gtag }}
+<script>
+    if (window.devConsent.consent == true) {
+        var script = document.createElement("script");
+        script.setAttribute("async", {});
+        script.src = "https://www.googletagmanager.com/gtag/js?id={{.}}";
+        document.getElementsByTagName("head")[0].appendChild(script);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', '{{.}}', { 'anonymize_ip': true});
+    }
+</script>
+{{ end }}

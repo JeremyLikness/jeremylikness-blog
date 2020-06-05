@@ -69,7 +69,7 @@ When you have a wide variety of options, how do you choose? There are several wa
   * Do competing sessions get scheduled at the same time? (For example, a React talk in parallel with an Angular talk makes more sense than two different Angular talks at the same time ... unless, of course, it's an Angular conference)
 * **Venue** The venue is very important. It's always interesting when a conference moves to a new venue to see what the experience is. Are the screens clear? Do the projectors support high resolution? Are the rooms long, deep, or wide? Are microphones provided? Is there a good mix of large and small rooms to accommodate the proper demand? How spread out is the venue? If it's large, does the schedule allow plenty of time to move between sessions? Remember, it takes several minutes to set up and get ready to present.
 
-    {{<twitter 962312534048075776>}}
+    {{<customtwitter 962312534048075776>}}
 
 * **Speaker Networking** There is tremendous value in networking with other speakers. Does the event provide some events specifically for the speakers? Is there a room set aside to network, unwind, or review your presentation before you go on stage?
 * **Attendee Networking** The entire point of delivering sessions is to provide value to attendees. I look for events that encourage interactions and networking. An attendee reception or party is always great. Providing opportunity for speakers to network over lunch and breaks is also key. One event I really enjoyed spaced events apart by 30 minutes and provided a whiteboard with chairs outside of every room so speakers could spend 15 minutes on face-to-face Q&A with attendees.

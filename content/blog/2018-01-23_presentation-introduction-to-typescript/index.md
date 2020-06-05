@@ -31,11 +31,11 @@ Last night, I kicked off 2018 with my [first talk](https://www.meetup.com/Atlant
 
 Special thanks to [Women who Code Atlanta](https://www.womenwhocode.com/atl) for choosing this talk as their first field trip!
 
-{{<twitter 955467086213582848>}}
+{{<customtwitter 955467086213582848>}}
 
 Scores of enthusiastic developers braved rain and Atlanta traffic to attend the talk.
 
-{{<twitter 955598202530664448>}}
+{{<customtwitter 955598202530664448>}}
 
 As with most my of my talks ([Conferences - Collection](https://kuula.co/explore/collection/7fy4R)), I asked for a little audience partition to create a 360 degree photo. Here is the [Creative Circus venue](https://creativecircus.edu/) in full three-dimensional surround.
 
@@ -44,7 +44,7 @@ As with most my of my talks ([Conferences - Collection](https://kuula.co/explore
 
 Because my camera was mounted a little low, here is another perspective.
 
-{{<twitter 955602128113987585>}}
+{{<customtwitter 955602128113987585>}}
 
 I started with a brief exercise around the nuances of JavaScript, looking at expressions that evaluate to … [WAT?!](https://jeremylikness.github.io/intro-to-typescript/presentation/intrototypescript.html#/3) You can click the button to evaluate the expression and puzzle over the results.
 

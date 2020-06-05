@@ -35,7 +35,7 @@ Shhhh. Don't tell anyone, but the *secret* is that, well, there really isn't a s
 
 When I started my first home-based business, a mentor of mine pointed out that something like 8 out of 10 first time ventures fail the first year. Some people hit that failure and decide, "This isn't for me." Serious entrepreneurs, on the other hand, embrace the failure by declaring, "One down. Only seven left to go!" Think about it! Don't let rejections discourage you. If possible, ask for feedback and see if you can uncover why your abstract wasn't accepted, and move on.
 
-{{<twitter 1059868844292886528>}}
+{{<customtwitter 1059868844292886528>}}
 
 Now for the good news: there are some techniques you can use that will increase your chances of getting noticed and, ultimately, accepted. As someone who has received more acceptance letters than rejection letters in my career, I'll outline what I believe has worked well for me.
 
@@ -43,7 +43,7 @@ Now for the good news: there are some techniques you can use that will increase 
 
 I probably spend most of my effort on the title. A good title is easy to read and understand, maybe a little clever, and accurately conveys what can be expected from the talk. Although there are always exceptions to the rule, better titles provide a sense of "what's in it for me" when I'm scanning the schedule, compared to titles that just list technologies.
 
-{{<twitter 765680937132621824>}}
+{{<customtwitter 765680937132621824>}}
 
 For a case study, let's take a presentation I built and modified several times to deliver multiple versions of at different venues. The talk focused on a fully managed NoSQL service called [Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction?WT.mc_id=link-blog-jeliknes). My initial audience was a conference of .NET developers who I assumed knew the name of the technology, but not necessarily its details. All the titles I share below are from accepted sessions. My first title was simply:
 
@@ -74,7 +74,7 @@ The next conference I submitted to featured a hiking/outdoor theme. I specifical
 
 > **(Hitch) Hiker's Guide to the Cosmos (DB)**
 
-{{<twitter 1040803735302111237>}}
+{{<customtwitter 1040803735302111237>}}
 
 Here are a few other titles of talks I gave. Do you get a sense for what the talk will cover? Do the titles properly convey, "What's in it for you?" I purposefully grouped titles of similar talks (based on the same content) together to show how I tweaked them over time. Which do you prefer, and why?
 
@@ -177,7 +177,7 @@ When I attend a conference, I am always genuinely thankful for the opportunity. 
 
 I wonder if this invitation is still valid 7 years later?
 
-{{<twitter 237916409307467776>}}
+{{<customtwitter 237916409307467776>}}
 
 In one case, I knew a developer local to Atlanta who started a new company. He invited me to speak at the coding academy he started. He ran an introduction to web development boot camp. I presented an introduction to TypeScript session. It was a unique experience for me because the material was far more introductory level than I typically provide, and I got to interact with an audience of mostly junior developers. 
 

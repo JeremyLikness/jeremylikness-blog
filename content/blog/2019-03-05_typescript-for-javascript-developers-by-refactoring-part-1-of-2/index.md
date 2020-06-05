@@ -41,7 +41,7 @@ The repository contains documentation paired with several commits to walk throug
 
 Each video is only a few minutes long so feel free to bookmark this page and come back often. You may have already found these videos from my Twitter thread.
 
-{{<twitter 1096203599946801152>}}
+{{<customtwitter 1096203599946801152>}}
 
 ## 1. Introduction
 

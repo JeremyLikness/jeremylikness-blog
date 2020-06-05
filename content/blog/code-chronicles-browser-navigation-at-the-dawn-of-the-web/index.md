@@ -32,7 +32,7 @@ A few minutes later I was riding on a fork-lift in a massive warehouse. A tiny W
 
 When I realized that programming is my passion and what I want to do for a living, I had no idea what I signed up for. My career flew me around the world, deposited me on massive warehouse floors, led me to don a hard hat and tour an aluminum extrusion site and connected me with brilliant scientists to collaborate on three-dimensional cubing algorithms and threat detection intelligence systems. Many cloud services available today exist to solve the problems we encountered decades ago, sometimes for the very first time. To capture those moments in history and share a journey of creative troubleshooting and problem-solving, I am kicking off "The Code Chronicles."
 
-{{<twitter 1149778555464605696>}}
+{{<customtwitter 1149778555464605696>}}
 
 In this series, I'll do my best to capture major projects I was a part of during my career. The goal is threefold: first, to capture what I feel are interesting moments in my personal history of software development; second, to share ways teams over time have been successfully solved unique problems; and finally to reflect on what is available today and celebrate the progress software development has made as an industry.
 

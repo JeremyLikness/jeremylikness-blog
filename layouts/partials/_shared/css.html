@@ -6,13 +6,21 @@ const css = [
     "{{ "/css/additional.css" | urlize | relURL }}",
     "{{ "/css/custom.css" | urlize | relURL }}"
 ];
+window.cssLoaded = false;
+const assetLoaded = () => {
+    window.asyncCount--;
+    setTimeout(() => window.cssLoaded = window.asyncCount <= 0, 0);
+}
 const setCss = () => {
+    window.asyncCount = 0;
     const firstLink = document.getElementsByTagName("link")[0];
     css.forEach(item => {
+        window.asyncCount++;
         const cssLink = document.createElement("link");
         cssLink.rel = "stylesheet";
         cssLink.href = item;
         cssLink.type = "text/css";
+        cssLink.onload = assetLoaded;
         firstLink.parentNode.insertBefore(cssLink, firstLink);
     }); 
     const fontLink = document.createElement("link");
@@ -21,7 +29,9 @@ const setCss = () => {
     fontLink.integrity = "sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp";
     fontLink.crossOrigin = "anonymous";
     fontLink.type = "text/css";
-    firstLink.parentNode.insertBefore(fontLink, firstLink); 
+    window.asyncCount++;
+    fontLink.onload = assetLoaded;
+    firstLink.parentNode.insertBefore(fontLink, firstLink);  
 }
 setTimeout(setCss, 0);
 </script>

@@ -37,11 +37,11 @@ Technology moves at such a fast pace it is often difficult to keep up with the l
 
 The presentation was fun, especially due to some technical challenges I faced when trying to run Docker containers. I’m not sure why my Docker host was resisting, but fortunately I prepare for all contingencies and had the Docker images available in a repository and running in an Azure Container Instance to demo.
 
-{{<twitter 902322865655209985>}}
+{{<customtwitter 902322865655209985>}}
 
 Despite the challenges, feedback was positive.
 
-{{<twitter 902325305477664768>}}
+{{<customtwitter 902325305477664768>}}
 
 I received a lot of great questions, and promised to follow-up with answers:
 

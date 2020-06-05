@@ -43,7 +43,7 @@ The deck itself has embedded videos for the demo portions, so you can watch thos
 
 The first group I met with was [Cloud Storage and Lambda Compute — Bay Area](https://www.meetup.com/Cloud-Storage-Bay-Area/) at the [Pivotal Office](https://www.google.com/maps/place/Pivotal/@37.7834656,-122.4068843,18z/data=!4m8!1m2!2m1!1spivotal+san+francisco!3m4!1s0x808580887d690df7:0x108e933f003c99e3!8m2!3d37.7818416!4d-122.403956). Everyone was very welcoming. I arrived an hour early to make sure everything was set up and working (it was).
 
-{{<twitter 920445234235899905>}}
+{{<customtwitter 920445234235899905>}}
 
 A few Microsoft employees in the area stopped by along with one gentlemen who said he knew me from my _cough_ Silverlight _cough_ days. This was the longest time slot I had and they were kind enough to record it live (yes, this is live, so there aren’t any edited transitions from speaking to slides).
 
@@ -51,19 +51,19 @@ A few Microsoft employees in the area stopped by along with one gentlemen who sa
 
 Oh, and thanks, Victor, for the kind words. I’m pretty sure he was trying to _shout out_ and not _shut out_ here.
 
-{{<twitter 920489093045174272>}}
+{{<customtwitter 920489093045174272>}}
 
 Here’s one more action picture. Thanks, Neil, it was great to meet you!
 
-{{<twitter 920467613435564032>}}
+{{<customtwitter 920467613435564032>}}
 
 The next meetup was held for [SF Microservices](https://www.meetup.com/SF-Microservices/events/243921541/) at the [Adobe office](https://www.google.com/maps/place/Adobe+-+San+Francisco/@37.771136,-122.4038287,17z/). This was another great venue.
 
-{{<twitter 920815956951101440>}}
+{{<customtwitter 920815956951101440>}}
 
 We had a very solid turnout.
 
-{{<twitter 920827006467502080>}}
+{{<customtwitter 920827006467502080>}}
 
 I presented a more condensed version of the talk and received some good questions about how usage is charged, what types of events can trigger functions, and how they can be tested and deployed. There were two more serverless talks after mine that covered similar concepts leveraging [Cloud Foundry](https://www.cloudfoundry.org/) and later [Kubeless](http://kubeless.io/).
 
@@ -85,9 +85,9 @@ The attendees were incredibly energetic, as evidenced by my 360° photo. You may
 
 We had a great evening with some good questions and feedback.
 
-{{<twitter 921401301992275968>}}
+{{<customtwitter 921401301992275968>}}
 
-{{<twitter 921404239775129600>}}
+{{<customtwitter 921404239775129600>}}
 
 I stayed for the presentation after mine that was focused on Kubernetes, then headed out. I had a great surprise that evening, because the Microsoft campus there is lit beautifully at night.
 

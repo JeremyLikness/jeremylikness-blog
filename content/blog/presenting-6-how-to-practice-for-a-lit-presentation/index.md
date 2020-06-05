@@ -32,7 +32,7 @@ images:
 
 You may have heard the expression *"practice makes perfect."* I don't expect to be perfect, but I do look for progress every time I deliver a technical session. My goal is to feel comfortable with the content, the timing, and any hiccups that may occur every time I step in front of an audience. Getting there requires a bit of practice and, perhaps surprisingly, stepping out of my comfort zone even when I'm alone.
 
-{{<twitter 1111338505924276225>}}
+{{<customtwitter 1111338505924276225>}}
 
 This article is about the techniques I've developed to practice delivering technical presentations so I'm just as confident the first time as I am the third or fourth iteration of a talk.
 

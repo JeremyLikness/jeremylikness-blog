@@ -70,7 +70,7 @@ This article is based on a presentation I first gave at [NDC Oslo](https://ndcos
 
 I also tweeted a link to the PowerPoint presentation.
 
-{{<twitter 1141390186250739717>}}
+{{<customtwitter 1141390186250739717>}}
 
 This is your official adventurer’s guide to the Durable Dungeon.
 

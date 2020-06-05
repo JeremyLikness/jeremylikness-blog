@@ -58,7 +58,7 @@ How did I do with my goals for 2018? Here are my retrospective comments.
 
 **The Result: ✅** success! On Twitter, I chronicled my travels across the country to relocate in our new home just north of Redmond. Just click on the tweet below to expand the full thread, or [read it here](https://twitter.com/jeremylikness/status/1017019438367936513).
 
-{{<twitter 1017019438367936513>}}
+{{<customtwitter 1017019438367936513>}}
 
 We ended up in an amazing new home. Here’s a view of Mt. Rainier from our front deck:
 
@@ -150,19 +150,19 @@ I don’t have updated age demographic stats, and my country demographics remain
 
 The most impressions for a tweet was about running serverless functions from a Docker image on Kubernetes. It had close to 16,000 impressions.
 
-{{<twitter 1057356224990273537>}}
+{{<customtwitter 1057356224990273537>}}
 
 The most (recently) liked tweet ironically had nothing to do with technology at all. It was a picture of a door stop I took that has a bit of a twist/pun related to “[Game of Thrones](https://amzn.to/2SiLwLN).” That tweet earned 70 likes as of this writing.
 
-{{<twitter 1067483006812573696>}}
+{{<customtwitter 1067483006812573696>}}
 
 The most clicked link I shared was for a project named “List” for working with immutable lists in JavaScript and TypeScript.
 
-{{<twitter 992394166494814210>}}
+{{<customtwitter 992394166494814210>}}
 
 The second most clicked tweet was a link to the serverless eBook I authored (thanks for your interest and support!).
 
-{{<twitter 1014137447813402624>}}
+{{<customtwitter 1014137447813402624>}}
 
 My goals for Twitter in 2019 are the same as 2018 with one addition:
 

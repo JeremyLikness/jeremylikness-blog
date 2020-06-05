@@ -80,7 +80,7 @@ Now you can open your favorite browser, navigate to your URL and run your live w
 
 The feature is in preview, and there are a few dragons. My colleague Anthony Chu had a few caveats to share as of this publication:
 
-{{<twitter 1036023917633142785>}}
+{{<customtwitter 1036023917633142785>}}
 
 I run a [link shortening service](/build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte-8c094bb1df2c) that leverages an Azure Storage account for storing the URLs, and over the course of a month my storage charges for [locally redundant storage](https://jlik.me/egh) never exceeded $0.10 (that’s right, I stop on a dime). Recently I upgraded for [geo-replicated storage](https://jlik.me/egg) so I have a fail-over option in the event of an outage. That brings me to just under $1 per month.
 
@@ -90,9 +90,9 @@ I’m a big fan of [serverless](https://jlik.me/egi) and use it for many of my o
 
 I have a few tweets that provide my TL;DR; (too long, don’t read — it means “here be a summary”) for serverless:
 
-{{<twitter 997106697171857408>}}
+{{<customtwitter 997106697171857408>}}
 
-{{<twitter 991291457809108994>}}
+{{<customtwitter 991291457809108994>}}
 
 You can use the [Azure pricing calculator](https://jlik.me/eam) to get a sense of the potential cost (and in many cases, savings) from leveraging this service .There are two components to billing: **invocations** (how many times the function is called) and **Gigabyte/seconds (GB/s)**. The first is easy to understand and you get 1,000,000 (yes, that’s a _million_) calls for free. The second requires a bit of explanation. If you plot the time it takes for your function to run on a horizontal (x) axis, then plot the amount of memory it uses along the vertical (y) axis, you’ll get something like this:
 

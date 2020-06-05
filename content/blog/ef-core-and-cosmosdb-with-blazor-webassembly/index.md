@@ -31,7 +31,7 @@ images:
 
 It all began as a simple idea. I've been speaking with customers about [Entity Framework Core (EF Core)](https://jlik.me/hvb) and was intrigued by the popularity of using EF Core to access [Cosmos DB](https://jlik.me/hvc). I'm a huge fan of Cosmos DB and have worked with it since it evolved from Azure DocumentDB. It wasn't clear to me why anyone would want to use EF Core when Cosmos DB [has its own SDK](https://jlik.me/hvd). I started asking questions and [<i class="fab fa-twitter"></i> Julie Lerman](https://twitter.com/julielerman) answered with this tweet for context:
 
-{{<twitter 1245732530160050176>}}
+{{<customtwitter 1245732530160050176>}}
 
 Many customers shared the same feedback:
 
@@ -157,7 +157,7 @@ Cons:
 
 After I was successful, I posted a teaser to Twitter. I did not anticipate the magnitude of the response I received. The biggest (well-placed) concerns are around how security is implemented.
 
-{{<twitter 1260340804351975424>}}
+{{<customtwitter 1260340804351975424>}}
 
 I apologize to anyone looking for an out of the box solution. My project uses the latest preview bits and relies on [ASP.NET Core Identity](https://jlik.me/hvm) for authentication, so it has a lot of moving parts that will likely be out of date before I publish this. Instead, I'll walk through the relevant steps and share the code I used along the way.
 

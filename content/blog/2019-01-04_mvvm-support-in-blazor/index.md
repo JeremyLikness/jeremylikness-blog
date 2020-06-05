@@ -42,9 +42,9 @@ There are certainly other frameworks available, some that even support XAML. For
 
 Blazor is brand new and it might make sense, as suggested by Tim Heuer and Oren Novotny, to take a different approach:
 
-{{<twitter 1081233514094182400>}}
+{{<customtwitter 1081233514094182400>}}
 
-{{<twitter 1081242926703882241>}}
+{{<customtwitter 1081242926703882241>}}
 
 However, an `[Observable]` attribute would simplify change detection on the model but wouldn’t necessarily address communication between components. I wanted something that leverages the time-tested, baked in interface for change detection: `INotifyPropertyChanged`. Then I can create a view model that simply raises an event when properties change:
 

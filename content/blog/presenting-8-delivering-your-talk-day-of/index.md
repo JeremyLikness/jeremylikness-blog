@@ -82,7 +82,7 @@ I suggest you never apologize before a talk. "This is my first time so sorry if 
 
 You can start with a question, a mind-blowing fact, or an engaging story. If you have just under 8 minutes, 👀 look at some actionable tips here:
 
-{{<twitter 1131458533055193088>}}
+{{<customtwitter 1131458533055193088>}}
 
 Talks tend to fizzle early when they start with, "Let's see, where are my slides" or a deep sigh followed by, "Let's hope this goes well." The theme here: present with confidence even if you're not feeling it, don't apologize for being you and taking the risk to stand in front of an audience and dive directly into the material. Save small talk for the moments leading up to the start.
 
@@ -114,7 +114,7 @@ Managing questions is an art. It's possible to become completely derailed by que
 
 My preferred approach now is to finish the talk with a strong summary of what was presented followed by a call to action: "Follow this link to learn more about the 6502 instruction set. The deck will be available by end of day." Then, I make it clear I'm available for questions but everyone else is free to leave. "I'm staying for the rest of the conference and look forward to meeting you! We have about 5 minutes left, so I will remain up front to answer any questions you may have. Thank you for spending your afternoon with me!" This signals everyone to leave but provides an option for those with questions to ask them.
 
-{{<twitter 748853991291793408>}}
+{{<customtwitter 748853991291793408>}}
 
 The other thing I'll do is go ahead and break down my equipment and step off stage. This brings me to the same level as the audience so I'm not answering by "talking down" to anyone, but it does something else too: it gives the next presenter the opportunity to step up and begin their setup. There is nothing more frustrating than to have just minutes before your presentation begins only to find the last speaker is still on stage and surrounding by a line of attendees with questions!
 
@@ -129,7 +129,7 @@ If your schedule and work allow it, please try to stay through the entire confer
 * Be present and accessible between sessions so that attendees can find you and interact. If you get exhausted from presenting and/or interacting with people, consider taking time during sessions to go into a quiet corner and recharge.
 * When there is a lunch or happy hour, I try to avoid gravitating to the people I know and instead either find and open space to build a new group or move to a circle of people I don't know and introduce myself (obviously that requires feeling comfortable doing this, it's something I avoided in the past but started doing in spite of my fears/reservations and now I love the positive interactions that unfold as a result).
 
-{{<twitter 1133996319360655360>}}
+{{<customtwitter 1133996319360655360>}}
 
 ## Other Sessions
 
@@ -143,7 +143,7 @@ Last, but not least, take some time to attend other sessions! Confused about whe
 
 > ⭐ **Tip:** most speakers love to document their talks but not everyone is comfortable taking a picture of the audience or a selfie. If you are in a session, why not snap a shot from the back of the room, post it and tag the speaker? They'll likely appreciate you for it and you may gain a new follower or create a networking opportunity as the result. Then you can share this tip and maybe someone will capture and comment on *your* presentation.
 
-    {{<twitter 1137034439438061569>}}
+    {{<customtwitter 1137034439438061569>}}
 
 ## 🎉 Celebrate
 

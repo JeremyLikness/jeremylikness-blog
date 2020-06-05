@@ -33,21 +33,21 @@ The challenge of creating a programming model that enables you to share the same
 
 Those dreams were dashed when competitors who happened to produce the most popular smartphones refused to adopt the platform.
 
-{{<twitter 15338221591>}}
+{{<customtwitter 15338221591>}}
 
-{{<twitter 25391362453>}}
+{{<customtwitter 25391362453>}}
 
 The project Michael referred to, Mono, was launched in 2001 with a goal to bring the .NET framework to Linux. It has a long and fascinating history which I’ll skip here but is easy to find online if you’re interested in learning more. To make a short story boring, the technology eventually led to a product named [Xamarin](https://www.xamarin.com/) that was acquired by Microsoft in 2016, a full 15 years after the original project began.
 
-{{<twitter 704294549951221760>}}
+{{<customtwitter 704294549951221760>}}
 
 Xamarin empowers developers to [create cross-platform mobile apps](https://docs.microsoft.com/mobile-center/sdk/getting-started/xamarin?WT.mc_id=link-blog-jeliknes), but what about Linux? Around 2011 Twitter exploded with discussion about a new framework cleverly named, well, [.NET Core](https://docs.microsoft.com/dotnet/core/index?WT.mc_id=link-blog-jeliknes). Microsoft announced that the new, truly cross-platform version of .NET would be written from the ground up. Some people wondered why Microsoft bothered preserving the .NET name, but the team was adamant they would support well-known .NET APIs. A few years later, .NET Core was open sourced.
 
-{{<twitter 532558796199981056>}}
+{{<customtwitter 532558796199981056>}}
 
 And finally, in 2016, five years after the online mumbling about this new core thing began, the first “production” version was released.
 
-{{<twitter 747465576834965504>}}
+{{<customtwitter 747465576834965504>}}
 
 How was it be received?### The Enterprise Waits
 
@@ -62,16 +62,16 @@ The first version of .NET Core addressed “green field” scenarios, or the API
 
 What was it missing? Unfortunately, a lot.
 
-> {{<twitter 798325692421328896>}}
+> {{<customtwitter 798325692421328896>}}
 
-> {{<twitter 714975903114072064>}}
+> {{<customtwitter 714975903114072064>}}
 
-> {{<twitter 698179210251276288>}}
+> {{<customtwitter 698179210251276288>}}
 
 
 For this reason, most of the enterprise waited. I also was leery of looking at .NET Core for anything but proof-of-concept projects and purely web-based workloads. In fact, one of my most popular open source projects, an object-oriented database named [Sterling](https://github.com/JeremyLikness/SterlingNoSQL?utm_source=jeliknes&amp;utm_medium=blog&amp;utm_content=repo&amp;utm_term=medium), relied on so many missing features it just wasn’t feasible to try to port.
 
-> {{<twitter 116313605187706881>}}
+> {{<customtwitter 116313605187706881>}}
 
 Sterling was rooted in Microsoft’s long history of bringing .NET to multiple platforms. I originally authored it for Silverlight, based on the lack of viable “local database” options to handle scenarios like caching and querying data without round-tripping to the server. When Windows Phone was released with Silverlight support, I updated the engine to handle Windows Phone and developers adopted it mainly for [tombstone support](https://jlik.me/f3f). There is even a <i class="fab fa-github"></i> [newer port](https://github.com/Wintellect/SterlingDB) that supports the Windows Store apps (“Windows Runtime”) and includes a driver for <i class="fab fa-github"></i> [Azure Table Storage](https://github.com/Wintellect/SterlingDB/tree/master/Wintellect.Sterling.Server.Azure).
 
@@ -101,7 +101,7 @@ Although .NET Core supported green field scenarios, in my experience as a consul
 
 With support from and for .NET Standard 2.0, the API surface area increased from 13,000 to 32,000. Key scenarios were addressed, spanning serialization (most developers are probably excited about the support for binary and XML-based scenarios), threading, sockets, reflection, Linq, and more. So much has been added that I decided to dust off the old Sterling code and give porting it a whirl. Just about one hour later, I tweeted this in response to Tim’s question:
 
-{{<twitter 900051536994349056>}}
+{{<customtwitter 900051536994349056>}}
 
 Visit the <i class="fab fa-github"></i> [sterling-net-core repository](https://github.com/JeremyLikness/sterling-net-core) to pull down a version of Sterling you can work with on Windows, Linux, or MacOS and run the test application. It ships with an in-memory driver and you can always write your own (I do accept pull-requests, in case anyone wants to tackle converting the asynchronous saves from BackgroundWorker to Task). Here’s a quick look at some of the scenarios that .NET Core 2.0 supported with no issues and remain unchanged from the original code.
 

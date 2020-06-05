@@ -1,0 +1,28 @@
+<!-- Modal -->
+<script>window.noConsent = {{ .Page.Params.noads }};</script>
+<div class="modal fade" id="consentModal" tabindex="-1" role="dialog" aria-labelledby="consentModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="consentModalLabel">Privacy Notice</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This website uses cookies to create the best experience for you.</p>
+                <p>Learn more: <a href="/privacy">Privacy Policy</a>.</p>
+                <p>This site requires your consent to acknowledge and accept the use of cookies.</p>
+                <p class="alert alert-warning"><b>⚠ Note:</b> some features such as interactive comments
+                    and discussions require cookies. Opting out will disable those features. You can return to the
+                    <a href="/privacy">Privacy Policy</a> at any time to opt in.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button id="consentOptOut" type="button" class="btn btn-secondary" data-dismiss="modal">Opt out</button>
+                <button id="consentOptIn" type="button" class="btn btn-success">I Consent</button>
+            </div>
+        </div>
+    </div>
+</div>

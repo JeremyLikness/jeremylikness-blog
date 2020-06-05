@@ -28,7 +28,7 @@ images:
 
 On July 9, 2019, a new set of libraries for working with Azure services was announced. These SDKs target multiple languages including 🐍 Python, ☕ Java, JavaScript, and .NET. A few popular services are covered including [Azure Cosmos DB](https://jlik.me/f7d).
 
-{{<twitter 1149009392127356928>}}
+{{<customtwitter 1149009392127356928>}}
 
 I decided to take them for a spin and build something useful for my [link shortener project](/series/serverless-link-shortener/). Right now, I have a Power BI dashboard that I wrote about:
 

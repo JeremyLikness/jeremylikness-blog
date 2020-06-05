@@ -40,7 +40,7 @@ In this video you will see:
 
 Microsoft Ignite | The Tour was an event that spanned the globe and featured presentations about new ways to code, how to optimize your cloud infrastructure and approaches to modernization. The tour introduced Tailwind Traders and a set of integrated applications designed to showcase enterprise cloud applications. This session explains how Tailwind Traders uses serverless to handle inventory transactions including queries at scale, workflows that manage the lifecycle of inventory items, and integrations that send email notifications for important events and auto-generate captions when inventory images are uploaded.
 
-{{<twitter 1070729872803282944>}}
+{{<customtwitter 1070729872803282944>}}
 
 All of the code in the presentation is open source and available for you to download, build, run locally and deploy to Azure.
 

@@ -5,7 +5,6 @@ theme = "mediumish-gohugo-theme"
 summaryLength = 50
 copyright = "Jeremy Likness - All Rights Reserved"
 disqusShortname = "developerforlife"
-googleAnalytics = "UA-1227465-12"
 enableEmoji = true
 enableRobotsTXT = true
 pygmentsStyle = "friendly"
@@ -16,14 +15,9 @@ unsafe= true
 [privacy]
   [privacy.disqus]
     disable = false
-  [privacy.googleAnalytics]
-    anonymizeIP = true
-    disable = false
-    respectDoNotTrack = true
-    useSessionStorage = false
   [privacy.instagram]
     disable = false
-    simple = false
+    simple = true
   [privacy.twitter]
     disable = false
     enableDNT = true
@@ -65,6 +59,10 @@ unsafe= true
   name = "Jeremy Likness"
   thumbnail = "/images/author.png"
   description = "Empowering developers to be their best."
+
+[params.customgtag]
+  gtag = "UA-1227465-12"
+
 
 [params.csp]
   childsrc = ["'self'"]
@@ -113,6 +111,7 @@ unsafe= true
     "https://platform.twitter.com",
     "*.twimg.com",
     "https://syndication.twitter.com",
+    "*.cdninstagram.com",
     "data:",
     "https://files.kuula.io",
     "disqus.com",
@@ -141,7 +140,9 @@ unsafe= true
     "https://www.google.com",
     "https://pagead2.googlesyndication.com",
     "https://adservice.google.com",
+    "*.googleadservices.com",
     "https://www.googletagservices.com",
+    "*.googletagmanager.com",
     "jsfiddle.net",
     "www.instagram.com",
     "disqus.com",

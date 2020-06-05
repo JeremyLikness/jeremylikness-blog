@@ -68,7 +68,7 @@ In addition, the organizers reached out to assist me with travel. For speakers, 
 
 The organizers made all of the speakers feel very welcome and introduced us at the beginning of conference.
 
-{{<twitter 987952270414409730>}}
+{{<customtwitter 987952270414409730>}}
 
 The event was my first time traveling to Russia and I didn’t know any other speakers who also went (except online). The organization really helped with my comfort level and reduced my stress by knowing exactly what to expect.
 
@@ -91,11 +91,11 @@ The organizers were kind enough to provide the speakers with a sight-seeing tour
 
 I mentioned that I had tremendous feedback to shape my talk. The process to prepare to speak was awesome as well. The night after our sight-seeing tour, I was able to go to the room I’d be speaking in and test all of my equipment and get a sense for the room. The talks are structured with 30 minutes in between so I had plenty of time to prepare between the keynote and my session (the first of the day).
 
-{{<twitter 987986342528405504>}}
+{{<customtwitter 987986342528405504>}}
 
 It was a fun talk to deliver because the setup was so professional. I had a nice screen facing me that made it easy to see my slides when I walked away from my laptop, and a timer to keep from going long.
 
-{{<twitter 987986836122464256>}}
+{{<customtwitter 987986836122464256>}}
 
 ⬇ [Click here](https://jlikme.blob.core.windows.net/presentations/cosmosdb-dotnext.pptx) to download the full deck from my presentation.
 
@@ -110,15 +110,15 @@ It was incredibly well done and I connected with a lot of attendees there.
 
 I didn’t just speak at DotNext. I attended every session I could outside of my own. That was a lot of sessions. These included a great keynote by [Dylan Beattie](https://twitter.com/dylanbeattie) that revealed just how much technology is behind the simple things we take for granted every day. I highly recommend carving an hour to <i class="fab fa-youtube"></i> [watch it](https://youtu.be/M5edtzCNACE?t=56m52s) yourself!
 
-{{<twitter 987956698383110144>}}
+{{<customtwitter 987956698383110144>}}
 
 The last session I attended was by [Edwin van Wijk](https://twitter.com/evanwijk) reviewing a full microservices-based application built using .NET Core and Docker.
 
-{{<twitter 988416380654505985>}}
+{{<customtwitter 988416380654505985>}}
 
 The attendee party featured great food, libations, and even some really nerdy music. Here is a snippet of “You give REST a bad name.”
 
-{{<twitter 988121094899974144>}}
+{{<customtwitter 988121094899974144>}}
 
 The conference ended with a speaker and organizer dinner where I made some fantastic new friends from all around the world.
 
