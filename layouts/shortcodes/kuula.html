@@ -1,3 +1,36 @@
-<iframe title="Kuula 360 degree photo" width="100%" height="640" style="width: 95%; height: 640px; border: none; max-width: 100%;" frameborder="0"
-    allow="vr,gyroscope,accelerometer,fullscreen" scrolling="no" allowfullscreen="true"
-    src="https://kuula.co/share/{{ .Get 0 }}?fs=1&vr=0&thumbs=1&chromeless=0&logo=0"></iframe>
+{{ if not (.Page.Scratch.Get "__kuula") }}
+{{  .Page.Scratch.Set "__kuula" 0 }}
+{{ end }}
+{{ $idk := int (.Page.Scratch.Get "__kuula") }}
+{{ $idk := add $idk 1 }}
+{{ $kid := (print "kuula" (string $idk)) }}
+<div id="{{ $kid }}">
+    <p>
+        <a href="https://kuula.co/post/{{ .Get 0 }}" 
+        title="Kuula 360 degree photo" target="_blank">
+            Click to view on Kuula.
+        </a>
+    </p>
+</div>
+<script>
+if (window.devConsent.consent === true) {
+    var div = document.getElementById("{{ $kid }}");
+    var iframe = document.createElement("iframe");
+    var config = {
+        title: "Kuula 360 degree photo",
+        width: "100%",
+        height: "640",
+        style: "width: 95%; height: 640px; border: none; max-width: 100%;",
+        frameborder: "0",
+        allow: "vr,gyroscope,accelerometer,fullscreen",
+        scrolling: "no",
+        allowfullscreen: "true",
+        src: "https://kuula.co/share/{{ .Get 0 }}?fs=1&vr=0&thumbs=1&chromeless=0&logo=0"
+    };
+    for(var prop in config) {
+        iframe.setAttribute(prop, config[prop]);
+        div.appendChild(iframe);
+    }
+}
+</script>
+{{ .Page.Scratch.Set "__kuula" $idk }}

@@ -14,6 +14,7 @@
 {{/* Only include once */}}
 {{  .Page.Scratch.Set "__h_simple_twitter_css" true }}
 <script>
+(function () {
   if (window.devConsent.consent == true) {
     var twitterWidget = document.createElement("script");
     twitterWidget.setAttribute("async", {});
@@ -28,6 +29,7 @@
     newStyle.setAttribute("href", "{{ "/css/twitter.css" | urlize | relURL }}");
     document.getElementsByTagName("head")[0].appendChild(newStyle);
   }
+})();
 </script>
 {{ end }}
 {{ end }}

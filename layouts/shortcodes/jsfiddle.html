@@ -1,1 +1,26 @@
-<script async src="//jsfiddle.net/{{ .Get 0 }}/embed/result,js,html,css/"></script>
+{{ if not (.Page.Scratch.Get "__jsfiddle") }}
+{{  .Page.Scratch.Set "__jsfiddle" 0 }}
+{{ end }}
+{{ $idj := int (.Page.Scratch.Get "__jsfiddle") }}
+{{ $idj := add $idj 1 }}
+{{ $jsfid := (print "jsfiddle" (string $idj)) }}
+<div id="{{ $jsfid }}">
+    <p>
+        <a target="_blank" title="jsFiddle" href="https://jsfiddle.net/{{ .Get 0 }}">
+            Click to view the fiddle.
+        </a>
+    </p>    
+</div>
+<script>
+(function () {
+    var div = document.getElementById("{{ $jsfid }}");
+    if (window.devConsent.consent === true) {
+        var script = document.createElement("script");
+        script.setAttribute("async", null);
+        script.setAttribute("src", "//jsfiddle.net/{{ .Get 0 }}/embed/");
+        div.innerHTML = "";
+        div.appendChild(script);
+    }
+})();
+</script>
+{{ .Page.Scratch.Set "__jsfiddle" $idj }}

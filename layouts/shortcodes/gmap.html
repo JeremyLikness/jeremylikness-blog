@@ -1,7 +1,46 @@
-<iframe title="Google Map"
-onerror="this.setAttribute('srcdoc', '<p>Google Maps are not available offline.</p>');this.setAttribute('onerror','');"
-onload="if(navigator && navigator.onLine === false) eval(this.getAttribute('onerror'));"
-src="{{ .Get 0 }}" 
-width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-{{ if .Get 1 }}
-<figcaption>{{ .Get 1 }}</figcaption>{{ end }}
+{{ if not (.Page.Scratch.Get "__gmap") }}
+{{  .Page.Scratch.Set "__gmap" 0 }}
+{{ end }}
+{{ $idg := int (.Page.Scratch.Get "__gmap") }}
+{{ $idg := add $idg 1 }}
+{{ $gmapid := (print "gmap" (string $idg)) }}
+<div id="{{$gmapid}}">
+    {{ if .Get 1 }}
+    <a title="{{.Get 1}}" 
+        target="_blank" 
+        href="https://www.google.com/maps/search/{{ .Get 1 | safeHTML }}">
+        {{ .Get 1 }}
+    </a>    
+  {{ end }}
+  </div>
+<script>
+(function () {
+    var src = "{{ .Get 0 | safeHTML }}";
+    var div = document.getElementById("{{ $gmapid }}");
+    if (window.devConsent.consent === true) {
+        var config = {
+            "onerror": "this.setAttribute('srcdoc', '<p>Google Maps are not available offline.</p>');this.setAttribute('onerror','');",
+            "onload": "if(navigator && navigator.onLine === false) eval(this.getAttribute('onerror'));",
+            "src": src,
+            "width": 600,
+            "height": 450,
+            "frameborder": 0,
+            "style": "border:0",
+            "allowfullscreen": null
+        };
+
+        var iframe = document.createElement("iframe");
+        for (var attr in config) {
+            iframe.setAttribute(attr, config[attr]);
+        }
+        div.innerHTML = "";
+        div.appendChild(iframe);
+        {{ if .Get 1 }}
+    var fig = document.createElement("figcaption");
+    fig.innerText = "{{.Get 1}}";
+    div.appendChild(fig);
+{{ end }}
+    }
+})();
+</script>
+{{ .Page.Scratch.Set "__gmap" $idg }}
