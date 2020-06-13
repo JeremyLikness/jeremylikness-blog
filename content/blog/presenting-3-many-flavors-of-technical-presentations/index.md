@@ -91,8 +91,6 @@ Example of a hands-on lab:
 
 I love conferences that provide open spaces! These are ad hoc presentation areas. Usually you sign up for an open space with a presentation or even an idea for discussion. You get assigned a time slot and then anyone interested stops by to collaborate. It's usually more intimate and less pressure than a full presentation. Consider trying these out at a conference if you're not sure you are ready to take the stage. Often, I find topics include support for aspiring speakers.
 
-{{<customtwitter 1088484352865062912>}}
-
 ## 🐦🦜 Birds of a Feather
 
 Another casual way to share your knowledge: with "birds of a feather" you are encouraged to mingle with attendees to answer questions and share your insights. This is often done over lunch, and tables are labeled with either names or topics that people can sit to discuss. Birds of a feather facilitates comfortable and casual interactions.
