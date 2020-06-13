@@ -9,6 +9,8 @@ draft: false
 comments: true
 toc: true
 
+series: Blazor and EF Core
+
 subtitle: "In the browser, for the browser, by the browser."
 
 description: "With Blazor WebAssembly it is possible to use EF Core to access Cosmos DB directly from the browser. This post explores why, how, and what security implications and considerations exist."

@@ -9,6 +9,8 @@ draft: false
 comments: true
 toc: true
 
+series: Blazor and EF Core
+
 subtitle: "An authentic look at static sites with dynamic attitudes."
 
 description: "Learn how to configure a standalone Blazor WebAssembly app to securely connect to an Azure Functions endpoint using Azure AD to retrieve a Cosmos DB resource token. Use the resource token to connect to Cosmos DB directly from the Blazor client app through Entity Framework EF Core."
