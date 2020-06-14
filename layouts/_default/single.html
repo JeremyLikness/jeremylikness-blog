@@ -62,6 +62,9 @@
                 </aside>
                 {{ end }}
 
+                <div id="articleConsent" class="d-none alert alert-warning">You are viewing a limited version of this blog. To enable experiences like comments, opt-in to our privacy and cookie policy. 
+                    <button class="btn btn-link" data-toggle="modal" data-target="#consentModal">Show consent dialog.</button>
+                </div>
                 <!-- Post Content -->
                 <div class="article-post">
                     {{ .Content}}
@@ -175,6 +178,15 @@
         <div>&nbsp;</div>
         {{ end }}
 </div>
+{{ if not .Params.noads }}
+<script>
+    setTimeout(function () {
+        if (!window.devConsent || window.devConsent.consent !== true) {
+            document.getElementById("articleConsent").classList.remove("d-none");
+        }
+    }, 0);
+</script>
+{{ end }}
 {{- partial "_shared/alertbar.html" . -}}
 {{ end }}
 

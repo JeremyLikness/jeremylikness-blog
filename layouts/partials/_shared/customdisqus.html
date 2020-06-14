@@ -13,7 +13,8 @@
             thread.classList.add("alert");
             thread.classList.add("alert-warning");
             thread.innerHTML = 'You have opted out of cookies so commenting is disabled.'
-                + ' To change your preferences, visit our <a href="/privacy/">Privacy Page</a>.';
+                + ' To change your preferences and enable comments, opt-in to cookies here: '
+                + ' <button class="btn btn-link" data-toggle="modal" data-target="#consentModal">Show consent dialog</button>';
             return;
         }
         if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {

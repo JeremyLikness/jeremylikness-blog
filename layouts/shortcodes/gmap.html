@@ -1,5 +1,6 @@
 {{ if not (.Page.Scratch.Get "__gmap") }}
 {{  .Page.Scratch.Set "__gmap" 0 }}
+<div class="d-none alert alert-warning" id="gmapConsent">Google Maps integration is disabled. To enable the live map preview:&nbsp;&nbsp;&nbsp;<button class="btn btn-success" data-toggle="modal" data-target="#consentModal">Show consent dialog</button></div>
 {{ end }}
 {{ $idg := int (.Page.Scratch.Get "__gmap") }}
 {{ $idg := add $idg 1 }}
@@ -40,6 +41,9 @@
     fig.innerText = "{{.Get 1}}";
     div.appendChild(fig);
 {{ end }}
+    }
+    else {
+        document.getElementById("gmapConsent").classList.remove("d-none");
     }
 })();
 </script>

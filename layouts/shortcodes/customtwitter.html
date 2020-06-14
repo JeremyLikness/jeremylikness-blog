@@ -13,6 +13,7 @@
 {{ if not (.Page.Scratch.Get "__h_simple_twitter_css") }}
 {{/* Only include once */}}
 {{  .Page.Scratch.Set "__h_simple_twitter_css" true }}
+<div class="d-none alert alert-warning" id="twitter{{ .Get 0 }}">Twitter capabilities are limited without consent. For the full experience:&nbsp;&nbsp;&nbsp;<button class="btn btn-success" data-toggle="modal" data-target="#consentModal">Show consent dialog</button></div>
 <script>
 (function () {
   if (window.devConsent.consent == true) {
@@ -28,6 +29,7 @@
     newStyle.setAttribute("type", "text/css");
     newStyle.setAttribute("href", "{{ "/css/twitter.css" | urlize | relURL }}");
     document.getElementsByTagName("head")[0].appendChild(newStyle);
+    document.getElementById("twitter{{ .Get 0 }}").classList.remove("d-none");
   }
 })();
 </script>
