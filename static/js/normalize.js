@@ -87,10 +87,13 @@
     if (elem) {
         content = elem.getAttribute('content');
         if (content) {
+            var contentUrl = new URL(content);
+            var there = `${contentUrl.origin}${location.pathname}`;
+            console.info(there);
             var here = `${location.origin}${location.pathname}${location.search}`;
-            if (here != content) {
-                location.href = location.hash ? `${content}${location.hash}`
-                    : content;
+            if (here != there) {
+                location.href = location.hash ? `${there}${location.hash}`
+                    : there;
             }
         }
     }
