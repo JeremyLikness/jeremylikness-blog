@@ -1,6 +1,7 @@
 <!-- begin post -->
 <div class="col-lg-4 col-md-6 mb-30px card-group">
-    <div class="card h-100">{{ $image := .Params.image }}{{ $class := "maxthumb" }}{{if eq .Page.Kind "taxonomy"}}{{ $class = "smallerthumb" }}{{ range first 1 .Data.Pages }}{{ $image = .Params.image }}{{ end }}{{ end }}
+    <div class="card h-100">{{ $image := .Params.image }}{{ $class := "maxthumb" }}{{if eq .Page.Kind "term"}}
+        {{ $class = "smallerthumb" }}{{ range first 1 .Data.Pages }}{{ $image = .Params.image }}{{ end }}{{ end }}
         <div class="{{ $class }}">
             <a href="{{ .RelPermalink }}">                
                 {{with $image}}
@@ -10,7 +11,7 @@
         </div>
         <div class="card-body">
             <h2 class="card-title"><a class="text-dark" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-            {{if eq .Page.Kind "taxonomy"}}
+            {{if eq .Page.Kind "term"}}
             <h4 class="card-text">{{ len .Data.Pages }} post(s).</h4>
             {{else}}
                <h4 class="card-text">{{ .Description }}</h4>
@@ -30,7 +31,7 @@
                     <span class="post-name">{{ .Site.Params.author }}</a></span><br/>
                 {{end}}
                 {{end}}
-                {{if eq .Page.Kind "taxonomy" }}
+                {{if eq .Page.Kind "term" }}
                 {{else}}
                 <span class="post-date">{{ dateFormat "Jan 2, 2006" .PublishDate }} - {{ .ReadingTime }} min read </span>
                 </span>

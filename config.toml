@@ -42,7 +42,7 @@ unsafe= true
     logo = "images/logo.png"
     description = "Code all the things."
     keywords = ["cloud", "webassembly", "azure", "programming", "coding"]
-    swVersion = 3.4
+    swVersion = 3.5
 
 [params.social]
   github = "JeremyLikness"
@@ -63,7 +63,6 @@ unsafe= true
 
 [params.customgtag]
   gtag = "UA-1227465-12"
-
 
 [params.csp]
   childsrc = ["'self'"]

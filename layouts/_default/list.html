@@ -6,10 +6,10 @@
 {{- partial "_shared/title.html" . -}}
 {{ $pages := .Pages }}
 {{ $pageSize := 6 }}
-{{ if and (eq .Page.Kind "taxonomy") (eq .Page.Type "series")}}
+{{ if and (eq .Page.Kind "term") (eq .Page.Type "series")}}
 {{ $pages = .Pages.ByDate }}
 {{ else}}
-{{ if eq .Page.Kind "taxonomyTerm" }}
+{{ if eq .Page.Kind "taxonomy" }}
 {{ $pageSize = 12 }}
 {{ if or (eq .Page.Type "tags") (eq .Page.Type "series") }}
 {{ $pages = .Pages.ByTitle }}
@@ -28,7 +28,7 @@
             <strong><a href="/blog">All</a>&nbsp;|&nbsp;<a href="/series">Series</a>&nbsp;|&nbsp;<a href="/tags">Tags</a>
                 |&nbsp;<a href="/years">Years</a></strong>
             <h2>&nbsp;</h2>
-            {{if eq .Page.Kind "taxonomyTerm"}}
+            {{if eq .Page.Kind "taxonomy"}}
                 <h2><span>Available {{ .Page.Title }} ({{ len .Data.Pages }} Total)
             {{ else }}
             {{ if eq .Page.Type "tags" }}
