@@ -1,11 +1,11 @@
 ---
 title: "Look Behind the IQueryable Curtain"
 author: "Jeremy Likness"
-date: 2020-07-19T13:47:29-07:00
+date: 2020-07-19T00:47:29-07:00
 years: "2020"
-lastmod: 2020-07-19T13:47:29-07:00
+lastmod: 2020-10-20T00:47:29-07:00
 
-draft: true
+draft: false
 comments: true
 toc: true
 
