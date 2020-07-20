@@ -34,6 +34,10 @@ First, if you haven't read the first article, take a few minutes to check it out
 
 Ready to chop down the expression tree? Let's get started.
 
+(Eager to jump into code? Here's the repo ...):
+
+{{<github "JeremyLikness/ExpressionExplorer">}}
+
 ## Setting the Stage
 
 First, let's start with a few assumptions. I'm working with a thing. It's just a plain old Common Language Runtime (CLR) entity (you may have heard it referred to as _POCO_) named `Thing`. Here's the definition:
@@ -482,9 +486,10 @@ How do you "intercept" the query when someone downstream calls `ToList()`? That 
 
 Until then, happy expression hunting!
 
+Repo:
+
+{{<github "JeremyLikness/ExpressionExplorer">}}
+
 Regards,
 
 ![Jeremy Likness](/images/jeremylikness.gif)
-
-
-
