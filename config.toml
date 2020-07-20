@@ -42,7 +42,7 @@ unsafe= true
     logo = "images/logo.png"
     description = "Code all the things."
     keywords = ["cloud", "webassembly", "azure", "programming", "coding"]
-    swVersion = 3.5
+    swVersion = 3.6
 
 [params.social]
   github = "JeremyLikness"

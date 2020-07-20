@@ -11,6 +11,8 @@ toc: true
 
 subtitle: "Your expression is so dynamic!"
 
+series: "LINQ and Expressions"
+
 description: "If you want to master Language Integrated Query (LINQ), you first need to understand the expressions it is based on. This blog post demonstrates how to dynamically build a LINQ expression tree with multiple nested conditions, use the compiled query to filter an in-memory list, then reuse the expression query a relational database."
 
 tags:
