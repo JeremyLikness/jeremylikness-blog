@@ -35,6 +35,12 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
+## &lt;TDevConf/>
+
+_Virtual (October 3, 2020)_
+
+* [Inside IQueryable: The Power of .NET Expressions](https://github.com/jeremylikness/iqueryableexpressionexamples)
+
 ## DevNexus 2020
 
 _Atlanta, GA (February 20 - 21, 2020)_

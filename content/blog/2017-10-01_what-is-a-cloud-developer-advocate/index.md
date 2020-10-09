@@ -94,8 +94,6 @@ Another very important point:
 
 That expertise has spread to our team, as evidenced by many of the advocates with Linux, Go, Containers, and other open source backgrounds. I learned more about how Linux works on Windows in one blog post than I had the entire year prior.
 
-{{<customtwitter 908089626623176704>}}
-
 Although the industry focus and excitement has mainly been around traditionally “non-Microsoft” open source, our team is very much aligned around the more traditional Microsoft technologies like .NET and SQL Server as well. Long-time friend and fellow (former) MVP <i class="fab fa-twitter"></i> [Laurent Bugnion](https://twitter.com/LBugnion), perhaps best known for his [MVVM Light Toolkit](http://www.mvvmlight.net/), recently joined and shared his own perspective.
 
 {{<customtwitter 892331970482638848>}}
