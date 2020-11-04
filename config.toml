@@ -8,6 +8,7 @@ disqusShortname = "developerforlife"
 enableEmoji = true
 enableRobotsTXT = true
 pygmentsStyle = "friendly"
+ignoreErrors = ["error-remote-getjson"]
 
 [markup.goldmark.renderer]
 unsafe= true

@@ -35,6 +35,14 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
+## Atlanta .NET User Group 2020
+
+_Virtual (October 26, 2020)_
+
+* [EF Core Queries from Blazor WebAssembly](https://www.meetup.com/Atlanta-Net-User-Group/events/273639506/)
+
+{{<youtube GE8_E8-KxBY>}}
+
 ## &lt;TDevConf/>
 
 _Virtual (October 3, 2020)_

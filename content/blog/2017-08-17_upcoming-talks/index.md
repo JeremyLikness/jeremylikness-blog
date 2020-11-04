@@ -29,7 +29,7 @@ _"Bit" mascot by [@ashleymcnamara](https://twitter.com/ashleymcnamara)_
 
 Visit this page to see where and when I'll be speaking and what topics I'll be covering. If you run a conference or user group and are looking for speakers, please don't hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I'll be happy to consider your venue!
 
-## November 10, 2020 DEV DAY 2020
+## November 18, 2020 DEV DAY 2020
 
 [DEV DAY 2020](https://www.devday.lk/)
 
