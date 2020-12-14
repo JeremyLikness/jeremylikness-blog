@@ -35,6 +35,24 @@ I’ve been delivering technical presentations for a decade now. My passion is e
 
 ![Image of Jeremy Giving a Talk](/blog/2017-08-17_presentations-archive/images/1.jpeg)
 
+## MSHOWTO | .NET for Apache Spark w/ Jeremy Likness
+
+_Virtual (December 11, 2020)_
+
+{{<youtube D0-03zBaiOM>}}
+
+## .NET Conf 2020 | The Missing Piece - Diving into the World of Big Data with .NET for Apache Spark
+
+_Virtual (November 13, 2020)_
+
+{{<youtube wRN6ExbW7kA>}}
+
+## .NET Conf 2020 | Entity Framework Core: The Next Generation for Data Access
+
+_Virtual (November 12, 2020)_
+
+{{<youtube BIImyq8qaD4>}}
+
 ## Atlanta .NET User Group 2020
 
 _Virtual (October 26, 2020)_

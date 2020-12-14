@@ -16,9 +16,7 @@ tags:
 image: "/blog/2017-08-17_upcoming-talks/images/1.png" 
 images:
  - "/blog/2017-08-17_upcoming-talks/images/1.png" 
- - "/blog/2017-08-17_upcoming-talks/images/3.jpeg" 
- - "/blog/2017-08-17_upcoming-talks/images/4.png" 
- - "/blog/2017-08-17_upcoming-talks/images/Jeremy_Likness_Nashville.jpg" 
+ - "/blog/2017-08-17_upcoming-talks/images/netconfefcore5.png" 
 
 aliases:
     - "/upcoming-talks-eaf27ff8a3a7"
@@ -29,8 +27,12 @@ _"Bit" mascot by [@ashleymcnamara](https://twitter.com/ashleymcnamara)_
 
 Visit this page to see where and when I'll be speaking and what topics I'll be covering. If you run a conference or user group and are looking for speakers, please don't hesitate to <i class="fab fa-twitter"></i> [contact me](https://twitter.com/messages/compose?recipient_id=jeremylikness) (I have open Direct Messages) and I'll be happy to consider your venue!
 
-## November 18, 2020 DEV DAY 2020
+## January 25, 2021 .NET Conf Virtual Event | What's new in EF Core 5.0
 
-[DEV DAY 2020](https://www.devday.lk/)
+[![.NET Conf Virtual Event: What's New in EF Core 5](/blog/2017-08-17_upcoming-talks/images/netconfefcore5.png)](https://www.meetup.com/Microsoft-Reactor-Redmond/events/274973827)
 
-* Real-time Big Data with .NET for Spark and Azure Synapse Notebooks
+.NET Conf Virtual Event
+
+* [What's new in EF Core 5.0](https://www.meetup.com/Microsoft-Reactor-Redmond/events/274973827)
+
+Entity Framework Core is the preferred data access API for over 70% of .NET Core web developers. The latest version provides more functionality than ever before. In this session you will learn what EF Core is, what problems it solves, and see the latest features in action. From debugging and diagnostics to advanced queries and mapping strategies, you will discover how to build database applications using .NET code.
