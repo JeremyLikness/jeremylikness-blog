@@ -41,6 +41,12 @@ _Virtual (December 11, 2020)_
 
 {{<youtube D0-03zBaiOM>}}
 
+## Orlando .NET User Group | What's New in EF Core 5.0
+
+_Virtual (December 10, 2020)_
+
+{{<youtube noavrHvdlqs>}}
+
 ## .NET Conf 2020 | The Missing Piece - Diving into the World of Big Data with .NET for Apache Spark
 
 _Virtual (November 13, 2020)_
