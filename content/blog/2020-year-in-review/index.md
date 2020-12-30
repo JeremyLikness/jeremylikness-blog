@@ -89,11 +89,29 @@ Last year I received 96,047 visitors over 123,961 sessions, about a 30% increase
 This year dropped to 61,930 visitors over 84,376 sessions. In my new role and with my focus split between two blogs, I simply did not write enough fresh content to drive new traffic. I don't have a goal for visitors or sessions, but I do have a mission to empower developers and blog posts are a big part of that. I will do more in 2021.
 Almost three-quarters of incoming traffic is from organic search.
 
-_Acquisition for Developer for Life in 2020_
+### Acquisition for Developer for Life in 2020
 
 Over half of my traffic came from organic searches. The top 10 search phrases covered three broad topics: Blazor, JavaScript, and a one-off blog post I wrote in 2018 that explains [how to run MongoDb in Docker on Windows](/blog/2018-12-27_mongodb-on-windows-in-minutes-with-docker/).
 
 The top three third party referrals came from GitHub, a case study of my site published on [JAMStack.org](https://jamstack.org), and [The Morning Brew](http://blog.cwa.me.uk).
+
+### Most read articles on Developer for Life in 2020
+
+Here are the top five (5) most read articles from 2020:
+
+1. [Build a SPA site with Vanilla.js](/blog/build-a-spa-site-with-vanillajs)
+1. [From Angular to Blazor: The Health App](/blog/2019-01-03_from-angular-to-blazor-the-health-app)
+1. [Blazor State Management](/blog/blazor-state-management)
+1. [MongoDB on Windows in Minutes with Docker](/blog/2018-12-27_mongodb-on-windows-in-minutes-with-docker)
+1. [Using LINQ to query dynamic schema-less Cosmos DB documents](/blog/using-linq-to-query-dynamic-schemaless-cosmosdb-documents)
+
+Here are the top five (5) filtered to only those articles I wrote in 2020:
+
+1. [Blazor State Management](/blog/blazor-state-management)
+1. [My New Role as Senior Program Manager for .NET Data](/blog/new-role-dotnet-data-pm)
+1. [Dynamically Build LINQ Expressions](/blog/dynamically-build-linq-expressions)
+1. [Build a Blazor WebAssembly Line of Business App Part 1: Intro and Data Access](/blog/build-a-blazor-webassembly-line-of-business-app)
+1. [EF Core and Cosmos DB with Blazor WebAssembly](/blog/ef-core-and-cosmosdb-with-blazor-webassembly)
 
 Because I did not post as much news, I did not use my link tracker as much so I'm skipping statistics for that. I will likely retire the link shortener in 2021 and just post direct links.
 
