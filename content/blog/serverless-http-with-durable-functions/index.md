@@ -26,7 +26,7 @@ images:
  - "/blog/serverless-http-with-durable-functions/images/searching.png" 
  - "/blog/serverless-http-with-durable-functions/images/orchestration.png" 
 ---
-[Durable Functions](https://jlik.me/gvt) enables developers to implement implicit (code-based) and explicit (entity-based) stateful workflows in serverless apps. If you aren't familiar with this feature, take a moment to read my original article:
+[Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable/?utm_source=jeliknes&utm_medium=blog&utm_campaign=durablehttp&WT.mc_id=durablehttp-blog-jeliknes) enables developers to implement implicit (code-based) and explicit (entity-based) stateful workflows in serverless apps. If you aren't familiar with this feature, take a moment to read my original article:
 
 {{<relativelink "/blog/stateful-serverless-long-running-workflows-with-durable-functions">}}
 
@@ -34,11 +34,11 @@ Durable functions rely on a main _orchestrator function_ that coordinates the ov
 
 _As of 2.0, this is no longer the case!_
 
-Now, with the introduction of the [HTTP Task](https://jlik.me/gvu), it is possible to interact with HTTP endpoints directly from the main orchestration function! The HTTP Task handles most of the interaction for you and returns a simple result. There are some trade-offs. Advantages of using this approach include:
+Now, with the introduction of the [HTTP Task](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-http-features?utm_source=jeliknes&utm_medium=blog&utm_campaign=durablehttp&WT.mc_id=durablehttp-blog-jeliknes#consuming-http-apis), it is possible to interact with HTTP endpoints directly from the main orchestration function! The HTTP Task handles most of the interaction for you and returns a simple result. There are some trade-offs. Advantages of using this approach include:
 
 * The task returns a simple result that encapsulates the HTTP content as a string.
 * HTTP Tasks support long polling. If the endpoint returns a `202` status code, the task will automatically continue to poll the endpoint until it returns a non-`202` status.
-* [Managed identities](https://jlik.me/gwa) are supported out-of-the-box, making it possible to call APIs that require Azure Active Directory tokens. This enables scenarios like restarting VMs and spinning up clusters. In addition,
+* [Managed identities](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=durablehttp&WT.mc_id=durablehttp-blog-jeliknes) are supported out-of-the-box, making it possible to call APIs that require Azure Active Directory tokens. This enables scenarios like restarting VMs and spinning up clusters. In addition,
   * Tokens are automatically refreshed when they expire.
   * Tokens are never stored in the orchestration state.
   * Token acquisition happens automatically.
@@ -55,7 +55,7 @@ These points are mostly summarized in the official docs; what about a hands-on e
 
 ## Introducing Durable Search
 
-I often use the example of passing a search to multiple sites then aggregating the results when explaining the serverless [fan-out/fan-in pattern](https://jlik.me/gvv). It's time to implement that! I originally wanted to build a site map, but that example is overly complex. In the spirit of keeping things simple, I built "Durable Search":
+I often use the example of passing a search to multiple sites then aggregating the results when explaining the serverless [fan-out/fan-in pattern](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-cloud-backup?utm_source=jeliknes&utm_medium=blog&utm_campaign=durablehttp&WT.mc_id=durablehttp-blog-jeliknes). It's time to implement that! I originally wanted to build a site map, but that example is overly complex. In the spirit of keeping things simple, I built "Durable Search":
 
 {{<github "JeremyLikness/DurableSearch">}}
 
@@ -125,7 +125,7 @@ Does it get any easier than that?
 
 ## The Watcher
 
-Orchestrations automatically expose a set of [built-in orchestration APIs](https://jlik.me/gv8) for managing and querying the workflow. The status inquiry returns a `202` status code until the orchestration finishes, then it returns a `200` with the results. To demonstrate how the HTTP Task handles long-polling, I wrote a simple "watcher" that issues a status request to the search workflow. The code is straightforward:
+Orchestrations automatically expose a set of [built-in orchestration APIs](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-http-features?utm_source=jeliknes&utm_medium=blog&utm_campaign=durablehttp&WT.mc_id=durablehttp-blog-jeliknes#exposing-http-apis) for managing and querying the workflow. The status inquiry returns a `202` status code until the orchestration finishes, then it returns a `200` with the results. To demonstrate how the HTTP Task handles long-polling, I wrote a simple "watcher" that issues a status request to the search workflow. The code is straightforward:
 
 {{<highlight csharp>}}
 var req = context.GetInput<string>();
@@ -269,7 +269,7 @@ Now everything is ready to run!
 
 ## The Finished App
 
-I tested the app locally with the [storage emulator](https://jlik.me/gv9) running. The project spins up and reveals the HTTP endpoints:
+I tested the app locally with the [storage emulator](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator?utm_source=jeliknes&utm_medium=blog&utm_campaign=durablehttp&WT.mc_id=durablehttp-blog-jeliknes) running. The project spins up and reveals the HTTP endpoints:
 
 ![HTTP Endpoints](/blog/serverless-http-with-durable-functions/images/httpfunctions.png)
 
@@ -289,7 +289,7 @@ That's a wrap!
 
 ## Conclusion
 
-The new Durable Functions framework has many new features. Hopefully this gives you an idea and insight into managing HTTP APIs, both as a consumer and a producer. Be sure to visit the [official documentation](https://jlik.me/gvt) for the latest information. As always, I welcome your discussions, comments, suggestions and feedback below.
+The new Durable Functions framework has many new features. Hopefully this gives you an idea and insight into managing HTTP APIs, both as a consumer and a producer. Be sure to visit the [official documentation](https://docs.microsoft.com/en-us/azure/azure-functions/durable/?utm_source=jeliknes&utm_medium=blog&utm_campaign=durablehttp&WT.mc_id=durablehttp-blog-jeliknes) for the latest information. As always, I welcome your discussions, comments, suggestions and feedback below.
 
 Regards,
 

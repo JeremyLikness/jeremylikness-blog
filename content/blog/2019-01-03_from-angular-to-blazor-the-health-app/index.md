@@ -27,13 +27,13 @@ aliases:
     - "/from-angular-to-blazor-the-health-app-2e36077d641c"
 ---
 
-[Blazor](https://jlik.me/ev2) is a .NET-based framework for building web applications that runs in the browser. It leverages [C#](https://jlik.me/ev1) and [Razor templates](https://jlik.me/ev3) to generate cross-platform, HTML5-compliant code that compiles to [WebAssembly](https://jlik.me/ev4). The purpose of this post is to illustrate how to build a specific reference application using Blazor.
+[Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazor&WT.mc_id=blazor-blog-jeliknes) is a .NET-based framework for building web applications that runs in the browser. It leverages [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazor&WT.mc_id=blazor-blog-jeliknes) and [Razor templates](https://docs.microsoft.com/en-us/aspnet/core/blazor/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazor&WT.mc_id=blazor-blog-jeliknes&view=aspnetcore-5.0#razor-support) to generate cross-platform, HTML5-compliant code that compiles to [WebAssembly](https://webassembly.org/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazor&WT.mc_id=blazor-blog-jeliknes). The purpose of this post is to illustrate how to build a specific reference application using Blazor.
 
 ![Screenshot of Health App](/blog/2019-01-03_from-angular-to-blazor-the-health-app/images/1.png)
 
 To see the application in action:
 
-👀 [Live Demo](https://jlik.me/ev5)
+👀 [Live Demo](https://blazorhealthapp.z5.web.core.windows.net/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazor&WT.mc_id=blazor-blog-jeliknes)
 
 This post was written with version `3.2.0-preview1.20073.1` of Blazor.
 
@@ -481,7 +481,7 @@ The weight component uses very similar logic. This is one of those areas it may 
 
 ## Deployment
 
-Client-side Blazor produces a set of static assets that can be served from any web platform. The only caveat is that the web server needs to understand the appropriate MIME types. I hosted this sample app in an extremely inexpensive instance of [Azure storage](https://jlik.me/ev6).
+Client-side Blazor produces a set of static assets that can be served from any web platform. The only caveat is that the web server needs to understand the appropriate MIME types. I hosted this sample app in an extremely inexpensive instance of [Azure storage](https://dev.to/azure/introduction-to-cloud-storage-for-developers-2hig).
 
 If you're curious about the steps involved, check out:
 
@@ -497,7 +497,7 @@ Building single page applications with Blazor is surprisingly simple. I enjoyed 
 * The payload to deliver an app is fairly large. Manageable, but large, so this needs to improve.
 * I wonder if there will be support for dynamic module loading? We leverage that quite a bit in other front-end frameworks.
 
-Overall, I was happy with the experience. Maybe I’m biased because I’ve worked with C# so many years, but as a major fan and experienced Angular developer I prefer the Blazor experience. It just feels more organized and straightforward. Obviously, I’ll need to tackle larger apps before having a more informed opinion. I plan to do a lot more with Blazor in 2019. Interested? [Click here to get started](https://jlik.me/ev2).
+Overall, I was happy with the experience. Maybe I’m biased because I’ve worked with C# so many years, but as a major fan and experienced Angular developer I prefer the Blazor experience. It just feels more organized and straightforward. Obviously, I’ll need to tackle larger apps before having a more informed opinion. I plan to do a lot more with Blazor in 2019. Interested? [Click here to get started](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazor&WT.mc_id=blazor-blog-jeliknes).
 
 Regards,
 

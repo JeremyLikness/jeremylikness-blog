@@ -45,7 +45,7 @@ The slide deck (linked at the end of this story) covers the evolution of deploym
 
 It also includes several business cases and examples for leveraging serverless functions.
 
-The following (silent) video demonstrates how to set up a simple serverless [Azure Function](https://jlik.me/azure-fn) that listens to an HTTP endpoint and echoes back the name that is passed to it.
+The following (silent) video demonstrates how to set up a simple serverless [Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=atlcodecode&WT.mc_id=atlcodecamp-blog-jeliknes) that listens to an HTTP endpoint and echoes back the name that is passed to it.
 
 {{<youtube uuu6ZTsKgG8>}}
 <figcaption>Part 1: Create an Azure Function from the Portal</figcaption>
@@ -55,7 +55,7 @@ Next, I walked through the same experience starting using Visual Studio 2017. In
 {{<youtube kXPrPvmwd64>}}
 <figcaption>Part 2: Create an Azure Function from Visual Studio</figcaption>
 
-After the names are gathered in a queue, I show how easy it is to set up a trigger that listens to the queue, pulls the name from the queue, then uses [Azure Table Storage](https://jlik.me/bdz) to count the names.
+After the names are gathered in a queue, I show how easy it is to set up a trigger that listens to the queue, pulls the name from the queue, then uses [Azure Table Storage](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=atlcodecode&WT.mc_id=atlcodecamp-blog-jeliknes) to count the names.
 
 {{<youtube oUJBa0tPr0Q>}}
 <figcaption>Part 3: Create a Queue Trigger and use Table Storage</figcaption>
@@ -65,12 +65,12 @@ The audience submitted a few samples to process, and I highlighted my favorite.
 ![Table Storage Explorer](/blog/2017-09-17_atlanta-code-camp-2017-serverless-.net/images/2.jpeg)
 <figcaption>Table Storage Explorer</figcaption>
 
-After demonstrating function apps, I moved on to share the power of [Logic Apps](https://jlik.me/bd0). These are cloud-based integrations and workflows that literally enable you to connect hundreds of end points ranging from web-hooks to APIs and more. Logic Apps support integrations with Office 365, Salesforce.com, Twilio, and many more third party platforms as well as Microsoft’s own Azure APIs like [Cognitive Services](https://jlik.me/bd1). This video shows how easy it is to set up a trigger that listens for a Twitter hashtag then posts the content to a Slack channel.
+After demonstrating function apps, I moved on to share the power of [Logic Apps](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=atlcodecode&WT.mc_id=atlcodecamp-blog-jeliknes). These are cloud-based integrations and workflows that literally enable you to connect hundreds of end points ranging from web-hooks to APIs and more. Logic Apps support integrations with Office 365, Salesforce.com, Twilio, and many more third party platforms as well as Microsoft’s own Azure APIs like [Cognitive Services](https://docs.microsoft.com/en-us/azure/cognitive-services/?utm_source=jeliknes&utm_medium=blog&utm_campaign=atlcodecode&WT.mc_id=atlcodecamp-blog-jeliknes). This video shows how easy it is to set up a trigger that listens for a Twitter hashtag then posts the content to a Slack channel.
 
 {{<youtube U5x8XJmYqJA>}}
 <figcaption>Part 4: Logic App</figcaption>
 
-The last part I covered is an important but often overlooked aspect of serverless: logging and analytics. Fortunately, this is extremely easy to add to your services with Azure [Application Insights](https://jlik.me/bd2). This feature has so much functionality that I wrote a separate blog post to cover it all:
+The last part I covered is an important but often overlooked aspect of serverless: logging and analytics. Fortunately, this is extremely easy to add to your services with Azure [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=atlcodecode&WT.mc_id=atlcodecamp-blog-jeliknes). This feature has so much functionality that I wrote a separate blog post to cover it all:
 
 🔗 [Real-Time Insights with Real-Low Effort](/real-time-insights-with-real-low-effort-7248e90048b1)
 

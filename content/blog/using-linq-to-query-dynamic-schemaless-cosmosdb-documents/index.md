@@ -26,7 +26,7 @@ images:
  - "/blog/using-linq-to-query-dynamic-schemaless-cosmosdb-documents/images/cosmosdatabase.jpg" 
 ---
 
-On July 9, 2019, a new set of libraries for working with Azure services was announced. These SDKs target multiple languages including 🐍 Python, ☕ Java, JavaScript, and .NET. A few popular services are covered including [Azure Cosmos DB](https://jlik.me/f7d).
+On July 9, 2019, a new set of libraries for working with Azure services was announced. These SDKs target multiple languages including 🐍 Python, ☕ Java, JavaScript, and .NET. A few popular services are covered including [Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?utm_source=jeliknes&utm_medium=blog&utm_campaign=newsdk&WT.mc_id=newsdk-blog-jeliknes).
 
 {{<customtwitter 1149009392127356928>}}
 
@@ -43,7 +43,7 @@ But how did I get here? Let me back up, and I'll start from the beginning.
 
 ## The Console App
 
-I decided to write something in cross-platform [.NET Core](https://jlik.me/f7e). I already installed the .NET Core SDK, so I just needed to create a directory and initialize a new console application.
+I decided to write something in cross-platform [.NET Core](https://docs.microsoft.com/en-us/dotnet/fundamentals/?utm_source=jeliknes&utm_medium=blog&utm_campaign=newsdk&WT.mc_id=newsdk-blog-jeliknes). I already installed the .NET Core SDK, so I just needed to create a directory and initialize a new console application.
 
 `dotnet new console`
 
@@ -55,7 +55,7 @@ Finally, I added the new [Azure SDK for Cosmos DB](https://www.nuget.org/package
 
 `dotnet add package Microsoft.Azure.Cosmos --version 3.0.0.19-preview`
 
-After that, I launched [Visual Studio Code](https://jlik.me/f7f) and was on my way!
+After that, I launched [Visual Studio Code](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code?utm_source=jeliknes&utm_medium=blog&utm_campaign=newsdk&WT.mc_id=newsdk-blog-jeliknes) and was on my way!
 
 `code .`
 
@@ -113,7 +113,7 @@ I ran it at this point and no exceptions were thrown, so of course I knew it was
 
 ## Open the Container
 
-Azure Cosmos DB organizes data into [database accounts](https://jlik.me/f7i) that contain information about regions, failover, the type of API to use and other properties. Inside a database you can then have multiple containers that are partitioned and provisioned differently. I have a database named `url-tracking` with a container named `url-stats`. 
+Azure Cosmos DB organizes data into [database accounts](https://docs.microsoft.com/en-us/azure/cosmos-db/account-databases-containers-items?utm_source=jeliknes&utm_medium=blog&utm_campaign=newsdk&WT.mc_id=newsdk-blog-jeliknes) that contain information about regions, failover, the type of API to use and other properties. Inside a database you can then have multiple containers that are partitioned and provisioned differently. I have a database named `url-tracking` with a container named `url-stats`. 
 
 ![Cosmos DB Database and Container](/blog/using-linq-to-query-dynamic-schemaless-cosmosdb-documents/images/cosmosdatabase.jpg)
 <figcaption>Cosmos DB Database and Container</figcaption>
@@ -210,13 +210,13 @@ But I didn't, so ... for now the best I could come up with on short notice was _
 
 ## The Query
 
-One advantage of the Azure Cosmos DB [SQL API](https://jlik.me/f7j) is that you can use SQL syntax to query the document. This is a perfectly valid query:
+One advantage of the Azure Cosmos DB [SQL API](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-query-getting-started?utm_source=jeliknes&utm_medium=blog&utm_campaign=newsdk&WT.mc_id=newsdk-blog-jeliknes) is that you can use SQL syntax to query the document. This is a perfectly valid query:
 
 `SELECT * FROM c WHERE <filter> ORDER BY c.timestamp DESC`
 
 However, I prefer to use LINQ because I don't have to manipulate strings and can take a more fluent approach.
 
-> Wait, Jeremy. What is this _LINQ_ you keep speaking of? If you're new to C# and/or .NET, have no fear. LINQ stands for (and here's the docs link) [Language Integrated Query](https://jlik.me/f7g). It's a way to write queries using C# methods without resorting to string manipulation. The example above becomes `query.Select(c=>c).Where(c=>{//filter}).OrderByDescending(c=>c.timestamp)`
+> Wait, Jeremy. What is this _LINQ_ you keep speaking of? If you're new to C# and/or .NET, have no fear. LINQ stands for (and here's the docs link) [Language Integrated Query](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/?utm_source=jeliknes&utm_medium=blog&utm_campaign=newsdk&WT.mc_id=newsdk-blog-jeliknes). It's a way to write queries using C# methods without resorting to string manipulation. The example above becomes `query.Select(c=>c).Where(c=>{//filter}).OrderByDescending(c=>c.timestamp)`
 
 The goal is simple: grab all entries from the past 24 hours and aggregate them on page and medium. Sort to list the most popular page first with a total click count, then within the page sort by the most popular mediums and show click count by medium. To hold the data, I created this:
 
@@ -320,7 +320,7 @@ Wow! That was easy. It took me about 30 minutes to write the code, and far longe
 
 The new SDKs are here, and so far, they look good. I was able to get up and running quickly, the API felt intuitive and the examples helped me work out how to solve my problem. I look forward to seeing these evolve based on feedback and see more services covered in future releases. I hope you found this useful. As always, please feel free to share your personal experiences and feedback in the comments below!
 
-🔗 [Get started with the new Azure SDKs](https://jlik.me/f7h).
+🔗 [Get started with the new Azure SDKs](https://azure.microsoft.com/en-us/blog/previewing-azure-sdks-following-new-azure-sdk-api-standards/?utm_source=jeliknes&utm_medium=blog&utm_campaign=newsdk&WT.mc_id=newsdk-blog-jeliknes).
 
 Regards,
 

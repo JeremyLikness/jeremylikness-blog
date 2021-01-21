@@ -30,7 +30,7 @@ Monday, May 13th, 2019 was the date we kicked off the inaugural [.NET South conf
 
 ![Image of clouds](/blog/2019-05-16_managing-data-in-the-cloud/images/1.png)
 
-[<i class="fab fa-vimeo"></i> Watch the full presentation](https://jlik.me/f0h)
+[<i class="fab fa-vimeo"></i> Watch the full presentation](https://www.recallact.com/presentation/managing-data-cloud?WT.mc_id=medium-blog-jeliknes)
 
 The presentation features three case studies that illustrate different approaches to managing and accessing data. There is a flights database that traverses a graph of nodes and vertices to compute possible flight paths between two airports. The link shortening example highlights the entirely serverless application I run in production to create, use, and report on URLs. Finally, the Tailwind Traders application leverages microservices that include a Node.js app with a MongoDB backend and a .NET Core API on top of Azure SQL.
 

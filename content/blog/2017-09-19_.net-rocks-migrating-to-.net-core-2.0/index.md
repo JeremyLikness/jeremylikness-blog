@@ -26,7 +26,7 @@ aliases:
     - "/net-rocks-migrating-to-net-core-2-0-72203276a698"
 ---
 
-[.NET Core 2](https://jlik.me/bfu) is out — are you ready to migrate? Carl and Richard talk to me about my experiences migrating my own projects over to Core 2 from .NET Framework.
+[.NET Core 2](https://docs.microsoft.com/en-us/aspnet/core/getting-started/?utm_source=jeliknes&utm_medium=blog&utm_campaign=dotnetrocks&WT.mc_id=dotnetrocks-blog-jeliknes&view=aspnetcore-5.0) is out — are you ready to migrate? Carl and Richard talk to me about my experiences migrating my own projects over to Core 2 from .NET Framework.
 
 ![.NET Rocks Podcast](/blog/2017-09-19_.net-rocks-migrating-to-.net-core-2.0/images/1.png)
 <figcaption>.NET Rocks Podcast</figcaption>

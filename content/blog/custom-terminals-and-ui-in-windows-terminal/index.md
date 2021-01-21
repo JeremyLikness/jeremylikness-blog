@@ -29,9 +29,9 @@ images:
  - "/blog/custom-terminals-and-ui-in-windows-terminal/images/node-prompt.png" 
 ---
 
-[Windows Terminal](https://jlik.me/gsv) is a brand-new terminal app that runs on Windows 10 and supports multiple configurations. It was [first announced](https://jlik.me/gsw) in May of 2019.
+[Windows Terminal](https://www.microsoft.com/p/windows-terminal-preview/9n0dx20hk701?utm_source=jeliknes&utm_medium=blog&utm_campaign=windowsterminal&WT.mc_id=windowsterminal-blog-jeliknes) is a brand-new terminal app that runs on Windows 10 and supports multiple configurations. It was [first announced](https://devblogs.microsoft.com/commandline/introducing-windows-terminal/?utm_source=jeliknes&utm_medium=blog&utm_campaign=windowsterminal&WT.mc_id=windowsterminal-blog-jeliknes) in May of 2019.
 
-You can grab it from the <i class="fab fa-windows"></i> [Windows Store](https://jlik.me/gsv). If you're more pioneering and want to build it yourself or integrate it in your own applications, it is an open source project that you can access from the following repository:
+You can grab it from the <i class="fab fa-windows"></i> [Windows Store](https://www.microsoft.com/p/windows-terminal-preview/9n0dx20hk701?utm_source=jeliknes&utm_medium=blog&utm_campaign=windowsterminal&WT.mc_id=windowsterminal-blog-jeliknes). If you're more pioneering and want to build it yourself or integrate it in your own applications, it is an open source project that you can access from the following repository:
 
 {{< github "Microsoft/Terminal" >}}
 
@@ -80,7 +80,7 @@ This gives me a light background and larger font size, presenting this cool effe
 
 ![Command prompt with circuit background](/blog/custom-terminals-and-ui-in-windows-terminal/images/cmd-shell.png)
 
-As you may have noticed, I have quite a few more terminals configured. I did a little bit of online research to figure out how to add the other terminals. To work with Azure resources in a shell that comes pre-installed with tons of developer tools (including its own version of [Visual Studio Code](https://jlik.me/gsx)) that is frequently updated without me having to do a thing, I configured <i class="fa fa-cloud"></i> **[Azure Cloud Shell](https://jlik.me/gsy)**. There are a million ways to generate the necessary GUID, here's one that uses .NET Fiddle: [get a GUID](https://dotnetfiddle.net/UzEkEy).
+As you may have noticed, I have quite a few more terminals configured. I did a little bit of online research to figure out how to add the other terminals. To work with Azure resources in a shell that comes pre-installed with tons of developer tools (including its own version of [Visual Studio Code](https://code.visualstudio.com/?utm_source=jeliknes&utm_medium=blog&utm_campaign=windowsterminal&WT.mc_id=windowsterminal-blog-jeliknes)) that is frequently updated without me having to do a thing, I configured <i class="fa fa-cloud"></i> **[Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=windowsterminal&WT.mc_id=windowsterminal-blog-jeliknes)**. There are a million ways to generate the necessary GUID, here's one that uses .NET Fiddle: [get a GUID](https://dotnetfiddle.net/UzEkEy).
 
 {{<highlight JSON>}}
 {

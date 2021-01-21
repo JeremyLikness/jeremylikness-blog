@@ -80,7 +80,7 @@ When you have a wide variety of options, how do you choose? There are several wa
 
 🗣 **Let's discuss** What are your favorite events? How do you find places to present?
 
-> My example presentation for this article is a lightning talk I gave at Microsoft's [//build conference](https://jlik.me/gdg). I took a 60-minute presentation and condensed it down to 20 minutes focused on as much value as I could deliver in the short period of time. The venue was "theater style" meaning an open platform in a large showroom, so there was a lot of background noise and foot traffic. It was a great learning experience!
+> My example presentation for this article is a lightning talk I gave at Microsoft's [//build conference](https://mybuild.microsoft.com/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes). I took a 60-minute presentation and condensed it down to 20 minutes focused on as much value as I could deliver in the short period of time. The venue was "theater style" meaning an open platform in a large showroom, so there was a lot of background noise and foot traffic. It was a great learning experience!
 
 {{<youtube tBollT76thk>}}
 

@@ -29,7 +29,7 @@ images:
 
 “It’s time to migrate.”
 
-Maybe the decision to switch cloud providers came “down from above.” Maybe the decision was yours. Perhaps your original solution was merely a spike to “kick the tires” of one cloud, and now it’s time to try another. Whatever your reasons, if you are considering moving your serverless functions from AWS Lambda to [Azure Functions](https://jlik.me/jkm), you’re in the right place to learn how!
+Maybe the decision to switch cloud providers came “down from above.” Maybe the decision was yours. Perhaps your original solution was merely a spike to “kick the tires” of one cloud, and now it’s time to try another. Whatever your reasons, if you are considering moving your serverless functions from AWS Lambda to [Azure Functions](https://blog.jeremylikness.com/?utm_source=jeliknes&utm_medium=redirect&utm_campaign=jlik_me), you’re in the right place to learn how!
 
 ![Lambda to Azure Functions](/blog/moving-from-lambda-to-azure-functions/images/lambdatofunctions.jpeg)
 <figcaption>Lambda to Azure Functions</figcaption>
@@ -114,7 +114,7 @@ Friends don’t let friends right-click publish. That’s why in this final vide
 
 This is a short series designed to ease your understanding of how to migrate from AWS Lambda to Azure. As always, we welcome your feedback, comments, and suggestions. If you have experienced a similar migration, please share your thoughts and tips in the comments below!
 
-What's next? Check out an [Overview of Azure Functions](https://jlik.me/gkm).
+What's next? Check out an [Overview of Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=awsmigration&WT.mc_id=awsmigration-blog-jeliknes).
 
 Regards,
 

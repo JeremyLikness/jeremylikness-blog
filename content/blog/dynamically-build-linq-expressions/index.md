@@ -27,7 +27,7 @@ images:
  - "/blog/dynamically-build-linq-expressions/images/logic.jpg" 
 ---
 
-[LINQ](https://jlik.me/hzf) stands for Language Integrated Query and is one of my favorite .NET and C# technologies. Using LINQ, developers can write queries directly in strongly typed code. LINQ provides a standard language and syntax that is consistent across data sources.
+[LINQ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/?utm_source=jeliknes&utm_medium=blog&utm_campaign=dynamicexpressions&WT.mc_id=dynamicexpressions-blog-jeliknes) stands for Language Integrated Query and is one of my favorite .NET and C# technologies. Using LINQ, developers can write queries directly in strongly typed code. LINQ provides a standard language and syntax that is consistent across data sources.
 
 ## The Basics
 
@@ -53,7 +53,7 @@ public class Program
 }
 ```
 
-Because `someNumbers` is an `IEnumerable<int>`, the query is parsed by [LINQ to Objects](https://jlik.me/hzg). The same query syntax can be used with a tool like [Entity Framework Core](https://jlik.me/hzh) to generate T-SQL that is run against a relational database. LINQ can be written using one of two syntaxes: _query syntax_ (shown above) or _method syntax_. The two syntaxes are semantically identical and the one you use depends on your preference. The same query above can be written using method syntax like this:
+Because `someNumbers` is an `IEnumerable<int>`, the query is parsed by [LINQ to Objects](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/linq-to-objects?utm_source=jeliknes&utm_medium=blog&utm_campaign=dynamicexpressions&WT.mc_id=dynamicexpressions-blog-jeliknes). The same query syntax can be used with a tool like [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/querying/?utm_source=jeliknes&utm_medium=blog&utm_campaign=dynamicexpressions&WT.mc_id=dynamicexpressions-blog-jeliknes) to generate T-SQL that is run against a relational database. LINQ can be written using one of two syntaxes: _query syntax_ (shown above) or _method syntax_. The two syntaxes are semantically identical and the one you use depends on your preference. The same query above can be written using method syntax like this:
 
 ```csharp
 var secondQuery = someNumbers.Where(n => n > 10)
@@ -63,7 +63,7 @@ var secondQuery = someNumbers.Where(n => n > 10)
 
 Every LINQ query has three phases:
 
-1. A data source is set up, known as a _provider_, for the query to act against. For example, the code shown so far uses the built-in LINQ to Objects provider. Your EF Core projects use the [EF Core provider](https://jlik.me/hzi) that maps to your database.
+1. A data source is set up, known as a _provider_, for the query to act against. For example, the code shown so far uses the built-in LINQ to Objects provider. Your EF Core projects use the [EF Core provider](https://docs.microsoft.com/en-us/ef/core/providers/?utm_source=jeliknes&utm_medium=blog&utm_campaign=dynamicexpressions&WT.mc_id=dynamicexpressions-blog-jeliknes) that maps to your database.
 2. The query is defined and turned into an _expression tree_. I'll cover expressions more in a moment.
 3. The query is executed, and data is returned.
 
@@ -144,7 +144,7 @@ I created a simple console app to test my hypothesis that materializing the LINQ
 
 Set the startup project to **`ExpressionGenerator`** for the first part of this post. If you run it from the command line, be sure that `rules.json` is in your current directory.
 
-I embedded the sample JSON as `rules.json`. Using [System.Text.Json](https://jlik.me/hzj) to parse the file is this simple:
+I embedded the sample JSON as `rules.json`. Using [System.Text.Json](https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=dynamicexpressions&WT.mc_id=dynamicexpressions-blog-jeliknes) to parse the file is this simple:
 
 ```csharp
 var jsonStr = File.ReadAllText("rules.json");
@@ -444,7 +444,7 @@ The example app also prints one of the selected entities to spot-check.
 
 ## Conclusion
 
-LINQ expressions are a very powerful tool to filter and transform data. I hope this example helped demystify how expression trees are built. Of course, parsing the expression tree feels a little like magic. How does Entity Framework Core walk the expression tree to produce meaningful SQL? I'm exploring that myself and with a little help from my friend, [ExpressionVisitor](https://jlik.me/hzk). More posts to come on this!
+LINQ expressions are a very powerful tool to filter and transform data. I hope this example helped demystify how expression trees are built. Of course, parsing the expression tree feels a little like magic. How does Entity Framework Core walk the expression tree to produce meaningful SQL? I'm exploring that myself and with a little help from my friend, [ExpressionVisitor](https://docs.microsoft.com/en-us/dotnet/api/system.linq.expressions.expressionvisitor?utm_source=jeliknes&utm_medium=blog&utm_campaign=dynamicexpressions&WT.mc_id=dynamicexpressions-blog-jeliknes&view=net-5.0). More posts to come on this!
 
 Regards,
 

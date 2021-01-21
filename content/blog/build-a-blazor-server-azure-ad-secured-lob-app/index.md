@@ -41,11 +41,11 @@ The server solution relies on the libraries already built for the client solutio
 
 * A **model** project
 * A **basic repository** project
-* A **data access** layer that uses [Entity Framework Core](https://jlik.me/h18)
+* A **data access** layer that uses [Entity Framework Core](https://docs.microsoft.com/en-us/ef/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorserverefcore&WT.mc_id=blazorserverefcore-blog-jeliknes)
 * A **repository** implementation that uses the data access layer
 * A **Razor class library** that hosts UI and UI logic
 
-To get started, I created an empty solution file and initialized a [git submodule](https:/jlik.me/h19) to reference the previous project.
+To get started, I created an empty solution file and initialized a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorserverefcore&WT.mc_id=blazorserverefcore-blog-jeliknes) to reference the previous project.
 
 ```
 git submodule add https://github.com/jeremylikness/blazorwasmefcoreexample
@@ -235,13 +235,13 @@ I also built `EditContact.razor` from the client template, with a slight change:
 
 ## Component Scope
 
-Wait, what? Notice the component inherits from `OwningComponentBase<T>`. Why is that? ASP.NET Core has three [service lifetimes](https://jlik.me/h2b) by default:
+Wait, what? Notice the component inherits from `OwningComponentBase<T>`. Why is that? ASP.NET Core has three [service lifetimes](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorserverefcore&WT.mc_id=blazorserverefcore-blog-jeliknes&view=aspnetcore-5.0#service-lifetimes) by default:
 
 * **Transient** provides a copy per request
 * **Scoped** provides a copy per connection. In ASP.NET Core Web API apps, that is simply a call to the controller. For Blazor Server apps, it will last the duration of a user session.
 * **Singleton** is shared across all application instances
 
-The unit of work is unique because we want it to last the duration of the component. The way the edit component works is by capturing the contact and allowing EF Core's change tracking to manage state. When the update is submitted, EF Core can determine if the record has changed and throw a concurrency exception if it has. This was handled using a disconnected entity pattern in the WebAssembly app (the client held onto the concurrency token, then passed it on update). Here, we're keeping it simple and letting EF Core do the work. `OwningComponentBase<T>` provides a special scope that overrides the default behavior and provides the instance for the duration of the component. This means the same user will get a new copy when they return to that component, and the service is properly disposed of when the component goes out of scope. Learn more about it here: [utility base component classes in Blazor](https://jlik.me/h2d).
+The unit of work is unique because we want it to last the duration of the component. The way the edit component works is by capturing the contact and allowing EF Core's change tracking to manage state. When the update is submitted, EF Core can determine if the record has changed and throw a concurrency exception if it has. This was handled using a disconnected entity pattern in the WebAssembly app (the client held onto the concurrency token, then passed it on update). Here, we're keeping it simple and letting EF Core do the work. `OwningComponentBase<T>` provides a special scope that overrides the default behavior and provides the instance for the duration of the component. This means the same user will get a new copy when they return to that component, and the service is properly disposed of when the component goes out of scope. Learn more about it here: [utility base component classes in Blazor](https://docs.microsoft.com/en-us/aspnet/core/blazor/fundamentals/dependency-injection?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorserverefcore&WT.mc_id=blazorserverefcore-blog-jeliknes&view=aspnetcore-5.0#utility-base-component-classes-to-manage-a-di-scope).
 
 Finally, another simple component/page for `AddContact.razor`:
  
@@ -263,7 +263,7 @@ After testing the application and verifying that it successfully adds, updates, 
 
 ![Audit rows](/blog/build-a-blazor-server-azure-ad-secured-lob-app/images/useraudit.jpg)
 
-The "user" here is based on the `NameIdentifier` claim from Azure Active Directory. This claim will be unique _per user per app_. If you set up a different application, the same user will have a different unique identifier. It is enough to show uniqueness by users, but not enough to tie the user back to their Active Directory account. If you need to trace the user back to the account, you can choose other claims or configure the application to use a different name identifier. Learn more by reading: [How to customize Azure AD claims](https://jlik.me/2a). The logic for determining the "name" is in the `ContactAuditAdapter` class.
+The "user" here is based on the `NameIdentifier` claim from Azure Active Directory. This claim will be unique _per user per app_. If you set up a different application, the same user will have a different unique identifier. It is enough to show uniqueness by users, but not enough to tie the user back to their Active Directory account. If you need to trace the user back to the account, you can choose other claims or configure the application to use a different name identifier. Learn more by reading: [How to customize Azure AD claims](https://blog.jeremylikness.com/?utm_source=jeliknes&utm_medium=redirect&utm_campaign=jlik_me). The logic for determining the "name" is in the `ContactAuditAdapter` class.
 
 ## Summary
 

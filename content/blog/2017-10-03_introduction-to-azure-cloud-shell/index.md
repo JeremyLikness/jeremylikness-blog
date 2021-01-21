@@ -31,9 +31,9 @@ aliases:
     - "/introduction-to-azure-cloud-shell-c88a37ff5c28"
 ---
 
-Today I want to share a powerful tool that is built right into your web browser. [Azure Cloud Shell](https://jlik.me/bkf) is a shell you can access from the Azure portal. It attaches to a pre-configured workstation that has several tools and utilities already installed. It automatically authenticates to Azure so you are able to access your resources immediately, and can connect to a storage account to persist files between sessions.
+Today I want to share a powerful tool that is built right into your web browser. [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=cloudshell&WT.mc_id=cloudshell-blog-jeliknes) is a shell you can access from the Azure portal. It attaches to a pre-configured workstation that has several tools and utilities already installed. It automatically authenticates to Azure so you are able to access your resources immediately, and can connect to a storage account to persist files between sessions.
 
-The main advantage to using Azure Cloud Shell is the built-in access to the [Azure Command Line Interface (CLI)](https://jlik.me/bkg) without having to install anything locally on your machine or create a custom Virtual Machine (VM). This tool makes it incredibly easy to create and manage Azure resources. Although you can do most things through the portal UI, many developers find that the CLI is a fast and easy way to accomplish tasks with minimal keystrokes.
+The main advantage to using Azure Cloud Shell is the built-in access to the [Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/?utm_source=jeliknes&utm_medium=blog&utm_campaign=cloudshell&WT.mc_id=cloudshell-blog-jeliknes) without having to install anything locally on your machine or create a custom Virtual Machine (VM). This tool makes it incredibly easy to create and manage Azure resources. Although you can do most things through the portal UI, many developers find that the CLI is a fast and easy way to accomplish tasks with minimal keystrokes.
 
 ## Getting Started
 
@@ -66,7 +66,7 @@ You may then re-list the subscriptions to confirm.
 
 ## Resource Groups
 
-[Resource groups](https://jlik.me/bkh) are logical partitions that you can think of as folders for related assets in Azure. Similar resources are typically grouped in the same resource group. You can deploy and destroy all of the assets in a resource group at once. You can also track cost by resource group.
+[Resource groups](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=cloudshell&WT.mc_id=cloudshell-blog-jeliknes) are logical partitions that you can think of as folders for related assets in Azure. Similar resources are typically grouped in the same resource group. You can deploy and destroy all of the assets in a resource group at once. You can also track cost by resource group.
 
 List your resources by issuing the command:
 
@@ -89,7 +89,7 @@ I made this short video to demonstrate these steps in action.
 
 ## Run a Container
 
-For the last step we’ll do something much more interesting than creating groups: we’ll run a Docker container. We’ll use the powerful new service named [Azure Container Instances](https://jlik.me/bkj) to accomplish this feat. Type the following command and hit enter (remember to update the resource group name if you changed it in the previous step).
+For the last step we’ll do something much more interesting than creating groups: we’ll run a Docker container. We’ll use the powerful new service named [Azure Container Instances](https://docs.microsoft.com/en-us/azure/container-instances/?utm_source=jeliknes&utm_medium=blog&utm_campaign=cloudshell&WT.mc_id=cloudshell-blog-jeliknes) to accomplish this feat. Type the following command and hit enter (remember to update the resource group name if you changed it in the previous step).
 
 `az container create --name gosmall --image jlikness/gosmall --ip-address public -g container-group`
 
@@ -115,6 +115,6 @@ Make sure you truly want to delete everything inside the resource group before y
 
 ## Conclusion
 
-Today you learned how to access a powerful workstation that is accessible from any browser. Did you know the Azure Cloud Shell is even available from your phone when you install the [Azure mobile app](https://jlik.me/bki)? Use the shell to quickly list, create, and manage resources without having to set up an environment or install any software of your own. What will the shell enable you to do next in the cloud?
+Today you learned how to access a powerful workstation that is accessible from any browser. Did you know the Azure Cloud Shell is even available from your phone when you install the [Azure mobile app](https://azure.microsoft.com/en-us/features/azure-portal/mobile-app/?utm_source=jeliknes&utm_medium=blog&utm_campaign=cloudshell&WT.mc_id=cloudshell-blog-jeliknes)? Use the shell to quickly list, create, and manage resources without having to set up an environment or install any software of your own. What will the shell enable you to do next in the cloud?
 
 ![Jeremy Likness](/blog/2017-10-03_introduction-to-azure-cloud-shell/images/6.gif)

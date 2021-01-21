@@ -47,19 +47,19 @@ aliases:
     - "/deploy-webassembly-from-github-toazure-storage-static-websites-with-azure-pipelines-a15f05d26fb8"
 ---
 
-[WebAssembly](https://jlik.me/fuw) is a new technology (just released in 2017) that enables a stack-based virtual machine to run byte code (called Wasm) in your browser without plugins. The latest stable version works in all modern browsers, including mobile. The byte code format, standard instruction set, and simple memory model enables Wasm to run at near-native speeds. It also serves as a viable compilation target for multiple languages. The key benefits of Wasm include better performance compared to JavaScript, a smaller footprint for client-side code, and the ability to reuse existing software written in the language of your choice.
+[WebAssembly](https://webassembly.org/?WT.mc_id=azuremedium-blog-jeliknes) is a new technology (just released in 2017) that enables a stack-based virtual machine to run byte code (called Wasm) in your browser without plugins. The latest stable version works in all modern browsers, including mobile. The byte code format, standard instruction set, and simple memory model enables Wasm to run at near-native speeds. It also serves as a viable compilation target for multiple languages. The key benefits of Wasm include better performance compared to JavaScript, a smaller footprint for client-side code, and the ability to reuse existing software written in the language of your choice.
 
 {{<figure src="/blog/2019-05-06_deploy-webassembly-from-github-toazure-storage-static-websites-with-azure-pipelines/images/1.png" caption="The CI/CD pipeline" alt="Image of pipeline icons">}}
 
-Wasm is stored in a static file that can be loaded along with HTML, JavaScript, CSS, images, and other website assets. This makes [Azure Storage Static Websites](https://jlik.me/fuz) a perfect hosting platform for WebAssembly apps. Open source projects hosted on GitHub can take advantage of free [Azure Pipelines](https://jlik.me/fu0) instances to build and deploy your apps. This post explores how to set up continuous integration and deployment (CI/CD) for WebAssembly apps.
+Wasm is stored in a static file that can be loaded along with HTML, JavaScript, CSS, images, and other website assets. This makes [Azure Storage Static Websites](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes) a perfect hosting platform for WebAssembly apps. Open source projects hosted on GitHub can take advantage of free [Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=tfs-2018-2&utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes) instances to build and deploy your apps. This post explores how to set up continuous integration and deployment (CI/CD) for WebAssembly apps.
 
 {{<figure src="/blog/2019-05-06_deploy-webassembly-from-github-toazure-storage-static-websites-with-azure-pipelines/images/2.jpeg" caption="Example text-based representation of Wasm code" alt="Image of Wasm Text">}}
 
-I wrote a series of articles to document my investigation of WebAssembly beginning with a unique framework called [Blazor](https://jlik.me/fux). Start with the .NET Framework — including the Common Language Runtime (CLR) — build it on top of WebAssembly, then add functionality to render and manage Single Page Applications using Razor templates and C#, and the result is Blazor (Browser + Razor templates). My first step in learning the framework was to [port an existing Angular 2 app](https://jlik.me/fuy). I then [created a Blazor presentation](https://jlik.me/fu1) with several example applications:
+I wrote a series of articles to document my investigation of WebAssembly beginning with a unique framework called [Blazor](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0&utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes&viewFallbackFrom=aspnetcore-3.0). Start with the .NET Framework — including the Common Language Runtime (CLR) — build it on top of WebAssembly, then add functionality to render and manage Single Page Applications using Razor templates and C#, and the result is Blazor (Browser + Razor templates). My first step in learning the framework was to [port an existing Angular 2 app](https://blog.jeremylikness.com/from-angular-to-blazor-the-health-app-2e36077d641c?WT.mc_id=azuremedium-blog-jeliknes). I then [created a Blazor presentation](https://blog.jeremylikness.com/presentation-webassembly-c-and-blazor-at-codestock-2019-ab2f8636356?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes) with several example applications:
 
 {{<relativelink "/blog/2019-04-16_presentation-webassembly-c-sharp-and-blazor-at-codestock-2019">}}
 
-After recording and publishing a video series about [Azure DevOps for .NET Developers](https://jlik.me/fu2), I immediately realized that because the demo apps are Single Page Apps deployed as a set of static assets, I can host them on storage and automate the build and deployment.
+After recording and publishing a video series about [Azure DevOps for .NET Developers](https://channel9.msdn.com/Tags/asp.net-devops?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes), I immediately realized that because the demo apps are Single Page Apps deployed as a set of static assets, I can host them on storage and automate the build and deployment.
 
 ## 1️⃣ First Step: Add Azure Pipelines 🚀
 
@@ -71,7 +71,7 @@ Search for and choose Azure Pipelines.
 
 {{<figure src="/blog/2019-05-06_deploy-webassembly-from-github-toazure-storage-static-websites-with-azure-pipelines/images/4.png" caption="Choose Azure Pipelines" alt="Cursor selecting the option">}}
 
-Follow the prompts to create your [Azure DevOps](https://jlik.me/fu3) account. After you’ve created or selected a project, you are prompted to apply to _all_ projects or pick specific ones. I recommend one Azure DevOps project per GitHub repository to start with. When prompted, choose _public_ for your project. That doesn’t mean anyone will be able to see your secrets or deployment credentials; it gives them access to the build status and details. The deployment will be separate.
+Follow the prompts to create your [Azure DevOps](https://docs.microsoft.com/en-us/azure/devops/?view=azure-devops&utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes) account. After you’ve created or selected a project, you are prompted to apply to _all_ projects or pick specific ones. I recommend one Azure DevOps project per GitHub repository to start with. When prompted, choose _public_ for your project. That doesn’t mean anyone will be able to see your secrets or deployment credentials; it gives them access to the build status and details. The deployment will be separate.
 
 {{<figure src="/blog/2019-05-06_deploy-webassembly-from-github-toazure-storage-static-websites-with-azure-pipelines/images/5.png" caption="Create a new project" alt="New project dialog">}}
 
@@ -98,7 +98,7 @@ variables:
 
 The build will automatically trigger based on a commit to the `master` branch. It uses a hosted Linux image (Ubuntu 16.04) and is configured for “release” or production.
 
-📃 Learn more about hosted agents, including how they are configured and what software is installed, here: [Microsoft-hosted agents for Azure Pipelines](https://jlik.me/fu4).
+📃 Learn more about hosted agents, including how they are configured and what software is installed, here: [Microsoft-hosted agents for Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/hosted?view=azure-devops&utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes).
 
 The next section of the Yaml file details the build steps.
 
@@ -135,13 +135,13 @@ steps:
 
 Blazor is currently in preview, so I use a .NET Core task to install the correct preview version. Next, each project is built and published into its own directory. Notice the use of the `$(Build.ArtifactStagingDirectory)` to reference where distributions should reside.
 
-📃 You can read the full list of [Azure Pipelines predefined variables](https://jlik.me/fu5).
+📃 You can read the full list of [Azure Pipelines predefined variables](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml&utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes).
 
 Notice the last step publishes the artifacts. This places them in a compressed archive that you can inspect and download after the build. It also makes the artifacts available to the release pipeline that will deploy your assets. More on that later.
 
 ### The Chaos Game with C
 
-Someone wiser than me once said that to truly learn a technology, you should always go at least one layer beneath the surface. Underneath Blazor is WebAssembly, so I set out to learn as much as I could. There are several ways to build WebAsssembly, and the original tool chain that allows you to compile C and C++ projects to Wasm is called [Emscripten](https://jlik.me/fu6).
+Someone wiser than me once said that to truly learn a technology, you should always go at least one layer beneath the surface. Underneath Blazor is WebAssembly, so I set out to learn as much as I could. There are several ways to build WebAsssembly, and the original tool chain that allows you to compile C and C++ projects to Wasm is called [Emscripten](https://emscripten.org/?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes).
 
 I wrote about my experiments here:
 
@@ -291,7 +291,7 @@ steps:
   displayName: 'Publish artifacts'
 {{</highlight>}}
 
-The environment is setup to use Node.js. A command-line task installs the Rust toolchain (“[Rustup](https://jlik.me/fva)”), followed by “wasm-pack” that is used to build Wasm apps.
+The environment is setup to use Node.js. A command-line task installs the Rust toolchain (“[Rustup](https://rustup.rs/?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes)”), followed by “wasm-pack” that is used to build Wasm apps.
 
 > The need to install Rustup manually will go away soon. As of this writing, a [pull request](https://github.com/Microsoft/azure-pipelines-image-generation/pull/653) is in review to add Rust as a first-class pipeline task.
 
@@ -313,7 +313,7 @@ The resulting dialog will allow you to specify some parameters and provides both
 
 ## 3️⃣ Third Step: Create an Azure Storage Account
 
-The next few steps require an Azure subscription. If you don’t have one already, you can [grab a free Azure account](https://jlik.me/fvb). Use the ➕ in the upper left to add a new resource and choose Storage account.
+The next few steps require an Azure subscription. If you don’t have one already, you can [grab a free Azure account](https://azure.microsoft.com/en-us/free/?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes). Use the ➕ in the upper left to add a new resource and choose Storage account.
 
 {{<figure src="/blog/2019-05-06_deploy-webassembly-from-github-toazure-storage-static-websites-with-azure-pipelines/images/10.png" caption="New storage account" alt="Dialog to select new Azure service">}}
 
@@ -357,7 +357,7 @@ Next, click “view stage tasks” to begin building the deployment.
 
 ### Set the Base URL
 
-I’m using a single static website to host multiple projects. The projects live under a folder path and not at the root of the website, so I need to specify the base URL using the `<base href="">` HTML tag. The easiest way to do this is to click the little ➕ next to the agent job to add a new task then go the marketplace and install the free [RegExReplace Build Task](https://jlik.me/fvc). In the resulting dialog, I specify the path to the main HTML file that hosts the app. The regular expression varies from project to project. In the case of the Rust app, there is no existing tag to replace. Therefore, I search for the end of a `style` tag I know exists and append the `base` tag to the end of it. The regular expression and replacement look like this:
+I’m using a single static website to host multiple projects. The projects live under a folder path and not at the root of the website, so I need to specify the base URL using the `<base href="">` HTML tag. The easiest way to do this is to click the little ➕ next to the agent job to add a new task then go the marketplace and install the free [RegExReplace Build Task](https://marketplace.visualstudio.com/items?itemName=knom.regexreplace-task&utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes). In the resulting dialog, I specify the path to the main HTML file that hosts the app. The regular expression varies from project to project. In the case of the Rust app, there is no existing tag to replace. Therefore, I search for the end of a `style` tag I know exists and append the `base` tag to the end of it. The regular expression and replacement look like this:
 
 {{<figure src="/blog/2019-05-06_deploy-webassembly-from-github-toazure-storage-static-websites-with-azure-pipelines/images/19.png" caption="Add the base ref after the closing style tag" alt="Add the base ref after the closing style tag">}}
 
@@ -375,7 +375,7 @@ Give the task a name and click the ellipses after “source” to navigate to yo
 
 Pick “Azure Resource Manager” for the type and choose your subscription from the drop-down.
 
-> Note: if your subscription does not display automatically, you may need to use a service account to connect to Azure. To learn how, read: [Connect to Microsoft Azure](https://jlik.me/fvd).
+> Note: if your subscription does not display automatically, you may need to use a service account to connect to Azure. To learn how, read: [Connect to Microsoft Azure](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/connect-to-azure?view=azure-devops&utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes).
 
 Pick “Azure Blob” as the destination type, then select the name of your storage account. The container name will be `$web` and the blob prefix is where you specify the folder path to place the artifacts in (it is the same “path” as the base URL but without the leading slash). Here is the task for the Rust project:
 
@@ -407,4 +407,4 @@ Azure Pipelines is free for open source projects hosted on GitHub. The goal of A
 
 Do you have an open source project that will benefit from automation?
 
-▶ [Get started building your GitHub repository](https://jlik.me/fve).
+▶ [Get started building your GitHub repository](https://docs.microsoft.com/en-us/azure/devops/pipelines/repos/github?view=azure-devops&utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes).

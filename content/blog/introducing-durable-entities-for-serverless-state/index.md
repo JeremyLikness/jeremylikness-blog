@@ -28,7 +28,7 @@ images:
 
 ---
 
-The combination of [Azure Functions](https://jlik.me/gbt) <⚡> and [Durable Functions](https://jlik.me/gbu) enable long running workflows and the implementation of multiple patterns that I wrote about in a [previous blog post](/blog/stateful-serverless-long-running-workflows-with-durable-functions/). Although it is possible to associate metadata with workflows, referred to as orchestrations, it is limited in scope and usually used for identification. Tracking more complex data and state still required interaction with a back-end data store or database. With [Durable Functions v2](https://jlik.me/gbv), this changes and now data related to state can be encapsulated in [Durable Entities](https://jlik.me/gbw).
+The combination of [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) <⚡> and [Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) enable long running workflows and the implementation of multiple patterns that I wrote about in a [previous blog post](/blog/stateful-serverless-long-running-workflows-with-durable-functions/). Although it is possible to associate metadata with workflows, referred to as orchestrations, it is limited in scope and usually used for identification. Tracking more complex data and state still required interaction with a back-end data store or database. With [Durable Functions v2](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-versions?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes), this changes and now data related to state can be encapsulated in [Durable Entities](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-versions?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes#entity-functions).
 
 > The code and functionality in this post is preview code and subject to change.
 
@@ -46,7 +46,7 @@ In the example application, I tracked four entities in a “game”:
 * Inventory, including a weapon 🔪 and a treasure 💎
 * A room 🏠 where the action all happens
 
-The application used Durable Functions to track game state and enable various workflows, but the entities were all manually tracked using [Azure Table Storage](https://jlik.me/gbx). The following (simplified) code illustrates the steps to check for an existing user (other non-related code has been removed for clarity).
+The application used Durable Functions to track game state and enable various workflows, but the entities were all manually tracked using [Azure Table Storage](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes). The following (simplified) code illustrates the steps to check for an existing user (other non-related code has been removed for clarity).
 
 {{<highlight CSharp>}}
 [FunctionName(nameof(NewUser))]
@@ -201,7 +201,7 @@ public class User : BaseHasInventory, IUserOperations
 }
 {{</highlight>}}
 
-The data being tracked is the user’s name, the room the user is in and the user’s state of health (either alive or dead). The possible operations are `New`, `Kill`, `SetRoom`, and `AddInventory`. The `Run` method is the key to defining User as a durable entity and dispatches a context able to interact with the methods on the class. Notice that it is a [trigger](https://jlik.me/gby) like anything else that signals code to execute in the Azure Functions serverless environment. I’ll cover the `IUserOperations` interface soon.
+The data being tracked is the user’s name, the room the user is in and the user’s state of health (either alive or dead). The possible operations are `New`, `Kill`, `SetRoom`, and `AddInventory`. The `Run` method is the key to defining User as a durable entity and dispatches a context able to interact with the methods on the class. Notice that it is a [trigger](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) like anything else that signals code to execute in the Azure Functions serverless environment. I’ll cover the `IUserOperations` interface soon.
 
 ## Reading and Creating State
 
@@ -329,7 +329,7 @@ The inventory entity has multiple instances (a weapon and a treasure) so a user 
 1. Save the list of inventory names with the key _user_
 2. Save each inventory item with the key _user:item-name_
 
-Using the [storage explorer](https://jlik.me/gbz), this is what inventory looks like for user “Flint”:
+Using the [storage explorer](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes), this is what inventory looks like for user “Flint”:
 
 ![Inventory entries](/blog/introducing-durable-entities-for-serverless-state/images/inventory.jpeg)
 <figcaption>Inventory entries</figcaption>
@@ -437,7 +437,7 @@ Access the repository here:
 
 {{<github "JeremyLikness/DurableDungeon">}}
 
-Are you intrigued by durable functions? Jump right in with a hands-on tutorial that walks you step-by-step through creating and managing durable functions. No Azure subscription is required: [Create a long-running serverless workflow with Durable Functions](https://jlik.me/gb0).
+Are you intrigued by durable functions? Jump right in with a hands-on tutorial that walks you step-by-step through creating and managing durable functions. No Azure subscription is required: [Create a long-running serverless workflow with Durable Functions](https://docs.microsoft.com/en-us/learn/modules/create-long-running-serverless-workflow-with-durable-functions/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes).
 
 Regards,
 

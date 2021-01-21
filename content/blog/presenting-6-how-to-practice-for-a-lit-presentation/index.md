@@ -45,7 +45,7 @@ A good friend and colleague of mine <i class="fab fa-twitter"></i> [Laurent](htt
 ![Example OneNote checklist](/blog/presenting-6-how-to-practice-for-a-lit-presentation/images/onenote.png)
 <figcaption>Example OneNote checklist</figcaption>
 
-I take advantage of [Windows 10 virtual desktops](https://jlik.me/gdh) to stage my talks. I set up my presentation on the main desktop. I launch an app named Windows Mobility Center that helps with presentation settings by suppressing notifications. I also use a free tool called [ZoomIt](https://jlik.me/gdi) for zooming and annotating during the presentation. If I need specific reminders, I put them there.
+I take advantage of [Windows 10 virtual desktops](https://blogs.windows.com/windowsexperience/2015/04/16/virtual-desktops-in-windows-10-the-power-of-windowsmultiplied?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) to stage my talks. I set up my presentation on the main desktop. I launch an app named Windows Mobility Center that helps with presentation settings by suppressing notifications. I also use a free tool called [ZoomIt](https://docs.microsoft.com/en-us/sysinternals/downloads/zoomit?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) for zooming and annotating during the presentation. If I need specific reminders, I put them there.
 
 The second desktop is typically where I stage the web browser. In the example talk I show two development environments, so one goes on the third desktop and the last is on the fourth desktop. Staging this way eliminates the need to `ALT+TAB` and find the right window and allows me to stay in presentation mode. I simply `CTRL+Windows+➡` or `CTRL+Windows+⬅` to navigate between desktops.
 

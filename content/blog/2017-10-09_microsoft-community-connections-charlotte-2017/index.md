@@ -43,7 +43,7 @@ Ultimately, the event was about connections, so we headed out to a local venue t
 
 {{<customtwitter 916616410880794624>}}
 
-Then it was back to the hotel for some rest and to prepare for the next day. On Saturday we started out with a few great keynote presentations that covered organizational structure, discussed roles at Microsoft, recapped the [MVP Program](https://jlik.me/bn4), and more. To capture that eight-second attention span, we started with an “ice breaker” game called “💣 [Keep Talking and Nobody Explodes](http://www.keeptalkinggame.com/).” It was a lot of fun and the teams quickly tackled more complex scenarios and started cheering when they successfully defused a bomb.
+Then it was back to the hotel for some rest and to prepare for the next day. On Saturday we started out with a few great keynote presentations that covered organizational structure, discussed roles at Microsoft, recapped the [MVP Program](https://mvp.microsoft.com/?utm_source=jeliknes&utm_medium=blog&utm_campaign=mcccharlotte2017&WC.mc_id=mcccharlotte2017-blog-jeliknes), and more. To capture that eight-second attention span, we started with an “ice breaker” game called “💣 [Keep Talking and Nobody Explodes](http://www.keeptalkinggame.com/).” It was a lot of fun and the teams quickly tackled more complex scenarios and started cheering when they successfully defused a bomb.
 
 The premise is that one person has access to the “bomb” while everyone else has a manual. The two have to work together. For example, if the bomb has wires, the bomb defuser describes the wires and the team uses the manual to figure out which wire to cut. The manual has directions like “if there are six wires, cut the third” or “if there are less than six total wires, and two yellow wires, cut the first” etc.
 
@@ -92,7 +92,7 @@ I followed this up with a presentation on some of Azure’s new features includi
 
 We wrapped with a general Q&A panel discussion and then headed our separate ways. I reconnected with several awesome people I’ve known for years and created new connections I look forward to following, ranging from an Atlanta entrepreneur to a Birmingham user group organizer to several consultants looking to transition from their traditional roles to have more active, hands-on Azure experiences.
 
-You can click or tap to learn more about the: [Microsoft Valuable Professional award](https://jlik.me/bn4).
+You can click or tap to learn more about the: [Microsoft Valuable Professional award](https://mvp.microsoft.com/?utm_source=jeliknes&utm_medium=blog&utm_campaign=mcccharlotte2017&WC.mc_id=mcccharlotte2017-blog-jeliknes).
 
 And that’s a wrap!
 

@@ -37,7 +37,7 @@ You can visit Alicia at her site:
 
 We spoke for almost 30 minutes and really connected over some great things happening in Atlanta and at conferences around the globe. Listen to the full interview here:
 
-👂 [Jeremy Likness at Connect Tech Conference 2017](https://jlik.me/bo2)
+👂 [Jeremy Likness at Connect Tech Conference 2017](http://bougieblackbrother.podbean.com/e/jeremy-likness-at-connect-tech-conference-2017/?utm_source=jeliknes&utm_campaign=werise2017&utm_medium=blog)
 
 Feel free to add your own perspective and thoughts in the comments below!
 

@@ -28,7 +28,7 @@ aliases:
     - "/json-and-the-mongodb-driver-for-the-net-developer-d4a6aacd8bcd"
 ---
 
-Recently I created a [.NET Core 2.0](https://jlik.me/f2f) project to demonstrate several features of [CosmosDB](https://jlik.me/f2g). I chose the [MongoDB driver](https://www.nuget.org/packages/MongoDB.Driver/) due to its popularity and because I’m already familiar with it through my Node.js work. As a C# developer, I love that I can create strongly-typed domain objects and work with “known entities” as part of my application. Paradoxically, as a JavaScript developer I love the dynamic flexibility that JSON documents provide. Believe it or not, it’s possible to have the best of both worlds.
+Recently I created a [.NET Core 2.0](https://docs.microsoft.com/en-us/dotnet/fundamentals/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) project to demonstrate several features of [CosmosDB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes). I chose the [MongoDB driver](https://www.nuget.org/packages/MongoDB.Driver/) due to its popularity and because I’m already familiar with it through my Node.js work. As a C# developer, I love that I can create strongly-typed domain objects and work with “known entities” as part of my application. Paradoxically, as a JavaScript developer I love the dynamic flexibility that JSON documents provide. Believe it or not, it’s possible to have the best of both worlds.
 
 ![Food Item definition in a .NET Core 2.0 project](/blog/2017-08-27_json-and-the-mongodb-driver-for-the-.net-developer/images/1.jpeg)
 <figcaption>Food Item definition in a .NET Core 2.0 project</figcaption>
@@ -143,7 +143,7 @@ public void SerializeNutrients()
 }
 {{</highlight>}}
 
-The resulting document looks like this in raw JSON format (courtesy of the browser-based [CosmosDB data explorer](https://jlik.me/f2h)):
+The resulting document looks like this in raw JSON format (courtesy of the browser-based [CosmosDB data explorer](https://azure.microsoft.com/en-us/updates/documentdb-data-explorer-preview-now-available-in-the-azure-portal/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes)):
 
 ![Example document in the CosmosDB Data Explorer](/blog/2017-08-27_json-and-the-mongodb-driver-for-the-.net-developer/images/2.jpeg)
 <figcaption>Example document in the CosmosDB Data Explorer</figcaption>
@@ -232,9 +232,9 @@ The refactored query returns results in milliseconds instead of timing out as it
 
 As developers it’s important to recognize when we are trying to solve the wrong problem. I spent a day trying to optimize the sub-query that scanned the nutrients by amount before I realized I was approaching a document database problem with a relational-database mindset. The solution wasn’t to keep hammering at the query, but instead to take advantage of the nature of the document database and store the documents differently.
 
-In a way, object-relational mappers (ORM) tools like [Entity Framework Core](https://jlik.me/f2i) provide a similar solution. The ORM maps a relational entity to a domain entity, whereas the solution I detailed here maps a dynamic document-based entity to a strongly-typed domain entity. The result is the difference between queries lasting seconds or minutes and taking only milliseconds to complete.
+In a way, object-relational mappers (ORM) tools like [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) provide a similar solution. The ORM maps a relational entity to a domain entity, whereas the solution I detailed here maps a dynamic document-based entity to a strongly-typed domain entity. The result is the difference between queries lasting seconds or minutes and taking only milliseconds to complete.
 
-The driver and tips here will work with any Mongo compatible database. If you want to stand up your own database quickly in the cloud that is capable of scaling to massive workloads and can geo-replicate across the globe with the click of a button, take a look at [CosmosDB](https://jlik.me/f2j). If you have other tips and tricks for dealing with document databases in C#, leave them in the comments below!
+The driver and tips here will work with any Mongo compatible database. If you want to stand up your own database quickly in the cloud that is capable of scaling to massive workloads and can geo-replicate across the globe with the click of a button, take a look at [CosmosDB](https://azure.microsoft.com/en-us/services/cosmos-db/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes). If you have other tips and tricks for dealing with document databases in C#, leave them in the comments below!
 
 Thanks,
 

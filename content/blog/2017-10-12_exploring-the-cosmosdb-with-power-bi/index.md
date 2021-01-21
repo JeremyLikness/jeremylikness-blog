@@ -56,7 +56,7 @@ These are lofty goals, but the journey of a thousand miles starts with the first
 
 See this in action in my Channel 9 Visual Studio Toolbox interview:
 
-🎦 [CosmosDB: Serverless NoSQL for the .NET Developer](https://jlik.me/b35)
+🎦 [CosmosDB: Serverless NoSQL for the .NET Developer](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/CosmosDB-Serverless-NoSQL-for-the-NET-Developer?utm_source=jeliknes&utm_medium=blog&utm_campaign=explorecosmos&WT.mc_id=explorecosmos-blog-jeliknes)
 
 
 ## A Quick Tangent: Clean Data
@@ -123,7 +123,7 @@ I ran it again and confirmed no new records were found. Ouch. They got me! Charg
 
 ## PowerBI for CosmosDB
 
-[PowerBI](https://jlik.me/bqi) is an enterprise business intelligence tool with a lot of functionality. There have been books written about it. You can download it from the link at the beginning of this paragraph. It’s free.
+[PowerBI](https://powerbi.microsoft.com/en-us/?WT.mc_id=cosmospowerbi-blog-jeliknes) is an enterprise business intelligence tool with a lot of functionality. There have been books written about it. You can download it from the link at the beginning of this paragraph. It’s free.
 
 I’m no PowerBI expert, and only started using it recently to create my dashboard. Fortunately, the interface is intuitive enough that even I was able to figure things out. After launching the program, I was prompted to “Get Data”. Obviously, I picked “Azure” and “Cosmos DB” for my data source.
 
@@ -162,11 +162,11 @@ As you can see, noon is “prime time.” The times are Coordinated Universal Ti
 
 The power of the cloud never ceases to amaze me. I am using both serverless compute and data without relying on a database administrator to not only provide production infrastructure for a useful tool, but also to track and analyze important data. The PowerBI dashboard makes it easy for me to filter based on time (i.e. last 24 hours vs. past month) or resource (i.e. just show me stats for “Facebook.”) This is incredibly useful to me.
 
-As a developer, the entire project “start to finish” took probably around 20 hours total of investment. That’s not bad for the value it provides, and that included standing up infrastructure. I still have a few more steps. I am working with other [cloud developer advocates](https://jlik.me/bqj) to consolidate the tool across the team, add command line support, and hopefully extend the data-mining capabilities and ultimately leverage machine learning to help us optimize our online presence. I also will add the code to a CI/CD DevOps pipeline so it publishes via automated build rather than right-click.
+As a developer, the entire project “start to finish” took probably around 20 hours total of investment. That’s not bad for the value it provides, and that included standing up infrastructure. I still have a few more steps. I am working with other [cloud developer advocates](https://developer.microsoft.com/en-us/advocates/?WT.mc_id=cosmospowerbi-blog-jeliknes) to consolidate the tool across the team, add command line support, and hopefully extend the data-mining capabilities and ultimately leverage machine learning to help us optimize our online presence. I also will add the code to a CI/CD DevOps pipeline so it publishes via automated build rather than right-click.
 
-> “Friends don’t let friends right-click publish.”> — [Damian Brady](https://jlik.me/bql)
+> “Friends don’t let friends right-click publish.”> — [Damian Brady](https://developer.microsoft.com/en-us/advocates/damian-brady?WT.mc_id=cosmospowerbi-blog-jeliknes)
 
-In the meantime, you can [learn more about CosmosDB](https://jlik.me/bqk) and get started on your own journey. Let me know how it’s going in the comments below and be sure to clap to show your appreciation if you received value from this article.
+In the meantime, you can [learn more about CosmosDB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=cosmospowerbi-blog-jeliknes) and get started on your own journey. Let me know how it’s going in the comments below and be sure to clap to show your appreciation if you received value from this article.
 
 Thanks,
 

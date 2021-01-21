@@ -34,7 +34,7 @@ aliases:
     - "/expanding-azure-functions-to-the-cosmos-423d0cb920a"
 ---
 
-Although I’m already <i class="fab fa-youtube"></i> [tracking basic metrics](https://youtu.be/pxfEVKRwcvI) with my [custom URL Shortener](/build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte-8c094bb1df2c), it’s always been the plan to expand those analytics to gain deeper insights. I want answers to questions like, “What time of day results in the most click-throughs?” and “What keywords in the title are the most popular?” Collecting that data requires a bit more than generating custom events in [Application Insights](https://jlik.me/bog). Instead, I am collecting the data in a [CosmosDB] (https://jlik.me/boh) database instance.
+Although I’m already <i class="fab fa-youtube"></i> [tracking basic metrics](https://youtu.be/pxfEVKRwcvI) with my [custom URL Shortener](/build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte-8c094bb1df2c), it’s always been the plan to expand those analytics to gain deeper insights. I want answers to questions like, “What time of day results in the most click-throughs?” and “What keywords in the title are the most popular?” Collecting that data requires a bit more than generating custom events in [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/overview?WT.mc_id=azurefncosmos-blog-jeliknes). Instead, I am collecting the data in a [CosmosDB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=azurefncosmos-blog-jeliknes) database instance.
 
 ![Exploring data in CosmosDB](/blog/2017-10-10_expanding-azure-functions-to-the-cosmos/images/1.gif)
 <figcaption>Exploring data in CosmosDB</figcaption>
@@ -49,7 +49,7 @@ Also, this article is based on the URL shortening tool I described here:
 
 You can see this in more detail (and it action) by watching the online demo and interview I did for Channel 9’s Visual Studio Toolbox:
 
-🎦 [CosmosDB: Serverless NoSQL for the .NET Developer](https://jlik.me/b35)
+🎦 [CosmosDB: Serverless NoSQL for the .NET Developer](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/CosmosDB-Serverless-NoSQL-for-the-NET-Developer?utm_source=jeliknes&utm_medium=blog&utm_campaign=explorecosmos&WT.mc_id=explorecosmos-blog-jeliknes)
 
 After sharing my URL shortening strategy in the previous article, I updated the application to build my functions in C# from Visual Studio. I compile them and publish them rather than using the scripted version (.CSX) that is available from the portal for better performance. The source code for the updated project is available here:
 

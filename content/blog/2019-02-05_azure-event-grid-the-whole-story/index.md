@@ -29,25 +29,25 @@ aliases:
     - "/azure-event-grid-the-whole-story-4b7b4ec4ad23"
 ---
 
-[Azure Event Grid](https://jlik.me/e1r) is a cloud service that provides infrastructure for event-driven computing. Event Grid focuses on **events** or messages that declare, “something happened.” It is not designed for **commands** that imply “something will happen.” The service allows you to send messages, route them to endpoints, and consume them with custom code. It enables near real-time delivery (typically less than one second) at scale (thousands of events per second).
+[Azure Event Grid](https://docs.microsoft.com/en-us/azure/event-grid/overview?WT.mc_id=azuremedium-blog-jeliknes) is a cloud service that provides infrastructure for event-driven computing. Event Grid focuses on **events** or messages that declare, “something happened.” It is not designed for **commands** that imply “something will happen.” The service allows you to send messages, route them to endpoints, and consume them with custom code. It enables near real-time delivery (typically less than one second) at scale (thousands of events per second).
 
-Most Azure services automatically send messages through Event Grid and many can directly consume messages “out of the box.” Event Grid also supports posting to secure web API endpoints to deliver messages and uses the [WebHook](https://jlik.me/e1s) standard for delivering messages. Therefore, any language or platform that supports posting to a web endpoint and consuming an HTTP payload is capable of working with Event Grid.
+Most Azure services automatically send messages through Event Grid and many can directly consume messages “out of the box.” Event Grid also supports posting to secure web API endpoints to deliver messages and uses the [WebHook](https://docs.microsoft.com/en-us/azure/event-grid/event-handlers?WT.mc_id=azuremedium-blog-jeliknes#webhooks) standard for delivering messages. Therefore, any language or platform that supports posting to a web endpoint and consuming an HTTP payload is capable of working with Event Grid.
 
 ![Event Grid Logo](/blog/2019-02-05_azure-event-grid-the-whole-story/images/1.png)
 <figcaption>Azure Event Grid</figcaption>
 
 Azure Event Grid supports a “push model.” Your application will never have to ask or “poll” for events. Instead, events are delivered immediately to an endpoint that you specify. This means your code can respond to events as they happen. In many cases it can also lead to cost savings because it removes the overhead of polling on a regular basis and instead triggers code only when it is needed to consume an event.
 
-The infrastructure is fully managed through a serverless model: it automatically scales to meet your demands and only bills when you are actively using the service. To illustrate the billing model, consider that five million events are published during the month to two active subscriptions. One of the subscriptions has a filter for “[advanced match](https://jlik.me/e2c)” of messages coming in, resulting in one million messages passing the filter. One service handler goes down for a period, missing one million messages (so the delivery attempt fails). Event Grid is built to redeliver all of those messages after the service comes back up. The cost comes out to $10.14 USD for the month.
+The infrastructure is fully managed through a serverless model: it automatically scales to meet your demands and only bills when you are actively using the service. To illustrate the billing model, consider that five million events are published during the month to two active subscriptions. One of the subscriptions has a filter for “[advanced match](https://docs.microsoft.com/en-us/azure/event-grid/event-filtering?WT.mc_id=azuremedium-blog-jeliknes)” of messages coming in, resulting in one million messages passing the filter. One service handler goes down for a period, missing one million messages (so the delivery attempt fails). Event Grid is built to redeliver all of those messages after the service comes back up. The cost comes out to $10.14 USD for the month.
 
 ![Screenshot of SLAs](/blog/2019-02-05_azure-event-grid-the-whole-story/images/2.png)
 <figcaption>Example serverless pricing for Azure Event Grid</figcaption>
 
-You can explore pricing further by using the 💰[Azure Pricing Calculator](https://jlik.me/e1t). For the cost, Event Grid provides guaranteed delivery in a 24-hour window (with option to save undelivered messages) and 99.99% availability.
+You can explore pricing further by using the 💰[Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/?WT.mc_id=azuremedium-blog-jeliknes). For the cost, Event Grid provides guaranteed delivery in a 24-hour window (with option to save undelivered messages) and 99.99% availability.
 
 Now that we’ve introduced what Event Grid is, let’s dig into some examples of how you would use it in practice. After an application updates a status, it may raise a message “status was changed.” This then allows you to consume the message to integrate with other systems, kick off workflows and synchronize data.
 
-The following diagram represents an example of a serverless application that uses Event Grid, taken from a session in [Microsoft Ignite | The Tour](https://jlik.me/e14). We will use this example to explore Event Grid concepts and terminology.
+The following diagram represents an example of a serverless application that uses Event Grid, taken from a session in [Microsoft Ignite | The Tour](https://github.com/Microsoft/IgniteTheTour?WT.mc_id=azuremedium-blog-jeliknes). We will use this example to explore Event Grid concepts and terminology.
 
 ![Chart of components of application](/blog/2019-02-05_azure-event-grid-the-whole-story/images/3.gif)
 <figcaption>Reference application</figcaption>
@@ -67,7 +67,7 @@ In response to the events, three workflows are kicked off:
 
 The important thing to note is that all these processes are built independently of the main application. After it sends the appropriate messages, the rest of the application can be built independently with multiple workflows kicked off by the same messages. This enables not only application scale, but the ability to scale development teams as the product grows.
 
-<i class="fab fa-github"></i>  [Access the GitHub repository for the Tailwind Traders example](https://jlik.me/e12)
+<i class="fab fa-github"></i>  [Access the GitHub repository for the Tailwind Traders example](https://github.com/Microsoft/IgniteTheTour/tree/master/DEV - Building your Applications for the Cloud/DEV50?WT.mc_id=azuremedium-blog-jeliknes)
 
 ## Terminology
 
@@ -93,13 +93,13 @@ The following section provides video to illustrate the various features availabl
 
 ### Consume Azure-sourced events with Azure Functions
 
-In this video, an [Azure Function](https://jlik.me/e1u) is created with an Event Grid trigger (it is called by Event Grid for a subscription). The subscription is added to Azure Storage, so that whenever a file is uploaded to blob storage, the function is triggered.
+In this video, an [Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/?WT.mc_id=azuremedium-blog-jeliknes) is created with an Event Grid trigger (it is called by Event Grid for a subscription). The subscription is added to Azure Storage, so that whenever a file is uploaded to blob storage, the function is triggered.
 
 {{<youtube NXwoLZdSogk>}}
 
 ### Consume Azure-sourced events with Azure Storage Queues
 
-As another example of how Azure services are built ready to consume Event Grid events, this video shows how to consume events using [Azure Storage Queues](https://jlik.me/e1v).
+As another example of how Azure services are built ready to consume Event Grid events, this video shows how to consume events using [Azure Storage Queues](https://docs.microsoft.com/en-us/azure/storage/queues/storage-queues-introduction?WT.mc_id=azuremedium-blog-jeliknes).
 
 {{<youtube J1VtvSL48A8>}}
 
@@ -109,7 +109,7 @@ This video shows how to create a custom Event Grid topic.
 
 {{<youtube evrrD9vZINA>}}
 
-The [Event Grid SDK](https://jlik.me/e1w) is available for many popular languages and platforms. The library makes it easy to authenticate and publish messages. In this .NET Core example, a payload with information about a SKU event is wrapped in a message and published.
+The [Event Grid SDK](https://docs.microsoft.com/en-us/azure/event-grid/sdk-overview?WT.mc_id=azuremedium-blog-jeliknes) is available for many popular languages and platforms. The library makes it easy to authenticate and publish messages. In this .NET Core example, a payload with information about a SKU event is wrapped in a message and published.
 
 {{<highlight CSharp>}}
 public async Task RaiseEvent(SkuMessageType type, IInventoryItem item)
@@ -139,7 +139,7 @@ public async Task RaiseEvent(SkuMessageType type, IInventoryItem item)
 
 It is not necessary to use the SDK. Any language or platform that supports setting an authentication header and issuing an HTTP POST is capable of publishing to Event Grid. This is the .NET Core code to publish without using the SDK.
 
-<i class="fab fa-github"></i> [Access the GitHub repository for the “//build Event Grid” example](https://jlik.me/e13)
+<i class="fab fa-github"></i> [Access the GitHub repository for the “//build Event Grid” example](https://github.com/JeremyLikness/build-event-grid?WT.mc_id=azuremedium-blog-jeliknes)
 
 {{<highlight CSharp>}}
 private static async Task SendEvent(string msg)
@@ -221,26 +221,26 @@ If a handler is not able to recover in a 24-hour window, Event Grid will stop tr
 
 ### Configure Event Grid to Use the Open CloudEvents Message Schema
 
-Event Grid uses a proprietary schema to wrap messages. The Event Grid team worked with the [Cloud Native Computing Foundation (CNCF)](https://jlik.me/e1x) to create an open standard for cloud messaging called [CloudEvents](https://jlik.me/e1y). The following video shows how to configure Event Grid to use the CloudEvents schema instead of the proprietary one.
+Event Grid uses a proprietary schema to wrap messages. The Event Grid team worked with the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/?WT_mc_id=azuremedium-blog-jeliknes) to create an open standard for cloud messaging called [CloudEvents](https://cloudevents.io/?WT.mc_id=azuremedium-blog-jeliknes). The following video shows how to configure Event Grid to use the CloudEvents schema instead of the proprietary one.
 
 {{<youtube YtleFM0tZxk>}}
 
 ### Consume Event Grid Messages from Azure Logic Apps
 
-The final video shows an alternate way to consume events via [Azure Logic Apps](https://jlik.me/e1z) to kick of integrations and workflows.
+The final video shows an alternate way to consume events via [Azure Logic Apps](https://docs.microsoft.com/en-us/azure/logic-apps/?WT.mc_id=azuremedium-blog-jeliknes) to kick of integrations and workflows.
 
-> Tip: the example uses the Event Grid schema to parse information from the header. The `Data` portion (payload) can contain custom properties depending on the event, so it’s not available to parse automatically. Logic Apps provides a [Parse JSON connector](https://jlik.me/e10) that allows you to specify the schema of the payload and parse its information in later steps.
+> Tip: the example uses the Event Grid schema to parse information from the header. The `Data` portion (payload) can contain custom properties depending on the event, so it’s not available to parse automatically. Logic Apps provides a [Parse JSON connector](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-content-type?WT.mc_id=azuremedium-blog-jeliknes#applicationjson) that allows you to specify the schema of the payload and parse its information in later steps.
 
 {{<youtube dy0HMl9RnVg>}}
 
 ## Summary
 
-In this article you learned about Azure Event Grid, one component of the [Azure serverless platform](https://jlik.me/e11) that provides the infrastructure for event-based applications. You calculated how Event Grid bills per operation, explored terminology and concepts behind Event Grid, and studied an example serverless application that uses Event Grid. The walk through demonstrated how to use various features from publishing and subscribing to configuring delivery retries and capturing undelivered messages in storage.
+In this article you learned about Azure Event Grid, one component of the [Azure serverless platform](https://docs.microsoft.com/en-us/dotnet/architecture/serverless/) that provides the infrastructure for event-based applications. You calculated how Event Grid bills per operation, explored terminology and concepts behind Event Grid, and studied an example serverless application that uses Event Grid. The walk through demonstrated how to use various features from publishing and subscribing to configuring delivery retries and capturing undelivered messages in storage.
 
 A major benefit of Event Grid is the ability to manage all of your events in one place. It was also built to reliably handle massive scale. You get the benefits of publishing and subscribing to messages without the overhead of setting up the necessary infrastructure yourself.
 
-👍🏻 You can learn more about Azure Event Grid and get started by visiting the comprehensive [Event Grid documentation](https://jlik.me/e1r).
+👍🏻 You can learn more about Azure Event Grid and get started by visiting the comprehensive [Event Grid documentation](https://docs.microsoft.com/en-us/azure/event-grid/overview?WT.mc_id=azuremedium-blog-jeliknes).
 
-<i class="fab fa-github"></i> [Access the GitHub repository for the Tailwind Traders example](https://jlik.me/e12)
+<i class="fab fa-github"></i> [Access the GitHub repository for the Tailwind Traders example](https://github.com/Microsoft/IgniteTheTour/tree/master/DEV - Building your Applications for the Cloud/DEV50?WT.mc_id=azuremedium-blog-jeliknes)
 
-<i class="fab fa-github"></i> [Access the GitHub repository for the “//build Event Grid” example](https://jlik.me/e13)
+<i class="fab fa-github"></i> [Access the GitHub repository for the “//build Event Grid” example](https://github.com/JeremyLikness/build-event-grid?WT.mc_id=azuremedium-blog-jeliknes)

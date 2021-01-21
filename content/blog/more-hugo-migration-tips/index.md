@@ -34,7 +34,7 @@ This post continues my series about how I migrated from Medium to Hugo. You can 
 
 {{<relativelink "/blog/migrate-from-medium-to-hugo">}}
 
-In this blog, I cover how I integrated advertising, included static images, hosted it on [Azure storage static websites](https://jlik.me/f52) and built a continuous deployment pipeline with [Azure Pipelines](https://jlik.me/f53).
+In this blog, I cover how I integrated advertising, included static images, hosted it on [Azure storage static websites](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) and built a continuous deployment pipeline with [Azure Pipelines](https://docs.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops&utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes).
 
 ## Road to Riches
 
@@ -133,7 +133,7 @@ Other static resources include a global image for my signature, custom CSS, and 
 
 ## Hosting on Azure
 
-Hugo generates a static website. What better way to host it than using [Azure storage static websites](https://jlik.me/f52)? Really there are two options I would consider. I've heard great things about [Netlify](https://www.netlify.com), especially how easy it is to use and integrate. The deployment process for Netlify is built-in.
+Hugo generates a static website. What better way to host it than using [Azure storage static websites](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes)? Really there are two options I would consider. I've heard great things about [Netlify](https://www.netlify.com), especially how easy it is to use and integrate. The deployment process for Netlify is built-in.
 
 By choosing Azure storage, I knew I would need to build my own pipeline. Due to my role as a [cloud advocate](/blog/2017-10-01_what-is-a-cloud-developer-advocate/), I want to [dogfood](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) the services I talk about. I also considered containers, app services, even virtual machines but at the of the day there are three reasons I chose Azure storage:
 
@@ -146,7 +146,7 @@ When I say cost, I mean _low_. How low? According to Google I have 7,500 monthly
 ![Static website cost](/blog/more-hugo-migration-tips/images/staticwebsitecost.jpg)
 <figcaption>Static website cost</figcaption>
 
-(You can clearly see the "surge" in cost when I uploaded my site for the first time.) This isn't just a bucket to store things, either. I have it set up with [Zone Redundant Storage](https://jlik.me/f56) that distributes files across three storage clusters in the region and provides 12 9's of durability. It's probably overkill because I keep the site in source control and can rebuild it from scratch at any time.
+(You can clearly see the "surge" in cost when I uploaded my site for the first time.) This isn't just a bucket to store things, either. I have it set up with [Zone Redundant Storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-redundancy?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) that distributes files across three storage clusters in the region and provides 12 9's of durability. It's probably overkill because I keep the site in source control and can rebuild it from scratch at any time.
 
 Configuring the site was easy. I simply created my account, turned on the static website feature, specified `index.html` as the default document and `404.html` as my "not found" page, then uploaded the content. The service automatically provides an Azure-hosted domain and an SSL certificate, but I needed this to exist under my own custom domain, so I turned to [Cloudflare](https://www.cloudflare.com) for their free services.
 
@@ -194,7 +194,7 @@ RUN set -x && \
   mv hugo /usr/bin
 {{</highlight>}}
 
-This builds the Hugo version specific to what I'm using. When I upgrade my local Hugo version, I'll update the Docker file. To host the file, I created an [Azure Container Registry](https://jlik.me/f54) (at a projected cost of about $1 more U.S. dollar per month for me, so we're up to $2/month to operate my blog). I didn't even have to build and upload the image. ACR supports [Azure Container Registry Tasks](https://jlik.me/f55) that will build the image inside of Azure right from my local command line. With the image built and stored in the repo, I created this build pipeline:
+This builds the Hugo version specific to what I'm using. When I upgrade my local Hugo version, I'll update the Docker file. To host the file, I created an [Azure Container Registry](https://docs.microsoft.com/en-us/azure/container-registry/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) (at a projected cost of about $1 more U.S. dollar per month for me, so we're up to $2/month to operate my blog). I didn't even have to build and upload the image. ACR supports [Azure Container Registry Tasks](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-quickstart-task-cli?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) that will build the image inside of Azure right from my local command line. With the image built and stored in the repo, I created this build pipeline:
 
 {{<highlight yaml>}}
 trigger:

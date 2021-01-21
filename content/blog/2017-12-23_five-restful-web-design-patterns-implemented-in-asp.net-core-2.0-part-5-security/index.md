@@ -116,7 +116,7 @@ The purple (pink? I’ve never been great with colors) portion is the payload (a
 
 Finally, the blue portion is the signature. Using the [HS256](https://en.wikipedia.org/wiki/SHA-2) algorithm with a secret, the header and the payload were hashed to generate the signature. This is what keeps the token secure: even if someone intercepts the token and is able to read its contents, any modifications invalidate the signature. It’s like breaking a seal and the server can reject the request when the seal is broken.
 
-> One of the great things about JWT tokens is that they can work with any type of authentication system. Regardless of _how_ you verify the user’s identity and claims, if in the end you encode the values in a JWT token, the rest of your application can remain completely ignorant of how the authentication took place. For example, you could create a debug process that generates a pre-defined token for testing, then use [Azure Active Directory](https://jlik.me/cfp) in your production system, and not have to change any of your controller code.
+> One of the great things about JWT tokens is that they can work with any type of authentication system. Regardless of _how_ you verify the user’s identity and claims, if in the end you encode the values in a JWT token, the rest of your application can remain completely ignorant of how the authentication took place. For example, you could create a debug process that generates a pre-defined token for testing, then use [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis?WT.mc_id=webapi-blog-jeliknes) in your production system, and not have to change any of your controller code.
 
 The typical flow for authentication looks something like this:
 
@@ -208,7 +208,7 @@ That’s it — we’re good to go.
 
 ## Other Options
 
-There are, of course, other “out of the box” options that you can use. Many of those ultimately provide a token in the JWT format. ASP.NET Core makes it easy to integrate with any number of options. A great way to learn more is to read [Enabling authentication using Facebook, Google, and other external providers](https://jlik.me/cfq).
+There are, of course, other “out of the box” options that you can use. Many of those ultimately provide a token in the JWT format. ASP.NET Core makes it easy to integrate with any number of options. A great way to learn more is to read [Enabling authentication using Facebook, Google, and other external providers](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/social/?WT.mc_id=webapi-blog-jeliknes&view=aspnetcore-5.0).
 
 Now do you feel secure?
 

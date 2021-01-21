@@ -30,7 +30,7 @@ I was delighted when I discovered my [TechBash 2018](https://techbash.com) prese
 
 ![Image of slide deck title](/blog/2018-10-08_say-yes-to-nosql-for.net-sql-developers/images/1.png)
 
-The presentation includes an in-depth overview of NoSQL, including common NoSQL “flavors” such as key/value pair, document, graph, and column-based databases. I then demonstrate how these databases are implemented using the fully managed [Azure CosmosDB](https://jlik.me/eiu). The presentation includes demonstrations of several types of database, a dive into the portal to examine partition keys at work (and why they are important for partition-optimized queries) and lots of .NET and .NET Core source code.
+The presentation includes an in-depth overview of NoSQL, including common NoSQL “flavors” such as key/value pair, document, graph, and column-based databases. I then demonstrate how these databases are implemented using the fully managed [Azure CosmosDB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?utm_source=jeliknes&utm_medium=blog&utm_campaign=techbash18&WT.mc_id=techbash18-blog-jeliknes). The presentation includes demonstrations of several types of database, a dive into the portal to examine partition keys at work (and why they are important for partition-optimized queries) and lots of .NET and .NET Core source code.
 
 {{<customtwitter 1048273124511440897>}}
 
@@ -42,7 +42,7 @@ View the presentation [here](https://youtu.be/VeoJ3Rjw3Hg).
 
 Let me know what your thoughts, feedback, suggestions and questions are in the comments below!
 
-🔗 [Get started with Azure Cosmos DB for free](https://jlik.me/egb) (no credit card required).
+🔗 [Get started with Azure Cosmos DB for free](https://azure.microsoft.com/en-us/free/services/cosmos-db/?utm_source=jeliknes&utm_medium=presentation&utm_campaign=techbash18&WT.mc_id=techbash18-presentation-jeliknes) (no credit card required).
 
 Regards,
 

@@ -31,10 +31,10 @@ aliases:
 
 ## TL;DR;
 
-[Cloud Developer Advocates](https://aka.ms/advocates) advocate for developers to solve problems with the cloud. OK, so I’m not allowed to just flip the phrase and get away with it. No problem. We are a [globally distributed](https://jlik.me/c74) team of engineers with diverse areas of focus ranging from Open Source Software (OSS), container technology, the Go language, Java, front-end web development, gaming, machine learning and artificial intelligence to platform-oriented groups like .NET. Our goal is to empower developers to do more with the cloud. I believe we accomplish that goal by focusing on three key areas:
+[Cloud Developer Advocates](https://aka.ms/advocates) advocate for developers to solve problems with the cloud. OK, so I’m not allowed to just flip the phrase and get away with it. No problem. We are a [globally distributed](https://developer.microsoft.com/en-us/advocates/map?utm_source=jeliknes&utm_medium=blog&utm_campaign=cda&WT.mc_id=cda-blog-jeliknes) team of engineers with diverse areas of focus ranging from Open Source Software (OSS), container technology, the Go language, Java, front-end web development, gaming, machine learning and artificial intelligence to platform-oriented groups like .NET. Our goal is to empower developers to do more with the cloud. I believe we accomplish that goal by focusing on three key areas:
 
 1. **Community**— you’ll see us in groups both offline (whether it’s conferences, meetups, and user groups) and online (from forums to open source projects and social media outlets) meeting and collaborating with you _where you are at_.
-2. **Content**— we believe in the power of _good_ documentation. We all contribute to one of the largest open source projects on GitHub, namely our own [Microsoft documentation](https://jlik.me/c73). We also author blog posts, write articles, create videos, contribute to and even create our own open source projects.
+2. **Content**— we believe in the power of _good_ documentation. We all contribute to one of the largest open source projects on GitHub, namely our own [Microsoft documentation](http://docs.microsoft.com/?utm_source=jeliknes&utm_medium=blog&utm_campaign=cda&WT.mc_id=cda-blog-jeliknes). We also author blog posts, write articles, create videos, contribute to and even create our own open source projects.
 3. **Connect to Engineering** — at the end of the day, we are all engineers. We connect with developers in the field, foster strong relationships with teams at Microsoft, and work together to improve the experience of building solutions in the cloud.
 
 That’s my take, and I’m sticking to it! Please share your own thoughts in the comments below.
@@ -44,7 +44,7 @@ Illustration: [Ashley McNamara](https://github.com/ashleymcnamara/Developer-Advo
 
 ## Now for the Long Part
 
-I recently joined several co-workers, scores of Microsoft employees and over 25,000 customers at the [Microsoft Ignite event](https://jlik.me/bih) in Orlando. During my visit I had the opportunity to network with technology professionals and customers from around the world, assist with Hands-on Labs, connect with fellow [MVPs and RDs](https://mvp.microsoft.com/) (technically I am no longer an MVP as a Microsoft employee, but after eight years I’m still welcomed as part of the group), and explore a massive expo hall I’m confident was large enough to hold several [C-130 Hercules](https://en.wikipedia.org/wiki/Lockheed_C-130_Hercules).
+I recently joined several co-workers, scores of Microsoft employees and over 25,000 customers at the [Microsoft Ignite event](https://myignite.microsoft.com/?utm_source=jeliknes&utm_medium=blog&utm_campaign=cdapost&WT.mc_id=cdapost-blog-jeliknes) in Orlando. During my visit I had the opportunity to network with technology professionals and customers from around the world, assist with Hands-on Labs, connect with fellow [MVPs and RDs](https://mvp.microsoft.com/) (technically I am no longer an MVP as a Microsoft employee, but after eight years I’m still welcomed as part of the group), and explore a massive expo hall I’m confident was large enough to hold several [C-130 Hercules](https://en.wikipedia.org/wiki/Lockheed_C-130_Hercules).
 
 ![List of Cloud Developer Advocates as of October 2017](/blog/2017-10-01_what-is-a-cloud-developer-advocate/images/2.jpeg)
 <figcaption>List of Cloud Developer Advocates as of October 2017</figcaption>
@@ -78,7 +78,7 @@ The buzz is there, but what’s the buzz really all about?
 
 Although I considered writing this article in the past, each time someone new joined they posted or interviewed and shared some insights and wisdom that I felt captured the essence of our team perfectly. In fact, so much information is out there I wrote this post to catalog and organize the content. First and foremost, I encourage you to visit our page and get to know our full team.
 
-🔗 [Microsoft Cloud Developer Advocates](https://jlik.me/bii)
+🔗 [Microsoft Cloud Developer Advocates](https://developer.microsoft.com/en-us/advocates/?utm_source=jeliknes&utm_medium=blog&utm_campaign=cdapost&WT.mc_id=cdapost-blog-jeliknes)
 
 One of the first posts to go viral about our team that describes it so well was by <i class="fab fa-twitter"></i> [Ashley McNamara](https://twitter.com/ashleymcnamara).
 
@@ -166,7 +166,7 @@ Please don’t confuse what we do with traditional evangelism. Evangelism is abo
 
 We support you by doing things like:
 
-* Ensuring you have the [best possible documentation](https://jlik.me/azure-docs) available
+* Ensuring you have the [best possible documentation](https://docs.microsoft.com/en-us/azure/?utm_source=jeliknes&utm_medium=presentation&utm_campaign=atlcodecamp&WT.mc_id=atlcodecamp-presentation-jeliknes) available
 * Sharing our knowledge with you at [user groups and conferences](/upcoming-talks-eaf27ff8a3a7)
 * Learning from you at user groups and conferences
 * Writing blog posts and articles about topics we believe will help you accomplish more
@@ -184,7 +184,7 @@ We’re here to help catalyze that mission and I encourage you to challenge us t
 {{<customtwitter 913561384717373441>}}
 <figcaption>Cloud Developer Advocates: Paige Bailey, Christina Warren, Jeremy Likness, Bernd Verst and Damian Brady</figcaption>
 
-I was only able to share a few of many tweets, posts, pictures and stories so please don’t hesitate to visit the official [Cloud Developer Advocates](https://jlik.me/bii) page to learn more about _all_ of us.
+I was only able to share a few of many tweets, posts, pictures and stories so please don’t hesitate to visit the official [Cloud Developer Advocates](https://developer.microsoft.com/en-us/advocates/?utm_source=jeliknes&utm_medium=blog&utm_campaign=cdapost&WT.mc_id=cdapost-blog-jeliknes) page to learn more about _all_ of us.
 
 Let me know what you think and how I can help.
 

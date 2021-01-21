@@ -33,19 +33,19 @@ CosmosDB is a globally distributed, multi-model document database. Multi-model e
 
 As of this writing, there are five supported models:
 
-* The [SQL API](https://jlik.me/cb5) (based on the DocumentDB interface)
-* [MongoDB](https://jlik.me/cb6)
-* [Graph API](https://jlik.me/cb7)
-* [Table API](https://jlik.me/cb8)
-* [Cassandra](https://jlik.me/cb9)
+* The [SQL API](https://docs.microsoft.com/en-us/azure/cosmos-db/create-sql-api-dotnet?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) (based on the DocumentDB interface)
+* [MongoDB](https://docs.microsoft.com/en-us/azure/cosmos-db/create-mongodb-dotnet?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes)
+* [Graph API](https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-dotnet?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes)
+* [Table API](https://docs.microsoft.com/en-us/azure/cosmos-db/create-table-dotnet?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes)
+* [Cassandra](https://docs.microsoft.com/en-us/azure/cosmos-db/create-cassandra-dotnet?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes)
 
-The easiest way to get started is to follow the excellent [quick start document](https://jlik.me/cca). To make it even easier, I recently spent some time in the Channel 9 studios to record this walk through that demonstrates CosmosDB with the SQL (formerly DocumentDB) API in less than five minutes.
+The easiest way to get started is to follow the excellent [quick start document](https://docs.microsoft.com/en-us/azure/cosmos-db/create-sql-api-dotnet?WT.mc_id=link-blog-jeliknes). To make it even easier, I recently spent some time in the Channel 9 studios to record this walk through that demonstrates CosmosDB with the SQL (formerly DocumentDB) API in less than five minutes.
 
 {{<youtube Nccze3seDc0>}}
 
 The portal has changed a little since I recorded this (Cassandra was added and the DocumentDB interface renamed to SQL API) but otherwise you should be able to follow along to get up and running in minutes.
 
-Learn more about CosmosDB by reading the [official CosmosDB documentation](https://jlik.me/ccb).
+Learn more about CosmosDB by reading the [official CosmosDB documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=link-blog-jeliknes).
 
 Regards,
 

@@ -40,7 +40,7 @@ First, let's be clear on what we mean by "state" in a Blazor app. For the best p
 * The fields and properties representing the data being input and/or output on the page
 * The state of registered services that are running as part of code for the page
 
-In the absence of any special code, state is maintained in two places depending on the [Blazor hosting model](https://jlik.me/g64). For Blazor WebAssembly (client-side) apps, state is held in browser memory until the user refreshes or navigates away from the page. In Blazor Server apps, state is held in special "buckets" allocated to each client session known as _circuits_. These circuits can lose state when they time out after a disconnection and may be obliterated even during an active connection when the server is under memory pressure.
+In the absence of any special code, state is maintained in two places depending on the [Blazor hosting model](https://docs.microsoft.com/en-us/aspnet/core/blazor/hosting-models?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorstate&WT.mc_id=blazorstate-blog-jeliknes&view=aspnetcore-5.0). For Blazor WebAssembly (client-side) apps, state is held in browser memory until the user refreshes or navigates away from the page. In Blazor Server apps, state is held in special "buckets" allocated to each client session known as _circuits_. These circuits can lose state when they time out after a disconnection and may be obliterated even during an active connection when the server is under memory pressure.
 
 ## The Reference App
 
@@ -76,7 +76,7 @@ Now we have a problem. Let's work on the solution!
 
 The following solutions uses an approach to architecture designed to maximize reuse. The `Blazor.ViewModel` project hosts an interface, properties and business logic for the app. It is a .NET Standard library implementation of the [Model-View-ViewModel (MVVM) pattern](/blog/model-view-viewmodel-mvvm-explained/) that can be comfortably referenced by any type of .NET Core project, from WPF to Xamarin and even Blazor. Maximum reuse!
 
-For UI and user experience logic, as well as shareable assets such as images, stylesheets, JavaScript code and even Razor view components, `Blazor.Shared` takes advantage of [Razor Class Libraries](https://jlik.me/g7b). The solution implements a `HealthModelBase` to avoid duplicate MVVM code. It also implements all the state management solutions described here as services and/or components that are easily applied to both Blazor WebAssembly and Blazor Server projects. This further maximizes code reuse, as the "host" projects simply provide some structure to reference the share components and resources.
+For UI and user experience logic, as well as shareable assets such as images, stylesheets, JavaScript code and even Razor view components, `Blazor.Shared` takes advantage of [Razor Class Libraries](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/ui-class?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorstate&WT.mc_id=blazorstate-blog-jeliknes&view=aspnetcore-5.0). The solution implements a `HealthModelBase` to avoid duplicate MVVM code. It also implements all the state management solutions described here as services and/or components that are easily applied to both Blazor WebAssembly and Blazor Server projects. This further maximizes code reuse, as the "host" projects simply provide some structure to reference the share components and resources.
 
 ![Blazor Architecture](/blog/blazor-state-management/images/blazor-architecture.png)
 
@@ -295,7 +295,7 @@ The service is demonstrated for Blazor WebAssembly but will work the same for Bl
 
 Blazor is not opinionated about how you manage state. The services and component model make it easy to implement project-wide solutions. This post focused on an implementation of the Model-View-ViewModel pattern and registered for property changed notifications to handle serializing state either locally or over an API. The same approach will work if you are using a different approach such as [Redux](https://github.com/torhovland/blazor-redux). The important steps are to update your store when properties mutate and load from your state management solution when components initialize. The rest is browser history!
 
-> <i class="fa fa-star"></i> Check out the official documentation for [ASP.NET Core Blazor state management](https://jlik.me/g7u).
+> <i class="fa fa-star"></i> Check out the official documentation for [ASP.NET Core Blazor state management](https://docs.microsoft.com/en-us/aspnet/core/blazor/state-management?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorstate&WT.mc_id=blazorstate-blog-jeliknes&view=aspnetcore-5.0).
 
 Regards,
 

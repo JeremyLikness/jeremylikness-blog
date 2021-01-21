@@ -28,11 +28,11 @@ Most developers immediately think of databases as the solution when presented wi
 ![Azure storage options](/blog/2018-12-12_introduction-to-cloud-storage-for-developers/images/azurestorage.png)
 <figcaption>Azure storage options</figcaption>
 
-All major cloud providers have storage services available, and most of the features are similar. For this article, we'll focus on Azure storage because it's inexpensive, easy to get started and what I know best. You can also [get a free Azure account](https://jlik.me/etb) to follow along and learn how to use cloud storage for your own apps.
+All major cloud providers have storage services available, and most of the features are similar. For this article, we'll focus on Azure storage because it's inexpensive, easy to get started and what I know best. You can also [get a free Azure account](https://azure.microsoft.com/en-us/free/?utm_source=jeliknes&utm_medium=devto&utm_campaign=azurestorage&WT.mc_id=azurestorage-devto-jeliknes) to follow along and learn how to use cloud storage for your own apps.
 
 ## Introduction to Azure Storage
 
-Azure Storage is a cloud-based storage service. You can read the full documentation here: [Azure Storage Documentation](https://jlik.me/etc). Azure cloud storage accounts are designed to be:
+Azure Storage is a cloud-based storage service. You can read the full documentation here: [Azure Storage Documentation](https://docs.microsoft.com/en-us/azure/storage/?utm_source=jeliknes&utm_medium=devto&utm_campaign=azurestorage&WT.mc_id=azurestorage-devto-jeliknes). Azure cloud storage accounts are designed to be:
 
 1. Durable and available
 2. Highly secure
@@ -66,13 +66,13 @@ The storage account is also where you determine the level of replication for you
 * **Zone redundant (ZRS)** with 12 9's availability with multiple clusters in a region. Protects against data loss when a data center goes down but not if an entire region goes down.
 * **Geo-redundant (GRS)** with 16 9's availability and a secondary region hundreds of miles away from the primary region. This is the highest availability for the highest cost. 
 
-Confused or concerned about cost? Azure provides a [pricing calculator](https://jlik.me/ety) you can use to estimate the monthly cost of your account.
+Confused or concerned about cost? Azure provides a [pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?utm_source=jeliknes&utm_medium=devto&utm_campaign=azurestorage&WT.mc_id=azurestorage-devto-jeliknes) you can use to estimate the monthly cost of your account.
 
-To see a practical "real world" example (I use a storage account to run a [link shortener](https://jlik.me/et3) take a look at [this tweet](https://twitter.com/jeremylikness/status/1072534557193310209)
+To see a practical "real world" example (I use a storage account to run a [link shortener](https://github.com/JeremyLikness/serverless-url-shortener?utm_source=jeliknes&utm_medium=devto&utm_campaign=azurestorage&WT.mc_id=azurestorage-devto-jeliknes) take a look at [this tweet](https://twitter.com/jeremylikness/status/1072534557193310209)
 
 {{<customtwitter 1072534557193310209>}}
 
-If you're ready to get started, here is a [quickstart: create an Azure storage account](https://jlik.me/et0). I recommend creating a `V2` account.
+If you're ready to get started, here is a [quickstart: create an Azure storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=portal&utm_source=jeliknes&utm_medium=devto&utm_campaign=azurestorage&WT.mc_id=azurestorage-devto-jeliknes). I recommend creating a `V2` account.
 
 ## Blob Storage
 
@@ -87,7 +87,7 @@ Blob is an acronym for **B**inary **L**arge **OB**ject. Blob storage is designed
 
 In Azure, blob storage is organized into *containers* that are like folders. You can control security parameters at a container level, along with default behaviors.
 
-For example, in my storage account I created a `presentations` container that is publicly accessible. [This link](https://jlik.me/etz) will download the full slide deck (in PowerPoint format) of a storage presentation I uploaded to the container. I recommend you check it out because it's the presentation I based this article on.
+For example, in my storage account I created a `presentations` container that is publicly accessible. [This link](https://jlikme.blob.core.windows.net/presentations/lap-around-storage.pptx?utm_source=jeliknes&utm_medium=devto&utm_campaign=azurestorage&WT.mc_id=azurestorage-devto-jeliknes) will download the full slide deck (in PowerPoint format) of a storage presentation I uploaded to the container. I recommend you check it out because it's the presentation I based this article on.
 
 There are three primary types of blob storage:
 
@@ -137,13 +137,13 @@ All Azure storage options provide detailed usage metrics. Here are example Blob 
 
 A unique feature of blob storage is the ability to host static websites. Many front-end frameworks generate files that are downloaded by the browser to run your Single Page Apps (SPA). Static assets include HTML files, CSS stylesheets, and images. By creating a special `$web` container, you can upload your static assets and access them over the web without having to configure (or pay for) a web server. This can lead to tremendous cost savings.
 
-Here is a blog post by a colleague of mine that walks you through creating and hosting a SPA application using static websites: [Hosting a Blazor App in Azure Storage Static Websites](https://jlik.me/et1). Blazor uses WebAssembly to host .NET apps in the browser.
+Here is a blog post by a colleague of mine that walks you through creating and hosting a SPA application using static websites: [Hosting a Blazor App in Azure Storage Static Websites](https://anthonychu.ca/post/blazor-azure-storage-static-websites/?utm_source=jeliknes&utm_medium=devto&utm_campaign=azurestorage&WT.mc_id=azurestorage-devto-jeliknes). Blazor uses WebAssembly to host .NET apps in the browser.
 
 ## Azure Files
 
 Azure Files let you create mountable cloud-based file shares that can be accessed from Linux, macOS, and Windows. The most common use case for developers is to migrate legacy applications to the web even if they rely on file system access. You can create a file share and mount it from a virtual machine that is running your legacy application and it will run without even "knowing" it's in the cloud.
 
-You can kick the tires yourself and [create your first Azure file share](https://jlik.me/et2).
+You can kick the tires yourself and [create your first Azure file share](https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-share?utm_source=jeliknes&utm_medium=devto&utm_campaign=azurestorage&WT.mc_id=azurestorage-devto-jeliknes).
 
 ## Azure Queues
 
@@ -151,7 +151,7 @@ Azure Queues provide a lightweight, inexpensive way to handle messages for your 
 
 Queues are useful for tracking backlogs of information that should be processed in a first-come, first-served basis. They are also useful for sending messaging between cloud-based clients.  
 
-An example of how I've used queues is in my link shortener tool. When a user requests a short link, I want to redirect them as quickly as possible so they don't experience any delay. The application tracks clicks so I can run analytics to determine which topics are more popular and what links people generally don't click on because they're not interested. In the code that handles the redirect, I use a [serverless binding](https://jlik.me/et4) to access the queue:
+An example of how I've used queues is in my link shortener tool. When a user requests a short link, I want to redirect them as quickly as possible so they don't experience any delay. The application tracks clicks so I can run analytics to determine which topics are more popular and what links people generally don't click on because they're not interested. In the code that handles the redirect, I use a [serverless binding](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?utm_source=jeliknes&utm_medium=devto&utm_campaign=azurestorage&WT.mc_id=azurestorage-devto-jeliknes) to access the queue:
 
 {{<highlight CSharp>}}
 [Queue(queueName: Utility.QUEUE)]IAsyncCollector<string> queue
@@ -177,12 +177,12 @@ The item is added asynchronously and the user is redirected immediately. Another
 
 The code is called with the queue message and the message is automatically popped, or removed, from the queue so no other clients will access it. The code then processes the queue data on a separate thread without impacting the user's experience.
 
-Browse the [link shortener code on GitHub](https://jlik.me/euk).
+Browse the [link shortener code on GitHub](https://github.com/jeremylikness/shortlink?WT.mc_id=azurestorage-devto-jeliknes).
 
 ## Conclusion
 
 Databases are not the only place to store data! Cloud storage solutions provide inexpensive storage that is easy to program using existing SDKs and/or REST APIs. You can create distributed clusters without touching a single piece of hardware or even having to understand how the replication works, and have full control over whether your data is redundant inside of a data center or across separate ends of the continent. Best of all, you get durability, resiliency, scalability and security out of the box. Consider using cloud storage for your next application.
 
-[Learn more about Azure Storage](https://jlik.me/etc).
+[Learn more about Azure Storage](https://docs.microsoft.com/en-us/azure/storage/?utm_source=jeliknes&utm_medium=devto&utm_campaign=azurestorage&WT.mc_id=azurestorage-devto-jeliknes).
 
 ![by Jeremy Likness](/images/jeremylikness.gif)

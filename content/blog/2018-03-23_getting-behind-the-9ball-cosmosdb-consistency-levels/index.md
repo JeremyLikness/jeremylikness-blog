@@ -37,11 +37,11 @@ I’m not a huge sports fan, but I love my 9-ball. Between a short-lived college
 ![9-Ball!](/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/images/1.jpeg)
 <figcaption>9-Ball!</figcaption>
 
-Pool tournaments usually involve a “race to something.” For example, a “race to 7” means the first person to win seven games wins that round. In a typical tournament and a large pool hall, you may have dozens of games running simultaneously. I read an excellent white paper that [explains consistency levels using a baseball game analogy](https://jlik.me/c48). Although it left me with a new understanding, I felt something was missing.
+Pool tournaments usually involve a “race to something.” For example, a “race to 7” means the first person to win seven games wins that round. In a typical tournament and a large pool hall, you may have dozens of games running simultaneously. I read an excellent white paper that [explains consistency levels using a baseball game analogy](https://www.microsoft.com/en-us/research/wp-content/uploads/2011/10/ConsistencyAndBaseballReport.pdf?utm_source=jeliknes&utm_medium=blog&utm_campaign=cosmosdb&WT.mc_id=cosmosdb-blog-jeliknes). Although it left me with a new understanding, I felt something was missing.
 
 So, I applied what I learned to my passion for pool and came up with this.
 
-In case you are not familiar with it, [CosmosDB](https://jlik.me/c49) is a cloud-based NoSQL database service that supports several different APIs, allows you to replicate across global regions simply by clicking a button in the portal UI, and provides service-level agreements (SLAs) for availability, latency, throughput, and consistency. You can choose a default consistency level for the database and further override it on a per application or connection basis.
+In case you are not familiar with it, [CosmosDB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?utm_source=jeliknes&utm_medium=blog&utm_campaign=cosmosdb&WT.mc_id=cosmosdb-blog-jeliknes) is a cloud-based NoSQL database service that supports several different APIs, allows you to replicate across global regions simply by clicking a button in the portal UI, and provides service-level agreements (SLAs) for availability, latency, throughput, and consistency. You can choose a default consistency level for the database and further override it on a per application or connection basis.
 
 Consistency levels provide a trade-off between performance, availability, staleness, and ordering of your data. The easiest way I can think of to explain what this means is to walk through consistency levels through the lens of a pool tournament.
 
@@ -231,7 +231,7 @@ Second, there are some valid scenarios when this level is fine. For example, the
 **Throughput:** Highest  
 **Examples**: Non-ordered updates like reviews and ratings, aggregated status
 
-Did this analogy work to help you better understand consistency levels? Leave your thoughts and feedback in the comments. You can also read the [official documentation for CosmosDB consistency levels](https://jlik.me/c5a).
+Did this analogy work to help you better understand consistency levels? Leave your thoughts and feedback in the comments. You can also read the [official documentation for CosmosDB consistency levels](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels?utm_source=jeliknes&utm_medium=blog&utm_campaign=cosmosdb&WT.mc_id=cosmosdb-blog-jeliknes).
 
 Regards,
 

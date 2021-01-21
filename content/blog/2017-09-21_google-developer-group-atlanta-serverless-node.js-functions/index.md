@@ -37,7 +37,7 @@ As with previous talks, I recorded the demos and posted them to my <i class="fab
 
 {{<slideshare "ebg3pSur1NLDcd" "jeremylikness/code-first-in-the-cloud-serverless-azure-functions-with-nodejs">}}
 
-Learn more about [Azure Functions for JavaScript and Node.js](https://jlik.me/bgb).
+Learn more about [Azure Functions for JavaScript and Node.js](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node?utm_source=jeliknes&utm_medium=presentation&utm_campaign=googleatldev&WT.mc_id=googledevatl-presentation-jeliknes).
 
 I really appreciated the opportunity and look forward to coming out again sometime in the future.
 

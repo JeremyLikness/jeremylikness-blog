@@ -45,7 +45,7 @@ Our team thrives on real world data. I continuously analyze my online presence t
 
 Although there are plenty of freely available online URL shortening and tracking utilities, I was frustrated with my options. Today, Twitter doesn’t count the full link size you tweet against your 140 character budget, so it’s not really about making the links short. Instead, it’s more about tagging and tracking. I tag links so that know which medium is the most effective. Most freely available tools require me to painstakingly paste each variation of the link in order to get a short URL, and then I don’t have full control over the analytics. What’s more, the scheduling tool that promises to shorten URLs automatically ends up taking over the tracking tags so my data is corrupted.
 
-I decided to build a tool of my own, but I didn’t want to spin up VMs and configure expensive infrastructure to handle the load of a ton of redirects going through my servers. So, I decided to go serverless: the perfect task for &lt;⚡&gt; [Azure Functions](https://jlik.me/5x) to take on!
+I decided to build a tool of my own, but I didn’t want to spin up VMs and configure expensive infrastructure to handle the load of a ton of redirects going through my servers. So, I decided to go serverless: the perfect task for &lt;⚡&gt; [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?utm_source=jeliknes&utm_medium=blog&WT.mc_id=link-blog-jeliknes) to take on!
 
 ![Getting Started Templates for Azure Functions](/blog/2017-09-04_build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte/images/2.png)
 <figcaption>Getting Started Templates for Azure Functions</figcaption>
@@ -54,12 +54,12 @@ This post walks through how the entire site was set up, but you don’t have to 
 
 {{<github "JeremyLikness/serverless-url-shortener">}}
 
-Click on the [Deploy to Azure button](https://jlik.me/51) and you will be prompted to fill out a few values before the template engine creates and configures a fully functioning serverless app for you! Here’s a quick video that demonstrates the full process.
+Click on the [Deploy to Azure button](https://azuredeploy.net/?repository=https://github.com/JeremyLikness/serverless-url-shortener&WT.mc_id=medium-blog-jeliknes) and you will be prompted to fill out a few values before the template engine creates and configures a fully functioning serverless app for you! Here’s a quick video that demonstrates the full process.
 
 {{<youtube KmH1qqb4eF8>}}
 <figcaption>Walk-through of Azure Deployment and Testing</figcaption>
 
-To get started, I simply added a new function app from the portal and checked the box for [Application Insights](https://jlik.me/5y). This gives me all of the data and metrics I’ll ever need or hope for with minimal effort. For storage, I chose to go with [Azure Table Storage](https://jlik.me/5z). It’s a key/value store and is perfect for matching the key (short URL) to the value (long URL). It does its job fast!
+To get started, I simply added a new function app from the portal and checked the box for [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?WT.mc_id=medium-blog-jeliknes). This gives me all of the data and metrics I’ll ever need or hope for with minimal effort. For storage, I chose to go with [Azure Table Storage](https://docs.microsoft.com/en-us/azure/storage/?WT.mc_id=medium-blog-jeliknes). It’s a key/value store and is perfect for matching the key (short URL) to the value (long URL). It does its job fast!
 
 ![Azure Table Storage Speeds](/blog/2017-09-04_build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte/images/3.png)
 <figcaption>Azure Table Storage Speeds</figcaption>
@@ -269,7 +269,7 @@ To make it easier to shorten URLs, I created a simple single page web applicatio
 ![The Shortening Utility](/blog/2017-09-04_build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte/images/5.png)
 <figcaption>The Shortening Utility</figcaption>
 
-Use <i class="fab fa-github"></i> [this link](https://github.com/JeremyLikness/serverless-url-shortener/tree/master/webApp) to browse the source code for the web app. It includes a Dockerfile that builds a tiny docker image that I run locally when I’m using it to post URLs. I keep the Docker image local and run it when needed. Because the function to generate short URLs is secured, I added a Cross-Origin Resource Sharing entry to the function app so the browser will allow requests from “localhost” and a custom port. Use this link to: [Learn how to configure CORS](https://jlik.me/59).
+Use <i class="fab fa-github"></i> [this link](https://github.com/JeremyLikness/serverless-url-shortener/tree/master/webApp) to browse the source code for the web app. It includes a Dockerfile that builds a tiny docker image that I run locally when I’m using it to post URLs. I keep the Docker image local and run it when needed. Because the function to generate short URLs is secured, I added a Cross-Origin Resource Sharing entry to the function app so the browser will allow requests from “localhost” and a custom port. Use this link to: [Learn how to configure CORS](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings?WT.mc_id=medium-blog-jeliknes#cors).
 
 ## Redirection and Custom Telemetry
 
@@ -432,11 +432,11 @@ The subsequent dialog will walk you through the steps needed to verify you own t
 
 There are several options to secure your endpoint with SSL. If you own your own SSL certificate, you can upload it to the site and leverage it for secure calls. I personally prefer to use [CloudFlare](https://www.cloudflare.com/) as a free and easy to configure option. CloudFlare allows me to configure my domain for secured connections and generates their own SSL certificate. CloudFlare connects to my Azure function app “behind the scenes” but presents a valid certificate to the client that secures the connection. It also offers various security features and caches requests to improve the responsive of the site. It will even serve cached content when your website goes down!
 
-Now the URL shortening tool is fully up and running, allowing me to generate short URLs and happily routing users to their final destination. Now is the perfect time to mention one of the biggest benefits I received by going serverless: cost. As of this writing, the [Azure Functions pricing model](https://jlik.me/57) grants the first million function calls and 400,000 gigabyte seconds (GB-s) of consumption for free. My site has low risk of hitting those levels, so my main cost is storage. How much is storage?
+Now the URL shortening tool is fully up and running, allowing me to generate short URLs and happily routing users to their final destination. Now is the perfect time to mention one of the biggest benefits I received by going serverless: cost. As of this writing, the [Azure Functions pricing model](https://azure.microsoft.com/en-us/pricing/details/functions/?WT.mc_id=medium-blog-jeliknes) grants the first million function calls and 400,000 gigabyte seconds (GB-s) of consumption for free. My site has low risk of hitting those levels, so my main cost is storage. How much is storage?
 
 Update: I recently spent thirty minutes in an interview discussing and demoing the link shortener that I use. Check that out here:
 
-[Azure Functions: Less-Server and More Code](https://jlik.me/b1x)
+[Azure Functions: Less-Server and More Code](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Azure-Functions-Less-Server-and-More-Code?utm_source=jeliknes&utm_medium=blog&utm_campaign=linkshortener&WT.mc_id=linkshortener-blog-jeliknes)
 
 > **Although actual results will differ for everyone, in my experience, running the site for a week while generating around 1,000 requests per day resulted in a massive seven cent U.S.D. charge to my bill. I don’t think I’ll have any problem affording this!**
 

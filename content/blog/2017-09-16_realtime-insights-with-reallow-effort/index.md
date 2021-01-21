@@ -29,7 +29,7 @@ aliases:
     - "/real-time-insights-with-real-low-effort-7248e90048b1"
 ---
 
-I still recall the day I first learned about [Application Insights](https://jlik.me/bdt). At the time (several years ago) I was working on a web application and App Insights was mentioned as a possible alternative to the analytics product I was using. We thought it was just another way to track web pages and maybe get some light performance data, but we were wrong. Dead wrong.
+I still recall the day I first learned about [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?utm_source=jeliknes&utm_medium=blog&WT.mc_id=link-blog-jeliknes). At the time (several years ago) I was working on a web application and App Insights was mentioned as a possible alternative to the analytics product I was using. We thought it was just another way to track web pages and maybe get some light performance data, but we were wrong. Dead wrong.
 
 ![Viewing Performance Data in Application Insights](/blog/2017-09-16_realtime-insights-with-reallow-effort/images/1.gif)
 <figcaption>Viewing Performance Data in Application Insights</figcaption>
@@ -47,7 +47,7 @@ The list goes on, but instead of writing about what it _can_ do, I wrote this po
 
 {{<relativelink "blog/2017-09-04_build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte">}}
 
-In the article I show how to click a checkbox and add a few lines of code to track App Analytics. In fact, following is the code that tracks three custom items: how long it takes to access an entry in [Azure Table Storage](https://jlik.me/bdy), a count of page views(where the shortening tool is redirecting to), and a summary of custom events (which channel or medium such as Twitter or Facebook is associated with the request). Just look for “BOOM” in the comments.
+In the article I show how to click a checkbox and add a few lines of code to track App Analytics. In fact, following is the code that tracks three custom items: how long it takes to access an entry in [Azure Table Storage](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-overview?utm_source=jeliknes&utm_medium=blog&WT.mc_id=link-blog-jeliknes), a count of page views(where the shortening tool is redirecting to), and a summary of custom events (which channel or medium such as Twitter or Facebook is associated with the request). Just look for “BOOM” in the comments.
 
 {{<highlight CSharp>}}
 var startTime = DateTime.UtcNow;
@@ -91,6 +91,6 @@ To see just how I track this and what other information is available, I created 
 {{<youtube pxfEVKRwcvI>}}
 <figcaption>Application Insights Walkthrough</figcaption>
 
-If you’re struggling to find a solution that provides rich telemetry combined with deep machine learning insights and automatic anomaly detection with low overhead and development impact, take a serious look at [Application Insights](https://jlik.me/bdt). Let me know what you think in the comments below!
+If you’re struggling to find a solution that provides rich telemetry combined with deep machine learning insights and automatic anomaly detection with low overhead and development impact, take a serious look at [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?utm_source=jeliknes&utm_medium=blog&WT.mc_id=link-blog-jeliknes). Let me know what you think in the comments below!
 
 ![Jeremy Likness](/blog/2017-09-16_realtime-insights-with-reallow-effort/images/4.gif)

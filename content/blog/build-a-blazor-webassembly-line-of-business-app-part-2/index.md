@@ -112,7 +112,7 @@ Again, not too complicated. The contact must exist, and because it uses data ann
 
 ## Shadow Properties: Audit and Versioning
 
-The table for `Contact` has several additional properties that aren't present on the C# class. The properties _could_ be added if they need to be displayed in the UI or referenced in other code. The additional properties are mostly for audit and concurrency purposes, so there isn't really a need for them to "live" outside of the data access layer. Fortunately, EF Core has a method to map additional properties without changing the class: [shadow properties](https://jlik.me/h0z).
+The table for `Contact` has several additional properties that aren't present on the C# class. The properties _could_ be added if they need to be displayed in the UI or referenced in other code. The additional properties are mostly for audit and concurrency purposes, so there isn't really a need for them to "live" outside of the data access layer. Fortunately, EF Core has a method to map additional properties without changing the class: [shadow properties](https://docs.microsoft.com/en-us/ef/core/modeling/shadow-properties?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorwasmefcore&WT.mc_id=blazorwasmefcore-blog-jeliknes).
 
 The `ContactContext` context defines these property names:
 

@@ -37,10 +37,10 @@ There is a better way! As much as I love to speak and write about serverless, I 
 
 This lab exposes you to the full spectrum of capabilities and workflows associated with serverless application development. You will:
 
-1. Create a [serverless Azure function](https://jlik.me/cac) locally and debug it on your machine (no Internet required) using the cross-platform functions host
+1. Create a [serverless Azure function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?utm_source=jeliknes&utm_medium=github&utm_campaign=handsonlab&WT.mc_id=handsonlab-github-jeliknes) locally and debug it on your machine (no Internet required) using the cross-platform functions host
 2. Set up a trigger to automatically detect when a file is uploaded to file storage — no polling required (and you’ll also test this locally using the Azure Storage Emulator)
 3. Create a local SQL database that represents a common scenario: the _legacy on-premises database_
-4. Learn how to use [Entity Framework](https://jlik.me/cah) in Azure Functions by parsing a CSV file and inserting new records into the database
+4. Learn how to use [Entity Framework](https://docs.microsoft.com/en-us/aspnet/entity-framework?utm_source=jeliknes&utm_medium=github&utm_campaign=handsonlab&WT.mc_id=handsonlab-github-jeliknes) in Azure Functions by parsing a CSV file and inserting new records into the database
 5. Create a cloud-hosted Azure SQL Database and migrate your local database to the cloud
 6. Deploy your local code to Azure
 7. Run the full process entirely from the cloud without configuring a single piece of hardware or consulting with a DBA

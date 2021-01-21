@@ -68,7 +68,7 @@ Edit the generated `tsconfig.json` file so that the property `strict` is set to 
 
 Next, you’ll transform the JavaScript to TypeScript.
 
-Change the file extension from `.js` to `.ts`. If you’re using an IDE, like the free cross-platform [Visual Studio Code](https://jlik.me/fo9), you’ll notice a few errors. There are two things necessary to finish the transformation.
+Change the file extension from `.js` to `.ts`. If you’re using an IDE, like the free cross-platform [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=medium-blog-jeliknes), you’ll notice a few errors. There are two things necessary to finish the transformation.
 
 First, in the constructor for the `Wrapper` class, add the keyword `public` to each of the parameters. This informs TypeScript they are valid properties on the class. The updated constructor should look like this:
 

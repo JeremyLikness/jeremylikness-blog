@@ -45,14 +45,14 @@ Despite the challenges, feedback was positive.
 
 I received a lot of great questions, and promised to follow-up with answers:
 
-* Does CosmosDB support sharding? Short answer is yes, that concept is supported. Here is more information about [how to partition and scale a CosmosDB](https://jlik.me/f29).
-* Strong consistency and eventual consistency were well-understood, but there were a lot of questions about the other consistency levels available. You can learn more about those in this article about [tuning data consistency levels](https://jlik.me/f3a).
-* How does CosmosDB integrate with Azure’s serverless “functions” offering? Read about [CosmosDB Azure Functions bindings](https://jlik.me/f3b).
+* Does CosmosDB support sharding? Short answer is yes, that concept is supported. Here is more information about [how to partition and scale a CosmosDB](https://docs.microsoft.com/en-us/azure/cosmos-db/partitioning-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes).
+* Strong consistency and eventual consistency were well-understood, but there were a lot of questions about the other consistency levels available. You can learn more about those in this article about [tuning data consistency levels](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes).
+* How does CosmosDB integrate with Azure’s serverless “functions” offering? Read about [CosmosDB Azure Functions bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes).
 * Can you use the MongoDB driver if you choose the DocumentDB API? No, not in the current implementation. You must specify MongoDB as the API in order to use the MongoDB driver.
-* How do you migrate data into CosmosDB? Use the [data migration tool](https://jlik.me/f3c).
-* Is it possible to test CosmosDB applications locally? Yes, there is a [local emulator](https://jlik.me/f3d).
+* How do you migrate data into CosmosDB? Use the [data migration tool](https://docs.microsoft.com/en-us/azure/cosmos-db/import-data?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes).
+* Is it possible to test CosmosDB applications locally? Yes, there is a [local emulator](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes).
 
-If you have other questions, take a look at the [CosmosDB FAQ](https://jlik.me/f3e) and if that doesn’t answer them, reach out to me!
+If you have other questions, take a look at the [CosmosDB FAQ](https://docs.microsoft.com/en-us/azure/cosmos-db/faq?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) and if that doesn’t answer them, reach out to me!
 
 I also had a question about understanding document databases from the perspective of a relational developer. I recently published a blog post to address those concerns directly:
 

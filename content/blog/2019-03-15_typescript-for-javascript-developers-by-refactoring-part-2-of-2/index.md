@@ -43,7 +43,7 @@ Interfaces start to take us into more advanced and unique features of TypeScript
 
 {{<youtube EUGNhz7y5TQ>}}
 
-🔗[Learn more about interfaces](https://jlik.me/fdu)
+🔗[Learn more about interfaces](http://www.typescriptlang.org/docs/handbook/interfaces.html?utm_source=jeliknes&utm_medium=blog&utm_campaign=tsforjs&WT.mc_id=tsforjs-blog-jeliknes)
 
 ## 12. Recursive Print
 
@@ -51,8 +51,8 @@ The interface is extended to include an optional property. Create a generic func
 
 {{<youtube rSER94B3Uyg>}}
 
-🔗 [Learn more about optional parameters in interfaces](https://jlik.me/fe4)  
-🔗 [Learn more about accessors (getters and setters)](https://jlik.me/fe5)
+🔗 [Learn more about optional parameters in interfaces](http://www.typescriptlang.org/docs/handbook/interfaces.html?utm_source=jeliknes&utm_medium=blog&utm_campaign=tsforjs&WT.mc_id=tsforjs-blog-jeliknes#optional-properties)  
+🔗 [Learn more about accessors (getters and setters)](http://www.typescriptlang.org/docs/handbook/classes.html?utm_source=jeliknes&utm_medium=blog&utm_campaign=tsforjs&WT.mc_id=tsforjs-blog-jeliknes#accessors)
 
 ## 13. Format the Print Output
 
@@ -66,7 +66,7 @@ TypeScript supports a special convention `keyof` (called an “index type”) th
 
 {{<youtube tJrF1l6by60>}}
 
-🔗 [Learn more about index types](https://jlik.me/fff)
+🔗 [Learn more about index types](https://www.typescriptlang.org/docs/handbook/advanced-types.html?utm_source=jeliknes&utm_medium=blog&utm_campaign=tsforjs&WT.mc_id=tsforjs-blog-jeliknes#index-types)
 
 ## 15. Type Guards
 
@@ -74,7 +74,7 @@ Type guards are another extremely useful feature that help improve productivity 
 
 {{<youtube QIE1rZJoXJM>}}
 
-🔗 [Learn more about type guards](https://jlik.me/ffg)
+🔗 [Learn more about type guards](https://www.typescriptlang.org/docs/handbook/advanced-types.html?utm_source=jeliknes&utm_medium=blog&utm_campaign=tsforjs&WT.mc_id=tsforjs-blog-jeliknes#type-guards-and-differentiating-types)
 
 ## 16. Strict Types
 
@@ -88,7 +88,7 @@ Decorators are one of the most powerful aspects of TypeScript. They enable aspec
 
 {{<youtube sgAa9NHShGw>}}
 
-🔗 [Learn more about decorators](https://jlik.me/fgh)
+🔗 [Learn more about decorators](https://www.typescriptlang.org/docs/handbook/decorators.html?utm_source=jeliknes&utm_medium=blog&utm_campaign=tsforjs&WT.mc_id=tsforjs-blog-jeliknes)
 
 ## 18. Compilation Targets
 

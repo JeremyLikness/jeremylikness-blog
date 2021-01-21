@@ -31,7 +31,7 @@ images:
  - "/blog/ef-core-and-cosmosdb-with-blazor-webassembly/images/nuget.jpg" 
 ---
 
-It all began as a simple idea. I've been speaking with customers about [Entity Framework Core (EF Core)](https://jlik.me/hvb) and was intrigued by the popularity of using EF Core to access [Cosmos DB](https://jlik.me/hvc). I'm a huge fan of Cosmos DB and have worked with it since it evolved from Azure DocumentDB. It wasn't clear to me why anyone would want to use EF Core when Cosmos DB [has its own SDK](https://jlik.me/hvd). I started asking questions and [<i class="fab fa-twitter"></i> Julie Lerman](https://twitter.com/julielerman) answered with this tweet for context:
+It all began as a simple idea. I've been speaking with customers about [Entity Framework Core (EF Core)](https://docs.microsoft.com/en-us/ef/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes) and was intrigued by the popularity of using EF Core to access [Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes). I'm a huge fan of Cosmos DB and have worked with it since it evolved from Azure DocumentDB. It wasn't clear to me why anyone would want to use EF Core when Cosmos DB [has its own SDK](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-sdk-dotnet?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes). I started asking questions and [<i class="fab fa-twitter"></i> Julie Lerman](https://twitter.com/julielerman) answered with this tweet for context:
 
 {{<customtwitter 1245732530160050176>}}
 
@@ -43,13 +43,13 @@ Many customers shared the same feedback:
 * EF Core by convention creates a container named after the context and then stores all entity types in that table with a special type discriminator. This means less work for the developer
 * In some scenarios it is possible to reuse code across providers
 
-The last point was interesting because I spoke to an internal team working on a process that distributes data to [Azure SQL](https://jlik.me/hve) and Cosmos DB. They are using Azure Functions and chose EF Core so that most of the code remains the same between connectors. For the most part, they just plug in the appropriate provider to make it work.
+The last point was interesting because I spoke to an internal team working on a process that distributes data to [Azure SQL](https://docs.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes) and Cosmos DB. They are using Azure Functions and chose EF Core so that most of the code remains the same between connectors. For the most part, they just plug in the appropriate provider to make it work.
 
 Speaking with these teams sold me on the idea of using EF Core for Cosmos DB. What happened next was unexpected.
 
 ## The Idea
 
-[Blazor WebAssembly](https://jlik.me/hvf) is one of the most amazing new technologies I've worked with in my career. I know that's a bold statement, but it's not just based on personal experience. Enabling .NET apps to run in the browser efficiently and without plug-ins is revolutionary. Customers are migrating desktop and legacy web apps to the new platform. C# developers are rejoicing that they can build responsive Single Page Apps without getting sucked into choosing a JavaScript framework and learning an entirely new language and platform. 
+[Blazor WebAssembly](https://www.infoq.com/articles/webassembly-blazor/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes) is one of the most amazing new technologies I've worked with in my career. I know that's a bold statement, but it's not just based on personal experience. Enabling .NET apps to run in the browser efficiently and without plug-ins is revolutionary. Customers are migrating desktop and legacy web apps to the new platform. C# developers are rejoicing that they can build responsive Single Page Apps without getting sucked into choosing a JavaScript framework and learning an entirely new language and platform. 
 
 As powerful as the technology is, it is constrained by the fact it runs as a client in the browser. This means it can't make direct TCP connections, for example, which limits the databases it can connect to directly. All the code runs in the browser, so credentials can't be secured the same way they are on the webserver. Therefore most access is done over HTTP APIs and creates the challenge of deciding how to serialize complex queries over the wire.
 
@@ -59,7 +59,7 @@ A final push for the idea came from friend and coworker [<i class="fab fa-twitte
 
 ## Why Cosmos DB
 
-The Cosmos DB client allows [two connection modes](https://jlik.me/hvg): direct (TCP) and gateway (HTTPS). Gateway mode _should_ be usable from the browser. The challenge is how to secure credentials. There is no safe way to ship them in the browser and if anyone were to intercept them, your entire database will be compromised. I decided to first tackle _if_ it could work, then tackle whether it _should_ be done based on security concerns. But why even consider Cosmos DB in the browser? There are a few reasons:
+The Cosmos DB client allows [two connection modes](https://docs.microsoft.com/en-us/azure/cosmos-db/performance-tips?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes#networking): direct (TCP) and gateway (HTTPS). Gateway mode _should_ be usable from the browser. The challenge is how to secure credentials. There is no safe way to ship them in the browser and if anyone were to intercept them, your entire database will be compromised. I decided to first tackle _if_ it could work, then tackle whether it _should_ be done based on security concerns. But why even consider Cosmos DB in the browser? There are a few reasons:
 
 * Cosmos DB can be configured with multiple regions and will automatically route to the closest (and fastest) node
 * Building it into the client app removes the need to build an additional API tier (with exceptions, more on that later)
@@ -74,7 +74,7 @@ My decision to use Entity Framework Core goes beyond the fact that I work closel
 
 {{<youtube SwIBkZZ32r4>}}
 
-I used Cosmos DB and built an example app that handles blogs and blog posts. To keep my experiment fast and easy, I simply copied the setup from that app into my Blazor WebAssembly project. I was up and running in just a few minutes. The moment of truth had arrived. For now, I brazenly embedded my secrets as hard-coded string literals that I used to [configure the database context](https://jlik.me/hvh). I hit `CTRL+F5` to "Start without Debugging" and eagerly waited for the blog posts to render.
+I used Cosmos DB and built an example app that handles blogs and blog posts. To keep my experiment fast and easy, I simply copied the setup from that app into my Blazor WebAssembly project. I was up and running in just a few minutes. The moment of truth had arrived. For now, I brazenly embedded my secrets as hard-coded string literals that I used to [configure the database context](https://docs.microsoft.com/en-us/ef/core/dbcontext-configuration/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes). I hit `CTRL+F5` to "Start without Debugging" and eagerly waited for the blog posts to render.
 
 Instead, what I got was an exception.
 
@@ -125,7 +125,7 @@ So how does Firebase work? Although Firebase "feels" like a serverless solution,
 
 📱 It turns out this problem has already been solved in mobile applications. Although there are secure ways to store secrets on phones, no one wants to risk shipping the master keys. So how do _they_ do it?
 
-The official documentation for Cosmos DB includes an article to [learn how to secure access to data](https://jlik.me/hvj). In that article you can read about "resource tokens." These are ephemeral (short-lived) keys for access that are generated specifically for a user. The keys allow very refined access permissions and even allow you to scope access to a particular partition key for multi-tenant scenarios. The maximum lifespan of a token is five hours, but you can configure it to a shorter duration. The default is just one hour.
+The official documentation for Cosmos DB includes an article to [learn how to secure access to data](https://docs.microsoft.com/en-us/azure/cosmos-db/secure-access-to-data?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes). In that article you can read about "resource tokens." These are ephemeral (short-lived) keys for access that are generated specifically for a user. The keys allow very refined access permissions and even allow you to scope access to a particular partition key for multi-tenant scenarios. The maximum lifespan of a token is five hours, but you can configure it to a shorter duration. The default is just one hour.
 
 Handing the user their own token only allows them to do what we want them to do anyway. If the token is somehow intercepted, the hacker only has the same level of access they would via a Web API scenario: they can only act based on the permissions the user has. They also have a limited timeline to do so.
 
@@ -143,17 +143,17 @@ Pros:
 * Removes an additional round-trip to an API service for subsequent calls (after the token request) resulting in lower latency
 * Takes advantage of Cosmos DB global distribution to route to the nearest cluster
 * Token is ephemeral and restricted
-* [Cross Original Resource Sharing (CORS)](https://jlik.me/hvk) is configurable to constrain access (I was unable to access my endpoint until I set this up for my localhost port)
+* [Cross Original Resource Sharing (CORS)](https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-configure-cross-origin-resource-sharing?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes) is configurable to constrain access (I was unable to access my endpoint until I set this up for my localhost port)
 
 Cons:
 
 * The token can be intercepted or stolen
 * The endpoint of your Cosmos DB database is exposed, opening up a potential attack vector
-* You have to either disable your [IP access control policy](https://jlik.me/hvl) or somehow capture all potential IP endpoints for access
+* You have to either disable your [IP access control policy](https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-configure-firewall?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes) or somehow capture all potential IP endpoints for access
 
 ⚠ The last two concerns aren't unique to Blazor WebAssembly apps. They also exist for mobile apps that access Cosmos DB directly. I'm curious about your thoughts: do you consider the endpoint to be a "secret" and how much risk do you feel is involved when it is revealed? Would love to hear your comments below.
 
-💡 For reference, here's the documentation for [accessing Cosmos DB from Xamarin (mobile) apps](https://jlik.me/hvo). Does anything look familiar? They had professionals draw _their_ diagram. It turns out we're not in completely unchartered territory here.
+💡 For reference, here's the documentation for [accessing Cosmos DB from Xamarin (mobile) apps](https://docs.microsoft.com/en-us/azure/cosmos-db/mobile-apps-with-xamarin?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes). Does anything look familiar? They had professionals draw _their_ diagram. It turns out we're not in completely unchartered territory here.
 
 ## The Final Solution
 
@@ -161,7 +161,7 @@ After I was successful, I posted a teaser to Twitter. I did not anticipate the m
 
 {{<customtwitter 1260340804351975424>}}
 
-I apologize to anyone looking for an out of the box solution. My project uses the latest preview bits and relies on [ASP.NET Core Identity](https://jlik.me/hvm) for authentication, so it has a lot of moving parts that will likely be out of date before I publish this. Instead, I'll walk through the relevant steps and share the code I used along the way.
+I apologize to anyone looking for an out of the box solution. My project uses the latest preview bits and relies on [ASP.NET Core Identity](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmoswasm&WT.mc_id=blazorcosmoswasm-blog-jeliknes&view=aspnetcore-5.0) for authentication, so it has a lot of moving parts that will likely be out of date before I publish this. Instead, I'll walk through the relevant steps and share the code I used along the way.
 
 The first step is to create a Blazor WebAssembly project. I used the Release Candidate (`3.2.0-rc1.20223.4`). Choose "ASP.NET Core Hosted" so you can host authentication, then pick the option to include authentication in the app. This will set up a SQL database to store user profiles. It requires you to run an initial migration to set up the database (thanks to template magic, it will give you an option to do this directly from an error page the first time you run the app). This is just to facilitate an authentication mechanism for the example. If you have an external authentication provider, feel free to use that instead.
 

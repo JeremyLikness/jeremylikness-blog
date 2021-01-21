@@ -40,7 +40,7 @@ images:
  - "/blog/stateful-serverless-long-running-workflows-with-durable-functions/images/durablefrontend.jpg"  
 
 ---
-[Azure Functions](https://jlik.me/f4s) allows you to easily build, deploy, run, and maintain small pieces of code, or functions, in the cloud. You write the code in your language/platform of choice and don't worry about building an application or configuring infrastructure. The functions runtime handles hosting and scaling your code in response to events or triggers that range from HTTP requests to timers, messages, database updates and more. The consumption-based billing model tracks how often your code is run, and how much memory it consumes while running.
+[Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes) allows you to easily build, deploy, run, and maintain small pieces of code, or functions, in the cloud. You write the code in your language/platform of choice and don't worry about building an application or configuring infrastructure. The functions runtime handles hosting and scaling your code in response to events or triggers that range from HTTP requests to timers, messages, database updates and more. The consumption-based billing model tracks how often your code is run, and how much memory it consumes while running.
 
 In this example, memory use fluctuates over time as the function is running. The "area under the curve" is what determines billing.
 
@@ -62,7 +62,7 @@ _If only..._
 
 ## Introducing Durable Functions
 
-The [Durable Task Framework](https://jlik.me/f4t) is an open source library that was written to manage state and control flow for long-running workflows. [Durable Functions](https://jlik.me/f4u) builds on the framework to provide the same support for serverless functions. In addition to facilitating potential cost savings for longer running workflows, it opens a new set of [patterns and possibilities](https://jlik.me/f4v) for serverless applications. To illustrate these patterns, I created the Durable Dungeon.
+The [Durable Task Framework](https://github.com/Azure/durabletask?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes) is an open source library that was written to manage state and control flow for long-running workflows. [Durable Functions](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes) builds on the framework to provide the same support for serverless functions. In addition to facilitating potential cost savings for longer running workflows, it opens a new set of [patterns and possibilities](https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes) for serverless applications. To illustrate these patterns, I created the Durable Dungeon.
 
 This article is based on a presentation I first gave at [NDC Oslo](https://ndcoslo.com). You can watch the full presentation here:
 
@@ -88,7 +88,7 @@ The Durable Dungeon is a serverless adventure game designed to illustrate how Du
 * If the user does confirm, a game loop starts that monitors the status of the game for up to one hour
 * The user must pick up the weapon, slay the monster, then retrieve the treasure to win the game
 
-The entire game is implemented with a combination of Azure Functions and [Azure Storage](https://jlik.me/f4w), with a [Vanilla.js](/blog/2019-04-09_vanilla.jsgetting-started) front-end to monitor and play if direct HTTP calls aren’t your thing. If you’re curious about why this is implemented using a serverless architecture, the reasons are explained in the presentation deck.
+The entire game is implemented with a combination of Azure Functions and [Azure Storage](https://docs.microsoft.com/en-us/azure/storage/?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes), with a [Vanilla.js](/blog/2019-04-09_vanilla.jsgetting-started) front-end to monitor and play if direct HTTP calls aren’t your thing. If you’re curious about why this is implemented using a serverless architecture, the reasons are explained in the presentation deck.
 
 You can access the GitHub repository that contains step-by-step instructions to run the entire demo here:
 
@@ -105,7 +105,7 @@ The flow looks like this:
 ![New user workflow](/blog/stateful-serverless-long-running-workflows-with-durable-functions/images/newuserflow.jpg)
 <figcaption>New user workflow</figcaption>
 
-The sample code is set up to send messages to a queue named _console_. The queue is useful for querying game state. In the repository you will find a standalone .NET Core console project named <i class="fab fa-github"></i> [`DungeonConsole`](https://github.com/JeremyLikness/DurableDungeon/tree/master/DungeonConsole). By default it connects to the [Azure Storage Emulator](https://jlik.me/e9i). You can provide a connection string to monitor a different storage account if you are not running it locally.
+The sample code is set up to send messages to a queue named _console_. The queue is useful for querying game state. In the repository you will find a standalone .NET Core console project named <i class="fab fa-github"></i> [`DungeonConsole`](https://github.com/JeremyLikness/DurableDungeon/tree/master/DungeonConsole). By default it connects to the [Azure Storage Emulator](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator?utm_source=jeliknes&utm_medium=github&utm_campaign=durabledungeon&WT.mc_id=durabledungeon-github-jeliknes). You can provide a connection string to monitor a different storage account if you are not running it locally.
 
 ![The dungeon console](/blog/stateful-serverless-long-running-workflows-with-durable-functions/images/durableconsole.jpg)
 <figcaption>The dungeon console</figcaption>
@@ -139,7 +139,7 @@ A quick durable functions primer: ordinary functions or _clients_ can kick off w
 
 An orchestration is responsible for coordinating work. Durable Functions use the concept of _checkpoints_ and _replays_ to manage the state and lifetime of the workflow. To learn more about these concepts, read:
 
-{{<iconlink "https://jlik.me/f4x" "Checkpoints and replay in Durable Functions">}}
+{{<iconlink "https://docs.microsoft.com/azure/azure-functions/durable/durable-functions-orchestrations?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes&tabs=csharp" "Checkpoints and replay in Durable Functions">}}
 
 The orchestration manages the workflow itself, such as how and when tasks are performed. The tasks themselves are encapsulated in special units called _activities_. As a rule of thumb, anything with side effects should be contained within an activity.
 
@@ -433,7 +433,7 @@ Although this example used a game concept for fun, the code demonstrates how to 
 
 Azure Functions don’t have to be constrained by external dependencies or avoided just because they implement long-running workflows. If the compute time is relatively low and the architecture makes sense for your solution, consider tapping into the power of durable functions to extend the capabilities of your serverless workflows.
 
-Curious to learn more? Check out this interactive, hands-on walk through to build a workflow from scratch: [Create a long-running serverless workflow with Durable Functions](https://jlik.me/f4y).
+Curious to learn more? Check out this interactive, hands-on walk through to build a workflow from scratch: [Create a long-running serverless workflow with Durable Functions](https://docs.microsoft.com/en-us/learn/modules/create-long-running-serverless-workflow-with-durable-functions/?utm_source=jeliknes&utm_medium=blog&utm_campaign=azuremedium&WT.mc_id=azuremedium-blog-jeliknes).
 
 Regards,
 

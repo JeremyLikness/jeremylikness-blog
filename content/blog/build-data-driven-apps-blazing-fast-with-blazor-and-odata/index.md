@@ -32,7 +32,7 @@ images:
  - "/blog/build-data-driven-apps-blazing-fast-with-blazor-and-odata/images/filteredresults.jpg"
 ---
 
-Once upon a time there was a technology named [WCF RIA Services](https://jlik.me/gej). It made our lives easier by providing a magical bridge between the client and the server. Behind the scenes, it generated a set of endpoints and proxies that worked together to create a seamless experience across the stack. Using a LINQ query over a domain object in your Silverlight app generated the appropriate API calls to the server that would filter, transport, and deserialize the data.
+Once upon a time there was a technology named [WCF RIA Services](https://docs.microsoft.com/en-us/previous-versions/dotnet/wcf-ria/ee707344(v=vs.91)?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes). It made our lives easier by providing a magical bridge between the client and the server. Behind the scenes, it generated a set of endpoints and proxies that worked together to create a seamless experience across the stack. Using a LINQ query over a domain object in your Silverlight app generated the appropriate API calls to the server that would filter, transport, and deserialize the data.
 
 Imagine for a second if implementing advanced filtering and sorting over a REST endpoint was as simple as writing this fluent code to run in any browser client:
 
@@ -48,7 +48,7 @@ This would generate the appropriate call to the server to fetch the filtered and
 
 What if you could use the exact same `Todo` model in your client, with business logic and validations, to provide a form for the user to add and update the list?
 
-Don't fret. This is possible _today_. No, I'm not talking about making the effort to build a glorified GraphQL client and  dropping a massive JSON payload to get what you want. I'm talking about out-of-the-box with the power of [Blazor](https://jlik.me/gel) and using very stable and mature [OData](https://jlik.me/gek). It doesn't matter if your backend is a [SQL Server](https://jlik.me/gem), a [NoSQL Cosmos DB instance](https://jlik.me/gen), or an in-memory cache.
+Don't fret. This is possible _today_. No, I'm not talking about making the effort to build a glorified GraphQL client and  dropping a massive JSON payload to get what you want. I'm talking about out-of-the-box with the power of [Blazor](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro) and using very stable and mature [OData](https://docs.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-endpoint?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes). It doesn't matter if your backend is a [SQL Server](https://docs.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes), a [NoSQL Cosmos DB instance](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes), or an in-memory cache.
 
 ![The Todo App](/blog/build-data-driven-apps-blazing-fast-with-blazor-and-odata/images/todoapp.jpg)
 <figcaption>The "Todo" App</figcaption>
@@ -57,7 +57,7 @@ Intrigued? Let's explore how with a simple "todo" application.
 
 ## OData: GraphQL before GraphQL
 
-GraphQL is a popular technology today. It empowers front-end/client-side developers to query data and shape the results, such as only bringing back a subset of available properties and/or navigating complex object graphs. Despite the excitement around GraphQL as a "newer" technology, the capabilities it provides have been available to .NET developers for more than a decade. _[Project Astoria](https://jlik.me/geo/)_ was announced to the public in July of 2007. I recently hosted a Channel 9 [On .NET OData episode](https://jlik.me/gep) that you can watch here if you're not familiar with OData or need a refresher.
+GraphQL is a popular technology today. It empowers front-end/client-side developers to query data and shape the results, such as only bringing back a subset of available properties and/or navigating complex object graphs. Despite the excitement around GraphQL as a "newer" technology, the capabilities it provides have been available to .NET developers for more than a decade. _[Project Astoria](https://devblogs.microsoft.com/odata/welcome/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes)_ was announced to the public in July of 2007. I recently hosted a Channel 9 [On .NET OData episode](https://channel9.msdn.com/Shows/On-NET/Supercharging-your-Web-APIs-with-OData-and-ASPNET-Core?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) that you can watch here if you're not familiar with OData or need a refresher.
 
 {{<youtube ZCDWUBOJ5FU>}}
 
@@ -94,7 +94,7 @@ public class Todo
 }
 {{</highlight>}}
 
-For this example, I'm using [Entity Framework Core](https://jlik.me/geq) to set up a context for the data because I can specify an in-memory database to keep the example simple. It is a simple configuration change to switch to a more permanent, production-ready database such as SQL Server or Cosmos DB.
+For this example, I'm using [Entity Framework Core](https://docs.microsoft.com/en-us/ef/core/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) to set up a context for the data because I can specify an in-memory database to keep the example simple. It is a simple configuration change to switch to a more permanent, production-ready database such as SQL Server or Cosmos DB.
 
 {{<highlight CSharp>}}
 public class TodoContext : DbContext
@@ -157,7 +157,7 @@ public IEnumerable<Todo> GetTodoList()
 }
 {{</highlight>}}
 
-At this stage I can construct an OData query. Here, I'm using the cross-platform .NET Core global [HTTPREPL](https://jlik.me/ger) tool to query my items. Notice in the results I get exactly (and only) what I asked for:
+At this stage I can construct an OData query. Here, I'm using the cross-platform .NET Core global [HTTPREPL](https://devblogs.microsoft.com/aspnet/httprepl-a-command-line-tool-for-interacting-with-restful-http-services/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) tool to query my items. Notice in the results I get exactly (and only) what I asked for:
 
 ![Example OData Query](/blog/build-data-driven-apps-blazing-fast-with-blazor-and-odata/images/odataquery.jpg)
 <figcaption>HTTPREPL to query OData</figcaption>
@@ -613,8 +613,8 @@ This post demonstrated:
 
 * Sharing a model, including business logic, between the client and server
 * Using the same validation at multiple levels without having to rewrite it, anywhere
-* Implementing an [OData](https://jlik.me/gek) endpoint using some simple attributes on a special controller
-* How to take advantage of dependency injection in [Blazor](https://jlik.me/gel) clients
+* Implementing an [OData](https://docs.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-endpoint?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) endpoint using some simple attributes on a special controller
+* How to take advantage of dependency injection in [Blazor](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro) clients
 * A few newer Blazor features such as managing the attributes of an HTML element
 * An example of the MVVM pattern in Blazor
 * Dealing with asynchronous operations

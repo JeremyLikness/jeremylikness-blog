@@ -100,8 +100,8 @@ Finally, I went to bed early to wake up for a 6:35 am flight back to Atlanta. Ye
 It was a beautiful end to a very fun trip. I appreciate my warm Silicon Valley welcome and look forward to coming back in the future! I’m excited that I was able to share the power of serverless with so many, and look forward to everyone’s feedback and success stories. As a reminder:
 
 * The full deck and video demonstrations are available here: [Code First in the Cloud: Serverless Azure Functions](https://www.slideshare.net/jeremylikness/code-first-with-serverless-azure-functions-81068288).
-* Read the full [Azure Documentation](https://jlik.me/go-azdocs) online.
-* Get started with [Functions for Free](https://jlik.me/bod)!
+* Read the full [Azure Documentation](https://docs.microsoft.com/en-us/azure/?utm_source=jeliknes&utm_medium=presentation&utm_campaign=sfotour17&WT.mc_id=sfotour17-presentation-jeliknes) online.
+* Get started with [Functions for Free](https://functions.azure.com/ng-min/try?trial=true&utm_source=jeliknes&utm_medium=powerpoint&utm_campaign=sfotour2017&WT.mc_id=sfotour2017-powerpoint-jeliknes)!
 
 Until the next time,
 

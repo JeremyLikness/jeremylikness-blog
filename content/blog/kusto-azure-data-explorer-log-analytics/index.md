@@ -34,11 +34,11 @@ images:
  - "/blog/kusto-azure-data-explorer-log-analytics/images/topchart.png" 
 ---
 
-Azure provides some incredible services for storing and analyzing data. One service I use every day is [Azure Monitor](https://jlik.me/hpa). It automatically gathers information from my [serverless link shortener](/series/serverless-link-shortener/) app and surfaces analytics and insights through [Application Insights](https://jlik.me/hpb).
+Azure provides some incredible services for storing and analyzing data. One service I use every day is [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes). It automatically gathers information from my [serverless link shortener](/series/serverless-link-shortener/) app and surfaces analytics and insights through [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes).
 
 ![Application Insights](/blog/kusto-azure-data-explorer-log-analytics/images/appinsights.png)
 
-My logs are automatically captured through [Log Analytics](https://jlik.me/hpc) and I can investigate the data using [Azure Data Explorer](https://jlik.me/hpd). The service for storing and handling interactive analytics is called [Kusto](https://jlik.me/hpe), and it has a unique query syntax that is similar to SQL. There is plenty of in-depth documentation about Kusto. I struggled with it until I started my [new role as .NET Data PM](/blog/new-role-dotnet-data-pm/) and began looking into telemetry about how .NET users manage data in their applications. I had some _ah-hah_ moments I want to share.
+My logs are automatically captured through [Log Analytics](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-query-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) and I can investigate the data using [Azure Data Explorer](https://docs.microsoft.com/en-us/azure/data-explorer/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes). The service for storing and handling interactive analytics is called [Kusto](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes), and it has a unique query syntax that is similar to SQL. There is plenty of in-depth documentation about Kusto. I struggled with it until I started my [new role as .NET Data PM](/blog/new-role-dotnet-data-pm/) and began looking into telemetry about how .NET users manage data in their applications. I had some _ah-hah_ moments I want to share.
 
 ## Finding Kusto
 

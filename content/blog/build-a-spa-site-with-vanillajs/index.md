@@ -32,7 +32,7 @@ Modern JavaScript frameworks exist to address deficiencies in the capabilities p
 
 I implemented a Single Page Application (SPA) app based completely on pure JavaScript ("Vanilla.js"). It includes routing (you can bookmark and navigate pages), databinding, reusable web components and uses JavaScript's native module functionality. You can run and install the application (it is a Progressive Web App or PWA) here:
 
-<i class="fas fa-external-link-alt"></i> [https://jlik.me/vanilla-js](https://jlik.me/vanilla-js)
+<i class="fas fa-external-link-alt"></i> [https://jlikme.z13.web.core.windows.net/vanillajs/](https://jlikme.z13.web.core.windows.net/vanillajs/?WT.mc_id=vanillajs-github-jeliknes)
 
 The source code repository is available here:
 

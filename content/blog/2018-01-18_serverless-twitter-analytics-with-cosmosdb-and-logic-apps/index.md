@@ -35,14 +35,14 @@ aliases:
     - "/serverless-twitter-analytics-with-cosmosdb-and-logic-apps-280e5ff6c948"
 ---
 
-I recently added a [Logic App](https://jlik.me/cly) to my Azure portfolio, and the insights it provides are amazing. I chose Logic Apps because I needed an [easy way to query Twitter](https://jlik.me/clz). In the Logic Apps designer, I simply clicked “Twitter”, logged in, and specified my search. It does the rest. I didn’t have to write a line of code or even worry about the nuances of authentication. It was all handled for me!
+I recently added a [Logic App](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-overview?WT.mc_id=logicapp-blog-jeliknes&utm_source=jeliknes&utm_medium=blog&utm_campaign=logicapp) to my Azure portfolio, and the insights it provides are amazing. I chose Logic Apps because I needed an [easy way to query Twitter](https://docs.microsoft.com/en-us/azure/connectors/connectors-create-api-twitter?WT.mc_id=logicapp-blog-jeliknes&utm_source=jeliknes&utm_medium=blog&utm_campaign=logicapp). In the Logic Apps designer, I simply clicked “Twitter”, logged in, and specified my search. It does the rest. I didn’t have to write a line of code or even worry about the nuances of authentication. It was all handled for me!
 
 ![Logic App workflow](/blog/2018-01-18_serverless-twitter-analytics-with-cosmosdb-and-logic-apps/images/1.png)
 <figcaption>Logic App workflow</figcaption>
 
 It’s been several months and tens of thousands of clicks since I started using my [custom link shortener](/build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte-8c094bb1df2c). I use this tool daily and leverage the analytics to refine the information I send out to social media. The goal is simply to find out how developers react to various topics so that I can eliminate the ones that are not interesting and focus on the ones that generate interest and excitement. In the context of the tool, a “click” is a “vote” for a particular topic.
 
-I can look at the past 24 hours, for example, and see that although <i class="fab fa-twitter"></i> [Twitter](https://twitter.com/JeremyLikness)is by far the most active social medium I use, there is plenty of activity from my [Channel 9 videos](https://jlik.me/b10), this blog, and even <i class="fab fa-github"></i> [GitHub](https://github.com/JeremyLikness).
+I can look at the past 24 hours, for example, and see that although <i class="fab fa-twitter"></i> [Twitter](https://twitter.com/JeremyLikness)is by far the most active social medium I use, there is plenty of activity from my [Channel 9 videos](https://channel9.msdn.com/Niners/JeremyLikness?utm_source=jeliknes&utm_medium=blog&utm_campaign=jeremyliknessblog&WT.mc_id=jeremyliknessblog-blog-jeliknes), this blog, and even <i class="fab fa-github"></i> [GitHub](https://github.com/JeremyLikness).
 
 ![Redirects by medium (pasts 24 hours) on January 18, 2018](/blog/2018-01-18_serverless-twitter-analytics-with-cosmosdb-and-logic-apps/images/2.png)
 <figcaption>Redirects by medium (pasts 24 hours) on January 18, 2018</figcaption>
@@ -64,7 +64,7 @@ if (parsed.Referrer != null)
 }
 {{</highlight>}}
 
-This gives me both a page and a host so I can organize data at different levels. I love that 🌎 [CosmosDB](https://jlik.me/cl0) is a schema-less database, so it’s trivial to add new properties as an afterthought. I just ignore the old data in my analytics that need referral information. After running with the new information for awhile, I noticed an interesting trend.
+This gives me both a page and a host so I can organize data at different levels. I love that 🌎 [CosmosDB](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=logicapp-blog-jeliknes&utm_source=jeliknes&utm_medium=blog&utm_campaign=logicapp) is a schema-less database, so it’s trivial to add new properties as an afterthought. I just ignore the old data in my analytics that need referral information. After running with the new information for awhile, I noticed an interesting trend.
 
 ![Referring hosts](/blog/2018-01-18_serverless-twitter-analytics-with-cosmosdb-and-logic-apps/images/4.png)
 <figcaption>Referring hosts</figcaption>
@@ -73,7 +73,7 @@ A large number of referrals were coming from “t.co” which is Twitter’s own
 
 > Note: it would be great to understand activity at a retweet level, but this is not possible. A retweet simply references the original tweet, so there is no way of determining whether the click came from the original or a retweet. Therefore, I set up the logic to track the original tweet information, and from there I can always query statistics from twitter about likes and retweets.
 
-I knew that Logic Apps would be the easiest way to process the Tweets, so I logged into my [Azure portal](https://jlik.me/cl1) and added a new Logic App. The designer makes it incredibly easy to connect to various resources and assets. Here is the first part of my workflow. The trigger is a timer I run every two hours and will tweak as needed based on activity. I initialize a variable to represent the current document and the Twitter link, then grab all documents that have a Twitter referral but haven’t yet been mapped to the original tweet.
+I knew that Logic Apps would be the easiest way to process the Tweets, so I logged into my [Azure portal](https://portal.azure.com/?WT.mc_id=logicapp-blog-jeliknes&utm_source=jeliknes&utm_medium=blog&utm_campaign=logicapp) and added a new Logic App. The designer makes it incredibly easy to connect to various resources and assets. Here is the first part of my workflow. The trigger is a timer I run every two hours and will tweak as needed based on activity. I initialize a variable to represent the current document and the Twitter link, then grab all documents that have a Twitter referral but haven’t yet been mapped to the original tweet.
 
 ![Grabbing documents for processing](/blog/2018-01-18_serverless-twitter-analytics-with-cosmosdb-and-logic-apps/images/5.png)
 <figcaption>Grabbing documents for processing</figcaption>
@@ -161,7 +161,7 @@ The twitter URL variable now contains one of three possible values:
 2. The Original Tweet because the search returned a retweet
 3. The Tweet itself because the search returned an original tweet
 
-The next step involves adding the new property to the document. There isn’t a direct connector for this in Logic Apps, but Logic Apps play well with [Azure Functions](https://jlik.me/cl2) and adding the function was trivial:
+The next step involves adding the new property to the document. There isn’t a direct connector for this in Logic Apps, but Logic Apps play well with [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/?utm_source=jeliknes&utm_medium=blog&utm_campaign=logicapp&WT.mc_id=logicapp-blog-jeliknes) and adding the function was trivial:
 
 {{<highlight CSharp>}}
 [FunctionName(name: "UpdateTwitter")]
@@ -187,7 +187,7 @@ public static async Task<HttpResponseMessage> Twitter([HttpTrigger(Authorization
 }
 {{</highlight>}}
 
-Functions make life so easy! By providing a [CosmosDB (DocumentDB interface) binding](https://jlik.me/cl3), I don’t have to do anything to retrieve the document. The binding automatically retrieves the id from the header, finds the corresponding document (if it exists) and then passes it into the function method. All I need to do is pull the URL that is passed as a simple text string as the body of the post and add it as a new `referralTweet` property to the document. The binding even does the update for me!
+Functions make life so easy! By providing a [CosmosDB (DocumentDB interface) binding](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-cosmosdb?utm_source=jeliknes&utm_medium=blog&utm_campaign=logicapp&WT.mc_id=logicapp-blog-jeliknes), I don’t have to do anything to retrieve the document. The binding automatically retrieves the id from the header, finds the corresponding document (if it exists) and then passes it into the function method. All I need to do is pull the URL that is passed as a simple text string as the body of the post and add it as a new `referralTweet` property to the document. The binding even does the update for me!
 
 There are two ways to call functions from Logic Apps. You can connect to certain functions directly, or you can call the function endpoint as a client. I chose the latter.
 
@@ -201,7 +201,7 @@ Notice I use the variables to add the document id to the route and include the t
 
 Of course, now that I have the tweet, I can take it a step further and grab the tweet text to show more context or even a preview on the dashboard. But that’s a task for a different day!
 
-If you haven’t already tapped into the power of Logic Apps, I encourage you to [check them out](https://jlik.me/cly) today.
+If you haven’t already tapped into the power of Logic Apps, I encourage you to [check them out](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-overview?WT.mc_id=logicapp-blog-jeliknes&utm_source=jeliknes&utm_medium=blog&utm_campaign=logicapp) today.
 
 Until next time,
 

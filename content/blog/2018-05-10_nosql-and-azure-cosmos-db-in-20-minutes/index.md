@@ -56,7 +56,7 @@ A few other blog posts you may want to explore:
 
 {{<relativelink "/blog/2017-10-10_expanding-azure-functions-to-the-cosmos">}}
 
-Ready to get started? You can [click here](https://jlik.me/dhi) to get started with the full Azure Cosmos DB documentation.
+Ready to get started? You can [click here](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=build2018-blog-jeliknes) to get started with the full Azure Cosmos DB documentation.
 
 Regards,
 

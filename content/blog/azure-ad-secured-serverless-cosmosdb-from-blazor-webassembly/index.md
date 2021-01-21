@@ -34,9 +34,9 @@ images:
  - "/blog/azure-ad-secured-serverless-cosmosdb-from-blazor-webassembly/images/userimpersonation.jpg"
  - "/blog/azure-ad-secured-serverless-cosmosdb-from-blazor-webassembly/images/requestpermission.jpg"
 ---
-A [Blazor 🔥 WebAssembly 🕸 app](https://jlik.me/hxm) can be deployed as a set of static website assets and hosted on any server that publishes static files. As a browser application, it is capable of making calls to HTTP API endpoints. As a Single Page Application (SPA) it can render new pages dynamically from the data. Because it supports [.NET Standard](https://jlik.me/hxn), it is possible to load NuGet packages that target .NET Standard, including the [Cosmos DB 🌍 SDK](https://jlik.me/hxo). This makes it possible to connect to the [Azure Cosmos DB SQL API](https://jlik.me/hxp) backend directly. There is one major challenge: how can you connect securely without storing credentials in the client and hosting your own identity service?
+A [Blazor 🔥 WebAssembly 🕸 app](https://docs.microsoft.com/en-us/aspnet/core/blazor/hosting-models?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes&view=aspnetcore-5.0#blazor-webassembly) can be deployed as a set of static website assets and hosted on any server that publishes static files. As a browser application, it is capable of making calls to HTTP API endpoints. As a Single Page Application (SPA) it can render new pages dynamically from the data. Because it supports [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes), it is possible to load NuGet packages that target .NET Standard, including the [Cosmos DB 🌍 SDK](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-sdk-dotnet?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes). This makes it possible to connect to the [Azure Cosmos DB SQL API](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-query-getting-started?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes) backend directly. There is one major challenge: how can you connect securely without storing credentials in the client and hosting your own identity service?
 
-The solution is to use [Azure Active Directory](https://jlik.me/hxq) for authentication and communicate securely with a serverless [Azure Function](https://jlik.me/hxr). The function app uses securely stored master credentials to connect to Cosmos DB and generate an ephemeral token that grants limited access to a specific user for up to five hours. The client app then connects directly to Cosmos DB using the provided token.
+The solution is to use [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes) for authentication and communicate securely with a serverless [Azure Function](https://docs.microsoft.com/en-us/azure/azure-functions/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes). The function app uses securely stored master credentials to connect to Cosmos DB and generate an ephemeral token that grants limited access to a specific user for up to five hours. The client app then connects directly to Cosmos DB using the provided token.
 
 The repository for this solution is at:
 
@@ -46,13 +46,13 @@ The app requires some initial configuration that is explained in this blog post.
 
 ## Blazor WebAssembly and Authentication
 
-The first step is to setup authentication in the Blazor WebAssembly app. I'm no Azure AD expert, so it was extremely helpful to find dedicated documentation on [how to use Blazor WebAssembly with Azure AD](https://jlik.me/hxs).
+The first step is to setup authentication in the Blazor WebAssembly app. I'm no Azure AD expert, so it was extremely helpful to find dedicated documentation on [how to use Blazor WebAssembly with Azure AD](https://docs.microsoft.com/en-us/aspnet/core/blazor/security/webassembly/standalone-with-azure-active-directory?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes&view=aspnetcore-5.0).
 
 > Special thanks to [Javier Calvarro Nelson](https://github.com/javiercn) for investing his time to provide guidance for me to properly configure the solution.
 
 I'll summarize the high-level steps:
 
-1. Register your application in the Azure Active Directory [App Registrations](https://jlik.me/hxt). This enables your application to authenticate the user against Azure AD and to make requests on behalf of the user using their identity and credentials.
+1. Register your application in the Azure Active Directory [App Registrations](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes). This enables your application to authenticate the user against Azure AD and to make requests on behalf of the user using their identity and credentials.
 2. Be sure to note two important components of the app registration: the _tenant_ (or _directory_) the registration is a part of (this is like the zip code of the Azure AD authentication service) and the _client_ id that uniquely identifies your app (like a postal address).
 3. Generate the Blazor WebAssembly app using the built-in Azure AD template:
    ```text
@@ -73,13 +73,13 @@ This information is stored as part of the client app and is "in the clear" meani
 
 ![Azure AD Login Process](/blog/azure-ad-secured-serverless-cosmosdb-from-blazor-webassembly/images/blazorazuread.jpg)
 
-Now you have a secure Blazor client. You can use the `[Authorize]` attribute on any [Razor component](https://jlik.me/hxu) to prevent access by unauthorized users. I'll show you that later in this post.
+Now you have a secure Blazor client. You can use the `[Authorize]` attribute on any [Razor component](https://docs.microsoft.com/en-us/aspnet/core/blazor/components/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes&view=aspnetcore-5.0) to prevent access by unauthorized users. I'll show you that later in this post.
 
 ## Secure Azure Functions with Azure AD
 
-The next step is to create a secure connection to Azure Functions <⚡>. The functions app will communicate with Cosmos DB 🌍 to retrieve a token, so you don't want just anybody accessing it. You can start with the existing `CosmosAuthentication` app and publish it to Azure. If you're not familiar with the process, it is documented here: [Develop Azure Functions using Visual Studio: Publish to Azure](https://jlik.me/hxv). The functions application is not yet secured. However, the code checks for an authenticated user and will fail by returning a `401 Unauthorized` HTTP status code.
+The next step is to create a secure connection to Azure Functions <⚡>. The functions app will communicate with Cosmos DB 🌍 to retrieve a token, so you don't want just anybody accessing it. You can start with the existing `CosmosAuthentication` app and publish it to Azure. If you're not familiar with the process, it is documented here: [Develop Azure Functions using Visual Studio: Publish to Azure](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes#publish-to-azure). The functions application is not yet secured. However, the code checks for an authenticated user and will fail by returning a `401 Unauthorized` HTTP status code.
 
-Follow the steps in this document to secure your functions app: [Secure an Azure Functions App with Azure AD: Express Setup](https://jlik.me/hxw). I used the express option and created a new app registration. I chose the option to "Allow anonymous requests (no action)" because the code itself validates the identity of the connected user and the API is not intended to be accessed manually. The express setup will automatically create an application registration for the function app.
+Follow the steps in this document to secure your functions app: [Secure an Azure Functions App with Azure AD: Express Setup](https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad?toc=/azure/azure-functions/toc.json&utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes#-configure-with-express-settings). I used the express option and created a new app registration. I chose the option to "Allow anonymous requests (no action)" because the code itself validates the identity of the connected user and the API is not intended to be accessed manually. The express setup will automatically create an application registration for the function app.
 
 There is some additional configuration to perform. In the Azure Portal, navigate to "Azure Active Directory" then "App registrations" and finally open the registration for your _functions app_ (not your Blazor WebAssembly client). Open "Authentication" and make sure that "Implicit grant" for "ID tokens" is set.
 
@@ -267,7 +267,7 @@ public async Task<IActionResult> Run(
 }
 ```
 
-Notice that I include `ClaimsPrincipal` in the parameters and Azure Functions automatically passes in the principal associated with the request, if one exists. The log messages are how I confirmed the token authentication was working. It's not useful yet because we don't have a token, but we can at least get the user's unique `NameIdentifier` claim. To grab the token, I created a `CosmosClientWrapper` that is injected into the function class. If you're not familiar with how to setup dependency injection in Azure Functions, read: [Use Dependency Injection in Azure Functions](https://jlik.me/hxx).
+Notice that I include `ClaimsPrincipal` in the parameters and Azure Functions automatically passes in the principal associated with the request, if one exists. The log messages are how I confirmed the token authentication was working. It's not useful yet because we don't have a token, but we can at least get the user's unique `NameIdentifier` claim. To grab the token, I created a `CosmosClientWrapper` that is injected into the function class. If you're not familiar with how to setup dependency injection in Azure Functions, read: [Use Dependency Injection in Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-dotnet-dependency-injection?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes).
 
 The client wrapper uses dependency injection to grab the configuration. It expects a configuration string named "CosmosConnection." Be sure to set that up in the `ConnectionStrings` portion of your configuration, whether in your local JSON settings or in the actual application's app settings. This connection string uses the master key so it can manipulate permissions.
 
@@ -287,7 +287,7 @@ public CosmosClientWrapper(
 
 ## Cosmos DB Users and Permissions
 
-Cosmos DB only supports Azure AD for the "control plane" or administration of the Cosmos DB account in the portal or using the command line interface. The "data plane" (what we're interested in) requires [master keys or resource tokens](https://jlik.me/hxy). This is why we use an Azure Function to "broker" the transaction and securely retrieve a token for the user. You can read more about Cosmos DB permissions in the previously linked article, but here is a brief summary:
+Cosmos DB only supports Azure AD for the "control plane" or administration of the Cosmos DB account in the portal or using the command line interface. The "data plane" (what we're interested in) requires [master keys or resource tokens](https://docs.microsoft.com/en-us/azure/cosmos-db/secure-access-to-data?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes). This is why we use an Azure Function to "broker" the transaction and securely retrieve a token for the user. You can read more about Cosmos DB permissions in the previously linked article, but here is a brief summary:
 
 * Create a named user that is scoped to the database.
 * Apply a named permission that specifies if the user can update or only read data, what container they have access to, and optionally a partition key for multi-tenant solutions.
@@ -362,7 +362,7 @@ The function app assumes that you already created a database named "myblogs". Th
 
 ## Set up the Database
 
-At this stage, you have everything you need to access Cosmos DB using a resource token. I use [Entity Framework Core](https://jlik.me/hxz) in this example to be consistent with my [previous blog post](/blog/ef-core-and-cosmosdb-with-blazor-webassembly/) that uses an ASP.NET Core hosted solution. That blog post explains the rationale for using EF Core and how the data model is setup.
+At this stage, you have everything you need to access Cosmos DB using a resource token. I use [Entity Framework Core](https://docs.microsoft.com/en-us/ef/?utm_source=jeliknes&utm_medium=blog&utm_campaign=blazorcosmosfunc&WT.mc_id=blazorcosmosfunc-blog-jeliknes) in this example to be consistent with my [previous blog post](/blog/ef-core-and-cosmosdb-with-blazor-webassembly/) that uses an ASP.NET Core hosted solution. That blog post explains the rationale for using EF Core and how the data model is setup.
 
 To create the database for the first time and seed some data, update the `SeedData` class in the `BlogData` project with the blogs and posts you want to start with, and call it from a console application. You'll need to modify the example to pass in a `DbContextOptionsBuilder` that configures the Cosmos DB connection string using the master keys. Install the EF Core Cosmos Provider then upgrade the referenced Cosmos DB SDK to version 3.9.1 or later by adding an explicit NuGet package reference.
 

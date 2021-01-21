@@ -40,7 +40,7 @@ aliases:
     - "/create-a-serverless-angular-app-with-azure-functions-and-blob-storage-20164c083c88"
 ---
 
-As DevOps continues to blur the lines between traditional IT operations and development, platforms and tools are rapidly evolving to embrace the new paradigm. While the use of containers explodes throughout global enterprises, another technology has been rapidly gaining momentum. On Amazon AWS it’s referred to as [AWS Lambda](https://aws.amazon.com/lambda/), on Azure it’s name is [Azure Functions](https://jlik.me/f4a) and in the Node.js world a popular option is [webtask.io](https://webtask.io/).
+As DevOps continues to blur the lines between traditional IT operations and development, platforms and tools are rapidly evolving to embrace the new paradigm. While the use of containers explodes throughout global enterprises, another technology has been rapidly gaining momentum. On Amazon AWS it’s referred to as [AWS Lambda](https://aws.amazon.com/lambda/), on Azure it’s name is [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) and in the Node.js world a popular option is [webtask.io](https://webtask.io/).
 
 > Read my new series about [Angular with .NET](/series/angular-and-.net-core/) that includes the new static website hosting from blob storage that doesn’t require a full path to launch the app!
 
@@ -285,13 +285,13 @@ You can either navigate to the container URL you saved earlier or click on index
 
 Eureka!
 
-At this point you should have a working application. If you want to host this for production and give it a more user-friendly name, you can use a CNAME entry in DNS to [point a custom domain name](https://jlik.me/f4b) to blob storage.
+At this point you should have a working application. If you want to host this for production and give it a more user-friendly name, you can use a CNAME entry in DNS to [point a custom domain name](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) to blob storage.
 
 Of course, this demonstration only scratched the surface of what is possible. You can build authentication and authorization into Azure Functions, securely store secrets like database credentials, trigger functions based on resource changes (such as running one when a SQL table is updated or a file is uploaded into blob storage) and much more.
 
 In just minutes developers can now provision a highly elastic, scalable, and resilient web application without having to worry about how it is load-balanced. Your boss will give you extra points for saving cash because the functions and blobs are charged based on usage — no more ongoing costs to keep a VM running when it isn’t being used. All of these resources support deployment from a continuous deployment pipeline and in Azure you can create an automation script to generate a template for building out multiple environments like Dev, QA, Staging, and Production.
 
-Intrigued? [Learn more about Azure Functions here](https://jlik.me/f4c).
+Intrigued? [Learn more about Azure Functions here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes).
 
 Enjoy your new super powers!
 

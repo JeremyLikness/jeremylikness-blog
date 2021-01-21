@@ -32,17 +32,17 @@ aliases:
     - "/what-the-shard-cc29623503ad"
 ---
 
-Azure Cosmos DB is a fully managed NoSQL database. I’ve written about it extensively [on this blog](/tags/cosmosdb). An advanced and powerful feature is the ability to partition data. This is commonly referred to as _sharding_. Azure Cosmos DB manages this for you when you follow these [prerequisites for partitioning](https://jlik.me/dx8).
+Azure Cosmos DB is a fully managed NoSQL database. I’ve written about it extensively [on this blog](/tags/cosmosdb). An advanced and powerful feature is the ability to partition data. This is commonly referred to as _sharding_. Azure Cosmos DB manages this for you when you follow these [prerequisites for partitioning](https://docs.microsoft.com/en-us/azure/cosmos-db/partitioning-overview?utm_source=jeliknes&utm_medium=medium&utm_campaign=blog&WT.mc_id=blog-medium-jeliknes#prerequisites).
 
 I won’t go into too much detail about partitioning here because it’s well-explained in the documentation. In a nutshell, a logical partition is a range of items that are grouped together. This is determined by a property on the documents that may be either hashed or specified as a range. Logically, items with the same partition key are kept together. Physically, a node may store one to many partitions or shards. This is handled transparently for you by Azure Cosmos DB based on demand.
 
-> Read everything there is to know about partitioning here: [Partitioning and scale in Azure Cosmos DB](https://jlik.me/dx5)
+> Read everything there is to know about partitioning here: [Partitioning and scale in Azure Cosmos DB](https://docs.microsoft.com/en-us/azure/cosmos-db/partitioning-overview?utm_source=jeliknes&utm_medium=medium&utm_campaign=blog&WT.mc_id=blog-medium-jeliknes)
 
 Partition keys help with scale, especially when your database is geographically distributed. This is because when items are inserted or updated, replication can focus on that specific partition rather than the entire database. Reads can also be optimized by co-locating partitions for those reads. The replication behavior is optimized by setting a specific [consistency level](/cloud-nosql-azure-cosmosdb-consistency-levels-cfe8348686e6).
 
 Although the documentation discusses how partitioning works across various APIs (for an overview of the different APIs and database “flavors” that are available, read this [overview of Azure Cosmos DB APIs](/getting-started-with-cosmosdb-sql-api-da52719f30de)), there wasn’t an explicit example of how to set the partition key through code.
 
-I started with my existing <i class="fab fa-github"></i> [USDA Database example](https://github.com/JeremyLikness/explore-cosmos-db). This contains almost 9,000 food items that are assigned to a particular “food group.” There are many [best practices for choosing a partition key](https://jlik.me/dx6). To keep this example simple, I chose to partition on the `FoodGroupId `property.
+I started with my existing <i class="fab fa-github"></i> [USDA Database example](https://github.com/JeremyLikness/explore-cosmos-db). This contains almost 9,000 food items that are assigned to a particular “food group.” There are many [best practices for choosing a partition key](https://docs.microsoft.com/en-us/azure/cosmos-db/partitioning-overview?utm_source=jeliknes&utm_medium=medium&utm_campaign=blog&WT.mc_id=blog-medium-jeliknes#best-practices-when-choosing-a-partition-key). To keep this example simple, I chose to partition on the `FoodGroupId `property.
 
 The code to create a collection in MongoDB looks like this:
 
@@ -102,7 +102,7 @@ The increase is not as dramatic for megabytes of data but would be more evident 
 
 If you are moving to Azure Cosmos DB from MongoDB or simply interested in using the MongoDB API, you now know how to take advantage of partition keys for replication at scale with Azure Cosmos DB. The concept is similar for other APIs but the implementations vary.
 
-Ready to get started with the MongoDB API? Read the [introduction to Azure Cosmos DB with the MongoDB API](https://jlik.me/dx7).
+Ready to get started with the MongoDB API? Read the [introduction to Azure Cosmos DB with the MongoDB API](https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-introduction?utm_source=jeliknes&utm_medium=medium&utm_campaign=blog&WT.mc_id=blog-medium-jeliknes).
 
 Regards,
 

@@ -77,13 +77,13 @@ I finished by covering Application Insights and how rich the metrics and analyti
 
 The deck contains several links for further reading. I have them summarized here:
 
-* [Learn more about triggers and bindings](https://jlik.me/cl7)
-* [Learn about proxies in Azure Functions](https://jlik.me/cl8)
-* [Azure Functions documentation](https://jlik.me/cl9)
-* [An Azure Functions real-world demo: Link Shortener](https://jlik.me/cma)
-* [Video: migrate an ASP. NET on premises app with SQL Server to a completely PaaS and serverless application in Azure](https://jlik.me/cmb)
-* [Logic Apps documentation](https://jlik.me/cmc)
-* [Real world Logic Apps example: social media analytics with Twitter](https://jlik.me/cmd)
+* [Learn more about triggers and bindings](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?utm_source=jeliknes&utm_medium=presentation&utm_campaign=serverless&WT.mc_id=serverless-presentation-jeliknes)
+* [Learn about proxies in Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-proxies?utm_source=jeliknes&utm_medium=presentation&utm_campaign=serverless&WT.mc_id=serverless-presentation-jeliknes)
+* [Azure Functions documentation](https://docs.microsoft.com/en-us/azure/azure-functions/?utm_source=jeliknes&utm_medium=presentation&utm_campaign=serverless&WT.mc_id=serverless-presentation-jeliknes)
+* [An Azure Functions real-world demo: Link Shortener](https://blog.jeremylikness.com/build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte-8c094bb1df2c?WT.mc_id=serverless-presentation-jeliknes)
+* [Video: migrate an ASP. NET on premises app with SQL Server to a completely PaaS and serverless application in Azure](https://channel9.msdn.com/Events/Connect/2017/E102?utm_source=jeliknes&utm_medium=presentation&utm_campaign=serverless&WT.mc_id=serverless-presentation-jeliknes)
+* [Logic Apps documentation](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-overview?utm_source=jeliknes&utm_medium=presentation&utm_campaign=serverless&WT.mc_id=serverless-presentation-jeliknes)
+* [Real world Logic Apps example: social media analytics with Twitter](https://blog.jeremylikness.com/serverless-twitter-analytics-with-cosmosdb-and-logic-apps-280e5ff6c948?WT.mc_id=serverless-presentation-jeliknes)
 
 Overall, I received positive feedback.
 

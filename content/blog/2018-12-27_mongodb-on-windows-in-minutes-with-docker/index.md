@@ -28,7 +28,7 @@ aliases:
     - "/mongodb-on-windows-in-minutes-with-docker-3e412f076762"
 ---
 
-Recently, I was working on a demo for an upcoming series of talks that required a (preferably local) instance of [MongoDB](https://www.mongodb.com/). If you aren’t familiar with MongoDB, it’s a very popular and mature document database. The API for MongoDB is supported by [Azure Cosmos DB](https://jlik.me/evo) and the demo illustrates how to migrate from a local instance of MongoDB for development purposes to a cloud-based production instance of Cosmos DB. There was just one catch: I had no desire to install MongoDB on my Windows 10 machine!
+Recently, I was working on a demo for an upcoming series of talks that required a (preferably local) instance of [MongoDB](https://www.mongodb.com/). If you aren’t familiar with MongoDB, it’s a very popular and mature document database. The API for MongoDB is supported by [Azure Cosmos DB](https://azure.microsoft.com/en-us/services/cosmos-db/?utm_source=jeliknes&utm_medium=blog&utm_campaign=medium&WT.mc_id=medium-blog-jeliknes) and the demo illustrates how to migrate from a local instance of MongoDB for development purposes to a cloud-based production instance of Cosmos DB. There was just one catch: I had no desire to install MongoDB on my Windows 10 machine!
 
 > **Note**: although I’m focusing on Windows-based steps, the same steps should work fine on macOS and Linux.
 

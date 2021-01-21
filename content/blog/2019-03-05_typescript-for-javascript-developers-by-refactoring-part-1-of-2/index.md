@@ -57,8 +57,8 @@ The TypeScript configuration is updated to turn off the requirement for strict t
 
 {{<youtube 1GJy74OwOzc>}}
 
-🔗 [Learn more about the] (https://jlik.me/e63)`[tsconfig.json](https://jlik.me/e63)` [file](https://jlik.me/e63)  
-🔗 [Learn more about “rest parameters”](https://jlik.me/e64)
+🔗 [Learn more about the](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html?WT.mc_id=tsforjs-blog-jeliknes)`[tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html?WT.mc_id=tsforjs-blog-jeliknes)` [file](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html?WT.mc_id=tsforjs-blog-jeliknes)  
+🔗 [Learn more about “rest parameters”](https://www.typescriptlang.org/docs/handbook/functions.html?WT.mc_id=tsforjs-blog-jeliknes#rest-parameters)
 
 ## 3. Classes and Types
 
@@ -66,8 +66,8 @@ A major benefit of using TypeScript, as you may be able to guess from the name, 
 
 {{<youtube WXbOjEkoPDA>}}
 
-🔗 [Learn more about basic types](https://jlik.me/e65)  
-🔗 [Learn more about classes](https://jlik.me/e66)
+🔗 [Learn more about basic types](https://www.typescriptlang.org/docs/handbook/basic-types.html?WT.mc_id=tsforjs-blog-jeliknes)  
+🔗 [Learn more about classes](https://www.typescriptlang.org/docs/handbook/classes.html?WT.mc_id=tsforjs-blog-jeliknes)
 
 ## 4. Custom Types
 
@@ -75,7 +75,7 @@ The class refactoring revealed a property that wasn’t named consistently. This
 
 {{<youtube 0wpWbEKUge8>}}
 
-🔗 [Learn more about custom types](https://jlik.me/e67)
+🔗 [Learn more about custom types](https://www.typescriptlang.org/docs/handbook/advanced-types.html?WT.mc_id=tsforjs-blog-jeliknes)
 
 ## 5. Scope and the “let” Keyword
 
@@ -83,7 +83,7 @@ A bug has surfaced due to the way variables are captured in scope in JavaScript.
 
 {{<youtube gXZq-CzzPo0>}}
 
-🔗 [Learn more about let declarations](https://jlik.me/e9e)
+🔗 [Learn more about let declarations](https://www.typescriptlang.org/docs/handbook/variable-declarations.html?WT.mc_id=tsforjs-blog-jeliknes#let-declarations)
 
 ## 6. Lambda Expressions
 
@@ -91,7 +91,7 @@ Anyone familiar with JavaScript has encountered the issue of understanding exact
 
 {{<youtube 8boMVNdXXkU>}}
 
-🔗 [Learn more about “this” and arrow functions](https://jlik.me/fa9)
+🔗 [Learn more about “this” and arrow functions](https://www.typescriptlang.org/docs/handbook/functions.html?utm_source=jeliknes&utm_medium=blog&utm_campaign=tsforjs&WT.mc_id=tsforjs-blog-jeliknes#this-and-arrow-functions)
 
 ## 7. String Templates
 
@@ -99,7 +99,7 @@ In TypeScript, as with modern JavaScript, you can use string templates for inter
 
 {{<youtube 2VTJO8YP6fM>}}
 
-🔗 [Learn more about string templates](https://jlik.me/fbf)
+🔗 [Learn more about string templates](https://www.typescriptlang.org/docs/handbook/basic-types.html?utm_source=jeliknes&utm_medium=blog&utm_campaign=tsforjs&WT.mc_id=tsforjs-blog-jeliknes#string)
 
 ## 8. Generic Types
 
@@ -107,7 +107,7 @@ Generics, or “generic types” are a development/compile-time feature that I l
 
 {{<youtube R4gkIzZitOE>}}
 
-🔗 [Learn more about generics](https://jlik.me/fcd)
+🔗 [Learn more about generics](http://www.typescriptlang.org/docs/handbook/generics.html?utm_source=jeliknes&utm_medium=blog&utm_campaign=tsforjs&WT.mc_id=tsforjs-blog-jeliknes)
 
 ## 9. Custom Types with Generics
 

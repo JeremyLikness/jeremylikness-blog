@@ -45,9 +45,9 @@ If you’re not familiar with WebAssembly, take a minute to read this high-level
 
 WebAssembly, or Wasm for short, is so powerful that teams of developers were able to port the entire .NET framework to run on it! This means that many existing .NET libraries can run “as is” with DLLs that are loaded directly into your browser. It also means that if you want to write applications for the browser, JavaScript and TypeScript are no longer the only language options available. You can create fully functional Single Page Applications (SPA) in C#!
 
-All of this is made possible with [Blazor](https://jlik.me/fow), a framework for SPA apps built on top of .NET over WebAssembly. There are two parts to the presentation. First, you can download the deck [here](https://jlik.me/fox).
+All of this is made possible with [Blazor](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0&utm_source=jeliknes&utm_medium=blog&utm_campaign=medium&WT.mc_id=medium-blog-jeliknes&viewFallbackFrom=aspnetcore-3.0), a framework for SPA apps built on top of .NET over WebAssembly. There are two parts to the presentation. First, you can download the deck [here](https://jlikme.blob.core.windows.net/presentations/Likness-WebAssembly-CodeStock.pptx?utm_source=jeliknes&utm_medium=blog&utm_campaign=medium&WT.mc_id=medium-blog-jeliknes).
 
-[![Main slide of presentation deck](/blog/2019-04-16_presentation-webassembly-c-sharp-and-blazor-at-codestock-2019/images/2.png)](https://jlik.me/fox)
+![Main slide of presentation deck](/blog/2019-04-16_presentation-webassembly-c-sharp-and-blazor-at-codestock-2019/images/2.png)
 
 Second, I built a GitHub repository with several demos. It includes a set of step-by-step instructions. You are welcome to fork the repository and walk through on your own or use these demos in your own presentations.
 

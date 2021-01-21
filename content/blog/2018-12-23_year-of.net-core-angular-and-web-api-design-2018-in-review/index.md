@@ -75,7 +75,7 @@ We ended up in an amazing new home. Here’s a view of Mt. Rainier from our fron
 Although I didn’t set them as goals, I had three other key accomplishments:
 
 * Gave my first 🗝 keynote at the Atlanta Code Camp
-* Authored a short [serverless eBook](https://jlik.me/duy)
+* Authored a short [serverless eBook](https://docs.microsoft.com/en-us/dotnet/architecture/serverless/)
 * Gave away my daughter to be married 👰🏻
 
 Wow! What a year.

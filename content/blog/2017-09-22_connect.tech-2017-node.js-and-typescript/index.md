@@ -48,7 +48,7 @@ The segments include:
 
 Be sure to check the option to enable access to local files so you can simply double-click on the file to read it.
 
-Learn more about: [Azure for Node.js](https://jlik.me/bgc).
+Learn more about: [Azure for Node.js](https://docs.microsoft.com/en-us/azure/developer/javascript/?view=azure-node-latest&utm_source=jeliknes&utm_medium=presentation&utm_campaign=connecttech2017&WT.mc_id=connecttech2017-presentation-jeliknes&viewFallbackFrom=azure-node-2.0.0).
 
 ## TypeScript for Node.js
 

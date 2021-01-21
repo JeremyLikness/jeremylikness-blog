@@ -42,7 +42,7 @@ For the second approach, you generate a project that integrates Angular and .NET
 * You still retain full control of the Angular app using the Angular CLI (including being able to run `ng update` in the `ClientApp` folder)
 * Source maps are automatically generated for you to debug TypeScript from the browser
 * Client code is auto-recompiled for live development
-* The production build automatically leverages the [Ahead of Time (AoT) compiler](https://jlik.me/d83)
+* The production build automatically leverages the [Ahead of Time (AoT) compiler](https://angular.io/guide/aot-compiler?utm_source=jeliknes&utm_medium=blog&utm_campaign=medium&WT.mc_id=medium-blog-jeliknes)
 * You can deploy everything in one step
 * There is support for server-side rendering (SSR) — but we’ll cover that in the next section
 
@@ -57,7 +57,7 @@ The template produces a fully functional app that fetches data from the server a
 ![Standard template for Angular and .NET Core integration](/blog/2018-09-11_angular.net-core-2.1-template-part-two/images/1.png)
 <figcaption>Standard template for Angular and .NET Core integration</figcaption>
 
-You can debug the app directly from Visual Studio. If you are using Visual Studio Code, [create a debug profile](https://jlik.me/d86), install the [Chrome debugger](https://jlikme/d87), and populate `launch.json` with the following:
+You can debug the app directly from Visual Studio. If you are using Visual Studio Code, [create a debug profile](https://code.visualstudio.com/Docs/editor/debugging?utm_source=jeliknes&utm_medium=blog&utm_campaign=medium&WT.mc_id=medium-blog-jeliknes), install the [Chrome debugger](https://jlikme/d87), and populate `launch.json` with the following:
 
 {{<highlight JSON>}}
 {
@@ -115,7 +115,7 @@ You can debug the app directly from Visual Studio. If you are using Visual Studi
 
 This creates two profiles, one for the browser and one for the back-end. You can choose the combined “ASP.NET Core and Browser” profile to set breakpoints in the TypeScript and C# source and debug seamlessly between the client and server. Now that you’re up and running, in the next article you’ll see how to [pre-render pages using server-side rendering (SSR)](/server-side-rendering-ssr-with-angular-in-net-core-2-1-part-three-481cb42d1ed2).
 
-[**Learn more about using the Angular template with .NET Core**](https://jlik.me/edj)**.**
+[**Learn more about using the Angular template with .NET Core**](https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/angular?view=aspnetcore-2.1&tabs=visual-studio&utm_source=jeliknes&utm_medium=blog&utm_campaign=medium&WT.mc_id=medium-blog-jeliknes)**.**
 
 Regards,
 

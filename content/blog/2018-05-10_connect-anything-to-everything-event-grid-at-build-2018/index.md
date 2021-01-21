@@ -46,7 +46,7 @@ Here is the full video of the session:
 
 {{<customtwitter 993994059378184193>}}
 
-Interested in learning more? Click to [get started with Event Grid](https://jlik.me/dhe).
+Interested in learning more? Click to [get started with Event Grid](https://docs.microsoft.com/en-us/azure/event-grid/?WT.mc_id=build2018-blog-jeliknes).
 
 Regards,
 

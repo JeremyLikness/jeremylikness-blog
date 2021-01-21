@@ -30,17 +30,17 @@ aliases:
     - "/migrating-azure-functions-from-v1-net-to-v2-net-standard-b2d724f9faf"
 ---
 
-On September 18th, 2017 I [committed the first version](https://github.com/JeremyLikness/jlik.me/commit/6b026f4e00321b19c513cb4e655f9ed8e2e54b32) of my serverless link shortener app to GitHub. The ⚡ [serverless app](https://jlik.me/e16) allows me to tag links with short URLs that I share in tweets, blog posts, presentations, and other media. A user clicks on the link and is redirected to the target site, then I collect rudimentary data such as the referring URL (if it’s available) and the user agent information to parse the browser and platform being used. This feeds into an [Azure Cosmos DB database](https://jlik.me/e19) that [I analyze with Power BI](https://jlik.me/e17) to determine what topics and links are popular (or not). I also have a [Logic App](https://jlik.me/e2a) that runs to [parse additional metadata from Twitter-sourced referrals](https://jlik.me/e18).
+On September 18th, 2017 I [committed the first version](https://github.com/JeremyLikness/jlik.me/commit/6b026f4e00321b19c513cb4e655f9ed8e2e54b32) of my serverless link shortener app to GitHub. The ⚡ [serverless app](https://blog.jeremylikness.com/build-a-serverless-link-shortener-with-analytics-faster-than-finishing-your-latte-8c094bb1df2c?WT.mc_id=medium-blog-jeliknes) allows me to tag links with short URLs that I share in tweets, blog posts, presentations, and other media. A user clicks on the link and is redirected to the target site, then I collect rudimentary data such as the referring URL (if it’s available) and the user agent information to parse the browser and platform being used. This feeds into an [Azure Cosmos DB database](https://docs.microsoft.com/en-us/azure/cosmos-db/introduction?WT.mc_id=medium-blog-jeliknes) that [I analyze with Power BI](https://blog.jeremylikness.com/exploring-cosmosdb-with-powerbi-9192317087d8?WT.mc_id=medium-blog-jeliknes) to determine what topics and links are popular (or not). I also have a [Logic App](https://docs.microsoft.com/en-us/azure/logic-apps/?WT.mc_id=medium-blog-jeliknes) that runs to [parse additional metadata from Twitter-sourced referrals](https://blog.jeremylikness.com/serverless-twitter-analytics-with-cosmosdb-and-logic-apps-280e5ff6c948?WT.mc_id=medium-blog-jeliknes).
 
 The overall architecture looks like this, using serverless functions, table storage, queues, a NoSQL database and cloud-based integrations to Twitter:
 
 {{<figure src="/blog/2019-02-13_migrating-azure-functions-from-v1-.net-to-v2-.net-standard/images/1.png" caption="Link Shortener Application" alt="Chart showing components of application">}}
 
-I wrote extensively about the process and published all of the code to GitHub, so you can follow the links in the previous paragraph if you want to learn more of the background story. At the time I built the [Azure Functions](https://jlik.me/e2b) portions of the app, the production version was v1 and used the .NET Framework. As of this writing, the production version is v2 and uses .NET Core and .NET Standard libraries. To take advantage of all the updates rolling into the latest version and keep current, I chose to migrate my functions to the latest version.
+I wrote extensively about the process and published all of the code to GitHub, so you can follow the links in the previous paragraph if you want to learn more of the background story. At the time I built the [Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/?WT.mc_id=medium-blog-jeliknes) portions of the app, the production version was v1 and used the .NET Framework. As of this writing, the production version is v2 and uses .NET Core and .NET Standard libraries. To take advantage of all the updates rolling into the latest version and keep current, I chose to migrate my functions to the latest version.
 
 ## Background
 
-The original functions engine hosted .NET applications. Due to numerous reasons, including compatibility and performance, the second version hosts .NET Core applications (the functions app is essentially a [.NET Standard 2.0](https://jlik.me/e48) class but implemented as .NET Core app). To keep current and take advantage of the latest updates, I decided to migrate my application to .NET Core. The path I chose to follow was:
+The original functions engine hosted .NET applications. Due to numerous reasons, including compatibility and performance, the second version hosts .NET Core applications (the functions app is essentially a [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard?utm_source=jeliknes&utm_medium=blog&utm_campaign=medium&WT.mc_id=medium-blog-jeliknes) class but implemented as .NET Core app). To keep current and take advantage of the latest updates, I decided to migrate my application to .NET Core. The path I chose to follow was:
 
 1. Create a .NET Core Azure Functions v2 project
 2. Migrate existing business classes over
@@ -159,7 +159,7 @@ I also track some custom telemetry with application insights, so I brought in th
 
 ## Migrating Proxies
 
-[Proxies](https://jlik.me/e49) are another great feature of Azure Functions. They provide the ability to modify incoming requests and responses and route public APIs to internal endpoints that may be different. In v1, my proxies definition looked like this:
+[Proxies](https://docs.microsoft.com/en-us/azure/azure-functions/functions-proxies?utm_source=jeliknes&utm_medium=blog&utm_campaign=medium&WT.mc_id=medium-blog-jeliknes) are another great feature of Azure Functions. They provide the ability to modify incoming requests and responses and route public APIs to internal endpoints that may be different. In v1, my proxies definition looked like this:
 
 {{<highlight JSON>}}
 {
@@ -245,7 +245,7 @@ The functionality was very limited. Here’s a snapshot of stats gathered with t
 
 {{<figure src="/blog/2019-02-13_migrating-azure-functions-from-v1-.net-to-v2-.net-standard/images/2.png" alt="Image of a pie chart" caption="v1 Browser Data">}}
 
-The “browser capabilities” functionality doesn’t exist out of the box in .NET Core, so I did some research and landed on the [UA Parser](https://jlik.me/e5a) project. It contains some advanced logic to generically parse user agent strings and can be augmented with a set of configuration files that contain metadata about known agents. I have no desire to keep up with the latest files, so I chose to go with the basic metadata. This is a great aspect of Azure Functions: the ability to integrate third-party packages. The logic changed to this:
+The “browser capabilities” functionality doesn’t exist out of the box in .NET Core, so I did some research and landed on the [UA Parser](https://github.com/tobie/ua-parser?utm_source=jeliknes&utm_medium=blog&utm_campaign=medium&WT.mc_id=medium-blog-jeliknes) project. It contains some advanced logic to generically parse user agent strings and can be augmented with a set of configuration files that contain metadata about known agents. I have no desire to keep up with the latest files, so I chose to go with the basic metadata. This is a great aspect of Azure Functions: the ability to integrate third-party packages. The logic changed to this:
 
 {{<highlight CSharp>}}
 var parser = UAParser.Parser.GetDefault();
@@ -292,7 +292,7 @@ I am still figuring out what information I can collect and how to instrument it,
 
 ## Testing
 
-Many people focus on the “serverless” aspect of Azure Functions, without recognizing it is a cross-platform engine that can run on Windows, Linux, or macOS machines and even execute from within containers. This makes it incredibly easy to test. I was able to test all endpoints using the [Azure Storage Emulator](https://jlik.me/e5b). I could have installed an emulator for Cosmos DB as well, but it was just as easy to create a test instance of the database and update my local connection string to test the analytics metadata. I was even able to test proxies locally prior to deploying.
+Many people focus on the “serverless” aspect of Azure Functions, without recognizing it is a cross-platform engine that can run on Windows, Linux, or macOS machines and even execute from within containers. This makes it incredibly easy to test. I was able to test all endpoints using the [Azure Storage Emulator](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-emulator?utm_source=jeliknes&utm_medium=blog&utm_campaign=medium&WT.mc_id=medium-blog-jeliknes). I could have installed an emulator for Cosmos DB as well, but it was just as easy to create a test instance of the database and update my local connection string to test the analytics metadata. I was even able to test proxies locally prior to deploying.
 
 ## Deploying
 
@@ -311,7 +311,7 @@ The following snapshot is from an hour of activity. The “failed” indicator y
 
 As you can see, performance is great across the board. Do you have a v1 functions app you are considering migrating? Have you already gone through the process? I would love to hear your thoughts and feedback in the comments below!
 
-💡 For a complete list of considerations when migrating to v2, read the [breaking changes notice](https://jlik.me/e5c)
+💡 For a complete list of considerations when migrating to v2, read the [breaking changes notice](https://github.com/Azure/app-service-announcements/issues/129?utm_source=jeliknes&utm_medium=blog&utm_campaign=medium&WT.mc_id=medium-blog-jeliknes)
 
 Regards,
 

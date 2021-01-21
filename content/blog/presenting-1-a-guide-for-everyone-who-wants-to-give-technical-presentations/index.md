@@ -57,7 +57,7 @@ Several years back I was in a transition between jobs and realized I hadn't stop
 
 > My mission is to empower developers to be their best.
 
-The two roles I took on after both embraced the mission. First, I led the application development practice for a company and had the opportunity to create jobs, hire and mentor developers, and build their experience with hands-on projects. Second, I moved into developer advocacy and a role that feels like it was custom built to deliver my personal mission. [Microsoft's mission statement](https://jlik.me/gdf) is no coincidence:
+The two roles I took on after both embraced the mission. First, I led the application development practice for a company and had the opportunity to create jobs, hire and mentor developers, and build their experience with hands-on projects. Second, I moved into developer advocacy and a role that feels like it was custom built to deliver my personal mission. [Microsoft's mission statement](https://www.microsoft.com/en-us/?utm_source=jeliknes&utm_medium=blog&utm_campaign=link&WT.mc_id=link-blog-jeliknes) is no coincidence:
 
 > Microsoft's mission is to empower every person and every organization on the planet to achieve more.
 
