@@ -37,7 +37,7 @@
             {{ $url := printf "%s%s" .Permalink $original }}
             {{ $description = printf "<p><img src='%s' alt='%s'/></p>%s" $url .Title $description }} 
         <enclosure url="{{$url}}" length="{{$len}}" type="{{$originalImg.MediaType}}" />{{end}}{{end}}
-      <description><![CDATA[{{ $description | html }}]]</description>
+      <description><![CDATA[{{ $description | html }}]]></description>
     </item>
     {{ end }}
   </channel>
