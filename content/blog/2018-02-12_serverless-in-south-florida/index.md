@@ -33,7 +33,7 @@ This year I attended the [South Florida Code Camp](http://www.fladotnet.com/code
 
 I have to admit I was a bit spoiled when I left 32°F weather at home to experience 76°F weather in Florida. My hotel room wasn’t ready yet when I landed, so I took advantage of the extra time to explore the beach. I wasn’t disappointed!
 
-{{<instagram Be-39E0nJY2>}}
+{{<custominstagram Be-39E0nJY2>}}
 
 The code camp itself was amazing. There was an overwhelming number of sessions being presented.
 

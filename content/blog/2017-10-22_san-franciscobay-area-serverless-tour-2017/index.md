@@ -91,11 +91,11 @@ We had a great evening with some good questions and feedback.
 
 I stayed for the presentation after mine that was focused on Kubernetes, then headed out. I had a great surprise that evening, because the Microsoft campus there is lit beautifully at night.
 
-{{<instagram BadPzpUlFUr>}}
+{{<custominstagram BadPzpUlFUr>}}
 
 Finally, I went to bed early to wake up for a 6:35 am flight back to Atlanta. Yet another surprise was in store for me as I witnessed the sun rising over Silicon Valley.
 
-{{<instagram BafDhiclXdU>}}
+{{<custominstagram BafDhiclXdU>}}
 
 It was a beautiful end to a very fun trip. I appreciate my warm Silicon Valley welcome and look forward to coming back in the future! I’m excited that I was able to share the power of serverless with so many, and look forward to everyone’s feedback and success stories. As a reminder:
 

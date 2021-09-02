@@ -35,7 +35,7 @@ aliases:
 
 Last year was my first full year at Microsoft. It was a year of change for me as I relocated across the country and traveled around the world.
 
-{{<instagram BfssgW-HPGM>}}
+{{<custominstagram BfssgW-HPGM>}}
 <figcaption>A bit of ice on the ole goatee</figcaption>
 
 According to [TripIt](https://tripit.com) I enjoyed 18 ✈ trips, lived out of my 💼 suitcase for 100 days, and acquainted myself with 35 🏙 cities across 11 🌍 different countries (although several of the countries were just layover stops).
@@ -62,7 +62,7 @@ How did I do with my goals for 2018? Here are my retrospective comments.
 
 We ended up in an amazing new home. Here’s a view of Mt. Rainier from our front deck:
 
-{{<instagram BrAvCpknIBT>}}
+{{<custominstagram BrAvCpknIBT>}}
 
 **The Goal**: _Engage heavily in the amazing giving opportunities that Microsoft provides its employees_
 

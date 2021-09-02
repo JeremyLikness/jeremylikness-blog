@@ -32,7 +32,7 @@ images:
 
 What an awesome year! 2019 had lots of great milestones. Every year of my professional career has been exciting, and 2019 was no different. It was my first full year living in the Pacific Northwest and my second full year employed at Microsoft. I continued to travel the world.
 
-{{<instagram BtGzqF8gTX1>}}
+{{<custominstagram BtGzqF8gTX1>}}
 
 According to [TripIt](https://tripit.com) I covered 124,570 miles (200,476 km) over 17 trips across 26 cities in 10 countries. I was away for 92 days of the year, which is _way too much_ (I'll be fixing that this coming year!). The places I visited include:
 
@@ -119,19 +119,19 @@ How did I do with my goals for 2019? Here are my retrospective comments.
 **The Result:** ✅ success! I successfully reached the summit of several new mountains, including:
 
 🗻 [Heybrook Lookout](https://www.wta.org/go-hiking/hikes/heybrook-lookout) 1700' (518m)
-{{<instagram BvlCihpHnUS>}}
+{{<custominstagram BvlCihpHnUS>}}
 
 🗻 [Dragon's Back (Hong Kong)](https://en.wikipedia.org/wiki/Dragon%27s_Back) 931' (284m)
-{{<instagram BuIYh_vnHYd>}}
+{{<custominstagram BuIYh_vnHYd>}}
 
 🗻 [Beckler Peak](https://www.wta.org/go-hiking/hikes/beckler-peak) 5026' (1532m)
-{{<instagram B0b64tnplrA>}}
+{{<custominstagram B0b64tnplrA>}}
 
 🗻 [Mount Pilchuck](https://www.wta.org/go-hiking/hikes/mount-pilchuck) 5327' (1624m)
-{{<instagram B1l1XhdJ0UK>}}
+{{<custominstagram B1l1XhdJ0UK>}}
 
 🗻 [Mount Dickerman](https://www.wta.org/go-hiking/hikes/mount-dickerman) 5760' (1756m)
-{{<instagram B5gkVgPJo2F>}}
+{{<custominstagram B5gkVgPJo2F>}}
 
 **The Goal:** _ski for the first time in years_
 
@@ -145,11 +145,11 @@ How did I do with my goals for 2019? Here are my retrospective comments.
 
 **The Result:** ✅ success! We had an amazing mini-vacation in Oregon.
 
-{{<instagram ByJjXkXJ-8M>}}
+{{<custominstagram ByJjXkXJ-8M>}}
 
 ...then, we took a longer trip down to Baja Mexico.
 
-{{<instagram B2fIsz-JVeZ>}}
+{{<custominstagram B2fIsz-JVeZ>}}
 
 **The Goal:** _increase my giving (not just dollars, but mentoring, community service, etc.)_
 
@@ -159,7 +159,7 @@ In other news, my daughter graduated college with her Bachelor of Political Scie
 
 Sadly, my brother-in-law was diagnosed with cancer and died within the year. Rest in peace, Steve!
 
-{{<instagram BxX0CewpzyL>}}
+{{<custominstagram BxX0CewpzyL>}}
 
 ## My Goals for 2020
 
